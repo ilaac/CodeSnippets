@@ -1,0 +1,17 @@
+characters={
+	
+	GZC_fang_xianque={
+		name=GZC_fang_xianque
+		portraits={
+			civilian={
+				large="GFX_portrait_GZC_fang_xianque_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

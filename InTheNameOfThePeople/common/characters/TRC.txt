@@ -1,0 +1,17 @@
+characters={
+	
+	TRC_akaki_chkhenkli={
+		name=TRC_akaki_chkhenkli
+		portraits={
+			civilian={
+				large="GFX_portrait_trc_akaki_chkhenkli_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ stout_defender  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

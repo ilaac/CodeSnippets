@@ -1,0 +1,24 @@
+state={
+	id=1073
+	name="STATE_1073"
+	
+	history={
+		owner = TUR
+		
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = TUR
+		add_claim_by = TRC
+
+	}
+	
+	provinces={
+		789 3714 11753 13410
+	}
+	manpower=72018
+	state_category=small_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

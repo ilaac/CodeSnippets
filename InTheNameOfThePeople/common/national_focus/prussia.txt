@@ -1,0 +1,9155 @@
+focus_tree = {
+	id = prussian_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 100
+			tag = PRS
+		}
+	}
+ 
+	default = no
+	
+	continuous_focus_position = { x = 30 y = 2000 }
+	
+	
+	focus = {
+		id = PRS_status_of_the_army
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		#prerequisite = { focus = HUN_submarines }
+		x = 8
+		y = 1
+		#relative_position_id =
+		
+		cost = 1
+		
+		available = {
+		
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 100
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.1
+		}
+	}	
+	
+	focus = {
+		id = PRS_new_army_innovations
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_status_of_the_army }
+		x = 4.5
+		y = 1
+		relative_position_id = PRS_status_of_the_army
+		
+		cost = 3
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 100
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}	
+	
+	
+	focus = {
+		id = PRS_start_the_army_industrialisation
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_status_of_the_army }
+		x = -4
+		y = 1
+		relative_position_id = PRS_status_of_the_army
+		
+		cost = 3
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 100
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+
+				type = artillery_equipment_1
+
+				amount = 75
+
+			}
+		}
+	}	
+	
+	focus = {
+		id = PRS_the_militia_issue
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_status_of_the_army }
+		x = 0
+		y = 1
+		relative_position_id = PRS_status_of_the_army
+		
+		cost = 1
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 100
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.2
+		}
+	}
+
+focus = {
+		id = PRS_professionalize_the_militias
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_the_militia_issue }
+		x = 1
+		y = 1
+		relative_position_id = PRS_the_militia_issue
+		
+		cost = 3
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 100
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			
+			add_units_to_division_template = {
+					template_name = "Rotes Regiment"
+						regiments = {
+							infantry = 2
+							infantry = 2
+							infantry = 2
+						}
+				}
+		}
+	}	
+
+	focus = {
+		id = PRS_add_artillery
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_the_militia_issue }
+		x = -1
+		y = 1
+		relative_position_id = PRS_the_militia_issue
+		
+		cost = 3
+		
+		available = {
+			has_completed_focus = PRS_professionalize_the_militias
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 100
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_units_to_division_template = {
+				template_name = "Rotes Regiment"
+					regiments = {
+						artillery_brigade = 3
+					}
+						
+				support = { 
+					artillery = 0
+				}
+			}
+		}
+	}	
+	
+	focus = {
+		id = PRS_expand_the_militia_army
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_add_artillery }
+		prerequisite = { focus = PRS_professionalize_the_militias }
+		x = 1
+		y = 1
+		relative_position_id = PRS_add_artillery
+		
+		cost = 3
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 100
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "division_template = \"Rotes Regiment\" start_experience_factor = 0.5 start_equipment_factor = 50.0"
+					owner = PRS
+					count = 3
+				}
+			}
+		}	
+	}	
+	
+	focus = {
+		id = PRS_militia_issue_solved
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_expand_the_militia_army }
+		x = 0
+		y = 1
+		relative_position_id = PRS_expand_the_militia_army
+		
+		cost = 3
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 100
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = PRS_irregular_army
+				}   
+				swap_ideas = {
+					remove_idea = PRS_irregular_army
+					add_idea = PRS_irregular_army2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = PRS_irregular_army2
+				}   
+				swap_ideas = {
+					remove_idea = PRS_irregular_army2
+					add_idea = PRS_irregular_army3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = PRS_irregular_army3
+				}   
+				swap_ideas = {
+					remove_idea = PRS_irregular_army3
+					add_idea = PRS_irregular_army4
+				}
+			}
+		}	
+	}
+
+	focus = {
+		id = PRS_expand_production_capabilities
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_start_the_army_industrialisation }
+		x = 0
+		y = 1
+		relative_position_id = PRS_start_the_army_industrialisation
+		
+		cost = 3
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 100
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			763 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}	
+
+	focus = {
+		id = PRS_receive_foreign_equipment
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_start_the_army_industrialisation }
+		x = -2
+		y = 1
+		relative_position_id = PRS_start_the_army_industrialisation
+		
+		cost = 3
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 100
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			SOV = {
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = 900
+					target = PRS
+				}
+			}
+			FRA = {
+				send_equipment = {
+					equipment = support_equipment
+					amount = 250
+					target = PRS
+				}
+			}
+		}
+	}	
+
+	focus = {
+		id = PRS_introduce_mass_production
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_receive_foreign_equipment }
+		prerequisite = { focus = PRS_expand_production_capabilities }
+		x = 2
+		y = 1
+		relative_position_id = PRS_receive_foreign_equipment
+		
+		cost = 3
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 100
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_timed_idea = { idea = PRS_mass_production days = 250 }
+		}
+	}		
+	
+	focus = {
+		id = PRS_military_powerhouse
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_introduce_mass_production }
+		x = 0
+		y = 1
+		relative_position_id = PRS_introduce_mass_production
+		
+		cost = 4
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 100
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = PRS_irregular_army
+				}   
+				swap_ideas = {
+					remove_idea = PRS_irregular_army
+					add_idea = PRS_irregular_army2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = PRS_irregular_army2
+				}   
+				swap_ideas = {
+					remove_idea = PRS_irregular_army2
+					add_idea = PRS_irregular_army3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = PRS_irregular_army3
+				}   
+				swap_ideas = {
+					remove_idea = PRS_irregular_army3
+					add_idea = PRS_irregular_army4
+				}
+			}
+		}
+	}
+
+focus = {
+		id = PRS_offensive_warfare
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_new_army_innovations }
+		mutually_exclusive = { focus = PRS_defensive_warfare }
+		x = -1
+		y = 1
+		relative_position_id = PRS_new_army_innovations
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = YUG_supremacy_of_offense
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mobile_warfare
+				category = cat_superior_firepower
+			}
+		}
+	}
+
+	focus = {
+		id = PRS_defensive_warfare
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_new_army_innovations }
+		mutually_exclusive = { focus = PRS_offensive_warfare }
+		x = 1
+		y = 1
+		relative_position_id = PRS_new_army_innovations
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = YUG_supremacy_of_defense
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_grand_battle_plan
+				category = cat_mass_assault
+			}
+		}
+	}
+
+focus = {
+		id = PRS_research_armored_models
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_offensive_warfare }
+		x = 0
+		y = 1
+		relative_position_id = PRS_offensive_warfare
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_mechanized_focus
+				bonus = 1
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1
+				uses = 1
+				category = armor
+			}
+		}
+	}	
+	
+	focus = {
+		id = PRS_stay_with_traditional_weapons
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_defensive_warfare }
+		x = 0
+		y = 1
+		relative_position_id = PRS_defensive_warfare
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_mechanized_focus
+				bonus = 1
+				uses = 1
+				category = artillery
+			}
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}	
+	
+	focus = {
+		id = PRS_a_modernized_army
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_stay_with_traditional_weapons }
+		prerequisite = { focus = PRS_research_armored_models }
+		x = -1
+		y = 1
+		relative_position_id = PRS_stay_with_traditional_weapons
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = PRS_irregular_army
+				}   
+				swap_ideas = {
+					remove_idea = PRS_irregular_army
+					add_idea = PRS_irregular_army2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = PRS_irregular_army2
+				}   
+				swap_ideas = {
+					remove_idea = PRS_irregular_army2
+					add_idea = PRS_irregular_army3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = PRS_irregular_army3
+				}   
+				swap_ideas = {
+					remove_idea = PRS_irregular_army3
+					add_idea = PRS_irregular_army4
+				}
+			}
+		}	
+	}	
+	
+	focus = {
+		id = PRS_great_prussian_volksarmee
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_militia_issue_solved }
+		prerequisite = { focus = PRS_military_powerhouse }
+		prerequisite = { focus = PRS_a_modernized_army }
+		x = 0
+		y = 1
+		relative_position_id = PRS_militia_issue_solved
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "We won the German Civil War"	
+					NOT = {
+						country_exists = GER
+						country_exists = SWF
+					}
+					has_war = no
+				}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			country_event = prussia.3
+		}	
+	}
+
+	focus = {
+		id = PRS_status_of_our_economy
+		icon = GFX_goal_generic_construction
+		#prerequisite = { focus = HUN_submarines }
+		x = 23
+		y = 1
+		#relative_position_id =
+		
+		cost = 1
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.4
+		}
+	}	
+	
+	focus = {
+		id = PRS_start_collectivization
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_status_of_our_economy }
+		x = 4
+		y = 1
+		relative_position_id = PRS_status_of_our_economy
+		
+		cost = 4
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = PRS_collectivization
+			swap_ideas = {
+					remove_idea = PRS_dead_economy
+					add_idea = PRS_dead_economy2
+				}
+		}
+	}	
+	
+	focus = {
+		id = PRS_establish_ministry_of_economy
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_status_of_our_economy }
+		x = -3
+		y = 1
+		relative_position_id = PRS_status_of_our_economy
+		
+		cost = 4
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = PRS_economy
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	focus = {
+		id = PRS_develop_military_industry
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_start_collectivization }
+		x = 2
+		y = 1
+		relative_position_id = PRS_start_collectivization
+		
+		cost = 5
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}	
+	
+	focus = {
+		id = PRS_build_new_roads
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_start_collectivization }
+		x = 0
+		y = 1
+		relative_position_id = PRS_start_collectivization
+		
+		cost = 4.5
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+		}
+	}	
+	
+	focus = {
+		id = PRS_expand_civilian_industry
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_start_collectivization }
+		x = -2
+		y = 1
+		relative_position_id = PRS_start_collectivization
+		
+		cost = 5
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}	
+		}
+	}
+		
+	focus = {
+		id = PRS_get_rid_of_workers_councils
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_establish_ministry_of_economy }
+		x = -1
+		y = 1
+		relative_position_id = PRS_establish_ministry_of_economy
+		mutually_exclusive = { focus = PRS_keep_the_workers_councils }
+		
+		cost = 5
+		
+		available = {
+			has_completed_focus = PRS_start_collectivization
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+					remove_idea = PRS_dead_economy2
+					add_idea = PRS_dead_economy3
+				}
+			add_timed_idea = { idea = PRS_worker_protests days = 50 }
+		}
+	}	
+	
+	focus = {
+		id = PRS_keep_the_workers_councils
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_establish_ministry_of_economy }
+		x = 1
+		y = 1
+		relative_position_id = PRS_establish_ministry_of_economy
+		mutually_exclusive = { focus = PRS_get_rid_of_workers_councils }
+		
+		cost = 4.5
+		
+		available = {
+			has_completed_focus = PRS_start_collectivization
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+					remove_idea = PRS_dead_economy2
+					add_idea = PRS_dead_economy4
+				}
+			
+		}
+	}	
+	
+	focus = {
+		id = PRS_invite_soviet_experts
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_keep_the_workers_councils focus = PRS_get_rid_of_workers_councils }
+		x = 0
+		y = 1
+		relative_position_id = PRS_keep_the_workers_councils
+		
+		cost = 6.4
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = SOV_gosproyektstroy_1
+		}
+	}	
+	
+	focus = {
+		id = PRS_attract_new_workers
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_keep_the_workers_councils focus = PRS_get_rid_of_workers_councils }
+		x = 0
+		y = 1
+		relative_position_id = PRS_get_rid_of_workers_councils
+		
+		cost = 4
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			763 = {
+				add_manpower = 40781
+			}
+			85 = {
+				add_manpower = 30743
+			}
+		}
+	}
+
+	focus = {
+		id = PRS_urbanize_posen
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_build_new_roads focus = PRS_expand_civilian_industry focus = PRS_develop_military_industry }
+		x = -1
+		y = 1
+		relative_position_id = PRS_build_new_roads
+		
+		cost = 5.5
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			86 = {
+				set_state_category = large_city
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}	
+		}
+	}	
+	
+	focus = {
+		id = PRS_urbanize_gdlingen
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_build_new_roads focus = PRS_expand_civilian_industry focus = PRS_develop_military_industry }
+		x = 1
+		y = 1
+		relative_position_id = PRS_build_new_roads
+		
+		cost = 5.5
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			807 = {
+				set_state_category = city
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}	
+	
+	focus = {
+		id = PRS_urbanize_hinterpommern
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_build_new_roads focus = PRS_expand_civilian_industry focus = PRS_develop_military_industry }
+		x = -3
+		y = 1
+		relative_position_id = PRS_build_new_roads
+		
+		cost = 5.5
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			63 = {
+				set_state_category = city
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}	
+	
+	focus = {
+		id = PRS_urbanize_masuren
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_build_new_roads focus = PRS_expand_civilian_industry focus = PRS_develop_military_industry }
+		x = 3
+		y = 1
+		relative_position_id = PRS_build_new_roads
+		
+		cost = 5.5
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			5 = {
+				set_state_category = city
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+focus = {
+		id = PRS_prospect_for_new_resources 
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_urbanize_masuren focus = PRS_urbanize_posen }
+		prerequisite = { focus = PRS_urbanize_hinterpommern focus = PRS_urbanize_gdlingen }
+		x = -1
+		y = 1
+		relative_position_id = PRS_urbanize_masuren
+		
+		cost = 4.3
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+				add_resource = {
+					type = Aluminium
+					amount = 16
+				}
+			}
+		}
+	}	
+	
+	focus = {
+		id = PRS_improve_supply_network 
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_urbanize_masuren focus = PRS_urbanize_posen }
+		prerequisite = { focus = PRS_urbanize_hinterpommern focus = PRS_urbanize_gdlingen }
+		x = -1
+		y = 1
+		relative_position_id = PRS_urbanize_posen
+		
+		cost = 5
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			63 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 9252
+					instant_build = yes
+				}
+			}
+			
+			86 = {
+				add_building_construction = {
+					type = supply_node
+					level = 1
+					province = 9532
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PRS_introduce_a_planned_economy
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_invite_soviet_experts focus = PRS_attract_new_workers }
+		x = -1
+		y = 1
+		relative_position_id = PRS_invite_soviet_experts
+		
+		cost = 5
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = modified_economy_idea
+			if = {
+				limit = {
+					has_idea =  PRS_dead_economy3
+				}   
+				swap_ideas = {
+					remove_idea = PRS_dead_economy3
+					add_idea = PRS_dead_economy5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea =  PRS_dead_economy4
+				}
+				swap_ideas = {
+					remove_idea = PRS_dead_economy4
+					add_idea = PRS_dead_economy3
+				}
+			}
+		}
+	}	
+	
+	focus = {
+		id = PRS_the_german_civil_war
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		#prerequisite = { focus = HUN_submarines }
+		x = 13
+		y = 15
+		#relative_position_id =
+		
+		cost = 0
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The German Civil War has begun"	
+					has_war_with = GER
+					GER = {
+						has_country_flag = GER_german_civil_war
+					}
+				}
+			}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.5
+			remove_ideas = PRS_communist_refugees
+		}
+	}	
+	
+	focus = {
+		id = PRS_every_worker_fight
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_the_german_civil_war }
+		x = 3
+		y = 1
+		relative_position_id = PRS_the_german_civil_war
+		
+		cost = 5
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The German Civil War has begun"	
+					has_war_with = GER
+					GER = {
+						has_country_flag = GER_german_civil_war
+					}
+				}
+			}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = PRS_concript_all_workers
+		}
+	}	
+	
+	focus = {
+		id = PRS_equipment_for_the_revolution
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_the_german_civil_war }
+		x = -3
+		y = 1
+		relative_position_id = PRS_the_german_civil_war
+		
+		cost = 5
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The German Civil War has begun"	
+					has_war_with = GER
+					GER = {
+						has_country_flag = GER_german_civil_war
+					}
+				}
+			}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 200
+			}
+		}
+	}	
+	
+	focus = {
+		id = PRS_communism_over_everything
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_the_german_civil_war }
+		x = 0
+		y = 1
+		relative_position_id = PRS_the_german_civil_war
+		
+		cost = 5
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The German Civil War has begun"	
+					has_war_with = GER
+					GER = {
+						has_country_flag = GER_german_civil_war
+					}
+				}
+			}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event =  prussia.6
+		}
+	}	
+	
+	focus = {
+		id = PRS_sabotage_enemy_lines
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_communism_over_everything focus = PRS_equipment_for_the_revolution focus = PRS_every_worker_fight }
+		x = 1
+		y = 1
+		relative_position_id = PRS_communism_over_everything
+		
+		cost = 2.5
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The German Civil War has begun"	
+					has_war_with = GER
+					GER = {
+						has_country_flag = GER_german_civil_war
+					}
+				}
+			}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_tooltip = sabotage_enemy_lines
+		}
+	}	
+	
+	focus = {
+		id = PRS_sabotage_enemy_industry
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_communism_over_everything focus = PRS_equipment_for_the_revolution focus = PRS_every_worker_fight }
+		x = -1
+		y = 1
+		relative_position_id = PRS_communism_over_everything
+		
+		cost = 2.5
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The German Civil War has begun"	
+					has_war_with = GER
+					GER = {
+						has_country_flag = GER_german_civil_war
+					}
+				}
+			}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_tooltip = sabotage_german_industry
+		}
+	}	
+	
+	focus = {
+		id = PRS_asking_for_foreign_aid
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_communism_over_everything focus = PRS_equipment_for_the_revolution focus = PRS_every_worker_fight }
+		x = 0
+		y = 1
+		relative_position_id = PRS_equipment_for_the_revolution
+		
+		cost = 2.5
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The German Civil War has begun"	
+					has_war_with = GER
+					GER = {
+						has_country_flag = GER_german_civil_war
+					}
+				}
+			}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			SOV = {	country_event = { id = prussia.7 hours = 8 random_hours = 4 } }
+			FRA = {	country_event = { id = prussia.7 hours = 8 random_hours = 4 } }
+		}
+	}	
+	
+	focus = {
+		id = PRS_integrate_eastern_territories
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_communism_over_everything focus = PRS_equipment_for_the_revolution focus = PRS_every_worker_fight }
+		x = 0
+		y = 1
+		relative_position_id = PRS_every_worker_fight
+		
+		cost = 2.5
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The German Civil War has begun"	
+					has_war_with = GER
+					GER = {
+						has_country_flag = GER_german_civil_war
+					}
+				}
+			}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_tooltip = integrate_eastern_territories
+		}
+	}
+
+	focus = {
+		id = PRS_victory_in_the_german_civil_war
+		icon = GFX_focus_generic_self_management
+		#prerequisite = { focus = HUN_submarines }
+		x = 40
+		y = 1
+		#relative_position_id =
+		
+		cost = 1
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "We won the German Civil War"	
+					NOT = {
+						country_exists = GER
+						country_exists = SWF
+					}
+					has_war = no
+				}
+			}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.17
+			set_cosmetic_tag = PRS_north_germany
+			custom_effect_tooltip = PRS_integration_decisions
+			start_german_integration_decisions =  yes
+		}
+	}	
+	
+	focus = {
+		id = PRS_first_congress_of_german_workers
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_victory_in_the_german_civil_war }
+		x = 0
+		y = 1
+		relative_position_id = PRS_victory_in_the_german_civil_war
+		
+		cost = 2
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "We won the German Civil War"	
+					NOT = {
+						country_exists = GER
+					}
+					has_war = no
+				}
+			}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.18
+		}
+	}
+
+focus = {
+		id = PRS_rely_on_the_old
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_great_prussian_volksarmee }
+		x = 5
+		y = 1
+		relative_position_id = PRS_great_prussian_volksarmee
+		mutually_exclusive = { focus = PRS_build_from_the_ground }
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "We decided to reintegrate Wehrmacht Generals"	
+					has_country_flag = PRS_old_army
+				}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			country_event = prussia.25
+			clr_country_flag = PRS_old_army
+		}	
+	}	
+	
+	focus = {
+		id = PRS_build_from_the_ground
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_great_prussian_volksarmee }
+		x = -5
+		y = 1
+		relative_position_id = PRS_great_prussian_volksarmee
+		mutually_exclusive = { focus = PRS_rely_on_the_old }
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "We decided to build a new Army from the Ground"	
+					has_country_flag = PRS_new_army
+				}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+		random_owned_controlled_state = {
+				create_unit = {
+					division = "division_template = \"Volksmilizen\" start_experience_factor = 0.1 start_equipment_factor = 0.5"
+					owner = PRS
+					count = 5
+				}
+			}
+			clr_country_flag = PRS_new_army
+		}	
+	}
+
+	focus = {
+		id = PRS_ulbrichts_plan
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_introduce_a_planned_economy  }
+		prerequisite = { focus = PRS_improve_supply_network  }
+		prerequisite = { focus = PRS_prospect_for_new_resources  }
+		x = 3
+		y = 2
+		relative_position_id = PRS_introduce_a_planned_economy
+		mutually_exclusive = { focus = PRS_honeckers_plan }
+		
+		cost = 2
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "We choosed Ulbrichts Plan"	
+					has_country_flag = PRS_old_economy
+				}
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 0.5
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = PRS_ulbrichts_plan
+			clr_country_flag = PRS_old_economy
+		}
+	}	
+	
+	focus = {
+		id = PRS_honeckers_plan
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_introduce_a_planned_economy  }
+		prerequisite = { focus = PRS_improve_supply_network  }
+		prerequisite = { focus = PRS_prospect_for_new_resources  }
+		x = 7
+		y = 2
+		relative_position_id = PRS_introduce_a_planned_economy
+		mutually_exclusive = { focus = PRS_ulbrichts_plan }
+		
+		cost = 2
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "We choosed Honeckers Plan"	
+					has_country_flag = PRS_new_economy
+				}
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 0.5
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas =  PRS_honeckers_plan
+			clr_country_flag = PRS_new_economy
+		}
+	}
+
+	focus = {
+		id = PRS_establish_the_nationale_volksarmee
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_build_from_the_ground focus = PRS_rely_on_the_old }
+		x = 3
+		y = 1
+		relative_position_id = PRS_build_from_the_ground
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = PRS_nationale_volksarmee
+			army_experience = 30
+			add_command_power = 20
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}	
+	}
+	
+	focus = {
+		id = PRS_mielkes_role_in_the_military		
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_build_from_the_ground focus = PRS_rely_on_the_old }
+		x = 7
+		y = 1
+		relative_position_id = PRS_build_from_the_ground
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			country_event = prussia.26
+		}	
+	}
+	
+	focus = {
+		id = PRS_create_political_commissars		
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_mielkes_role_in_the_military focus = PRS_establish_the_nationale_volksarmee }
+		x = 1
+		y = 1
+		relative_position_id = PRS_mielkes_role_in_the_military
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = PRS_nationale_volksarmee
+				}   
+				swap_ideas = {
+					remove_idea = PRS_nationale_volksarmee
+					add_idea = PRS_nationale_volksarmee2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = PRS_nationale_volksarmee2
+					has_completed_focus = PRS_reorganize_the_military
+				}   
+				swap_ideas = {
+					remove_idea = PRS_nationale_volksarmee2
+					add_idea = PRS_nationale_volksarmee7
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = PRS_nationale_volksarmee2
+					has_completed_focus = PRS_empower_the_stasi
+				}   
+				swap_ideas = {
+					remove_idea = PRS_nationale_volksarmee2
+					add_idea = PRS_nationale_volksarmee5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = PRS_nationale_volksarmee7
+				}   
+				swap_ideas = {
+					remove_idea = PRS_nationale_volksarmee7
+					add_idea = PRS_nationale_volksarmee8
+				}
+			}
+			
+			else_if = {
+				limit = {
+					has_idea = PRS_nationale_volksarmee5
+				}   
+				swap_ideas = {
+					remove_idea = PRS_nationale_volksarmee5
+					add_idea = PRS_nationale_volksarmee8
+				}
+			}
+		}	
+	}
+	
+	focus = {
+		id = PRS_reorganize_the_military		
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_mielkes_role_in_the_military focus = PRS_establish_the_nationale_volksarmee }
+		x = -2
+		y = 1
+		relative_position_id = PRS_mielkes_role_in_the_military
+		
+		cost = 10.5
+
+		ai_will_do = {
+			factor = 50
+		}
+		select_effect = {
+			add_ideas = SOV_military_reorganization_ns
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = PRS_nationale_volksarmee
+				}   
+				swap_ideas = {
+					remove_idea = PRS_nationale_volksarmee
+					add_idea = PRS_nationale_volksarmee4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = PRS_nationale_volksarmee4
+					has_completed_focus = PRS_create_political_commissars
+				}   
+				swap_ideas = {
+					remove_idea = PRS_nationale_volksarmee4
+					add_idea = PRS_nationale_volksarmee5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = PRS_nationale_volksarmee4
+					has_completed_focus = PRS_empower_the_stasi
+				}   
+				swap_ideas = {
+					remove_idea = PRS_nationale_volksarmee2
+					add_idea = PRS_nationale_volksarmee6
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = PRS_nationale_volksarmee6
+				}   
+				swap_ideas = {
+					remove_idea = PRS_nationale_volksarmee6
+					add_idea = PRS_nationale_volksarmee8
+				}
+			}
+			
+			else_if = {
+				limit = {
+					has_idea = PRS_nationale_volksarmee5
+				}   
+				swap_ideas = {
+					remove_idea = PRS_nationale_volksarmee5
+					add_idea = PRS_nationale_volksarmee8
+				}
+			}
+			
+			custom_effect_tooltip = SOV_focus_select_effect_tt
+			effect_tooltip = {
+				add_ideas = SOV_military_reorganization_ns
+			}
+			hidden_effect = {
+				remove_ideas = SOV_military_reorganization_ns
+			}
+		}	
+	}
+	
+	focus = {
+		id = PRS_empower_the_stasi		
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_mielkes_role_in_the_military focus = PRS_establish_the_nationale_volksarmee }
+		x = -5
+		y = 1
+		relative_position_id = PRS_mielkes_role_in_the_military
+		
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+		
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = PRS_nationale_volksarmee
+				}   
+				swap_ideas = {
+					remove_idea = PRS_nationale_volksarmee
+					add_idea = PRS_nationale_volksarmee3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = PRS_nationale_volksarmee3
+					has_completed_focus = PRS_create_political_commissars
+				}   
+				swap_ideas = {
+					remove_idea = PRS_nationale_volksarmee3
+					add_idea = PRS_nationale_volksarmee5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = PRS_nationale_volksarmee3
+					has_completed_focus = PRS_reorganize_the_military
+				}   
+				swap_ideas = {
+					remove_idea = PRS_nationale_volksarmee3
+					add_idea = PRS_nationale_volksarmee6
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = PRS_nationale_volksarmee6
+				}   
+				swap_ideas = {
+					remove_idea = PRS_nationale_volksarmee6
+					add_idea = PRS_nationale_volksarmee8
+				}
+			}
+			
+			else_if = {
+				limit = {
+					has_idea = PRS_nationale_volksarmee5
+				}   
+				swap_ideas = {
+					remove_idea = PRS_nationale_volksarmee5
+					add_idea = PRS_nationale_volksarmee8
+				}
+			}
+			
+			if = {
+				limit = { has_dlc = "La Resistance" }
+				if = {
+					limit = { has_intelligence_agency = no }
+					create_intelligence_agency = yes
+				}
+				else_if = {
+					limit = {
+						NOT = { has_done_agency_upgrade = upgrade_army_department }
+					}
+					upgrade_intelligence_agency = upgrade_army_department
+				}
+			}
+				else = {
+					add_political_power = 50
+				}
+				
+		}
+	}
+	
+	focus = {
+		id = PRS_dissolve_the_militias
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_rely_on_the_old }
+		x = 2
+		y = 1
+		relative_position_id = PRS_rely_on_the_old
+
+		cost = 4.8
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			remove_ideas = PRS_irregular_army4
+			delete_unit_template_and_units = {
+				division_template = "Rotes Regiment"
+				disband = yes #will refund equipment and manpower
+			}
+			add_manpower = 20000
+		}	
+	}
+
+	focus = {
+		id = PRS_a_militia_army
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_build_from_the_ground }
+		x = -2
+		y = 1
+		relative_position_id = PRS_build_from_the_ground
+
+		cost = 4.8
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			swap_ideas = {
+					remove_idea = PRS_irregular_army4
+					add_idea = prussian_militia_army
+				}
+			add_political_power = -50
+		}	
+	}
+	
+	focus = {
+		id = PRS_new_infantry_innovations
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_a_militia_army }
+		prerequisite = { focus = PRS_build_from_the_ground }
+		x = 2
+		y = 1
+		relative_position_id = PRS_a_militia_army
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = HUN_better_industry_default
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}	
+	}
+	
+	focus = {
+		id = PRS_motorized_research
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_dissolve_the_militias }
+		prerequisite = { focus = PRS_rely_on_the_old }
+		x = -2
+		y = 1
+		relative_position_id = PRS_dissolve_the_militias
+
+		cost = 4
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = HUN_better_industry_default
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}	
+	}
+	
+	focus = {
+		id = PRS_forced_conscription
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_motorized_research }
+		x = 0
+		y = 1
+		relative_position_id = PRS_motorized_research
+
+		cost = 6
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = forced_conscription
+		}	
+	}
+	
+	focus = {
+		id = PRS_create_military_workshops
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_motorized_research }
+		x = 2
+		y = 1
+		relative_position_id = PRS_motorized_research
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}	
+	}
+	
+	focus = {
+		id = PRS_female_soldiers
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_new_infantry_innovations }
+		x = 0
+		y = 1
+		relative_position_id = PRS_new_infantry_innovations
+
+		cost = 6.3
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = female_soldiers
+			set_rule = {
+				can_generate_female_aces = yes
+			}
+		}	
+	}
+	
+	focus = {
+		id = PRS_expand_national_arsenal
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_new_infantry_innovations }
+		x = -2
+		y = 1
+		relative_position_id = PRS_new_infantry_innovations
+
+		cost = 6.3
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1000
+
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 400
+
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 225
+
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment
+				amount = 500
+
+			}
+		}	
+	}
+	
+	focus = {
+		id = PRS_decentralised_command
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_expand_national_arsenal focus = PRS_create_military_workshops }
+		prerequisite = { focus = PRS_female_soldiers focus = PRS_forced_conscription }
+		x = 3
+		y = 1
+		relative_position_id = PRS_expand_national_arsenal
+		mutually_exclusive = { focus = PRS_centralised_command }
+
+		cost = 6.8
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = PRS_decentralized_command
+		}	
+	}
+	
+	focus = {
+		id = PRS_centralised_command
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_expand_national_arsenal focus = PRS_create_military_workshops }
+		prerequisite = { focus = PRS_female_soldiers focus = PRS_forced_conscription }
+		x = 5
+		y = 1
+		relative_position_id = PRS_expand_national_arsenal
+		mutually_exclusive = { focus = PRS_decentralised_command }
+
+		cost = 6.8
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = PRS_central_command
+		}	
+	}
+	
+	focus = {
+		id = PRS_train_in_the_mountains
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_expand_national_arsenal focus = PRS_create_military_workshops }
+		prerequisite = { focus = PRS_female_soldiers focus = PRS_forced_conscription }
+		x = 9
+		y = 1
+		relative_position_id = PRS_expand_national_arsenal
+		mutually_exclusive = { focus = PRS_train_in_the_forest }
+
+		cost = 8.5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = special_bonus
+				bonus = 1.0
+				uses = 2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+			custom_effect_tooltip = GRE_mountain_training_effect
+			hidden_effect = { set_technology = { mountain_warfare = 1 } }
+		}	
+	}
+	
+	focus = {
+		id = PRS_train_in_the_forest
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_expand_national_arsenal focus = PRS_create_military_workshops }
+		prerequisite = { focus = PRS_female_soldiers focus = PRS_forced_conscription }
+		x = 11
+		y = 1
+		relative_position_id = PRS_expand_national_arsenal
+		mutually_exclusive = { focus = PRS_train_in_the_mountains }
+
+		cost = 7.5
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			custom_effect_tooltip = PRS_forest_training_effect
+			hidden_effect = { set_technology = { forest_warfare = 1 } }
+		}	
+	}
+	
+	focus = {
+		id = PRS_focus_on_artillery
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_train_in_the_forest focus = PRS_create_military_workshops }
+		prerequisite = { focus = PRS_centralised_command focus = PRS_decentralised_command }
+		x = -2
+		y = 1
+		relative_position_id = PRS_train_in_the_forest
+		mutually_exclusive = { focus = PRS_focus_on_mechanization focus = PRS_focus_on_panzers }
+
+		cost = 8
+
+		ai_will_do = {
+			factor = 33
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.5
+				uses = 1
+				category = artillery
+			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_superior_firepower
+			}
+		}	
+	}
+	
+	focus = {
+		id = PRS_focus_on_mechanization
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_train_in_the_forest focus = PRS_create_military_workshops }
+		prerequisite = { focus = PRS_centralised_command focus = PRS_decentralised_command }
+		x = -4
+		y = 1
+		relative_position_id = PRS_train_in_the_forest
+		mutually_exclusive = { focus = PRS_focus_on_artillery focus = PRS_focus_on_panzers }
+
+		cost = 8
+
+		ai_will_do = {
+			factor = 33
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_mechanized_focus
+				bonus = 1.5
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_grand_battle_plan
+			}
+		}	
+	}
+	
+	focus = {
+		id = PRS_focus_on_panzers
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_train_in_the_forest focus = PRS_create_military_workshops }
+		prerequisite = { focus = PRS_centralised_command focus = PRS_decentralised_command }
+		x = -6
+		y = 1
+		relative_position_id = PRS_train_in_the_forest
+		mutually_exclusive = { focus = PRS_focus_on_artillery focus = PRS_focus_on_mechanization }
+
+		cost = 8
+
+		ai_will_do = {
+			factor = 33
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.5
+				uses = 1
+				category = armor
+			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = cat_mobile_warfare
+			}
+		}	
+	}
+	
+	focus = {
+		id = PRS_build_a_professional_army
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_forced_conscription }
+		prerequisite = { focus = PRS_create_military_workshops }
+		x = 1
+		y = 1
+		relative_position_id = PRS_forced_conscription
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = PRS_proffesional_army
+		}	
+	}
+	
+	focus = {
+		id = PRS_copy_soviet_tank_designs
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_build_a_professional_army }
+		x = 0
+		y = 1
+		relative_position_id = PRS_build_a_professional_army
+
+		cost = 7.8
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "No Step Back"
+				}
+				#T-34 tank template
+				if = {
+					limit = {
+						OR = {
+							has_tech = artillery3
+							has_tech = antitank3
+						}
+					}
+					create_equipment_variant = {
+						name = "T-34"
+						type = medium_tank_chassis_2
+						parent_version = 0
+						modules = {
+							main_armament_slot = tank_medium_cannon_2
+							turret_type_slot = tank_medium_two_man_tank_turret
+							suspension_type_slot = tank_christie_suspension
+							armor_type_slot = tank_welded_armor
+							engine_type_slot = tank_diesel_engine
+							special_type_slot_1 = sloped_armor
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 10
+							tank_nsb_armor_upgrade = 7
+						}
+						icon = "GFX_SOV_improved_medium_tank_medium"
+					}
+				}
+				else_if = {
+					limit = {
+						OR = {
+							has_tech = artillery1
+							has_tech = antitank1
+						}
+					}
+					create_equipment_variant = {
+						name = "T-34"
+						type = medium_tank_chassis_2
+						parent_version = 0
+						modules = {
+							main_armament_slot = tank_medium_cannon
+							turret_type_slot = tank_medium_two_man_tank_turret
+							suspension_type_slot = tank_christie_suspension
+							armor_type_slot = tank_welded_armor
+							engine_type_slot = tank_diesel_engine
+							special_type_slot_1 = sloped_armor
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 10
+							tank_nsb_armor_upgrade = 7
+						}
+						icon = "GFX_SOV_improved_medium_tank_medium"
+					}
+				}
+				else_if = { #Why? You ruined your T-34
+					limit = {
+						has_tech = interwar_artillery
+					}
+					create_equipment_variant = {
+						name = "T-34"
+						type = medium_tank_chassis_2
+						parent_version = 0
+						modules = {
+							main_armament_slot = tank_small_cannon_2
+							turret_type_slot = tank_medium_two_man_tank_turret
+							suspension_type_slot = tank_christie_suspension
+							armor_type_slot = tank_welded_armor
+							engine_type_slot = tank_diesel_engine
+							special_type_slot_1 = sloped_armor
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 10
+							tank_nsb_armor_upgrade = 7
+						}
+						icon = "GFX_SOV_improved_medium_tank_medium"
+					}
+				}
+				else = { #Don't do this to yourself dude
+					create_equipment_variant = {
+						name = "T-34"
+						type = medium_tank_chassis_2
+						parent_version = 0
+						modules = {
+							main_armament_slot = tank_small_cannon
+							turret_type_slot = tank_medium_two_man_tank_turret
+							suspension_type_slot = tank_christie_suspension
+							armor_type_slot = tank_welded_armor
+							engine_type_slot = tank_diesel_engine
+							special_type_slot_1 = sloped_armor
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 10
+							tank_nsb_armor_upgrade = 7
+						}
+						icon = "GFX_SOV_improved_medium_tank_medium"
+					}
+				}
+			}
+			else = {
+				add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.5
+				uses = 1
+				category = armor
+			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_mobile_warfare
+			}
+			}
+		}	
+	}
+	
+	focus = {
+		id = PRS_train_our_generals
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_build_a_professional_army }
+		x = 2
+		y = 1
+		relative_position_id = PRS_build_a_professional_army
+
+		cost = 7.8
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			every_army_leader = {
+				add_attack = 1
+				add_defense = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_militia_tactics
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_female_soldiers }
+		prerequisite = { focus = PRS_expand_national_arsenal }
+		x = -1
+		y = 1
+		relative_position_id = PRS_female_soldiers
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_ideas = PRS_militia_tactics
+		}	
+	}
+	
+	focus = {
+		id = PRS_elite_units
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_militia_tactics }
+		x = 0
+		y = 1
+		relative_position_id = PRS_militia_tactics
+
+		cost = 8
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			division_template = {
+				name = "Sturmtruppen"
+				priority = 1
+				division_names_group = POL_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+		
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+				}
+			}
+			random_owned_controlled_state = {
+				limit = { PREV = { has_full_control_of_state = PREV } }
+				create_unit = {
+					division = "name = \"Sturmtruppen\" division_template = \"Sturmtruppen\" start_experience_factor = 0.9" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Sturmtruppen\" division_template = \"Sturmtruppen\" start_experience_factor = 0.9" 
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Sturmtruppen\" division_template = \"Sturmtruppen\" start_experience_factor = 0.9" 
+					owner = PREV
+				}
+			}
+		}	
+	}
+	
+	focus = {
+		id = PRS_maximize_conscription
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		prerequisite = { focus = PRS_militia_tactics }
+		x = -2
+		y = 1
+		relative_position_id = PRS_militia_tactics
+
+		cost = 7
+
+		ai_will_do = {
+			factor = 50
+		}
+
+		available = {
+			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			add_stability = -0.1
+			swap_ideas = {
+					remove_idea = female_soldiers
+					add_idea = every_worker_a_soldier
+				}
+		}
+	}
+	
+	focus = {
+		id = PRS_expand_industrialisation_plan
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_ulbrichts_plan focus =  PRS_honeckers_plan }
+		x = 2
+		y = 1
+		relative_position_id = PRS_ulbrichts_plan
+		
+		cost = 4
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 5
+			custom_effect_tooltip = industrialisation_decisions
+		}
+	}	
+	
+	focus = {
+		id = PRS_start_the_first_four_year_plan
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_ulbrichts_plan }
+		x = -4
+		y = 1
+		relative_position_id = PRS_ulbrichts_plan
+		
+		cost = 4
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = modified_economy_idea
+			if = {
+				limit = {
+					has_idea =  PRS_dead_economy3
+				}   
+				swap_ideas = {
+					remove_idea = PRS_dead_economy3
+					add_idea = PRS_dead_economy5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea =  PRS_dead_economy5
+				}
+				swap_ideas = {
+					remove_idea = PRS_dead_economy5
+					add_idea = PRS_dead_economy6
+				}
+			}
+		}
+	}	
+	
+	focus = {
+		id = PRS_create_the_arbeiterdienst
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_honeckers_plan }
+		x = 3
+		y = 1
+		relative_position_id = PRS_honeckers_plan
+		
+		cost = 4
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = modified_economy_idea
+		custom_effect_tooltip = reichswerke_decisions
+			if = {
+				limit = {
+					has_idea =  PRS_dead_economy3
+				}   
+				swap_ideas = {
+					remove_idea = PRS_dead_economy3
+					add_idea = PRS_dead_economy5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea =  PRS_dead_economy5
+				}
+				swap_ideas = {
+					remove_idea = PRS_dead_economy5
+					add_idea = PRS_dead_economy6
+				}
+			}
+		}
+	}	
+	
+	focus = {
+		id = PRS_repair_the_countryside
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_expand_industrialisation_plan  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_expand_industrialisation_plan
+		
+		cost = 3
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_country_flag = PRS_repair_shop
+			add_political_power = 5
+			custom_effect_tooltip = fix_country
+			unlock_decision_tooltip = start_the_repairing_program
+			unlock_decision_tooltip = seize_private_assets
+			unlock_decision_tooltip = finish_the_repairs
+		}
+	}	
+	
+	focus = {
+		id = PRS_use_foced_labour
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_repair_the_countryside  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_repair_the_countryside
+		
+		cost = 2
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_tooltip = create_genossenschaften
+			unlock_decision_tooltip = collective_work
+			add_days_mission_timeout = {
+				mission = collapsing_economy
+				days = 18
+			}
+		}
+	}	
+	
+	focus = {
+		id = PRS_repair_investments
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_repair_the_countryside  }
+		x = 2
+		y = 1
+		relative_position_id = PRS_repair_the_countryside
+		
+		cost = 2
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_tooltip = use_war_prisoners_as_forced_laborers
+			unlock_decision_tooltip = force_the_arbeitsdienst
+			add_days_mission_timeout = {
+				mission = collapsing_economy
+				days = 18
+			}
+		}
+	}	
+	
+	focus = {
+		id = PRS_stabilize_the_political_climate
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_repair_the_countryside  }
+		x = -2
+		y = 1
+		relative_position_id = PRS_repair_the_countryside
+		
+		cost = 2
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_tooltip = increase_social_spending
+			unlock_decision_tooltip = calm_down_workers
+			add_days_mission_timeout = {
+				mission = collapsing_economy
+				days = 18
+			}
+		}
+	}
+
+
+	focus = {
+		id = PRS_improve_civilian_industry
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_start_the_first_four_year_plan }
+		x = 0
+		y = 1
+		relative_position_id = PRS_start_the_first_four_year_plan
+		
+		cost = 9
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+		
+	focus = {
+		id = PRS_push_military_industry
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_start_the_first_four_year_plan }
+		x = 2
+		y = 1
+		relative_position_id = PRS_start_the_first_four_year_plan
+		
+		cost = 9
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_ernst_thaelmann_bergbau
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_start_the_first_four_year_plan }
+		x = -2
+		y = 1
+		relative_position_id = PRS_start_the_first_four_year_plan
+		
+		cost = 8
+		
+		available = {
+			owns_state = 992
+			owns_state = 65
+			owns_state = 62
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			992 = {
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+			}
+			62 = {
+				add_resource = {
+					type = steel
+					amount = 14
+				}
+			}
+			992 = {
+				add_resource = {
+					type = aluminium
+					amount = 35
+				}
+			}	
+			65 = {
+			add_resource = {
+					type = chromium
+					amount = 12
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_austerity_measures
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_ernst_thaelmann_bergbau focus = PRS_improve_civilian_industry focus = PRS_push_military_industry }
+		x = 2
+		y = 1
+		relative_position_id = PRS_ernst_thaelmann_bergbau
+		
+		cost = 5
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = modified_economy_idea
+			if = {
+				limit = {
+					has_idea =  PRS_dead_economy6
+				}   
+				swap_ideas = {
+					remove_idea = PRS_dead_economy6
+					add_idea = PRS_dead_economy7
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea =  PRS_dead_economy5
+				}
+				swap_ideas = {
+					remove_idea = PRS_dead_economy5
+					add_idea = PRS_dead_economy6
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_militarize_the_peoples_country
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_austerity_measures  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_austerity_measures
+		
+		cost = 5
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			add_manpower = 1000
+			custom_effect_tooltip = modified_economy_idea_ulbricht
+			if = {
+				limit = {
+					has_idea =  PRS_ulbrichts_plan
+				}   
+				swap_ideas = {
+					remove_idea = PRS_ulbrichts_plan
+					add_idea = PRS_ulbrichts_plan_military
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea =  PRS_ulbrichts_plan_military
+				}
+				swap_ideas = {
+					remove_idea = PRS_ulbrichts_plan_military
+					add_idea = PRS_ulbrichts_plan_all
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_improve_oil_production
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_austerity_measures  }
+		x = 2
+		y = 1
+		relative_position_id = PRS_austerity_measures
+		
+		cost = 7.2
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state =  {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+						type = fuel_silo
+						level = 1
+						instant_build = yes						
+					}
+			}
+			add_tech_bonus = {
+				name = SOV_synthetic_rubber
+				bonus = 0.75
+				uses = 2
+				category = cat_synth_oil
+			}
+			custom_effect_tooltip = modified_economy_idea_ulbricht
+			if = {
+				limit = {
+					has_idea =  PRS_ulbrichts_plan
+				}   
+				swap_ideas = {
+					remove_idea = PRS_ulbrichts_plan
+					add_idea = PRS_ulbrichts_plan_oil
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea =  PRS_ulbrichts_plan_oil
+				}
+				swap_ideas = {
+					remove_idea = PRS_ulbrichts_plan_oil
+					add_idea = PRS_ulbrichts_plan_all
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_reorganize_soil_administration
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_austerity_measures  }
+		x = -2
+		y = 1
+		relative_position_id = PRS_austerity_measures
+		
+		cost = 5.6
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_owned_state = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_finalize_economic_reforms
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_improve_oil_production  }
+		prerequisite = { focus = PRS_militarize_the_peoples_country  }
+		prerequisite = { focus = PRS_reorganize_soil_administration  }
+		x = 2
+		y = 1
+		relative_position_id = PRS_reorganize_soil_administration
+		
+		cost = 5
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = modified_economy_idea
+			if = {
+				limit = {
+					has_idea =  PRS_dead_economy7
+				}   
+				swap_ideas = {
+					remove_idea = PRS_dead_economy7
+					add_idea = PRS_dead_economy9
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea =  PRS_dead_economy6
+				}
+				swap_ideas = {
+					remove_idea = PRS_dead_economy6
+					add_idea = PRS_dead_economy8
+				}
+				add_political_power =  100
+			}
+			remove_ideas = PRS_collectivization
+		}
+	}
+	
+	
+	focus = {
+		id = PRS_create_the_volkswerke_zivil
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_create_the_arbeiterdienst  }
+		x = 1
+		y = 1
+		relative_position_id = PRS_create_the_arbeiterdienst
+		
+		cost = 5
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power =  5
+			unlock_decision_tooltip = volkswerke_zivil_ost
+		}
+	}
+	
+	focus = {
+		id = PRS_expand_the_volkswerke_zivil
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_create_the_volkswerke_zivil  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_create_the_volkswerke_zivil
+		
+		cost = 5
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power =  5
+			unlock_decision_tooltip = volkswerke_zivil_west
+		}
+	}
+	
+	focus = {
+		id = PRS_create_the_volkswerke_militaer
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_create_the_arbeiterdienst  }
+		x = -1
+		y = 1
+		relative_position_id = PRS_create_the_arbeiterdienst
+		
+		cost = 5
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power =  5
+			unlock_decision_tooltip = volkswerke_militaer_ost
+		}
+	}
+	
+	focus = {
+		id = PRS_expand_the_volkswerke_militaer
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_create_the_volkswerke_militaer  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_create_the_volkswerke_militaer
+		
+		cost = 5
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power =  5
+			unlock_decision_tooltip = volkswerke_militaer_west
+		}
+	}
+	
+	focus = {
+		id = PRS_the_effects_of_the_volkswerke
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_expand_the_volkswerke_militaer  }
+		prerequisite = { focus = PRS_expand_the_volkswerke_zivil  }
+		x = 1
+		y = 1
+		relative_position_id = PRS_expand_the_volkswerke_militaer
+		
+		cost = 5
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = modified_economy_idea
+			if = {
+				limit = {
+					has_idea =  PRS_dead_economy6
+				}   
+				swap_ideas = {
+					remove_idea = PRS_dead_economy6
+					add_idea = PRS_dead_economy7
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea =  PRS_dead_economy5
+				}
+				swap_ideas = {
+					remove_idea = PRS_dead_economy5
+					add_idea = PRS_dead_economy6
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_support_workers_welfare
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_the_effects_of_the_volkswerke  }
+		x = 1
+		y = 1
+		relative_position_id = PRS_the_effects_of_the_volkswerke
+		
+		cost = 5
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = modified_economy_idea_honecker
+			if = {
+				limit = {
+					has_idea =  PRS_honeckers_plan
+				}   
+				swap_ideas = {
+					remove_idea = PRS_honeckers_plan
+					add_idea = PRS_honeckers_plan2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea =  PRS_honeckers_plan3
+				}
+				swap_ideas = {
+					remove_idea = PRS_honeckers_plan3
+					add_idea = PRS_honeckers_plan4
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_control_the_means_of_production
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_the_effects_of_the_volkswerke  }
+		x = -1
+		y = 1
+		relative_position_id = PRS_the_effects_of_the_volkswerke
+		
+		cost = 5
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		custom_effect_tooltip = modified_economy_idea_honecker
+			if = {
+				limit = {
+					has_idea =  PRS_honeckers_plan
+				}   
+				swap_ideas = {
+					remove_idea = PRS_honeckers_plan
+					add_idea = PRS_honeckers_plan3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea =  PRS_honeckers_plan2
+				}
+				swap_ideas = {
+					remove_idea = PRS_honeckers_plan2
+					add_idea = PRS_honeckers_plan4
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_workers_paradise
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_control_the_means_of_production  }
+		prerequisite = { focus = PRS_support_workers_welfare  }
+		x = 1
+		y = 1
+		relative_position_id = PRS_control_the_means_of_production
+		
+		cost = 5
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = modified_economy_idea
+			if = {
+				limit = {
+					has_idea =  PRS_dead_economy7
+				}   
+				swap_ideas = {
+					remove_idea = PRS_dead_economy7
+					add_idea = PRS_dead_economy9
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea =  PRS_dead_economy6
+				}
+				swap_ideas = {
+					remove_idea = PRS_dead_economy6
+					add_idea = PRS_dead_economy8
+				}
+				add_political_power =  100
+			}
+			remove_ideas = PRS_collectivization
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_fate_of_the_trade_unions
+		icon = GFX_goal_generic_construction
+		prerequisite = { focus = PRS_finalize_economic_reforms  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_finalize_economic_reforms
+		
+		cost = 5
+		
+		available = {
+			
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.27
+		}
+	}
+	
+	focus = {
+		id = PRS_thahlmann_and_pieck
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_first_congress_of_german_workers }
+		x = 2
+		y = 1
+		relative_position_id = PRS_first_congress_of_german_workers
+		
+		cost = 2
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The German Workers Congress ist finished"	
+					has_country_flag = PRS_finished_congress
+			}
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			clr_country_flag = PRS_finished_congress
+			country_event =  prussia.28
+		}
+	}
+	
+	focus = {
+		id = PRS_the_fascist_menance
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_first_congress_of_german_workers }
+		x = -3
+		y = 1
+		relative_position_id = PRS_first_congress_of_german_workers
+		
+		cost = 2
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The German Workers Congress ist finished"	
+					has_country_flag = PRS_finished_congress
+			}
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			clr_country_flag = PRS_finished_congress
+			country_event = prussia.30
+		}
+	}
+	
+	focus = {
+		id = PRS_klaus_barbie
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_the_fascist_menance }
+		x = -2
+		y = 1
+		relative_position_id = PRS_the_fascist_menance
+		
+		cost = 2
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.31
+		}
+	}
+	
+	focus = {
+		id = PRS_deal_with_the_guerillas
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_the_fascist_menance }
+		x = 2
+		y = 1
+		relative_position_id = PRS_the_fascist_menance
+		
+		cost = 3
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = guerilla_decisions
+		}
+	}
+	
+	focus = {
+		id = PRS_the_domestic_policy
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_thahlmann_and_pieck }
+		x = 0
+		y = 1
+		relative_position_id = PRS_thahlmann_and_pieck
+		
+		cost = 2
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.32
+		}
+	}
+	
+	focus = {
+		id = PRS_the_foreign_policy
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_thahlmann_and_pieck }
+		x = 2
+		y = 1
+		relative_position_id = PRS_thahlmann_and_pieck
+		
+		cost = 2
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.33
+		}
+	}
+	
+	focus = {
+		id = PRS_kill_reinhard_heydrich
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_deal_with_the_guerillas }
+		prerequisite = { focus = PRS_klaus_barbie }
+		x = -2
+		y = 1
+		relative_position_id = PRS_deal_with_the_guerillas
+		
+		cost = 5
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.34
+			swap_ideas = {
+					remove_idea = PRS_fascist_resistance
+					add_idea = PRS_fascist_resistance2
+				}
+		}
+	}
+	
+	focus = {
+		id = PRS_strengthen_the_stasi
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_deal_with_the_guerillas }
+		x = 0
+		y = 2
+		relative_position_id = PRS_deal_with_the_guerillas
+		
+		cost = 8
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			IF =  {
+				limit = {
+					NOT = { has_tech = tech_military_police }	
+				}
+				set_technology = { tech_military_police = 1 }
+			}
+			else_if = {
+				limit = {
+					 has_tech =  tech_military_police  	
+				}
+				set_technology = { tech_military_police2 = 2 }	
+			}
+			division_template = {
+				name = "Staatssicherheitsbrigade"
+				priority = 2
+				division_names_group = GER_Inf_01
+				regiments = {
+					military_police1 = { x = 0 y = 0 }
+					military_police1 = { x = 0 y = 1 }
+					military_police1 = { x = 0 y = 2 }
+		
+					military_police1 = { x = 1 y = 0 }
+					military_police1 = { x = 1 y = 1 }
+					military_police1 = { x = 1 y = 2 }
+		
+				}
+				support = {
+					military_police = { x = 0 y = 0 }
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Staatssicherheitsbrigade\" division_template = \"Staatssicherheitsbrigade\" start_experience_factor = 1.0" 
+					owner = PRS
+				}
+				create_unit = {
+					division = "name = \"Staatssicherheitsbrigade\" division_template = \"Staatssicherheitsbrigade\" start_experience_factor = 1.0" 
+					owner = PRS
+				}
+			}
+			random_owned_controlled_state = { 
+				limit = { 
+					NOT =  {is_core_of = PRS}
+				}
+				add_resistance = -10
+			}
+			random_owned_controlled_state = { 
+				limit = { 
+					NOT =  {is_core_of = PRS}
+				}
+				add_resistance = -10
+			}
+			random_owned_controlled_state = { 
+				limit = { 
+					NOT =  {is_core_of = PRS}
+				}
+				add_resistance = -10
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_rise_of_the_ss_state
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_klaus_barbie }
+		x = 0
+		y = 2
+		relative_position_id = PRS_klaus_barbie
+		
+		cost = 3
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event =  prussia.35
+			51 =  {
+				set_demilitarized_zone = yes
+				add_core_of = SSW				
+				if = {
+					limit = {
+						is_core_of = PRS
+					}   
+					remove_core_of = PRS
+					add_resistance = 30
+				}
+				else = {
+					add_resistance = 30
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_fall_of_the_rhineland
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_rise_of_the_ss_state }
+		x = 0
+		y = 1
+		relative_position_id = PRS_rise_of_the_ss_state
+		
+		cost = 2
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			992 =  {
+				set_demilitarized_zone = yes
+				add_core_of = SSW				
+				if = {
+					limit = {
+						is_core_of = PRS
+					}   
+					remove_core_of = PRS
+					add_resistance = 30
+				}
+				else = {
+					add_resistance = 30
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_present_our_accomplishments
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_strengthen_the_stasi }
+		x = 0
+		y = 1
+		relative_position_id = PRS_strengthen_the_stasi
+		
+		cost = 5
+		
+		available = {
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			} 
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_the_escalation
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_fall_of_the_rhineland focus = PRS_present_our_accomplishments }
+		x = 2
+		y = 1
+		relative_position_id = PRS_fall_of_the_rhineland
+		
+		cost = 3
+		
+		available = {
+			has_completed_focus =  PRS_fall_of_the_rhineland
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = { id = prussia.36 days = 2 random_hours = 4 }
+			
+		}		
+	}
+	
+	focus = {
+		id = PRS_the_solution
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_the_escalation  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_the_escalation
+		
+		cost = 5
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "We have killed Klaus Barbie"	
+					has_country_flag =  fascist_defeated
+				}
+		}
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			remove_ideas = PRS_fascist_resistance2
+			51 = {
+				remove_core_of = SSW
+				add_core_of = PRS
+			}
+			992 = {
+				remove_core_of = SSW
+				add_core_of = PRS
+			}
+			clr_country_flag =  fascist_defeated
+		}		
+	}
+	
+	focus = {
+		id = PRS_fate_of_social_democrats
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_the_domestic_policy  focus = PRS_the_foreign_policy }
+		x = 0
+		y = 1
+		relative_position_id = PRS_the_domestic_policy
+		
+		cost = 2
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.41
+		}	
+	}
+	
+	focus = {
+		id = PRS_concentration_camps
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_the_foreign_policy  focus = PRS_the_domestic_policy }
+		x = 0
+		y = 1
+		relative_position_id = PRS_the_foreign_policy
+		
+		cost = 2
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.42
+		}
+	}
+	
+	focus = {
+		id = PRS_power_of_the_chairman
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_fate_of_social_democrats focus = PRS_concentration_camps }
+		x = 0
+		y = 1
+		relative_position_id = PRS_fate_of_social_democrats
+		
+		cost = 2
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.43
+		}	
+	}
+	
+	focus = {
+		id = PRS_centralisation_or_decentralisation
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_concentration_camps focus = PRS_fate_of_social_democrats }
+		x = 0
+		y = 1
+		relative_position_id = PRS_concentration_camps
+		
+		cost = 2
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.44
+		}
+	}
+	
+	focus = {
+		id = PRS_the_freedom_of_the_media
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_power_of_the_chairman focus = PRS_centralisation_or_decentralisation }
+		x = 0
+		y = 1
+		relative_position_id = PRS_power_of_the_chairman
+		
+		cost = 2
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.45
+		}	
+	}
+	
+	focus = {
+		id = PRS_the_role_of_women
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_centralisation_or_decentralisation focus = PRS_power_of_the_chairman }
+		x = 0
+		y = 1
+		relative_position_id = PRS_centralisation_or_decentralisation
+		
+		cost = 2
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.46
+		}
+	}
+	
+	focus = {
+		id = PRS_international_relationschips
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_the_freedom_of_the_media focus = PRS_the_role_of_women }
+		x = 0
+		y = 1
+		relative_position_id = PRS_the_freedom_of_the_media
+		
+		cost = 2
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.47
+		}	
+	}
+	
+	focus = {
+		id = PRS_the_education_issue
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_the_role_of_women focus = PRS_the_freedom_of_the_media }
+		x = 0
+		y = 1
+		relative_position_id = PRS_the_role_of_women
+		
+		cost = 2
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.48
+		}
+	}
+	
+	focus = {
+		id = PRS_preparations_for_the_workers_congress
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_the_education_issue  }
+		prerequisite = { focus = PRS_international_relationschips  }
+		x = -1
+		y = 1
+		relative_position_id = PRS_the_education_issue
+		
+		cost = 2
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "We have decided about all politics"	
+					has_completed_focus =  PRS_the_education_issue
+					has_completed_focus =  PRS_international_relationschips
+					has_completed_focus =  PRS_the_role_of_women
+					has_completed_focus =  PRS_the_freedom_of_the_media
+					has_completed_focus =  PRS_centralisation_or_decentralisation
+					has_completed_focus =  PRS_power_of_the_chairman
+					has_completed_focus =  PRS_concentration_camps
+					has_completed_focus =  PRS_fate_of_social_democrats
+				}
+			}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.49
+		}
+	}
+	
+	focus = {
+		id = PRS_the_second_congress_of_german_workers
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_preparations_for_the_workers_congress  }
+		prerequisite = { focus = PRS_the_solution  }
+		x = -3
+		y = 1
+		relative_position_id = PRS_preparations_for_the_workers_congress
+		
+		cost = 1
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = { id = prussia.50 days = 1 random_hours = 4 }
+		}
+	}
+	
+	focus = {
+		id = PRS_our_leader_pieck
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_the_second_congress_of_german_workers  }
+		x = -4
+		y = 1
+		relative_position_id = PRS_the_second_congress_of_german_workers
+		
+		cost = 0
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			clear_variable = PRS_our_leader_pieck
+		}
+	}
+	
+	focus = {
+		id = PRS_our_leader_thalmann
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_the_second_congress_of_german_workers  }
+		x = 4
+		y = 1
+		relative_position_id = PRS_the_second_congress_of_german_workers
+		
+		cost = 0
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			clear_variable = PRS_our_leader_thalmann
+		}
+	}
+	
+	focus = {
+		id = PRS_start_the_trials
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_our_leader_thalmann  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_our_leader_thalmann
+		
+		cost = 1
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_manpower = -10000
+			add_stability = -0.25
+			add_war_support = -0.25
+		}
+	}
+	
+	focus = {
+		id = PRS_purge_the_party
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_start_the_trials  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_start_the_trials
+		
+		cost = 2
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_timed_idea = { idea = PRS_party_purges days = 80 }
+		}
+	}
+	
+	focus = {
+		id = PRS_purge_the_army
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_start_the_trials  }
+		x = 2
+		y = 1
+		relative_position_id = PRS_start_the_trials
+		
+		cost = 2
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_timed_idea = { idea = PRS_army_purges days = 180 }
+		}
+	}
+	
+	focus = {
+		id = PRS_put_down_riots
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_purge_the_army  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_purge_the_army
+		
+		cost = 4
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 30
+			add_stability = 0.05
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			} 
+		}
+	}
+	
+	focus = {
+		id = PRS_death_of_pieck
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_purge_the_party  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_purge_the_party
+		
+		cost = 2
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.54
+		}
+	}
+	
+	focus = {
+		id = PRS_supreme_chairman
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_death_of_pieck  }
+		prerequisite = { focus = PRS_put_down_riots  }
+		x = 1
+		y = 1
+		relative_position_id = PRS_death_of_pieck
+		
+		cost = 3
+		
+		available = {
+			NOT = {has_idea = PRS_party_purges}
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			custom_effect_tooltip = PRS_thalmann_supreme_ruler
+			add_country_leader_trait = PRS_supreme_chairman
+		}
+	}
+	
+	focus = {
+		id = PRS_new_housing_program
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_supreme_chairman  }
+		x = -1
+		y = 1
+		relative_position_id = PRS_supreme_chairman
+		
+		cost = 6
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_red_guards
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_supreme_chairman  }
+		x = 1
+		y = 1
+		relative_position_id = PRS_supreme_chairman
+		
+		cost = 5
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = PRS_red_guards
+		}
+	}
+	
+	focus = {
+		id = PRS_socialist_education
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_supreme_chairman  }
+		x = 3
+		y = 1
+		relative_position_id = PRS_supreme_chairman
+		
+		cost = 5
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = PRS_socialist_education
+		}
+	}
+	
+	focus = {
+		id = PRS_work_with_german_companies
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_new_housing_program  }
+		x = -1
+		y = 1
+		relative_position_id = PRS_new_housing_program
+		
+		cost = 5.5
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			IF = {
+				limit  =  {has_dlc = "Arms Against Tyranny"}
+				mio:PRS_mauser_organization = {
+					add_mio_funds = 300
+				}
+				mio:PRS_rheinmetall_organization = {
+					add_mio_funds = 300
+				}
+				mio:PRS_messerschmitt_organization = {
+					add_mio_funds = 300
+				}
+				mio:PRS_porsche_organization = {
+					add_mio_funds = 300
+				}
+			}
+			ELSE = {
+				add_political_power = 100
+				add_ideas = PRS_work_with_companies
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_full_employment
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_work_with_german_companies  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_work_with_german_companies
+		
+		cost = 5
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.05
+			add_war_support = -0.05
+			add_ideas = PRS_full_employment
+		}
+	}
+	
+	focus = {
+		id = PRS_fight_against_capitalism
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_full_employment  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_full_employment
+		
+		cost = 5
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_country = {
+				limit = { 
+					OR = {
+						has_government = communism 
+						has_government = anarchism 
+					}
+				}
+				if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+					send_embargo = USA
+					send_embargo = ENG
+			}
+
+			else = {
+					USA = {
+						add_opinion_modifier = {
+							target = PREV 
+							modifier = SWE_embargoed_us
+						}
+					}
+					ENG = {
+						add_opinion_modifier = {
+							target = PREV 
+							modifier = SWE_embargoed_us
+						}
+					}
+				}
+			}		
+		}
+	}
+	
+	focus = {
+		id = PRS_technocratic_influence
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_socialist_education  }
+		x = 1
+		y = 1
+		relative_position_id = PRS_socialist_education
+		
+		cost = 8
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+					remove_idea = PRS_socialist_education
+					add_idea = PRS_technocratic_paradise
+				}
+		}
+	}
+	
+	focus = {
+		id = PRS_red_beacon_of_knowlegde
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_technocratic_influence  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_technocratic_influence
+		
+		cost = 7.5
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
+	focus = {
+		id = PRS_integrated_army_support_units
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_red_guards  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_red_guards
+		
+		cost = 6
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+					remove_idea = PRS_red_guards
+					add_idea = PRS_red_support_units
+				}
+		}
+	}
+	
+	focus = {
+		id = PRS_expand_the_stasi
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_integrated_army_support_units  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_integrated_army_support_units
+		
+		cost = 8
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "La Resistance"
+				}
+
+				create_operative_leader = {
+					name = "Otto Walkes"
+					bypass_recruitment = yes 
+					available_to_spy_master = yes 
+					traits = { operative_well_groomed operative_natural_orator }
+					nationalities = { PRS GER }
+					GFX = GFX_portrait_europe_generic_operative_male_18
+				}
+				add_ideas = PRS_expanded_stasi
+			}
+				else = {
+					add_ideas = PRS_expanded_stasi
+					add_political_power = 100
+				}
+		}
+	}
+	
+	focus = {
+		id = PRS_cooperation_with_the_soviets
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_red_beacon_of_knowlegde  }
+		prerequisite = { focus = PRS_expand_the_stasi  }
+		x = -1
+		y = 1
+		relative_position_id = PRS_red_beacon_of_knowlegde
+		
+		cost = 5.2
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			give_guarantee = SOV
+			give_military_access = SOV
+			add_opinion_modifier = { target = SOV modifier = prs_sov_alliance_focus }
+			SOV = {
+				give_guarantee = PRS
+				give_military_access = PRS
+				add_opinion_modifier = { target = PRS modifier = prs_sov_alliance_focus }
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_the_last_trials
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_cooperation_with_the_soviets  }
+		prerequisite = { focus = PRS_fight_against_capitalism  }
+		x = -3
+		y = 1
+		relative_position_id = PRS_cooperation_with_the_soviets
+		
+		cost = 2
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_manpower = -10000
+			country_event = prussia.55
+		}
+	}
+	
+	focus = {
+		id = PRS_a_new_germany
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_the_last_trials  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_the_last_trials
+		
+		cost = 2
+		
+		available = {
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_cosmetic_tag = PRS_god_thalmann
+		}
+	}
+	
+	focus = {
+		id = PRS_unrest_on_the_streets
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_our_leader_pieck  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_our_leader_pieck
+		
+		cost = 2
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.56
+		}
+	}
+	
+	focus = {
+		id = PRS_ensure_internal_security
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_unrest_on_the_streets  }
+		x = 1
+		y = 1
+		relative_position_id = PRS_unrest_on_the_streets
+		
+		cost = 2
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 30
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			} 
+		}
+	}
+	
+	focus = {
+		id = PRS_execute_the_traitor
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_unrest_on_the_streets  }
+		x = -1
+		y = 1
+		relative_position_id = PRS_unrest_on_the_streets
+		
+		cost = 2
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			PRS_ernst_thaelmann = { retire = yes}
+			add_manpower = -1
+			add_stability = 0.05
+		}
+	}
+	
+	focus = {
+		id = PRS_declare_martial_law
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_unrest_on_the_streets  }
+		x = -3
+		y = 1
+		relative_position_id = PRS_unrest_on_the_streets
+		
+		cost = 2
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_timed_idea = { idea = PRS_martial_law days = 120 }
+		}
+	}
+	
+	focus = {
+		id = PRS_proclaim_the_second_german_revolution
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_unrest_on_the_streets  }
+		x = 3
+		y = 1
+		relative_position_id = PRS_unrest_on_the_streets
+		
+		cost = 2
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		swap_ruler_traits = { remove = triumphant_revolutionary add = almighty_revolutionary }
+		}
+	}
+	
+	focus = {
+		id = PRS_merge_the_partys
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_ensure_internal_security  }
+		prerequisite = { focus = PRS_execute_the_traitor  }
+		prerequisite = { focus = PRS_declare_martial_law  }
+		prerequisite = { focus = PRS_proclaim_the_second_german_revolution  }
+		x = -3
+		y = 1
+		relative_position_id = PRS_proclaim_the_second_german_revolution
+		
+		cost = 7.2
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			set_party_name = { 
+				ideology = communism 
+				long_name = SED_PARTY_LONG
+				name = SED_PARTY_NORMAL
+			}
+			add_popularity = {
+				ideology = communism
+				popularity = 0.5
+			} 
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	
+	
+	focus = {
+		id = PRS_der_schwarze_kanal
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_merge_the_partys  }
+		x = 1
+		y = 1
+		relative_position_id = PRS_merge_the_partys
+		
+		cost = 5
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		unlock_decision_category_tooltip = PRS_schwarzer_kanal
+		custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = PRS_work_for_the_country
+			custom_effect_tooltip = unlock_propaganda_campaign_slot_tt
+			hidden_effect = {
+				SOV_unlock_propaganda_campaign_slot_effect = yes
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_master_of_economy
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_der_schwarze_kanal  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_der_schwarze_kanal
+		
+		cost = 5
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		hidden_effect = {
+				SOV_unlock_propaganda_campaign_slot_effect = yes
+			}
+			swap_ruler_traits = { remove = almighty_revolutionary add = master_of_economy }
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = PRS_our_great_plans
+			custom_effect_tooltip = unlock_propaganda_campaign_slot_tt
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_master_of_army
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_master_of_economy  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_master_of_economy
+		
+		cost = 5
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		hidden_effect = {
+				SOV_unlock_propaganda_campaign_slot_effect = yes
+			}
+			swap_ruler_traits = { remove = master_of_economy add = master_of_army }
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = PRS_glory_to_the_nva
+			custom_effect_tooltip = unlock_propaganda_campaign_slot_tt
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_unifier_of_germany
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_master_of_army  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_master_of_army
+		
+		cost = 5
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ruler_traits = { remove = master_of_army add = unifier_of_germany }
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = PRS_save_our_socialist_hegemony
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_successor_of_marx
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_unifier_of_germany  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_unifier_of_germany
+		
+		cost = 5
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ruler_traits = { remove = unifier_of_germany add = successor_of_marx }
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = PRS_the_workers_paradise
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_leader_of_the_world_revolution
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_successor_of_marx  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_successor_of_marx
+		
+		cost = 5
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ruler_traits = { remove = successor_of_marx add = leader_of_the_world_revolution }
+			custom_effect_tooltip = unlock_propaganda_campaign_tt
+			unlock_decision_tooltip = PRS_peace_through_friendschip
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_establish_the_bodenschatzkommission
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_merge_the_partys  }
+		x = -1
+		y = 1
+		relative_position_id = PRS_merge_the_partys
+		
+		cost = 8
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_resource = {
+					type = steel
+					amount = 40
+				}
+			}
+			random_owned_controlled_state = {
+				add_resource = {
+					type = Aluminium
+					amount = 32
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_plattenbau_groswohnsiedlungen
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_establish_the_bodenschatzkommission  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_establish_the_bodenschatzkommission
+		
+		cost = 10
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_improve_national_infrastructure
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_plattenbau_groswohnsiedlungen  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_plattenbau_groswohnsiedlungen
+		
+		cost = 6
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_merge_production_plants
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_improve_national_infrastructure  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_improve_national_infrastructure
+		
+		cost = 5
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = PRS_functional_architechture
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_merge_production_plants  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_merge_production_plants
+		
+		cost = 6.5
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = PRS_functional_architecture
+		}
+	}
+	
+	focus = {
+		id = PRS_transformation_of_the_country
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_merge_the_partys  }
+		x = -5
+		y = 1
+		relative_position_id = PRS_merge_the_partys
+		
+		cost = 2
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = PRS_transformation_of_germany
+			add_political_power = -30
+		}
+	}
+	
+	focus = {
+		id = PRS_militarize_the_people
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_transformation_of_the_country  }
+		x = 2
+		y = 1
+		relative_position_id = PRS_transformation_of_the_country
+		
+		cost = 5
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = PRS_militarisation_of_society
+		}
+	}
+	
+	focus = {
+		id = PRS_war_communism
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_militarize_the_people  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_militarize_the_people
+		
+		cost = 5
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+					remove_idea = PRS_militarisation_of_society
+					add_idea = PRS_war_communism
+				}
+		}
+	}
+	
+	focus = {
+		id = PRS_red_regiments_of_death
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_war_communism  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_war_communism
+		
+		cost = 5
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			division_template = {
+				name = "Rote Todesschwadron"
+				is_locked = yes 
+				division_names_group = GER_Inf_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+					artillery_brigade = { x = 3 y = 0 }
+					artillery_brigade = { x = 3 y = 1 }
+					artillery_brigade = { x = 3 y = 2 }
+				}
+				support = {
+					engineer = { x = 0 y = 0 }
+				}
+			}
+			capital_scope = {
+				create_unit = {
+					division = "division_template = \"Rote Todesschwadron\" start_experience_factor = 1 start_equipment_factor = 100.0"
+					owner = PRS
+					count = 2
+				}
+			}		
+		}
+	}
+	
+	focus = {
+		id = PRS_meet_with_the_soviets
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_transformation_of_the_country  }
+		x = -2
+		y = 1
+		relative_position_id = PRS_transformation_of_the_country
+		
+		cost = 4
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.57
+		}
+	}
+	
+	focus = {
+		id = PRS_expand_military_cooperation
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_meet_with_the_soviets  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_meet_with_the_soviets
+		
+		cost = 5
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = { 
+					has_dlc = "No Step Back"
+				}
+				#custom_effect_tooltip = GER_soviet_treaty_research_nsb_tt #Obsolete now
+				effect_tooltip = {
+					create_equipment_variant = {
+						name = "Volkspanzer III"
+						type = medium_tank_chassis_2
+						parent_version = 0
+						modules = {
+							main_armament_slot = tank_medium_cannon_2
+							turret_type_slot = tank_medium_three_man_tank_turret
+							suspension_type_slot = tank_bogie_suspension
+							armor_type_slot = tank_welded_armor
+							engine_type_slot = tank_gasoline_engine
+							special_type_slot_1 = tank_radio_2
+							special_type_slot_2 = smoke_launchers
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 6
+							tank_nsb_armor_upgrade = 3
+						}
+						icon = "GFX_GER_improved_medium_tank_medium"
+					}
+					create_equipment_variant = {
+						name = "Volkspanzer IV"
+						type = medium_tank_chassis_2
+						parent_version = 1
+						modules = {
+							main_armament_slot = tank_medium_howitzer_2
+							turret_type_slot = tank_medium_three_man_tank_turret
+							suspension_type_slot = tank_bogie_suspension
+							armor_type_slot = tank_welded_armor
+							engine_type_slot = tank_gasoline_engine
+							special_type_slot_1 = tank_radio_2
+							special_type_slot_2 = smoke_launchers
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 6
+							tank_nsb_armor_upgrade = 2
+						}
+						icon = "GFX_GER_improved_medium_tank_medium"
+					}	
+					add_tech_bonus = {
+						name = armor_bonus
+						bonus = 1.0
+						uses = 2
+						category = armor
+					}
+				}
+			}
+			else = {
+				effect_tooltip = {
+					add_tech_bonus = {
+						name = med_armor_bonus
+						ahead_reduction = 1
+						category = cat_medium_armor
+					}
+					add_tech_bonus = {
+						name = armor_bonus
+						bonus = 1.0
+						uses = 2
+						category = armor
+					}
+				}
+			}
+			
+			SOV = {
+				if = {
+				limit = { 
+					has_dlc = "No Step Back"
+				}
+				#custom_effect_tooltip = GER_soviet_treaty_research_nsb_tt #Obsolete now
+				effect_tooltip = {
+					create_equipment_variant = {
+						name = "Volkspanzer III"
+						type = medium_tank_chassis_2
+						parent_version = 0
+						modules = {
+							main_armament_slot = tank_medium_cannon_2
+							turret_type_slot = tank_medium_three_man_tank_turret
+							suspension_type_slot = tank_bogie_suspension
+							armor_type_slot = tank_welded_armor
+							engine_type_slot = tank_gasoline_engine
+							special_type_slot_1 = tank_radio_2
+							special_type_slot_2 = smoke_launchers
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 6
+							tank_nsb_armor_upgrade = 3
+						}
+						icon = "GFX_GER_improved_medium_tank_medium"
+					}
+					create_equipment_variant = {
+						name = "Volkspanzer IV"
+						type = medium_tank_chassis_2
+						parent_version = 1
+						modules = {
+							main_armament_slot = tank_medium_howitzer_2
+							turret_type_slot = tank_medium_three_man_tank_turret
+							suspension_type_slot = tank_bogie_suspension
+							armor_type_slot = tank_welded_armor
+							engine_type_slot = tank_gasoline_engine
+							special_type_slot_1 = tank_radio_2
+							special_type_slot_2 = smoke_launchers
+						}
+						upgrades = {
+							tank_nsb_engine_upgrade = 6
+							tank_nsb_armor_upgrade = 2
+						}
+						icon = "GFX_GER_improved_medium_tank_medium"
+					}	
+					add_tech_bonus = {
+						name = armor_bonus
+						bonus = 1.0
+						uses = 2
+						category = armor
+					}
+				}
+			}
+			else = {
+				effect_tooltip = {
+					add_tech_bonus = {
+						name = med_armor_bonus
+						ahead_reduction = 1
+						category = cat_medium_armor
+					}
+					add_tech_bonus = {
+						name = armor_bonus
+						bonus = 1.0
+						uses = 2
+						category = armor
+					}
+				}
+			}
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_the_treaty_of_berlin
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_expand_military_cooperation  }
+		x = 0
+		y = 1
+		relative_position_id = PRS_expand_military_cooperation
+		
+		cost = 5
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = prussia.58
+		}
+	}
+	
+	focus = {
+		id = PRS_socialist_intellectual_circles
+		icon = GFX_focus_generic_self_management
+		prerequisite = { focus = PRS_meet_with_the_soviets focus = PRS_militarize_the_people  }
+		x = 2
+		y = 1
+		relative_position_id = PRS_meet_with_the_soviets
+		
+		cost = 5
+		
+		available = {
+			
+			
+		}	
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_research_slot = 1
+			custom_effect_tooltip = "An event will be triggered when the focuses Fuctional Architechture, Treaty of Berlin and Leader of the World revolution are completed."
+		}
+	}
+	
+	focus = {
+		id = PRS_germany_on_world_stage
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		#prerequisite = { focus = HUN_submarines }
+		x = 58
+		y = 10
+		#relative_position_id =
+		
+		cost = 4
+		
+		available = {
+			OR = {
+				has_completed_focus = PRS_our_leader_thalmann
+				has_completed_focus = PRS_our_leader_pieck
+			}
+			date > 1939.09.01
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 50
+			set_variable = { PRS_communist_pressure = 10 }
+			custom_effect_tooltip =  PRS_communist_pressure
+		}
+	}	
+	
+	focus = {
+		id = PRS_plan_sued
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_germany_on_world_stage }
+		x = 0
+		y = 1
+		relative_position_id = PRS_germany_on_world_stage
+		
+		cost = 3
+		
+		available = {
+			
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_opinion_modifier = { target = BAV modifier = threatening_us } 
+			add_opinion_modifier = { target = AUS modifier = threatening_us } 
+			add_opinion_modifier = { target = CZE modifier = threatening_us } 
+			add_opinion_modifier = { target = HUN modifier = threatening_us } 
+			add_opinion_modifier = { target = SWI modifier = threatening_us } 
+		}
+		
+	}	
+	
+	focus = {
+		id = PRS_plan_ost
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_germany_on_world_stage }
+		x = 6
+		y = 1
+		relative_position_id = PRS_germany_on_world_stage
+		
+		cost = 3
+		
+		available = {
+			
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_opinion_modifier = { target = POL modifier = threatening_us } 
+			add_opinion_modifier = { target = LIT modifier = threatening_us } 
+			add_opinion_modifier = { target = LIV modifier = threatening_us } 
+			add_opinion_modifier = { target = UKR modifier = threatening_us } 
+			add_opinion_modifier = { target = BLR modifier = threatening_us }
+			add_opinion_modifier = { target = FSA modifier = threatening_us }
+		}
+	}
+
+	focus = {
+		id = PRS_plan_west
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_germany_on_world_stage }
+		x = -6
+		y = 1
+		relative_position_id = PRS_germany_on_world_stage
+		
+		cost = 3
+		
+		available = {
+			
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_opinion_modifier = { target = DEN modifier = threatening_us } 
+			add_opinion_modifier = { target = HOL modifier = threatening_us } 
+			add_opinion_modifier = { target = BEL modifier = threatening_us } 
+			add_opinion_modifier = { target = ENG modifier = threatening_us } 
+			add_opinion_modifier = { target = SPR modifier = threatening_us }
+			add_opinion_modifier = { target = IRE modifier = threatening_us }
+			add_opinion_modifier = { target = LUX modifier = threatening_us }
+		}
+	}
+
+
+	focus = {
+		id = PRS_german_soviet_alliance
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_plan_ost }
+		x = 0
+		y = 1
+		relative_position_id = PRS_plan_ost
+		
+		cost = 2
+		
+		available = {
+		}
+			
+		bypass = {
+			is_in_faction_with = SOV
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = { id = prussia.64 days = 1 random_hours = 4 }
+		}
+	}
+	
+	focus = {
+		id = PRS_demand_memel
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_german_soviet_alliance }
+		x = 1
+		y = 1
+		relative_position_id = PRS_german_soviet_alliance
+		
+		cost = 5
+		
+		available = {
+			
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			LIT =  { country_event = { id = prussia.60 days = 5 random_hours = 4 }}
+		}
+	}
+	
+	focus = {
+		id = PRS_eastern_partition_treaty
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_german_soviet_alliance }
+		x = -1
+		y = 1
+		relative_position_id = PRS_german_soviet_alliance
+		
+		cost = 5
+		
+		available = {
+			
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = { id = prussia.63 days = 2 random_hours = 4 }
+		}
+	}
+	
+	focus = {
+		id = PRS_declare_the_red_liberation
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_eastern_partition_treaty }
+		prerequisite = { focus = PRS_demand_memel }
+		x = 1
+		y = 1
+		relative_position_id = PRS_eastern_partition_treaty
+		
+		cost = 6
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "The Second World War has begun"
+				ENG = {has_war_with = ITA}
+			}
+					
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		POL = {country_event = prussia.75}
+			PRS = {
+				declare_war_on = {
+					target = POL
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = LIT
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = LIV
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = BLR
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = FSA
+					type = annex_everything
+				}
+			}	
+			SOV = {
+				declare_war_on = {
+					target = POL
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = LIT
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = LIV
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = BLR
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = UKR
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = FSA
+					type = annex_everything
+				}
+			}	
+		}
+	}
+	
+	focus = {
+		id = PRS_set_up_eastern_bruderstaaten
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_declare_the_red_liberation }
+		x = 0
+		y = 1
+		relative_position_id = PRS_declare_the_red_liberation
+		
+		cost = 5
+		
+		available = {
+			NOT = {
+				country_exists = POL
+				country_exists = LIT
+				country_exists = LIV
+				country_exists = UKR
+				country_exists = BLR
+				country_exists = FSA
+			}
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			98 = {add_claim_by = PRS}
+			87 = {add_claim_by = PRS}
+			1031 = {add_claim_by = PRS}
+			97 = {add_claim_by = PRS}
+			unlock_decision_tooltip = PRS_establish_polish_bruderstaat 
+			unlock_decision_tooltip = PRS_establish_baltic_bruderstaat 
+			unlock_decision_tooltip = PRS_establish_finish_bruderstaat 
+		}
+	}
+	
+	focus = {
+		id = PRS_liberate_the_soviet_union
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_declare_the_red_liberation }
+		x = 2
+		y = 1
+		relative_position_id = PRS_declare_the_red_liberation
+		
+		cost = 5
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "Our  Soviet Comrades have lost against the Whites"	
+					NOT = {
+						country_exists = SOV
+					}
+				}
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = CRI
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_fight_against_the_white_armies
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_set_up_eastern_bruderstaaten }
+		x = 0
+		y = 1
+		relative_position_id = PRS_set_up_eastern_bruderstaaten
+		
+		cost = 10
+		
+		available = {
+			
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 4000
+				producer = SOV
+			}
+			add_timed_idea = { idea = PRS_soviet_liberation_forces days = 360 }
+			add_timed_idea = { idea = PRS_defeat_the_whites days = 360 }
+			unlock_decision_tooltip = PRS_liberate_the_soviets
+		}
+	}
+	
+	focus = {
+		id = PRS_fate_of_denmark
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_plan_west }
+		x = 0
+		y = 1
+		relative_position_id = PRS_plan_west
+		
+		cost = 5
+		
+		available = {
+		}
+			
+		bypass = {
+			DEN = {is_subject_of = PRS}
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			912 =  {add_claim_by =  PRS}
+			DEN = {country_event = { id = prussia.71 days = 2 random_hours = 4 }}
+		}
+	}
+	
+	focus = {
+		id = PRS_german_french_non_aggression_pact
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_fate_of_denmark }
+		x = -2
+		y = 1
+		relative_position_id = PRS_fate_of_denmark
+		
+		cost = 5
+		
+		available = {
+		}
+			
+		bypass = {
+			
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = { id = prussia.66 days = 1 random_hours = 4 } 
+		}
+	}
+	
+	focus = {
+		id = PRS_condem_the_british
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_fate_of_denmark }
+		x = 2
+		y = 1
+		relative_position_id = PRS_fate_of_denmark
+		
+		cost = 5
+		
+		available = {
+		}
+			
+		bypass = {
+			
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		ENG = {add_timed_idea = { idea = PRS_wave_of_strikes days = 80 }}
+			add_opinion_modifier = { target = ENG modifier = pact_against_us}	
+		}
+	}
+	
+	focus = {
+		id = PRS_break_the_pact
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_german_french_non_aggression_pact }
+		x = 1
+		y = 1
+		relative_position_id = PRS_german_french_non_aggression_pact	
+		mutually_exclusive = { focus = PRS_defend_against_the_black_wave }
+		cost = 4
+		
+		available = {
+			date > 1940.10.01
+			can_declare_war_on = FRA
+		}
+			
+		bypass = {
+			
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			993 =  {add_claim_by =  PRS}
+			28 =  {add_claim_by =  PRS}
+			937 =  {add_claim_by =  PRS}
+			create_wargoal = {
+				type = annex_everything
+				target = FRA
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_defend_against_the_black_wave
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_german_french_non_aggression_pact }
+		x = -1
+		y = 1
+		relative_position_id = PRS_german_french_non_aggression_pact
+		mutually_exclusive = { focus = PRS_break_the_pact }
+		
+		cost = 4
+		
+		available = {
+			has_war_with = FRA
+		}
+			
+		bypass = {
+			
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_timed_idea = { idea = PRS_defence_against_france days = 360 }
+		}
+	}
+	
+	focus = {
+		id = PRS_partition_of_france
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_defend_against_the_black_wave focus = PRS_break_the_pact }
+		x = 1
+		y = 1
+		relative_position_id = PRS_defend_against_the_black_wave
+		
+		cost = 6
+		
+		available = {
+			NOT = {country_exists = FRA}
+		}
+			
+		bypass = {
+			
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_tooltip = PRS_establish_dutch_bruderstaat
+			unlock_decision_tooltip = PRS_establish_belgian_bruderstaat
+			unlock_decision_tooltip = PRS_establish_french_bruderstaat
+			unlock_decision_tooltip = PRS_establish_briti_bruderstaat
+			unlock_decision_tooltip = PRS_establish_occi_bruderstaat
+		}
+	}
+	
+	focus = {
+		id = PRS_strike_the_imperial_beast
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_condem_the_british }
+		x = 0
+		y = 1
+		relative_position_id = PRS_condem_the_british
+		
+		cost = 5
+		
+		available = {
+		custom_trigger_tooltip = {
+				tooltip = "The Second World War has begun"
+				ENG = {has_war_with = ITA}
+			}
+		}
+			
+		bypass = {
+			
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ENG
+			}
+			unlock_decision_tooltip = PRS_invade_scandinavia
+		}
+	}
+	
+	focus = {
+		id = PRS_initiate_anti_colonial_uprisings
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_strike_the_imperial_beast }
+		x = 0
+		y = 1
+		relative_position_id = PRS_strike_the_imperial_beast
+		
+		cost = 5
+		
+		available = {
+		custom_trigger_tooltip = {
+				tooltip = "The Second World War has begun"
+				ENG = {has_war_with = ITA}
+			}
+		}
+			
+		bypass = {
+			
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_political_power = 100
+			custom_effect_tooltip = British_uprisings
+			start_anti_british_uprisings =  yes
+		}
+	}
+	
+	focus = {
+		id = PRS_the_great_peace
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_initiate_anti_colonial_uprisings }
+		x = 1
+		y = 1
+		relative_position_id = PRS_initiate_anti_colonial_uprisings	
+		mutually_exclusive = { focus = PRS_divide_the_empire }
+		cost = 4
+		
+		available = {
+			date > 1944.03.01
+			has_war_with = ENG
+		}
+			
+		bypass = {
+			
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_country = { 
+				limit = {is_in_faction_with = ENG}
+				white_peace = {
+					tag =  PREV
+				}
+			}
+			hidden_effect = {
+				every_country = { 
+					limit = {is_in_faction_with = PRS}
+					white_peace = {
+						tag =  PREV
+					}
+				}
+			}
+			custom_effect_tooltip = peacexd	
+		}
+	}
+	
+	focus = {
+		id = PRS_divide_the_empire
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_initiate_anti_colonial_uprisings }
+		x = -1
+		y = 1
+		relative_position_id = PRS_initiate_anti_colonial_uprisings
+		mutually_exclusive = { focus = PRS_the_great_peace }
+		
+		cost = 4
+		
+		available = {
+			NOT =  {country_exists = ENG}
+		}
+			
+		bypass = {
+			
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_tooltip = PRS_establish_english_bruderstaat
+			unlock_decision_tooltip = PRS_establish_scotish_bruderstaat
+			unlock_decision_tooltip = PRS_establish_irish_bruderstaat
+			unlock_decision_tooltip = PRS_establish_welsh_bruderstaat
+			unlock_decision_tooltip = PRS_establish_scandinavian_bruderstaat
+			custom_effect_tooltip = opferxd
+		}
+	}
+	
+	
+	focus = {
+		id = PRS_look_at_the_danube
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_plan_sued }
+		x = 0
+		y = 1
+		relative_position_id = PRS_plan_sued
+		
+		cost = 5
+		
+		available = {
+			
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			country_event = { id = prussia.65 days = 1 random_hours = 4 } 
+			
+		}
+	}	
+	
+	focus = {
+		id = PRS_referendum_in_south_germany
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_look_at_the_danube }
+		x = -2
+		y = 1
+		relative_position_id = PRS_look_at_the_danube
+		
+		cost = 5
+		
+		available = {
+			country_exists = BAV
+			has_army_manpower = {
+				size > 1000000
+			}
+			has_equipment = {
+				infantry_equipment > 9999
+			}
+			
+		}
+			
+		bypass = {
+			has_war_with = BAV
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			IF = {
+				limit  = {
+					OR = {
+						check_variable = { PRS_communist_pressure = 20 }
+						check_variable = { PRS_communist_pressure > 20 }
+					}
+				}	
+				random_list = {
+					90 = { country_event = { id = prussia.69 days = 2 } } 
+					10 = { country_event = { id = prussia.70 days = 2 } }
+				}
+			}
+			ELSE_IF = {
+				limit  = {
+					OR = {
+						check_variable = { PRS_communist_pressure = 40 }
+						check_variable = { PRS_communist_pressure > 40 }
+					}
+				}	
+				random_list = {
+					75 = { country_event = { id = prussia.69 days = 2 } } 
+					25 = { country_event = { id = prussia.70 days = 2 } }
+				}
+			}
+			ELSE_IF = {
+				limit  = {
+					OR = {
+						check_variable = { PRS_communist_pressure = 60 }
+						check_variable = { PRS_communist_pressure > 60 }
+					}
+				}	
+				random_list = {
+					60 = { country_event = { id = prussia.69 days = 2 } } 
+					40 = { country_event = { id = prussia.70 days = 2 } }
+				}
+			}
+			ELSE_IF = {
+				limit  = {
+					OR = {
+						check_variable = { PRS_communist_pressure = 80 }
+						check_variable = { PRS_communist_pressure > 80 }
+					}
+				}	
+				random_list = {
+					45 = { country_event = { id = prussia.69 days = 2 } } 
+					55 = { country_event = { id = prussia.70 days = 2 } }
+				}
+			}
+			ELSE_IF = {
+				limit  = {
+					OR = {
+						check_variable = { PRS_communist_pressure = 100 }
+						check_variable = { PRS_communist_pressure > 100 }
+					}
+				}	
+				random_list = {
+					30 = { country_event = { id = prussia.69 days = 2 } } 
+					70 = { country_event = { id = prussia.70 days = 2 } }
+				}
+			}
+		}
+	}	
+	
+	focus = {
+		id = PRS_dismantle_the_czechs
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_look_at_the_danube }
+		x = 2
+		y = 1
+		relative_position_id = PRS_look_at_the_danube
+		
+		cost = 5
+		
+		available = {
+			has_completed_focus = PRS_referendum_in_south_germany
+			
+		}
+			
+		bypass = {
+			NOT = { country_exists = CZE }
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			74 =  {add_claim_by =  PRS}
+			75 =  {add_claim_by =  PRS}
+			9 =  {add_claim_by =  PRS}
+			69 =  {add_claim_by =  PRS}
+			create_wargoal = {
+				type = annex_everything
+				target = CZE
+			}
+		}
+	}
+
+	focus = {
+		id = PRS_coup_in_austria
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_look_at_the_danube }
+		x = 0
+		y = 1
+		relative_position_id = PRS_look_at_the_danube
+		
+		cost = 5
+		
+		available = {
+			country_exists = AUS
+			has_completed_focus = PRS_referendum_in_south_germany
+			is_neighbor_of = AUS
+		}
+			
+		bypass = {
+			has_war_with = AUS
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_state = { 
+				limit =  {is_owned_by = AUS}
+				add_claim_by =  PRS
+			}
+			random_list = {
+				90 = { country_event = { id = prussia.67 days = 2 } } 
+				10 = { country_event = { id = prussia.68 days = 2 } }
+			}
+		}
+	}	
+	
+	focus = {
+		id = PRS_balkan_bruderstaaten
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_coup_in_austria }
+		prerequisite = { focus = PRS_dismantle_the_czechs }
+		prerequisite = { focus = PRS_referendum_in_south_germany }
+		x = 0
+		y = 1
+		relative_position_id = PRS_coup_in_austria
+		
+		cost = 5
+		
+		available = {
+			NOT = {
+				country_exists = BAV
+				country_exists = AUS
+				country_exists = HUN
+				country_exists = CZE
+			}
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_tooltip = PRS_establish_slovak_bruderstaat
+			unlock_decision_tooltip = PRS_establish_hungarian_bruderstaat
+			unlock_decision_tooltip = PRS_establish_romanian_bruderstaat
+			unlock_decision_tooltip = PRS_establish_croatian_bruderstaat
+			unlock_decision_tooltip = PRS_establish_serbian_bruderstaat
+			
+		}
+	}	
+	
+	focus = {
+		id = PRS_crush_the_fascist_threat
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_balkan_bruderstaaten }
+		x = 0
+		y = 1
+		relative_position_id = PRS_balkan_bruderstaaten
+		
+		cost = 5
+		
+		available = {
+			owns_state = 4
+			can_declare_war_on = ITA
+			NOT = {country_exists = AUS}
+		}
+			
+		bypass = {
+			has_war_with = ITA
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+		declare_war_on = {
+			target = ITA
+			type = annex_everything
+		}
+			850 =  {add_claim_by =  PRS}
+			852 =  {add_claim_by =  PRS}
+			853 =  {add_claim_by =  PRS}
+		}
+	}	
+	
+	focus = {
+		id = PRS_remove_the_pimple_of_europe
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_balkan_bruderstaaten }
+		x = 2
+		y = 1
+		relative_position_id = PRS_balkan_bruderstaaten
+		
+		cost = 5
+		
+		available = {
+			owns_state = 4
+		}
+			
+		bypass = {
+			NOT= {country_exists = SWI}
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			every_state = { 
+				limit =  {is_owned_by = SWI}
+				add_claim_by =  PRS
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = SWI
+			}
+		}
+	}
+
+	focus = {
+		id = PRS_restructure_southern_europe
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		prerequisite = { focus = PRS_crush_the_fascist_threat }
+		x = 0
+		y = 1
+		relative_position_id = PRS_crush_the_fascist_threat
+		
+		cost = 5
+		
+		available = {
+			NOT = {country_exists = ITA}
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			unlock_decision_tooltip = PRS_establish_italian_bruderstaat
+			unlock_decision_tooltip = PRS_establish_albanian_bruderstaat
+			unlock_decision_tooltip = PRS_establish_bulgarian_bruderstaat
+			unlock_decision_tooltip = PRS_establish_greek_bruderstaat
+		}
+	}
+
+	focus = {
+		id = PRS_reconstruct_the_airforce
+		icon = GFX_goal_generic_air_fighter
+		#prerequisite = { focus = HUN_submarines }
+		x = 50
+		y = 1
+		#relative_position_id =
+		
+		cost = 6.5
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "We won the German Civil War"	
+					NOT = {
+						country_exists = GER
+					}
+					has_war = no
+				}
+			}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				create_equipment_variant = {
+					name = "Marx 1"
+					type = small_plane_airframe_1
+					parent_version = 0
+					modules = {
+						fixed_main_weapon_slot = heavy_mg_2x
+						fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+						engine_type_slot = engine_2_1x
+					}
+					icon = "GFX_ITA_fighter1_medium"
+				}
+
+				create_equipment_variant = {
+					name = "Engels 1"
+					type = small_plane_cas_airframe_1
+					parent_version = 0
+						modules = {
+							fixed_main_weapon_slot = bomb_locks
+							fixed_auxiliary_weapon_slot_1 = small_bomb_bay
+							engine_type_slot = engine_1_2x
+							special_type_slot_1 = fuel_tanks_small
+						}
+					icon = "GFX_ITA_CAS2_medium"
+				}
+				
+			}
+			else = {
+				add_tech_bonus = {
+				name = ITA_citta_dell_aria
+				bonus = 0.25
+				uses = 4
+				category = air_equipment
+			}
+			}
+		}
+	}	
+	
+	focus = {
+		id = PRS_new_air_innovations
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = PRS_reconstruct_the_airforce }
+		x = 0
+		y = 1
+		relative_position_id = PRS_reconstruct_the_airforce
+		
+		cost = 5
+		
+		available = {
+			
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 25
+
+			add_tech_bonus = {
+				name = ITA_air_innovations_bba #fighter_bonus
+				bonus = 0.5
+				uses = 1
+				category = light_fighter
+			}
+
+			add_doctrine_cost_reduction = {
+				name = air_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = air_doctrine
+			}
+		}
+	}
+		
+	focus = {
+		id = PRS_new_airbases
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = PRS_new_air_innovations }
+		x = 2
+		y = 1
+		relative_position_id = PRS_new_air_innovations
+		
+		cost = 6
+		
+		available = {
+			
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = air_base
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}	
+	
+	focus = {
+		id = PRS_new_pilot_programm
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = PRS_new_air_innovations }
+		x = -2
+		y = 1
+		relative_position_id = PRS_new_air_innovations
+		
+		cost = 6
+		
+		available = {
+			
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ace = {
+				type = "fighter_good"
+				name = "Klaus Klinski"
+				surname = "Klinke"
+				callsign = "Meister" #Totally made up
+			}
+			add_ace = { #Ace is a fighter pilot really
+				type = "bomber_unique"
+				name = "Andreas Erhard"
+				surname = "Andi"
+				callsign = "Allerbeste" #Totally made up
+			}
+			add_ace = {
+				type = "fighter_genius"
+				name = "Steffen Stralofski"
+				surname = "Steffilein"
+				callsign = "Altgeselle" #Totally made up
+			}
+		}
+	}	
+	
+	focus = {
+		id = PRS_plane_mass_production
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = PRS_new_air_innovations }
+		x = 0
+		y = 2
+		relative_position_id = PRS_new_air_innovations
+		
+		cost = 5
+		
+		available = {
+			
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = PRS_cheaper_planes
+		}
+	}	
+	
+	focus = {
+		id = PRS_optimize_our_planes
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = PRS_plane_mass_production }
+		x = 0
+		y = 1
+		relative_position_id = PRS_plane_mass_production
+		
+		cost = 9
+		
+		available = {
+			
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+					remove_idea = PRS_cheaper_planes
+					add_idea = PRS_optimized_planes
+				}
+		}
+	}
+
+	focus = {
+		id = PRS_cas_innovation
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = PRS_new_airbases }
+		x = 0
+		y = 1
+		relative_position_id = PRS_new_airbases
+		
+		cost = 4
+		
+		available = {
+			
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			air_experience = 10
+			add_tech_bonus = {
+				name = GER_CAS_effort
+				bonus = 0.75
+				uses = 2
+				category = cas_bomber
+			}
+		}
+	}
+
+	focus = {
+		id = PRS_fighter_innovation
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = PRS_new_pilot_programm }
+		x = 0
+		y = 1
+		relative_position_id = PRS_new_pilot_programm
+		
+		cost = 4
+		
+		available = {
+			
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = FRA_fighter_focus
+				bonus = 1.0
+				uses = 1
+				category = light_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = PRS_into_the_future
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = PRS_optimize_our_planes }
+		x = -1
+		y = 1
+		relative_position_id = PRS_optimize_our_planes
+		
+		cost = 8.5
+		
+		available = {
+			
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = GER_CAS_effort
+				bonus = 1
+				uses = 1
+				category = jet_technology
+			}
+			add_tech_bonus = {
+				name = GER_CAS_effort
+				bonus = 1
+				uses = 2
+				category = rocketry
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_fortress_of_anit_air
+		icon = GFX_goal_generic_air_fighter
+		prerequisite = { focus = PRS_optimize_our_planes }
+		x = 1
+		y = 1
+		relative_position_id = PRS_optimize_our_planes
+		
+		cost = 8.5
+		
+		available = {
+			
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = PRS_rebuild_the_navy
+		icon = GFX_goal_generic_construct_naval_dockyard
+		#prerequisite = { focus = HUN_submarines }
+		x = 58
+		y = 1
+		#relative_position_id =
+		
+		cost = 8
+		
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "We won the German Civil War"	
+					NOT = {
+						country_exists = GER
+					}
+					has_war = no
+				}
+			}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Type II Class"
+				creator = GER
+				name = "Karl Liebknecht"
+			}
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Type II Class"
+				creator = GER
+				name = "Rosa Luxemburg"
+			}
+			create_ship = {
+				type = ship_hull_submarine_1
+				equipment_variant = "Type II Class"
+				creator = GER
+				name = "Clara Zetkin"
+			}
+			create_ship = {
+				type = ship_hull_cruiser_2
+				equipment_variant = "Königsberg Class"
+				creator = GER
+				name = "Marx"
+			}
+			create_ship = {
+				type = ship_hull_cruiser_2
+				equipment_variant = "Königsberg Class"
+				creator = GER
+				name = "Engels"
+			}
+		}
+	}	
+	
+	focus = {
+		id = ost_expansion
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = PRS_rebuild_the_navy }
+		x = 1
+		y = 1
+		relative_position_id = PRS_rebuild_the_navy
+		
+		cost = 8
+		
+		available = {
+			
+			}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			63 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			763 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+			85 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = dockyard
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = west_expansion
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = PRS_rebuild_the_navy }
+		x = -1
+		y = 1
+		relative_position_id = PRS_rebuild_the_navy
+		
+		cost = 8
+		
+		available = {
+			
+			}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			IF = {
+				limit = {
+					owns_state  = 56
+					owns_state  = 59
+					owns_state  = 1013
+				}
+				56 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+				59 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}
+				}
+				1013 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = dockyard
+						level = 2
+						instant_build = yes
+					}	
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = carrier_warfare
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = west_expansion focus = ost_expansion }
+		x = 3
+		y = 1
+		relative_position_id = west_expansion
+		mutually_exclusive = { focus = submarine_warfare }
+		mutually_exclusive = { focus = heavy_ship_warfare }
+		
+		cost = 7
+		
+		available = {
+			
+			}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			navy_experience = 25
+			add_doctrine_cost_reduction = {
+				name = JAP_carrier_warfare_experiments
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_base_strike
+			}
+		}
+	}
+	
+	focus = {
+		id = submarine_warfare
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = west_expansion focus = ost_expansion }
+		x = -1
+		y = 1
+		relative_position_id = west_expansion
+		mutually_exclusive = { focus = carrier_warfare }
+		mutually_exclusive = { focus = heavy_ship_warfare }
+		
+		cost = 7
+		
+		available = {
+			
+			}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			navy_experience = 25
+			add_doctrine_cost_reduction = {
+				name = JAP_carrier_warfare_experiments
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_trade_interdiction
+			}
+		}
+	}
+	
+	focus = {
+		id = heavy_ship_warfare
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = west_expansion focus = ost_expansion }
+		x = 1
+		y = 1
+		relative_position_id = west_expansion
+		mutually_exclusive = { focus = carrier_warfare }
+		mutually_exclusive = { focus = submarine_warfare }
+		
+		cost = 7
+		
+		available = {
+			
+			}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			navy_experience = 25
+			add_doctrine_cost_reduction = {
+				name = JAP_carrier_warfare_experiments
+				cost_reduction = 0.5
+				uses = 1
+				category = cat_fleet_in_being
+			}
+		}
+	}
+	
+	focus = {
+		id = amphibious_naval_operations
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = heavy_ship_warfare focus = submarine_warfare focus = carrier_warfare }
+		x = -1
+		y = 1
+		relative_position_id = heavy_ship_warfare
+		
+		cost = 5
+		
+		available = {
+			has_tech = marines
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ITA_forza_navale_especiale
+				bonus = 1.0
+				uses = 2
+				category = marine_tech
+				category = tp_tech
+			}
+			division_template = {
+				name = "Brandungstruppe"
+				regiments = {
+					marine = { x = 0 y = 0 }
+					marine = { x = 0 y = 1 }
+					marine = { x = 1 y = 0 }
+					marine = { x = 1 y = 1 }
+				}
+			}
+			random_owned_controlled_state = {
+				create_unit = {
+					division = "name = \"Brandungstruppe\" division_template = \"Brandungstruppe\" start_experience_factor = 0.4 start_equipment_factor = 1.0"
+					owner = ROOT
+					count = 2
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = recall_former_german_admirals
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = heavy_ship_warfare focus = submarine_warfare focus = carrier_warfare }
+		x = 1
+		y = 1
+		relative_position_id = heavy_ship_warfare
+		
+		cost = 8
+		
+		available = {
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			create_navy_leader = {
+				name = "Alfred Saalwächter"
+				gfx = "GFX_portrait_GER_alfred_saalwachter_small"
+				traits = { old_guard_navy bold }
+				skill=4
+				attack_skill=4
+				defense_skill=2
+				maneuvering_skill=3
+				coordination_skill=4
+			}
+			create_navy_leader = {
+				name = "Hermann Böhm"
+				gfx = "GFX_portrait_GER_hermann_boehm_small"
+				traits = { craven superior_tactician }
+				skill=4
+				attack_skill=3
+				defense_skill=4
+				maneuvering_skill=4
+				coordination_skill=2
+			}
+			create_navy_leader = {
+				name = "Wilhelm Marschall"
+				gfx = "GFX_portrait_GER_wilhelm_marschall_small"
+				traits={ old_guard_navy bold }
+				skill=4
+				attack_skill=4
+				defense_skill=2
+				maneuvering_skill=3
+				coordination_skill=4
+			}
+		}
+	}
+	
+	focus = {
+		id = optimize_ship_production
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = recall_former_german_admirals focus = amphibious_naval_operations  }
+		x = -1
+		y = 1
+		relative_position_id = recall_former_german_admirals
+		
+		cost = 8
+		
+		available = {
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+			
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_ideas = PRS_optimized_ships
+		}
+	}
+	
+	focus = {
+		id = promote_future_innovation
+		icon = GFX_goal_generic_construct_naval_dockyard
+		prerequisite = { focus = optimize_ship_production  }
+		x = 0
+		y = 1
+		relative_position_id = optimize_ship_production
+		
+		cost = 7
+		
+		available = {
+		}
+			
+		bypass = {
+		}
+		
+		
+		ai_will_do = {
+			factor = 50
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = ITA_forza_navale_especiale
+				bonus = 1.0
+				uses = 1
+				category = cl_tech
+			}
+			add_tech_bonus = {
+				name = ITA_forza_navale_especiale
+				bonus = 1.0
+				uses = 1
+				category = ca_tech
+			}
+			add_tech_bonus = {
+				name = ITA_forza_navale_especiale
+				bonus = 1.0
+				uses = 1
+				category = dd_tech
+			}
+			add_tech_bonus = {
+				name = ITA_forza_navale_especiale
+				bonus = 1.0
+				uses = 1
+				category = ss_tech
+			}
+		}
+	}
+	
+	
+}

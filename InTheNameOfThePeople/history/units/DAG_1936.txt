@@ -1,0 +1,65 @@
+﻿division_template = {
+	name = "Kućni stražari"			
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+	}
+}
+
+########################
+
+units = {
+	#Ushtria Shqipëtarë
+	division = {
+		name = "Kućni stražari"
+		location = 6701
+		division_template = "Kućni stražari"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "Kućni stražari"
+		location = 821
+		division_template = "Kućni stražari"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "Kućni stražari"
+		location = 11609
+		division_template = "Kućni stražari"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "Kućni stražari"
+		location = 1455
+		division_template = "Kućni stražari"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "Kućni stražari"
+		location = 9
+		division_template = "Kućni stražari"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+}
+

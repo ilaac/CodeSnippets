@@ -1,0 +1,246 @@
+#Important to put HIGHEST first
+
+plan_alpha_decisions = {
+	
+	hidden_effect = {
+		for_each_scope_loop = {
+			array = global.countries 
+			IF = {
+				limit = { 
+					any_state = { 
+							is_core_of = FRA
+							is_owned_by = FRA
+						OWNER = {
+						  tag = FRA 
+						}
+					}
+				}
+
+				every_state = {				
+					limit = {
+					is_core_of = FRA
+					is_owned_by = FRA
+						NOT = { 
+							is_in_array = {
+								array = FRA.plan_alpha_decisions
+								value = THIS 
+							}
+						}
+					}
+					add_to_array = { FRA.plan_alpha_decisions = THIS }
+				}
+			}
+			
+		}
+	}
+}
+integrate_eurasia = {
+	
+	hidden_effect = {
+		for_each_scope_loop = {
+			array = global.countries 
+			IF = {
+				limit = { 
+					any_state = { 
+							is_claimed_by = FRA
+						OWNER = {
+						  tag = FRA 
+						}
+					}
+				}
+
+				every_state = {				
+					limit = {
+					is_claimed_by = FRA
+					OR = {
+						is_on_continent = europe
+						is_on_continent = asia
+					}
+						NOT = { 
+							is_in_array = {
+								array = FRA.integrate_eurasia
+								value = THIS 
+							}
+						}
+					}
+					add_to_array = { FRA.integrate_eurasia = THIS }
+				}
+			}
+			
+		}
+	}
+}
+#####mod triggers
+fra_swiss_peacedeal = {
+	FRA = {
+		set_state_owner = 845
+		puppet = SWI
+	}
+	SWI = {
+		set_cosmetic_tag = SWI_french_anarchist
+	}
+}
+fra_belgian_peacedeal = {
+	FRA = {
+		annex_country = {
+			target = BEL
+			transfer_troops = no
+		}
+	}
+	COG = {
+		add_ideas = COG_belgian_refugees
+		add_state_core = 6
+		add_state_core = 34
+		add_state_core = 1015
+		add_state_core = 1016
+	}
+	ENG = {
+		add_to_faction = COG
+	}
+}
+fra_dutch_peacedeal = {
+	FRA = {
+		puppet = HOL
+	}
+	HOL = {
+		set_state_owner = 6
+		set_cosmetic_tag = SWI_french_anarchist
+	}
+	INS = {
+		add_ideas = INS_dutch_refugees
+		add_state_core = 36
+		add_state_core = 35
+		add_state_core = 7
+		set_state_owner = 309
+		set_state_owner = 695
+	}
+	ENG = {
+		add_to_faction = INS
+	}
+}
+fra_enable_confiscation_system = {
+	set_variable = {
+			var = FRA_rescources_var
+			value = FRA.FRA_rescources_var
+		}
+}
+fra_mission_duration_small_increase = {
+	add_to_variable = {
+		var = FRA_war_devastation_mission_duration
+		value = 45
+	}
+}
+fra_mission_duration_medium_increase = {
+	add_to_variable = {
+		var = FRA_war_devastation_mission_duration
+		value = 75
+	}
+}
+fra_mission_duration_small_decrease = {
+	add_to_variable = {
+		var = FRA_war_devastation_mission_duration
+		value = -45
+	}
+}
+fra_mission_duration_medium_decrease = {
+	add_to_variable = {
+		var = FRA_war_devastation_mission_duration
+		value = -85
+	}
+}
+fra_mission_duration_huge_decrease = {
+	add_to_variable = {
+		var = FRA_war_devastation_mission_duration
+		value = -150
+	}
+}
+increase_state_category2x = {
+	if = {
+		limit = {
+			has_state_category = tiny_island
+		}
+		set_state_category = small_island
+		effect_tooltip = {
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+
+	if = {
+		limit = {
+			OR = {
+				has_state_category = wasteland
+				has_state_category = enclave
+			}
+		}
+		set_state_category = pastoral
+		effect_tooltip = {
+			add_extra_state_shared_building_slots = 1
+		}
+	}
+	else_if = {
+		limit = {
+			has_state_category = pastoral
+		}
+		set_state_category = small_town
+		effect_tooltip = {
+			add_extra_state_shared_building_slots = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_state_category = rural
+		}
+		set_state_category = town
+		effect_tooltip = {
+			add_extra_state_shared_building_slots = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_state_category = town
+		}
+		set_state_category = city
+		effect_tooltip = {
+			add_extra_state_shared_building_slots = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_state_category = large_town
+		}
+		set_state_category = large_city
+		effect_tooltip = {
+			add_extra_state_shared_building_slots = 2
+		}
+	}
+	else_if = {
+		limit = {
+			has_state_category = city
+		}
+		set_state_category = large_city
+		effect_tooltip = {
+			add_extra_state_shared_building_slots = 2
+		}
+	}
+
+	else_if = {
+		limit = {
+			has_state_category = large_city
+		}
+		set_state_category = metropolis
+		effect_tooltip = {
+			add_extra_state_shared_building_slots = 2
+		}
+	}
+
+	else_if = {
+		limit = {
+			has_state_category = metropolis
+		} 
+		set_state_category = megalopolis
+		effect_tooltip = {
+			add_extra_state_shared_building_slots = 2
+		}
+	}
+
+}

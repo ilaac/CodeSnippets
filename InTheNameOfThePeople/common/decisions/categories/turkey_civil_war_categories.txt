@@ -1,0 +1,16 @@
+turkey_goes_nuts = {
+	icon = power_struggle
+	priority = 9
+	allowed = {
+		OR = {
+			tag = TUR
+			tag = OTT
+			tag = NTU
+			tag = TRC
+		}
+	}
+	visible = {
+		has_global_flag = turkish_civil_war2
+	}
+	visible_when_empty = no
+}

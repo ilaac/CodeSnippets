@@ -1,0 +1,17 @@
+characters={
+	
+	RVA_pyotr_wrangel={
+		name=RVA_pyotr_wrangel
+		portraits={
+			civilian={
+				large="GFX_portrait_rva_pyotr_wrangel_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,17 @@
+characters={
+	
+	UZB_fayulla_xojayev={
+		name=UZB_fayulla_xojayev
+		portraits={
+			civilian={
+				large="GFX_portrait_uzb_fayzulla_xojayev_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

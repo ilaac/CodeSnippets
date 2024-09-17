@@ -1,0 +1,25 @@
+
+state={
+	id=611
+	name="STATE_611"
+
+	history={
+		owner = CHI
+		add_core_of = MEN
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		828 1137 1590 7158 7545 12403 
+	}
+	manpower=450000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

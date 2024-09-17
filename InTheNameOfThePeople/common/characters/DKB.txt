@@ -1,0 +1,17 @@
+characters={
+	
+	DKB_pyotr_krasnov={
+		name=DKB_pyotr_krasnov
+		portraits={
+			civilian={
+				large="GFX_portrait_dkb_pyotr_krasnov_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

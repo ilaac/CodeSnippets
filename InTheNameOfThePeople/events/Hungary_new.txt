@@ -1,0 +1,1841 @@
+﻿###########################
+# Hungarian Events
+###########################
+
+add_namespace = hungary_new
+
+country_event = {
+	id = hungary_new.1
+	title = hungary_new.1.t
+	desc = hungary_new.1.d
+	picture = GFX_report_event_election_vote_image
+	
+	is_triggered_only =  yes
+
+	
+	option = { 
+		name = hungary_new.1.a
+		ai_chance = { factor = 70}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+			} 
+			set_politics = { ruling_party = neutrality
+			elections_allowed = yes}
+			complete_national_focus = HUN_conservatives_in_charge
+	}
+	
+	option = { 
+		name = hungary_new.1.b
+		ai_chance = { factor = 30}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.1
+			} 
+			set_politics = { ruling_party = democratic
+			elections_allowed = yes}
+			complete_national_focus = HUN_social_democrats_in_charge
+	}
+}
+
+country_event = {
+	id = hungary_new.2
+	title = hungary_new.2.t
+	desc = hungary_new.2.d
+	picture = GFX_report_event_hun_nationalist_resistance
+	
+	is_triggered_only =  yes
+	
+	option = { 
+		name = hungary_new.2.a
+		ai_chance = { factor = 50}
+		add_stability =  -0.1
+		add_political_power =  -50
+			
+	}
+}
+
+country_event = {
+	id = hungary_new.3
+	title = hungary_new.3.t
+	desc = hungary_new.3.d
+	picture = GFX_report_event_hun_mass_desertion_poster
+	
+	is_triggered_only =  yes
+	
+	option = { 
+		name = hungary_new.3.a
+		ai_chance = { factor = 50}
+			army_experience = -10
+			add_manpower = -6000
+			add_stability = -0.05
+			add_equipment_to_stockpile = {
+
+				type = infantry_equipment_1
+
+				amount = -1000
+
+			} 		
+	}
+}
+
+country_event = {
+	id = hungary_new.4
+	title = hungary_new.4.t
+	desc = hungary_new.4.d
+	picture = GFX_report_event_hun_soldiers
+	
+	is_triggered_only =  yes
+
+	
+	option = { 
+		name = hungary_new.4.a
+		ai_chance = { factor = 60}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+			} 
+		complete_national_focus = HUN_side_with_moderates
+	}
+	
+	option = { 
+		name = hungary_new.4.b
+		ai_chance = { factor = 40}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+			}
+		complete_national_focus = HUN_side_with_horthy		
+	}
+}	
+	country_event = {
+	id = hungary_new.5
+	title = hungary_new.5.t
+	desc = hungary_new.5.d
+	picture = GFX_report_event_hun_resistance
+	
+	is_triggered_only =  yes
+	
+	option = { 
+		name = hungary_new.5.a
+		ai_chance = { factor = 50}
+			add_manpower = -500
+			add_stability = -0.03
+			add_equipment_to_stockpile = {
+
+				type = infantry_equipment_1
+
+				amount = -250
+
+			} 		
+	}
+}	
+	country_event = {
+	id = hungary_new.6
+	title = hungary_new.6.t
+	desc = hungary_new.6.d
+	picture = GFX_report_event_hun_fascist_march
+	
+	is_triggered_only =  yes
+	
+	option = { 
+		name = hungary_new.6.a
+		ai_chance = { factor = 50}
+		add_stability -0.03	
+	}
+}
+
+	country_event = {
+	id = hungary_new.7
+	title = hungary_new.7.t
+	desc = hungary_new.7.d
+	picture = GFX_report_event_hun_reformed_country
+	
+	is_triggered_only =  yes
+	
+	option = { 
+		name = hungary_new.7.a
+		ai_chance = { factor = 50}	
+	}
+}	
+	
+	country_event = {
+	id = hungary_new.8
+	title = hungary_new.8.t
+	desc = hungary_new.8.d
+	picture = GFX_report_event_hun_uprising
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.8.a
+		ai_chance = { factor = 50 }
+		every_owned_state = {
+				limit = {
+					OR = {
+						state = 43
+						state = 76
+						state = 154
+						state = 155
+						state = 664
+						state = 45
+					}
+				}
+				set_demilitarized_zone = yes
+			}
+		}
+	}
+	
+	country_event = {
+	id = hungary_new.9
+	title = hungary_new.9.t
+	desc = hungary_new.9.d
+	picture = GFX_report_event_hun_austrian_soldiers
+	
+	is_triggered_only =  yes
+	
+	option = { 
+		name = hungary_new.9.a
+		ai_chance = { factor = 50}	
+	}
+}
+
+	country_event = {
+	id = hungary_new.10
+	title = hungary_new.10.t
+	desc = hungary_new.10.d
+	picture = GFX_report_event_hun_politicans
+	
+	is_triggered_only =  yes
+	
+	option = { 
+		name = hungary_new.10.a
+		ai_chance = { factor = 50}	
+	}
+}	
+
+	country_event = {
+	id = hungary_new.11
+	title = hungary_new.11.t
+	desc = hungary_new.11.d
+	picture = GFX_report_event_border_war_soldiers_marching
+	
+	is_triggered_only =  yes
+	
+	option = { 
+		name = hungary_new.11.a
+		ai_chance = { factor = 50}	
+		add_timed_idea = { idea =  HUN_new_won_border_war  days = 360 }
+	}
+}	
+
+	country_event = {
+	id = hungary_new.12
+	title = hungary_new.12.t
+	desc = hungary_new.12.d
+	picture = GFX_report_event_border_war_soldiers_surrendering
+	
+	is_triggered_only =  yes
+	
+	option = { 
+		name = hungary_new.12.a
+		ai_chance = { factor = 50}
+		add_timed_idea = { idea =  HUN_new_lost_border_war  days = 360 }		
+	}
+}	
+
+	country_event = {
+	id = hungary_new.13
+	title = hungary_new.13.t
+	desc = hungary_new.13.d
+	picture = GFX_report_event_hun_negotiations_with_austria
+	
+	is_triggered_only =  yes
+	
+	option = { 
+		name = hungary_new.13.a
+		ai_chance = { factor = 100}
+		HUN = {
+			country_event = { id = hungary_new.14 }
+		}
+		add_timed_idea = { idea =  HUN_hungarian_reperations  days = 90 }
+			
+		
+	}
+	
+	option = { 
+		name = hungary_new.13.b
+		ai_chance = { factor = 0}
+		HUN = {
+			country_event = { id = hungary_new.15 }
+		}
+		
+	}
+}	
+
+	country_event = {
+	id = hungary_new.14
+	title = hungary_new.14.t
+	desc = hungary_new.14.d
+	picture = GFX_report_event_hun_negotiations_with_austria
+	
+	is_triggered_only =  yes
+	
+	option = { 
+		name = hungary_new.14.a
+		ai_chance = { factor = 50}		
+		remove_ideas = HUN_austrian_occupation
+	}
+	
+}	
+
+	country_event = {
+	id = hungary_new.15
+	title = hungary_new.15.t
+	desc = hungary_new.15.d
+	picture = GFX_report_event_hun_negotiations_with_austria
+	
+	is_triggered_only =  yes
+	
+	option = { 
+		name = hungary_new.15.a
+		ai_chance = { factor = 50}
+	}
+}	
+
+	country_event = {
+	id = hungary_new.16
+	title = hungary_new.16.t
+	desc = hungary_new.16.d
+	picture = GFX_report_event_election_vote_image
+	
+	is_triggered_only =  yes
+
+	
+	option = { 
+		name = hungary_new.16.a
+		ai_chance = { factor = 20}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.15
+			}
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.08
+			}
+			set_politics = { ruling_party = neutrality
+			elections_allowed = yes}
+	}
+	
+	option = { 
+		name = hungary_new.16.b
+		ai_chance = { factor = 80}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.15
+			} 
+		add_popularity = {
+			ideology = communism
+			popularity = 0.08
+			}
+			set_politics = { ruling_party = democratic
+			elections_allowed = yes}
+	}
+}
+
+	country_event = {
+	id = hungary_new.17
+	title = hungary_new.17.t
+	desc = hungary_new.17.d
+	picture = GFX_report_event_HUN_mixed_feelings
+	
+	is_triggered_only = yes
+
+	option = {
+		name = hungary_new.17.a
+		ai_chance = { factor = 50 }
+		add_stability = -0.15
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+		add_opinion_modifier = { target = AUS modifier = medium_increase }
+	}
+}
+
+	country_event = {
+	id = hungary_new.18
+	title = hungary_new.18.t
+	desc = hungary_new.18.d
+	picture = GFX_report_event_hun_party_split
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.18.a
+		ai_chance = { factor = 50 }
+	}
+}
+
+	country_event = {
+	id = hungary_new.19
+	title = hungary_new.19.t
+	desc = hungary_new.19.d
+	picture = GFX_report_event_hun_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.19.a
+		ai_chance = { factor = 50 }
+	}
+}
+
+	country_event = {
+	id = hungary_new.20
+	title = hungary_new.20.t
+	desc = hungary_new.20.d
+	picture = GFX_report_event_hun_burgenland_negotiations
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.20.a
+		ai_chance = { factor = 60 }
+		HUN = {
+			country_event = { id = hungary_new.21 }
+			152 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			
+			4 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		
+	}
+	
+	option = {
+		name = hungary_new.20.b
+		ai_chance = { factor = 40 }
+		HUN = {
+			country_event = { id = hungary_new.22 }
+		}
+	}
+}
+
+	country_event = {
+	id = hungary_new.21
+	title = hungary_new.21.t
+	desc = hungary_new.21.d
+	picture = GFX_report_event_hun_burgenland_negotiations
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.21.a
+		ai_chance = { factor = 50 }
+		transfer_state = 921
+		add_timed_idea = { idea = HUN_payments_for_burgenland days = 90 }
+	}
+}
+
+	country_event = {
+	id = hungary_new.22
+	title = hungary_new.22.t
+	desc = hungary_new.22.d
+	picture = GFX_report_event_hun_burgenland_negotiations
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.22.a
+		ai_chance = { factor = 50 }
+		add_opinion_modifier = { target = AUS modifier = holds_our_cores }
+	}
+}
+
+	country_event = {
+	id = hungary_new.23
+	title = hungary_new.23.t
+	desc = hungary_new.23.d
+	picture = GFX_report_event_hun_otto_blood
+	
+	is_triggered_only = yes
+	
+	option = {
+	name = hungary_new.23.a
+	ai_chance = { factor = 50 }
+	
+		remove_country_leader_role = {
+				character = HUN_otto_von_habsburg
+				ideology = despotism
+			}
+		retire_country_leader = yes	
+		add_country_leader_role = {
+			character = HUN_istvan_bethlen  
+			promote_leader = yes
+			country_leader = {
+				ideology = conservatism
+				traits = { cabinet_crisis }
+			}
+		}
+	}
+}	
+
+	country_event = {
+	id = hungary_new.24
+	title = hungary_new.24.t
+	desc = hungary_new.24.d
+	picture = GFX_report_event_hun_assaisination
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.24.a
+		ai_chance = { factor = 50 }
+		add_manpower = -1
+		add_stability =  0.05
+		add_popularity = {
+			ideology = fascism
+			popularity = -0.05
+		} 
+    }
+	
+	option = {
+		name = hungary_new.24.b
+		ai_chance = { factor = 50 }
+		add_stability =  -0.05
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.05
+		} 
+		
+	}
+}	
+	country_event = {
+	id = hungary_new.25
+	title = hungary_new.25.t
+	desc = hungary_new.25.d
+	picture = GFX_report_event_hun_royal_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.25.a
+		ai_chance = { factor = 50 }
+			
+	}	
+}	
+	country_event = {
+	id = hungary_new.26
+	title = hungary_new.26.t
+	desc = hungary_new.26.d
+	picture = GFX_report_event_hun_national_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.26.a
+		ai_chance = { factor = 50 }
+			
+	}	
+}
+	country_event = {
+	id = hungary_new.27
+	title = hungary_new.27.t
+	desc = hungary_new.27.d
+	picture = GFX_report_event_hun_national_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.27.a
+		ai_chance = { factor = 50 }
+		add_timed_idea = { idea =  HUN_general_strike days = 100 } 	
+	}	
+}
+	country_event = {
+	id = hungary_new.28
+	title = hungary_new.28.t
+	desc = hungary_new.28.d
+	picture = GFX_report_event_hun_national_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.28.a
+		ai_chance = { factor = 50 }	
+		country_event = hungary_new.29
+	}	
+	
+	option = {
+		name = hungary_new.28.b
+		ai_chance = { factor = 50 }	
+		country_event = hungary_new.30
+	}	
+}
+	country_event = {
+	id = hungary_new.29
+	title = hungary_new.29.t
+	desc = hungary_new.29.d
+	picture = GFX_report_event_hun_disloyal_army
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.29.a
+		ai_chance = { factor = 50 }
+		add_ideas = HUN_military_disloyalty	
+		complete_national_focus = military_unrest
+	}
+}
+
+	country_event = {
+	id = hungary_new.30
+	title = hungary_new.30.t
+	desc = hungary_new.30.d
+	picture = GFX_report_event_hun_national_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.30.a
+		ai_chance = { factor = 50 }
+		add_ideas = HUN_parlamentary_disloyalty
+		complete_national_focus = parlamentary_unrest
+	}
+}
+	country_event = {
+	id = hungary_new.31
+	title = hungary_new.31.t
+	desc = hungary_new.31.d
+	picture = GFX_report_event_election_vote_image
+	
+	is_triggered_only =  yes
+
+	
+	option = {
+	name = hungary_new.31.a
+	ai_chance = { factor = 100 }
+	hidden_effect = {
+		IF = { 
+			limit = { has_country_leader = HUN_istvan_bethlen }
+				retire_country_leader = yes
+		}
+	}
+	retire_country_leader = yes
+	add_country_leader_role = {
+		character = HUN_paul_v_esterhazy_de_galantha
+		promote_leader = yes
+		country_leader = {
+			ideology = despotism
+			traits = { conservative_nationalist }
+		}
+	}
+	complete_national_focus = HUN_elect_a_true_hungarian_king
+	set_cosmetic_tag =  HUN_true
+}
+
+	option = {
+		name = hungary_new.31.b
+		ai_chance = { factor = 30 }
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.1
+		}
+		set_politics = {
+			ruling_party = fascism
+			elections_allowed = no
+		}
+		complete_national_focus = HUN_go_with_horthy
+	}
+}
+
+	country_event = {
+	id = hungary_new.32
+	title = hungary_new.32.t
+	desc = hungary_new.32.d
+	picture = GFX_report_event_hun_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.32.a
+		ai_chance = { factor = 50 }
+		add_manpower =  250
+	}
+}
+
+	country_event = {
+	id = hungary_new.33
+	title = hungary_new.33.t
+	desc = hungary_new.33.d
+	picture = GFX_report_event_hun_ally_sanctions
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.33.a
+		ai_chance = { factor = 50 }
+		add_opinion_modifier = { target = ROM modifier = large_decrease }
+		add_timed_idea = { idea =  HUN_allied_sanctions  days = 60 }
+	}
+}
+	country_event = {
+	id = hungary_new.34
+	title = hungary_new.34.t
+	desc = hungary_new.34.d
+	picture = GFX_report_event_hun_politicans
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.34.a
+		ai_chance = { factor = 50 }
+		add_stability = 0.1
+		add_ideas = HUN_anti_monarchist_resistance
+		add_ideas = HUN_bad_austrian_relations
+		add_opinion_modifier = { target = AUS modifier = medium_decrease }
+	}
+}
+	country_event = {
+	id = hungary_new.35
+	title = hungary_new.35.t
+	desc = hungary_new.35.d
+	picture = GFX_report_event_hun_many_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.35.a
+		ai_chance = { factor = 50 }
+			add_doctrine_cost_reduction = {
+				name = HUN_overhelming_firepower
+				category = cat_superior_firepower
+				uses = 2
+				cost_reduction = 0.7
+				complete_national_focus = HUN_nagys_plan
+			}
+	}
+	
+	option = {
+		name = hungary_new.35.b
+		ai_chance = { factor = 50 }
+			add_doctrine_cost_reduction = {
+				name = HUN_methodical_planning
+				category = cat_grand_battle_plan
+				uses = 2
+				cost_reduction = 0.7
+				complete_national_focus = HUN_werths_plan
+			}
+	}
+}	
+	country_event = {
+	id = hungary_new.36
+	title = hungary_new.36.t
+	desc = hungary_new.36.d
+	picture = GFX_report_event_hun_many_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.36.a
+		ai_chance = { factor = 50 }
+	}
+}
+
+	country_event = {
+	id = hungary_new.37
+	title = hungary_new.37.t
+	desc = hungary_new.37.d
+	picture = GFX_report_event_hun_romanian_partisans
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.37.a
+		ai_chance = { factor = 50 }
+		add_manpower = -40
+		swap_ideas = {
+				remove_idea = HUN_romanian_minority
+				add_idea = HUN_rebeling_romanian_minority
+			}
+	}
+}
+	country_event = {
+	id = hungary_new.38
+	title = hungary_new.38.t
+	desc = hungary_new.38.d
+	picture = GFX_report_event_hun_factory
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.38.a
+		ai_chance = { factor = 50 }
+		add_ideas = HUN_stagnating_economy
+		
+	}
+}
+
+	country_event = {
+	id = hungary_new.39
+	title = hungary_new.39.t
+	desc = hungary_new.39.d
+	picture = GFX_report_event_hun_many_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.39.a
+		ai_chance = { factor = 50 }
+	}
+}
+
+country_event = {
+	id = hungary_new.40
+	title = hungary_new.40.t
+	desc = hungary_new.40.d
+	picture = GFX_report_event_hun_versammlung
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.40.a
+		ai_chance = { factor = 50 }
+		country_event = hungary_new.41
+		add_popularity = {
+			ideology = democratic
+			popularity = -0.10
+			}
+	}
+}
+	country_event = {
+	id = hungary_new.41
+	title = hungary_new.41.t
+	desc = hungary_new.41.d
+	picture = GFX_report_event_hun_rading_partisans
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.41.a
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = "We will have to fight against Partisan Raids in all of Hungary."
+		add_ideas = HUN_spreading_unrest
+	}
+	
+}
+	country_event = {
+	id = hungary_new.42
+	title = hungary_new.42.t
+	desc = hungary_new.42.d
+	picture = GFX_report_event_hun_mysterious_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.42.a
+		ai_chance = { factor = 50 }
+		add_political_power = -5
+	}	
+}
+	country_event = {
+	id = hungary_new.43
+	title = hungary_new.43.t
+	desc = hungary_new.43.d
+	picture = GFX_report_event_hun_negotiations_with_austria
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = hungary_new.43.a
+		ai_chance = { factor = 35 }
+		HUN = {
+			country_event = { id = hungary_new.44 hours = 8 random_hours = 4 }
+		}
+	}
+	
+	option = {
+		name = hungary_new.43.b
+		ai_chance = { factor = 65 }
+		HUN = {
+			country_event = { id = hungary_new.45 hours = 8 random_hours = 4 }
+		}
+	}	
+}
+
+country_event = {
+	id = hungary_new.44
+	title = hungary_new.44.t
+	desc = hungary_new.44.d
+	picture = GFX_report_event_hun_negotiations_with_austria
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.44.a
+		ai_chance = { factor = 50 }
+		remove_ideas = HUN_bad_austrian_relations
+		add_opinion_modifier = { target = AUS modifier = medium_increase }
+	}	
+}
+	country_event = {
+	id = hungary_new.45
+	title = hungary_new.45.t
+	desc = hungary_new.45.d
+	picture = GFX_report_event_hun_negotiations_with_austria
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = hungary_new.45.a
+		ai_chance = { factor = 50 }
+		country_event =  hungary_new.46 
+	}
+	
+}
+	country_event = {
+	id = hungary_new.46
+	title = hungary_new.46.t
+	desc = hungary_new.46.d
+	picture = GFX_report_event_hun_negotiations_with_austria
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.46.a
+		ai_chance = { factor = 50 }
+		AUS = {	country_event = { id = hungary_new.47 hours = 8 random_hours = 4 } }
+	}
+	
+	option = {
+		name = hungary_new.46.b
+		ai_chance = { factor = 50 }
+		AUS = {	country_event = { id = hungary_new.48 hours = 8 random_hours = 4 } }
+	}
+}	
+	country_event = {
+	id = hungary_new.47
+	title = hungary_new.47.t
+	desc = hungary_new.47.d
+	picture = GFX_report_event_hun_negotiations_with_austria
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.47.a
+		ai_chance = { factor = 50 }
+		add_ideas =  HUN_civilian_payment
+		HUN = {
+			country_event = { id = hungary_new.49 hours = 8 random_hours = 4 }
+		}
+	}
+}
+	country_event = {
+	id = hungary_new.48
+	title = hungary_new.48.t
+	desc = hungary_new.48.d
+	picture = GFX_report_event_hun_negotiations_with_austria
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.48.a
+		ai_chance = { factor = 50 }
+		HUN = {
+			give_resource_rights = { receiver = AUS state = 155 }
+			country_event = { id = hungary_new.49 hours = 8 random_hours = 4 }
+		}
+	}
+	
+}
+	country_event = {
+	id = hungary_new.49
+	title = hungary_new.49.t
+	desc = hungary_new.49.d
+	picture = GFX_report_event_hun_negotiations_with_austria
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.49.a
+		ai_chance = { factor = 50 }
+		remove_ideas = HUN_bad_austrian_relations
+	}
+	
+}
+
+	country_event = {
+	id = hungary_new.50
+	title = hungary_new.50.t
+	desc = hungary_new.50.d
+	picture = GFX_report_event_hun_factory
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.50.a
+		ai_chance = { factor = 50 }
+		add_political_power = -100
+		swap_ideas = {
+			remove_idea = HUN_stagnating_economy
+			add_idea = HUN_stagnating_economy1
+		}
+		country_event = {id = hungary_new.51 hours = 8 random_hours = 4}
+		
+	}
+	
+}
+	country_event = {
+	id = hungary_new.51
+	title = hungary_new.51.t
+	desc = hungary_new.51.d
+	picture = GFX_report_event_hun_factory
+	
+	is_triggered_only = yes
+	
+	
+	option = {
+		name = hungary_new.51.a
+		ai_chance = { factor = 50 }
+		swap_ideas = {
+			remove_idea = HUN_stagnating_economy1
+			add_idea = HUN_stagnating_economy2
+		}
+			add_timed_idea = { idea =  HUN_payments_to_austria days = 100 }
+			add_stability = -0.02
+			country_event = {id = hungary_new.52 hours = 8 random_hours = 4}
+	}
+}
+country_event = {
+	id = hungary_new.52
+	title = hungary_new.52.t
+	desc = hungary_new.52.d
+	picture = GFX_report_event_hun_factory
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.52.a
+		ai_chance = { factor = 50 }
+		add_political_power = -100
+		swap_ideas = {
+			remove_idea = HUN_stagnating_economy2
+			add_idea = HUN_stagnating_economy3	
+		}
+		add_timed_idea = { idea =  HUN_growing_powerty days = 360 }
+				
+	}
+	
+}
+	country_event = {
+	id = hungary_new.53
+	title = hungary_new.53.t
+	desc = hungary_new.53.d
+	picture = GFX_report_event_hun_national_riot
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.53.a
+		ai_chance = { factor = 50 }
+		add_stability = -0.05
+		custom_effect_tooltip = "Something is coming but nobody knows what."
+	}	
+}
+	country_event = {
+	id = hungary_new.54
+	title = hungary_new.54.t
+	desc = hungary_new.54.d
+	picture = GFX_report_event_hun_mysterious_conference
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.54.a
+		ai_chance = { factor = 50 }
+		add_stability = -0.1
+		custom_effect_tooltip = "This won´t end well"
+	}	
+}
+	country_event = {
+	id = hungary_new.55
+	title = hungary_new.55.t
+	desc = hungary_new.55.d
+	picture = GFX_report_event_hun_romanian_partisans
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.55.a
+		ai_chance = { factor = 50 }
+		custom_effect_tooltip = "This path will get content in the Future"	
+		}	
+	
+	option = {
+		name = hungary_new.55.b
+		ai_chance = { factor = 100 }
+		
+	}
+}
+	country_event = {
+	id = hungary_new.56
+	title = hungary_new.56.t
+	desc = hungary_new.56.d
+	picture = GFX_report_event_hun_fascist_march
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.56.a
+		ai_chance = { factor = 50 }
+		
+	}	
+}
+	country_event = {
+	id = hungary_new.57
+	title = hungary_new.57.t
+	desc = hungary_new.57.d
+	picture = GFX_report_event_hun_otto_blood
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.57.a
+		ai_chance = { factor = 50 }
+		add_ideas = HUN_low_monarchist_resistance
+		add_stability = 0.03
+		add_manpower = 20
+	}	
+}
+	country_event = {
+	id = hungary_new.58
+	title = hungary_new.58.t
+	desc = hungary_new.58.d
+	picture = GFX_report_event_border_arrow_cross
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.58.a
+		ai_chance = { factor = 50 }
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.1
+		}
+			add_stability = 0.05
+			add_war_support = 0.05
+	}	
+}
+	country_event = {
+	id = hungary_new.59
+	title = hungary_new.59.t
+	desc = hungary_new.59.d
+	picture = GFX_report_event_hun_church
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.59.a
+		ai_chance = { factor = 50 }
+		add_timed_idea = { idea =  HUN_religious_loyalty days = 360 }
+	}	
+}
+	country_event = {
+	id = hungary_new.60
+	title = hungary_new.60.t
+	desc = hungary_new.60.d
+	picture = GFX_report_event_hun_workers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.60.a
+		ai_chance = { factor = 50 }
+		swap_ideas = {
+				remove_idea = HUN_coporatism2
+				add_idea = HUN_coporatism3
+			}
+		add_power_balance_value = {
+			id = HUN_power_balance
+			value = -0.1
+		}
+	}	
+}
+country_event = {
+	id = hungary_new.61
+	title = hungary_new.61.t
+	desc = hungary_new.61.d
+	picture = GFX_report_event_hun_factory
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.61.a
+		ai_chance = { factor = 50 }
+		swap_ideas = {
+			remove_idea = HUN_controlled_capitalism3
+			add_idea = HUN_controlled_capitalism3
+		}
+	}	
+}
+	country_event = {
+	id = hungary_new.62
+	title = hungary_new.62.t
+	desc = hungary_new.62.d
+	picture = GFX_report_event_hun_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.62.a
+		ai_chance = { factor = 50 }
+		add_stability = 0.05
+		swap_ideas = {
+			remove_idea = HUN_suspended_constitution
+			add_idea = HUN_unpopular_constitution
+		}
+	}	
+}
+	country_event = {
+	id = hungary_new.63
+	title = hungary_new.63.t
+	desc = hungary_new.63.d
+	picture = GFX_report_event_hun_otto_blood
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.63.a
+		ai_chance = { factor = 50 }
+		swap_ideas = {
+			remove_idea = HUN_low_monarchist_resistance
+			add_idea = HUN_moderate_monarchist_resistance
+		}
+		add_stability = 0.1
+		add_manpower = -200
+	}	
+}
+	country_event = {
+	id = hungary_new.64
+	title = hungary_new.64.t
+	desc = hungary_new.64.d
+	picture = GFX_report_event_hun_arrests
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.64.a
+		ai_chance = { factor = 50 }
+		add_stability = 0.1
+		add_political_power = 50
+		add_manpower = -5000
+	}	
+}
+	country_event = {
+	id = hungary_new.65
+	title = hungary_new.65.t
+	desc = hungary_new.65.d
+	picture = GFX_report_event_hun_arrests
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.65.a
+		ai_chance = { factor = 50 }
+		add_political_power = 5
+	}	
+}
+	
+	country_event = {
+	id = hungary_new.66
+	title = hungary_new.66.t
+	desc = hungary_new.66.d
+	picture = GFX_report_event_hun_negotiations_with_austria
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.66.a
+		ai_chance = { factor = 50 }
+		add_political_power = 5
+	}	
+}
+	
+	country_event = {
+	id = hungary_new.67
+	title = hungary_new.67.t
+	desc = hungary_new.67.d
+	picture = GFX_report_event_hun_resistance
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.67.a
+		ai_chance = { factor = 50 }
+		add_political_power = 5
+	}	
+}
+	country_event = {
+	id = hungary_new.68
+	title = hungary_new.68.t
+	desc = hungary_new.68.d
+	picture = GFX_report_event_hun_politicans
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.68.a
+		ai_chance = { factor = 50 }
+		add_political_power = 5
+	}	
+}
+	country_event = {
+	id = hungary_new.69
+	title = hungary_new.69.t
+	desc = hungary_new.69.d
+	picture = GFX_report_event_hun_negotiations_with_austria
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.69.a
+		ai_chance = { factor = 100 }
+		add_to_faction = HUN
+	}	
+	
+	option = {
+		name = hungary_new.69.b
+		ai_chance = { factor = 0 }
+		country_event = { id = hungary_new.70 hours = 8 random_hours = 4 }
+	}	
+}
+	country_event = {
+	id = hungary_new.70
+	title = hungary_new.70.t
+	desc = hungary_new.70.d
+	picture = GFX_report_event_hun_negotiations_with_austria
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.70.a
+		ai_chance = { factor = 50 }
+	
+	}	
+}
+	country_event = {
+	id = hungary_new.71
+	title = hungary_new.71.t
+	desc = hungary_new.71.d
+	picture = GFX_report_event_hun_greater_hungary
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.71.a
+		ai_chance = { factor = 50 }
+	
+	}	
+}
+	country_event = {
+	id = hungary_new.72
+	title = hungary_new.72.t
+	desc = hungary_new.72.d
+	picture = GFX_report_event_hun_soldiers
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.72.a
+		ai_chance = { factor = 30 }
+		HUN = { transfer_state = 919 }
+		HUN = { transfer_state = 921 }
+	
+	}
+
+	option = {
+		name = hungary_new.72.b
+		ai_chance = { factor = 70 }
+		country_event = { id = hungary_new.73 hours = 8 random_hours = 4 }
+	}
+}
+	country_event = {
+	id = hungary_new.73
+	title = hungary_new.73.t
+	desc = hungary_new.73.d
+	picture = GFX_report_event_hun_greater_hungary
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.73.a
+		ai_chance = { factor = 50 }
+		HUN = {
+			create_wargoal = {
+				type = take_state_focus
+				target = AUS
+				generator = { 921 919 } 
+
+			}
+
+		}
+	}	
+}
+
+	country_event = {
+	id = hungary_new.74
+	title = hungary_new.74.t
+	desc = hungary_new.74.d
+	picture = GFX_report_event_hun_gabor_vajna
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.74.a
+		ai_chance = { factor = 50 }
+		add_power_balance_value = {
+			id = HUN_power_balance
+			value = 0.08
+		}
+		country_event = { id = hungary_new.75 hours = 8 random_hours = 4 }
+	}
+
+	option = {
+		name = hungary_new.74.b
+		ai_chance = { factor = 50 }
+		add_power_balance_value = {
+			id = HUN_power_balance
+			value = -0.08
+		}
+		country_event = { id = hungary_new.75 hours = 8 random_hours = 4 }
+	}
+}
+	
+	country_event = {
+	id = hungary_new.75
+	title = hungary_new.75.t
+	desc = hungary_new.75.d
+	picture = GFX_report_event_hun_karoly_beregfy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.75.a
+		ai_chance = { factor = 50 }
+		add_power_balance_value = {
+			id = HUN_power_balance
+			value = 0.08
+		}
+		country_event = { id = hungary_new.76 hours = 8 random_hours = 4 }
+	}
+
+	option = {
+		name = hungary_new.75.b
+		ai_chance = { factor = 50 }
+		add_power_balance_value = {
+			id = HUN_power_balance
+			value = -0.08
+		}
+		country_event = { id = hungary_new.76 hours = 8 random_hours = 4 }
+		HUN_karoly_beregfy = { retire = yes}
+	}
+}
+	country_event = {
+	id = hungary_new.76
+	title = hungary_new.76.t
+	desc = hungary_new.76.d
+	picture = GFX_report_event_hun_vilmos_nagy
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.76.a
+		ai_chance = { factor = 50 }
+		add_power_balance_value = {
+			id = HUN_power_balance
+			value = 0.08
+		}
+		country_event = { id = hungary_new.77 hours = 8 random_hours = 4 }
+		
+	}
+
+	option = {
+		name = hungary_new.76.b
+		ai_chance = { factor = 50 }
+		add_power_balance_value = {
+			id = HUN_power_balance
+			value = -0.08
+		}
+		country_event = { id = hungary_new.77 hours = 8 random_hours = 4 }
+		HUN_vilmos_nagy = { retire = yes}
+	}
+}
+
+	country_event = {
+	id = hungary_new.77
+	title = hungary_new.77.t
+	desc = hungary_new.77.d
+	picture = GFX_report_event_hun_horthy_politican
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.77.a
+		ai_chance = { factor = 50 }
+		add_power_balance_value = {
+			id = HUN_power_balance
+			value = 0.08
+		}
+		hidden_effect = {add_political_power = 100}
+		
+	}
+
+	option = {
+		name = hungary_new.77.b
+		ai_chance = { factor = 50 }
+		add_power_balance_value = {
+			id = HUN_power_balance
+			value = -0.08
+		}
+		hidden_effect = {add_political_power = 100}
+	}
+}
+
+	country_event = {
+	id = hungary_new.78
+	title = hungary_new.78.t
+	desc = hungary_new.78.d
+	picture = GFX_report_event_hun_romanian_partisans
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.78.a
+		ai_chance = { factor = 50 }
+		add_manpower = -40
+		
+	}
+}
+	country_event = {
+	id = hungary_new.79
+	title = hungary_new.79.t
+	desc = hungary_new.79.d
+	picture = GFX_report_event_hun_blood_deportations
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.79.a
+		ai_chance = { factor = 50 }
+		add_manpower = -4000
+			swap_ideas = {
+				remove_idea = HUN_national_identity
+				add_idea = HUN_national_identity2
+			}
+		
+	}
+}
+
+	country_event = {
+	id = hungary_new.80
+	title = hungary_new.80.t
+	desc = hungary_new.80.d
+	picture = GFX_report_event_hun_anti-fascist_resistance
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.80.a
+		ai_chance = { factor = 50 }
+		swap_ideas = {
+			remove_idea = HUN_moderate_monarchist_resistance
+			add_idea = HUN_moderate_monarchist_resistance2
+		}
+		
+	}
+}
+	country_event = {
+	id = hungary_new.81
+	title = hungary_new.81.t
+	desc = hungary_new.81.d
+	picture = GFX_report_event_hun_anti-fascist_resistance
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.81.a
+		ai_chance = { factor = 50 }
+		
+	}
+}
+	country_event = {
+	id = hungary_new.82
+	title = hungary_new.82.t
+	desc = hungary_new.82.d
+	picture = GFX_report_event_hun_rading_partisans
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.82.a
+		ai_chance = { factor = 40 }
+		
+		add_stability = -0.1
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = -500
+		}
+		
+		add_equipment_to_stockpile = {
+			type = support_equipment 
+			amount= -500
+		}
+		
+		add_equipment_to_stockpile = {
+			type = artillery_equipment 
+			amount= -250
+		}
+		HUN = {	country_event = { id = hungary_new.83 hours = 8 random_hours = 4 } }
+		
+	}
+	option = {
+		name = hungary_new.82.b
+		ai_chance = { factor = 60 }
+		HUN = {	country_event = { id = hungary_new.84 hours = 8 random_hours = 4 } }
+		
+	}
+}
+	country_event = {
+	id = hungary_new.83
+	title = hungary_new.83.t
+	desc = hungary_new.83.d
+	picture = GFX_report_event_hun_rading_partisans
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.83.a
+		ai_chance = { factor = 50 }
+			add_stability = 0.1
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+			}
+		
+			add_equipment_to_stockpile = {
+				type = support_equipment 
+				amount= 500
+			}
+		
+			add_equipment_to_stockpile = {
+				type = artillery_equipment 
+				amount= 250
+			}
+		
+	}
+}
+country_event = {
+	id = hungary_new.84
+	title = hungary_new.84.t
+	desc = hungary_new.84.d
+	picture = GFX_report_event_hun_rading_partisans
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hungary_new.84.a
+		ai_chance = { factor = 50 }
+		if = {
+			limit = {
+				TAG = ROM
+			}   
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					name = "Hungary"
+					state = 76
+					num_provinces = 4
+					on_win = hungary_new.85
+					on_lose = hungary_new.12
+					#on_cancel = japan_border_conflict.4
+				}
+				
+				defender = {
+					name = "Romania"
+					state = 84					
+					num_provinces = 4
+					on_win = hungary_new.85
+					on_lose = hungary_new.86
+					#on_cancel = japan_border_conflict.4
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				TAG = CZE
+			}
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					name = "Hungary"
+					state = 664
+					num_provinces = 4
+					on_win = hungary_new.85
+					on_lose = hungary_new.86
+					#on_cancel = japan_border_conflict.4
+				}
+				
+				defender = {
+					name = "Czechoslovakia"
+					state = 70				
+					num_provinces = 4
+					on_win = hungary_new.85
+					on_lose = hungary_new.86
+					#on_cancel = japan_border_conflict.4
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				TAG = YUG
+			}
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					name = "Hungary"
+					state = 155
+					num_provinces = 4
+					on_win = hungary_new.85
+					on_lose = hungary_new.86
+					#on_cancel = japan_border_conflict.4
+				}
+				
+				defender = {
+					name = "Yugosslavia"
+					state = 109				
+					num_provinces = 4
+					on_win = hungary_new.85
+					on_lose = hungary_new.86
+					#on_cancel = japan_border_conflict.4
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = hungary_new.85
+	title = hungary_new.85.t
+	desc = hungary_new.85.d
+	picture = GFX_report_event_hun_rading_partisans
+	
+	is_triggered_only =  yes
+	
+	option = { 
+		name = hungary_new.85.a
+		ai_chance = { factor = 50}	
+		
+	}
+}	
+
+	country_event = {
+	id = hungary_new.86
+	title = hungary_new.86.t
+	desc = hungary_new.86.d
+	picture = GFX_report_event_hun_rading_partisans
+	
+	is_triggered_only =  yes
+	
+	option = { 
+		name = hungary_new.86.a
+		ai_chance = { factor = 50}
+			
+	}
+}
+	
+	country_event = {
+	id = hungary_new.87
+	title = hungary_new.87.t
+	desc = hungary_new.87.d
+	picture = GFX_report_event_hun_horthy_dead
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = HUN
+		has_country_leader = {
+			character = HUN_miklos_horthy
+			ruling_only = yes
+		}
+		has_power_balance = {
+			id = HUN_power_balance
+		}
+		power_balance_value = {
+			id = HUN_power_balance
+			value > -0.98
+		}
+	}
+	
+	option = { 
+		name = hungary_new.87.a
+		ai_chance = { factor = 50}
+		kill_country_leader = yes
+		add_stability = 0.3
+		add_war_support = 0.3
+		add_manpower =  35000
+		set_cosmetic_tag = HUN_arrow_fascism
+		remove_power_balance = {
+			id = HUN_power_balance
+		}
+	}
+}
+
+	country_event = {
+	id = hungary_new.88
+	title = hungary_new.88.t
+	desc = hungary_new.88.d
+	picture = GFX_report_event_border_arrow_cross
+	
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = HUN
+		NOT = {has_country_flag =  HUN_Horthy_boss}
+		has_power_balance = {
+			id = HUN_power_balance
+		}
+		power_balance_value = {
+			id = HUN_power_balance
+			value > 0.98
+		}
+	}
+	
+	option = { 
+		name = hungary_new.88.a
+		ai_chance = { factor = 50}
+		add_ideas = HUN_man_of_the_nation
+		set_country_flag = HUN_Horthy_boss
+		remove_power_balance = {
+			id = HUN_power_balance
+		}
+	}
+}
+
+
+
+
+

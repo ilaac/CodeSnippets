@@ -1,0 +1,30 @@
+characters={
+	CRI_lawr_kornilov = {
+		name = CRI_lawr_kornilov 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_cri_lavr_kornilov_large
+			}
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "1951.1.1.1"
+			id = -1
+		}
+	}
+	
+	CRI_ilyas_tarkhan = {
+		name = "Ilyas Tarkhan" 
+		portraits = {
+			civilian = {
+				large = GFX_portrait_Ilyas_Tarkhan
+			}
+		}
+		country_leader = {
+			ideology = leninism
+			expire = "1940.1.1.1"
+			id = -1
+		}
+	}
+}
+	

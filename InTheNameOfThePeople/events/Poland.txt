@@ -1,0 +1,38 @@
+﻿###########################
+# Polish Events
+###########################
+
+add_namespace = poland
+
+####Germany asks to join faction
+country_event = {
+	id = poland.1
+	title = german_ultimatum.1.t
+	desc = german_ultimatum.1.d
+	picture = GFX_german_civil_war_start
+	
+	is_triggered_only =  yes
+	
+	option = { 
+		name = german_ultimatum.1.a
+		ai_chance = { factor = 80}
+			GER = {
+			transfer_state = 67
+			transfer_state = 762
+			add_political_power = -50
+		}
+	}
+	
+		option = { 
+		name = german_ultimatum.1.b
+		ai_chance = { factor = 20}
+			GER = { 
+			create_wargoal = {
+			type = take_state_focus
+			target = FROM
+			generator = { 67, 762 }
+			}
+		}
+	}
+}
+

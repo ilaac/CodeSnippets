@@ -1,0 +1,179 @@
+﻿
+GER_BB_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BB
+
+	for_countries = { GER }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship battle_cruiser }
+	
+	fallback_name = "Schlachtschiff %d"
+
+	
+	ordered = {
+		1 = {"Scharnhorst"}
+		2 = {"Gneisenau"} 
+		3 = {"Bismarck"} 
+		4 = {"Tirpitz"} 
+		5 = {"Hindenburg"} 
+		6 = {"Ludendorff"} 
+		7 = {"Friedrich der Große"} 
+		8 = {"Großdeutschland"} 
+		9 = {"Ulrich von Hutten"} 
+		10 = {"Götz von Berlichingen"} 
+		11 = {"Brandenburg"} 
+		12 = {"Hessen"} 
+		13 = {"Zähringen"} 
+		14 = {"Mecklenburg"} 
+		15 = {"Elsass"} 
+		16 = {"Lothringen"} 
+		17 = {"Hannover"} 
+		18 = {"Nassau"} 
+		19 = {"Pommern"} 
+		20 = {"Westfalen"} 
+		21 = {"Rheinland"} 
+		22 = {"Thüringen"} 
+		23 = {"Württemberg"} 
+		24 = {"Braunschweig"} 
+		25 = {"Bayern"} 
+		26 = {"Sachsen"} 
+		27 = {"Baden"} 
+		28 = {"Weissenburg"} 
+		29 = {"Ostfriesland"} 
+		30 = {"Oldenburg"} 
+		31 = {"Posen"} 
+		32 = {"Preussen"} 
+		33 = {"Pillau"} 
+		34 = {"Helgoland"} 
+		35 = {"Schwaben"} 
+		36 = {"Wörth"} 
+		37 = {"Wettin"} 
+		38 = {"Wittelsbach"} 
+		39 = {"Orbotrit"}
+		40 = {"Ostmark"}
+		41 = {"Schleswig"} 
+		42 = {"Holstein"} 
+		43 = {"Franken"} 
+		44 = {"Strelitz"} 
+		45 = {"Vaterland"}
+	}
+}
+
+GER_BC_HISTORICAL = {
+	name = NAME_THEME_HISTORICAL_BC
+
+	for_countries = { GER }
+
+	type = ship
+	ship_types = { ship_hull_heavy battleship battle_cruiser }
+	
+	fallback_name = "Schlachtkreuzer %d"
+
+	
+	ordered = {
+		1 = {"Von der Tann"}
+		2 = {"Moltke"} 
+		3 = {"Goeben"} 
+		4 = {"Derfflinger"} 
+		5 = {"Holtzendorff"} 
+		6 = {"York"} 
+		7 = {"Von Mackensen"} 
+		8 = {"Von Lettow-Vorbeck"} 
+		9 = {"Friedrich Barbarossa"} 
+		10 = {"Karl der Große"} 
+	}
+}
+
+	type = ship
+	ship_types = { ship_hull_carrier carrier }
+	
+	fallback_name = "Träger %d"
+
+	
+	ordered = {
+		1 = {"Graf Zeppelin"}
+		2 = {"Peter Strasser"}
+		3 = {"Seydlitz"}
+		4 = {"Europa"}
+		5 = {"Potsdam"}
+		6 = {"Otto Lilienthal"}
+		7 = {"Aurora"}
+		10 = {"Manfred von Richthofen"}
+		11 = {"Max Immelman"}
+		12 = {"Zander"}
+		13 = {"Wels"} 
+		14 = {"Hering"} 
+		15 = {"Aal"} 
+		16 = {"Hecht"} 
+		17 = {"Flunder"} 
+		18 = {"Dorsch"} 
+		19 = {"Hai"} 
+		20 = {"Stachelrochen"} 
+		21 = {"Neunauge"}
+		22 = {"Bitterling"} 
+		23 = {"Lachs"}
+		24 = {"Barsch"}
+		25 = {"Kabeljau"}
+		26 = {"Forelle"}
+		27 = {"Stör"}
+		28 = {"Barbe"}
+		29 = {"Schleie"}
+		30 = {"Sardine"}
+		31 = {"Grundel"}
+		32 = {"Makrele"}
+		33 = {"Heilbutt"}
+		34 = {"Seezunge"}
+		35 = {"Knurrhahn"}
+	}
+
+
+GER_THEME_GERMANIC = {
+	name = NAME_THEME_GERMANIC_MYTHOLOGY
+
+	for_countries = { GER }
+
+	can_use = { 
+		NOT = {
+			OR = { 
+				has_completed_focus = GER_return_of_the_kaiser 
+				has_completed_focus = GER_the_monarchy_compromise
+			}
+		}
+	}
+
+	type = ship
+	
+	fallback_name = "Schiff %d"
+
+	
+	ordered = {
+		1 = {"Wotan"}
+		2 = {"Donar"} 
+		3 = {"Tyr"} 
+		4 = {"Friia"} 
+		5 = {"Uolla"} 
+		6 = {"Phol"} 
+		7 = {"Gausus"} 
+		8 = {"Mittgart"} 
+		9 = {"Hellea"} 
+		28 = {"Himilinberg"}
+		29 = {"Alb"}
+		10 = {"Thrym"}
+		11 = {"Ägir"} 
+		12 = {"Atla"}
+		24 = {"Ran"}
+		25 = {"Hödur"}
+		13 = {"Hymir"}
+		14 = {"Borr"}
+		15 = {"Baduhenna"}
+		16 = {"Bragi"}
+		17 = {"Vili"}
+		18 = {"Thrud"}
+		19 = {"Idun"}
+		20 = {"Lodur"}
+		21 = {"Mani"}
+		22 = {"Mannus"}
+		23 = {"Vihansa"}
+		26 = {"Sigi"}
+	}
+}

@@ -1,0 +1,1000 @@
+ideas = {
+
+	country = {
+			diplomatic_isolation = {
+			
+			allowed = { 
+			
+			}
+			
+			available = { 
+			
+			}
+			
+			cancel = { 
+			
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+
+				political_power_cost = 0.45
+				political_advisor_cost_factor = 0.25
+				trade_laws_cost_factor = 0.25
+				mobilization_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+				high_command_cost_factor = 0.25
+				air_chief_cost_factor = 0.25
+				army_chief_cost_factor = 0.25
+				navy_chief_cost_factor = 0.25
+			}
+		}
+	
+		great_economic_depression = {
+			
+			allowed = { 
+			
+			}
+			
+			available = { 
+			
+			}
+			
+			cancel = { 
+			
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.3
+				stability_factor = -0.35
+				production_speed_buildings_factor = -0.45
+				consumer_goods_factor = 0.65
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.2 
+				production_factory_start_efficiency_factor = -0.2 
+			}
+		}
+		
+		great_economic_depression2 = {
+			
+			allowed = { 
+			
+			}
+			
+			available = { 
+			
+			}
+			
+			cancel = { 
+			
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.25
+				stability_factor = -0.25
+				production_speed_buildings_factor = -0.35
+				consumer_goods_factor = 0.55
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.15 
+				production_factory_start_efficiency_factor = -0.15 
+			}
+		}
+		
+		great_economic_depression3 = {
+			
+			allowed = { 
+			
+			}
+			
+			available = { 
+			
+			}
+			
+			cancel = { 
+			
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.2
+				production_speed_buildings_factor = -0.25
+				consumer_goods_factor = 0.35
+				stability_factor = -0.15
+				production_factory_max_efficiency_factor = -0.05
+				production_factory_efficiency_gain_factor = -0.1 
+				production_factory_start_efficiency_factor = -0.15 
+			}
+		}
+		
+		great_economic_depression4 = {
+			
+			allowed = { 
+			
+			}
+			
+			available = { 
+			
+			}
+			
+			cancel = { 
+			
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = -0.1
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		civilian_focused_industry = {
+			
+			allowed = { 
+			
+			}
+			
+			available = { 
+			
+			}
+			
+			cancel = { 
+			
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = -0.05
+				consumer_goods_factor = -0.05
+				production_factory_start_efficiency_factor = 0.05 
+			}
+		}
+		
+			civilian_focused_industry2 = {
+			
+			allowed = { 
+			
+			}
+			
+			available = { 
+			
+			}
+			
+			cancel = { 
+			
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = -0.1
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = -0.1
+				production_factory_start_efficiency_factor = 0.15 
+			}
+		}
+		
+			civilian_focused_industry3 = {
+			
+			allowed = { 
+			
+			}
+			
+			available = { 
+			
+			}
+			
+			cancel = { 
+			
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = -0.2
+				production_speed_industrial_complex_factor = 0.15
+				consumer_goods_factor = -0.25
+				production_factory_start_efficiency_factor = 0.25 
+			}
+		}
+		
+		militairy_focused_industry = {
+			
+			allowed = { 
+			
+			}
+			
+			available = { 
+			
+			}
+			
+			cancel = { 
+			
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = -0.05
+				production_speed_arms_factory_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05 
+			}
+		}
+		
+			militairy_focused_industry2 = {
+			
+			allowed = { 
+			
+			}
+			
+			available = { 
+			
+			}
+			
+			cancel = { 
+			
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = -0.05
+				production_speed_arms_factory_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1 
+			}
+		}
+		
+			militairy_focused_industry3 = {
+			
+			allowed = { 
+			
+			}
+			
+			available = { 
+			
+			}
+			
+			cancel = { 
+			
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = -0.1
+				consumer_goods_factor = -0.05
+				production_speed_arms_factory_factor = 0.2
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15 
+			}
+		}
+		
+		#########
+			new_research_facilities = {
+			
+			allowed = { 
+			
+			}
+			
+			available = { 
+			
+			}
+			
+			cancel = { 
+			
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		
+		#########
+		south_german_devide = {
+			
+			allowed = { 
+			
+			}
+			
+			available = { 
+			
+			}
+			
+			cancel = { 
+			
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				resistance_activity = 0.15
+				required_garrison_factor = 1
+			}
+		}
+		#######
+		efficient_war_production = {
+			
+			allowed = { 
+			
+			}
+			
+			available = { 
+			
+			}
+			
+			cancel = { 
+			
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05 
+				production_speed_arms_factory_factor = 0.05 
+			}
+		}
+		
+		defunct_army = {
+			
+			allowed = { 
+			
+			}
+			
+			available = { 
+			
+			}
+			
+			cancel = { 
+			
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				offence = -0.20
+				defence = -0.05
+				supply_consumption_factor = 0.25
+				army_speed_factor = -0.15
+				conscription_factor = -0.6
+				experience_gain_army_factor = -0.5
+				command_power_gain = -0.15
+				training_time_army_factor = 0.3
+			}
+		}
+		
+		defunct_army2 = {
+			
+			allowed = { 
+			
+			}
+			
+			available = { 
+			
+			}
+			
+			cancel = { 
+			
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				offence = -0.15
+				defence = -0.05
+				conscription_factor = -0.4
+				experience_gain_army_factor = -0.3
+				training_time_army_factor = 0.2
+			}
+		}
+		
+		defunct_army3 = {
+			
+			allowed = { 
+			
+			}
+			
+			available = { 
+			
+			}
+			
+			cancel = { 
+			
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				offence = -0.05
+				conscription_factor = -0.2
+				experience_gain_army_factor = -0.2
+				training_time_army_factor = 0.1
+			}
+		}
+		
+		defunct_army4 = {
+			
+			allowed = { 
+			
+			}
+			
+			available = { 
+			
+			}
+			
+			cancel = { 
+			
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				offence = 0.05
+				defence = 0.05
+				experience_gain_army_factor = 0.1
+				training_time_army_factor = 0.05
+			}
+		}
+		
+		streamlined_production = {
+			
+			allowed = { 
+			}
+			
+			available = { 
+			}
+			
+			cancel = { 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+			infantery_equipment = {
+				reliability = 0.05
+				build_cost_ic = -0.1 
+				instant = yes
+			}
+			artillery_equipment = {
+				reliability = 0.05
+				build_cost_ic = -0.1 
+				instant = yes
+			}
+		}
+	}
+	
+		streamlined_mechanized_production = {
+			
+			allowed = { 
+			}
+			
+			available = { 
+			}
+			
+			cancel = { 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				motorized_equipment = {
+					instant = yes
+					reliability = 0.05
+					build_cost_ic = -0.1
+				}
+				mechanized_equipment = {
+					instant = yes
+					reliability = 0.05
+					build_cost_ic = -0.1
+				}
+			}
+		}
+	
+	streamlined_armor_production = {
+			
+			allowed = { 
+			}
+			
+			available = { 
+			}
+			
+			cancel = { 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				medium_tank_equipment = {
+					instant = yes
+					reliability = 0.05
+					build_cost_ic = -0.1
+				}
+				light_tank_equipment = {
+					instant = yes
+					reliability = 0.05
+					build_cost_ic = -0.1
+				}
+				heavy_tank_equipment = {
+					instant = yes
+					reliability = 0.05
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		
+			german_italian_volunteer_program = {
+			
+			allowed = { 
+			}
+			
+			available = { 
+			}
+			
+			cancel = { 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			send_volunteer_size = 1
+				send_volunteer_divisions_required = -0.75
+				lend_lease_tension = -0.30
+			}
+		}
+		
+			prussian_threat = {
+			
+			allowed = { 
+			}
+			
+			available = { 
+			}
+			
+			cancel = { 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+			tag = PRS
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.1
+			}
+		}
+		
+			bavarian_threat = {
+			
+			allowed = { 
+			}
+			
+			available = { 
+			}
+			
+			cancel = { 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+			tag = BAV
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.1
+			}
+		}
+		
+		civil_war_recovery_plan = {
+			
+			allowed = { 
+			}
+			
+			available = { 
+			}
+			
+			cancel = { 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.1
+				industry_repair_factor = 0.3
+			}
+		}
+		
+		battlefield_CAS_support = {
+			
+			allowed = { 
+			}
+			
+			available = { 
+			}
+			
+			cancel = { 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				air_close_air_support_org_damage_factor = 0.1
+			}
+		}
+		
+		air_superiority_support = {
+			
+			allowed = { 
+			}
+			
+			available = { 
+			}
+			
+			cancel = { 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				air_superiority_bonus_in_combat = 0.1
+			}
+		}
+		
+		cheaper_airframe_design = {
+			
+			allowed = { 
+			}
+			
+			available = { 
+			}
+			
+			cancel = { 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.1 
+					instant = yes
+				}
+			}
+			equipment_bonus = {
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.1 
+					instant = yes
+				}
+			}	
+		}
+	
+	
+			fix_south_german_unrest1 = {
+			
+			allowed = { 
+			}
+			
+			available = { 
+			}
+			
+			cancel = { 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			#modifier = {
+			#	stability_factor = 0.025
+			#	political_power_factor = 0.025
+			#}
+			targeted_modifier = {
+				tag = BAV
+					attack_bonus_against = 0.05
+					defense_bonus_against = 0.05
+				}
+		}
+		
+			fix_south_german_unrest2 = {
+			
+			allowed = { 
+			}
+			
+			available = { 
+			}
+			
+			cancel = { 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			#modifier = {
+			#	stability_factor = 0.05
+			#	political_power_factor = 0.05
+			#}
+			targeted_modifier = {
+				tag = BAV
+					attack_bonus_against = 0.1
+					defense_bonus_against = 0.1
+				}
+		}
+			
+			fix_south_german_unrest3 = {
+			
+			allowed = { 
+			}
+			
+			available = { 
+			}
+			
+			cancel = { 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			#modifier = {
+			#	stability_factor = 0.075
+			#	political_power_factor = 0.075
+			#}
+			targeted_modifier = {
+				tag = BAV
+					attack_bonus_against = 0.15
+					defense_bonus_against = 0.15
+				}
+		}
+			
+			fix_south_german_unrest4 = {
+			
+			allowed = { 
+			}
+			
+			available = { 
+			}
+			
+			cancel = { 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			#modifier = {
+			#	stability_factor = 0.1
+			#	political_power_factor = 0.1
+			#}
+			targeted_modifier = {
+				tag = BAV
+					attack_bonus_against = 0.2
+					defense_bonus_against = 0.2
+				}
+		}
+		
+			programmfuhrer = {
+			
+			allowed = { 
+			}
+			
+			available = { 
+			}
+			
+			cancel = { 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = 2500
+				mobilization_speed = 0.2
+				production_speed_arms_factory_factor = 0.1
+			}
+		}
+		
+			the_eagles_nest = {
+			
+			allowed = { 
+			}
+			
+			available = { 
+			}
+			
+			cancel = { 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_speed = 0.15
+				political_power_factor = 0.1
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.1
+			}
+		}
+		
+			pact_of_steel = {
+			
+			allowed = { 
+			}
+			
+			available = { 
+			}
+			
+			cancel = { 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.075
+			war_support_factor = 0.075
+			}
+		}
+		
+			greater_germananic_innovation = {
+			
+			allowed = { 
+			}
+			
+			available = { 
+			}
+			
+			cancel = { 
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.025
+			war_support_factor = 0.025
+			political_power_factor = 0.05
+			research_speed_factor = 0.05
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+state={
+	id=1033
+	name="STATE_1033"
+	
+	history={
+		owner = SOV#
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = SOV
+		add_core_of = BLR
+
+	}
+	
+	provinces={
+		3331 6220 6371 9241 
+	}
+	manpower=503857
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

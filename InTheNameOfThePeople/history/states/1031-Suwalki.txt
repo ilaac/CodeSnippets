@@ -1,0 +1,27 @@
+state={
+	id=1031
+	name="STATE_1031"
+	
+	history={
+		owner = POL
+		victory_points = {
+			3254 1 
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = POL
+		add_claim_by = BLR
+		add_claim_by = LIT
+
+	}
+	
+	provinces={
+		400 3254 13400
+	}
+	manpower=220353
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

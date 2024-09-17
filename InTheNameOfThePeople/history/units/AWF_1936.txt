@@ -1,0 +1,96 @@
+﻿start_equipment_factor = 0.1
+##### Division Templates #####
+division_template = {
+	name = "Milicia Obrera Argentina"			
+	regiments = {
+		militia = { x = 0 y = 0 }				#1000
+		militia = { x = 0 y = 1 }				#1000
+		militia = { x = 0 y = 2 }				#1000
+		militia = { x = 0 y = 3 }				#1000
+	}
+	support = {
+	}
+	priority = 0
+}
+
+
+###### OOB ######
+units = {
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 13307
+		division_template = "Milicia Obrera Argentina"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2169
+		division_template = "Milicia Obrera Argentina"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10953
+		division_template = "Milicia Obrera Argentina"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12321
+		division_template = "Milicia Obrera Argentina"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 12306
+		division_template = "Milicia Obrera Argentina"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2199
+		division_template = "Milicia Obrera Argentina"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10981
+		division_template = "Milicia Obrera Argentina"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.7
+
+	}
+}

@@ -1,0 +1,29 @@
+
+state={
+	id=688
+	name="STATE_688"
+	resources={
+		tungsten=3.000
+		steel=2.000
+	}
+
+	history={
+		owner = PRU
+		buildings = {
+			infrastructure = 1
+
+		}
+		add_core_of = BOL
+		add_core_of = PRU
+		add_core_of = PAR
+
+	}
+
+	provinces={
+		2195 8203 
+	}
+	manpower=23900
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

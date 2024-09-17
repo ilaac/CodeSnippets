@@ -1,0 +1,17 @@
+characters={
+	
+	SSW_claus_barbie={
+		name=SSW_claus_barbie
+		portraits={
+			civilian={
+				large="GFX_portrait_ssw_klaus_barbie_large"
+			}
+		}
+		country_leader={
+			ideology=nazism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

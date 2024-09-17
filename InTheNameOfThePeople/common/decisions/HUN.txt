@@ -1,0 +1,2634 @@
+
+############################################################################
+#### ON MAP DECISIONS ALLOW YOU TO SHOW DECISION ICONS ON THE WORLD MAP ####
+############################################################################
+HUN_ally_the_country = {
+	on_map_decision = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 43 } 
+		}
+		on_map_mode = map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 20	
+		available = {
+			has_completed_focus = HUN_royal_propaganda_campaign
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_royal_propaganda_campaign
+		
+		}		
+
+		cost = 20	
+
+		remove_effect = {		
+			add_ideas = HUN_pro_habsburg_propaganda
+		}
+		
+		
+
+		ai_will_do = {	
+			factor = 50
+		}
+	
+	}
+	
+}
+
+HUN_ally_the_country = {
+	on_map_decision2 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 922 } 
+		}
+		on_map_mode = map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 20
+		available = {
+			has_completed_focus = HUN_royal_propaganda_campaign
+			has_idea = HUN_pro_habsburg_propaganda
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_royal_propaganda_campaign
+		
+		}		
+
+		cost = 20	
+
+		remove_effect = {	
+			swap_ideas = {
+				remove_idea = HUN_pro_habsburg_propaganda
+				add_idea = HUN_pro_habsburg_propaganda2
+			}
+		}
+		
+		
+
+		ai_will_do = {	
+			factor = 50
+		}
+	
+	}
+}
+
+HUN_ally_the_country = {
+	on_map_decision3 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 154 } 
+		}
+		on_map_mode = map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 20
+		available = {
+			has_completed_focus = HUN_royal_propaganda_campaign
+			has_idea = HUN_pro_habsburg_propaganda2
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_royal_propaganda_campaign
+		
+		}		
+
+		cost = 20	
+
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = HUN_pro_habsburg_propaganda2
+				add_idea = HUN_pro_habsburg_propaganda3
+			}
+		}
+		
+		
+
+		ai_will_do = {	
+			factor = 50
+		}
+	
+	}
+}
+
+HUN_ally_the_country = {
+	on_map_decision4 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 155 } 
+		}
+		on_map_mode = map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 20
+		available = {
+			has_completed_focus = HUN_royal_propaganda_campaign
+			has_idea = HUN_pro_habsburg_propaganda3
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_royal_propaganda_campaign
+		
+		}		
+
+		cost = 20	
+
+		remove_effect = {	
+			swap_ideas = {
+				remove_idea = HUN_pro_habsburg_propaganda3
+				add_idea = HUN_pro_habsburg_propaganda4
+			}
+		}
+		
+		
+
+		ai_will_do = {	
+			factor = 50
+		}
+	
+	}
+}
+
+HUN_ally_the_country = {
+	on_map_decision5 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 664 } 
+		}
+		on_map_mode = map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 20
+		available = {
+			has_completed_focus = HUN_royal_propaganda_campaign
+			has_idea = HUN_pro_habsburg_propaganda4
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_royal_propaganda_campaign
+		
+		}		
+
+		cost = 20	
+
+		remove_effect = {	
+			swap_ideas = {
+				remove_idea = HUN_pro_habsburg_propaganda4
+				add_idea = HUN_pro_habsburg_propaganda5
+			}
+		}
+		
+		
+
+		ai_will_do = {	
+			factor = 50
+		}
+	
+	}
+}
+
+HUN_ally_the_country = {
+	on_map_decision6 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 76 } 
+		}
+		on_map_mode = map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10	
+		days_remove = 20
+		available = {
+			has_completed_focus = HUN_royal_propaganda_campaign
+			has_idea = HUN_pro_habsburg_propaganda5
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_royal_propaganda_campaign
+		
+		}		
+
+		cost = 20	
+
+		remove_effect = {		
+			swap_ideas = {
+				remove_idea = HUN_pro_habsburg_propaganda5
+				add_idea = HUN_pro_habsburg_propaganda6
+			}
+		}
+		
+		
+
+		ai_will_do = {	
+			factor = 50
+		}
+	
+	}
+}
+
+HUN_ally_the_country = {
+	on_map_decision7 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 45 } 
+		}
+		on_map_mode = map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10	
+		days_remove = 20
+		available = {
+			has_completed_focus = HUN_royal_propaganda_campaign
+			has_idea = HUN_pro_habsburg_propaganda6
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_royal_propaganda_campaign
+		
+		}		
+
+		cost = 20	
+
+		remove_effect = {	
+			swap_ideas = {
+				remove_idea = HUN_pro_habsburg_propaganda6
+				add_idea = HUN_pro_habsburg_propaganda7
+			}
+		}
+		
+		
+
+		ai_will_do = {	
+			factor = 50
+		}
+	
+	}
+}
+third_balkan_war = {		
+	rennounce_treaty_of_triannon = {		
+
+		icon = GFX_decision_icon_default		
+		
+		
+		available = {		
+		}
+		
+		fire_only_once = yes
+		days_remove = 10		
+		visible = {		
+			has_idea = HUN_treaty_of_triannon1
+		}		
+
+		cost = 20		
+
+		remove_effect = {		
+			remove_ideas = HUN_treaty_of_triannon1
+			country_event = hungary_new.33
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	claim_slovakia = {		
+
+		icon = GFX_decision_icon_default		
+		
+		
+		available = {		
+		}
+		
+		fire_only_once = yes		
+		visible = {	
+		
+		}		
+
+		cost = 20		
+		days_remove = 10
+		
+
+		remove_effect = {		
+			73 = { add_claim_by = HUN }
+			70 = { add_claim_by = HUN }
+			71 = { add_claim_by = HUN }
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	claim_transylvania = {		
+
+		icon = GFX_decision_icon_default		
+		
+		
+		available = {		
+		}
+		
+		fire_only_once = yes		
+		visible = {	
+		
+		}		
+
+		cost = 20		
+		days_remove = 10
+		
+
+		remove_effect = {		
+			84 = { add_claim_by = HUN }
+			83 = { add_claim_by = HUN }
+			82 = { add_claim_by = HUN }
+			
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	claim_yugoslavia = {		
+
+		icon = GFX_decision_icon_default		
+		
+		
+		available = {		
+		}
+		
+		fire_only_once = yes		
+		visible = {	
+		
+		}		
+
+		cost = 20		
+		days_remove = 10
+		
+
+		remove_effect = {		
+			764 = { add_claim_by = HUN }
+			109 = { add_claim_by = HUN }
+			918 = { add_claim_by = HUN }
+			
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	start_the_war = {		
+
+		icon = GFX_decision_icon_default		
+		
+		
+		available = {		
+		}
+		
+		fire_only_once = yes		
+		visible = {	
+		
+		}		
+
+		cost = 20		
+		days_remove = 5
+		
+
+		remove_effect = {		
+			declare_war_on = {
+				target = CZE
+				type = take_state_focus
+				generator = { 73 }  
+			}
+			hidden_effect = {
+				country_event = mod_news.5
+			}
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+}
+
+the_romanian_issue = {
+	increasing_resistance = {
+		
+		icon = GFX_decision_icon_default
+		days_mission_timeout = 30
+		is_good = yes
+		
+		available = {
+			has_idea = HUN_romanian_repressions3
+		}
+		
+		fire_only_once = no
+		
+		visible = {
+			OR = { 
+				has_completed_focus = HUN_radical_consequences
+				has_completed_focus = HUN_fight_the_resistance
+			} 
+		}
+		activation = {
+			OR = { 
+				has_completed_focus = HUN_radical_consequences
+				has_completed_focus = HUN_fight_the_resistance
+			} 
+		}
+		timeout_effect = {
+			76 = {
+				add_resistance = 10
+			}
+			IF = { 
+				limit = { 
+					owns_state = 84
+					owns_state = 83
+					owns_state = 82
+				}
+				
+				84 = {
+					add_resistance = 10
+				}
+				
+				83 = {
+					add_resistance = 10
+				}
+				
+				82 = {
+					add_resistance = 10
+				}
+			}
+			add_stability = -0.15
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	exermine_romanian_people = {		
+
+		icon = GFX_decision_icon_default		
+		
+		
+		available = {		
+		}
+		
+		fire_only_once = yes		
+		visible = {	
+		
+		}		
+
+		cost = 20		
+		days_remove = 20
+		
+
+		remove_effect = {		
+			hidden_effect = {
+				add_manpower = -20
+			}
+			add_ideas = HUN_romanian_repressions
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	hunt_down_partisans = {		
+
+		icon = GFX_decision_icon_default		
+		
+		
+		available = {
+			has_idea = 	HUN_romanian_repressions	
+		}
+		
+		fire_only_once = yes		
+		visible = {	
+		
+		}		
+
+		cost = 20		
+		days_remove = 20
+		
+
+		remove_effect = {		
+			hidden_effect = {
+				add_manpower = -20
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+
+					amount = -100
+
+				}
+			}
+			swap_ideas = {
+				remove_idea = HUN_romanian_repressions
+				add_idea = HUN_romanian_repressions1
+			}
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	nationalize_romanian_property = {		
+
+		icon = GFX_decision_icon_default		
+		
+		
+		available = {
+			has_idea = 	HUN_romanian_repressions1	
+		}
+		
+		fire_only_once = yes		
+		visible = {	
+		
+		}		
+
+		cost = 20		
+		days_remove = 20
+		
+
+		remove_effect = {		
+			hidden_effect = {
+				add_manpower = -20
+				
+			}
+			swap_ideas = {
+				remove_idea = HUN_romanian_repressions1
+				add_idea = HUN_romanian_repressions2
+			}
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	hungary_for_hungarians = {		
+
+		icon = GFX_decision_icon_default		
+		
+		
+		available = {
+			has_idea = 	HUN_romanian_repressions2	
+		}
+		
+		fire_only_once = yes		
+		visible = {	
+		
+		}		
+
+		cost = 20		
+		days_remove = 40
+		
+
+		remove_effect = {		
+			hidden_effect = {
+				add_manpower = -500
+				
+			}
+			swap_ideas = {
+				remove_idea = HUN_romanian_repressions2
+				add_idea = HUN_romanian_repressions3
+			}
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+}
+
+partisan_raids = {
+	the_next_raid = {
+		
+		icon = GFX_decision_icon_default
+		days_mission_timeout = 25
+		is_good = yes
+		
+		available = {
+			always = no
+		}
+		
+		fire_only_once = no
+		
+		visible = {
+			has_idea = HUN_spreading_unrest
+		}
+		activation = {
+			has_idea = HUN_spreading_unrest
+		}
+		
+		timeout_effect = {
+			add_manpower = -80
+			add_stability = -0.1
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+
+				amount = -100
+
+			}
+			random_owned_controlled_state = {
+				damage_building = {
+					type = industrial_complex
+					damage = 1
+				}
+			}
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	destroy_resistance_cells = {		
+
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			
+		}
+		
+		fire_only_once = no
+		days_re_enable = 10		
+		visible = {	
+		
+		}		
+
+		cost = 25		
+		days_remove = 10
+		
+		remove_effect = {		
+			add_stability = 0.1
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+
+				amount = 100
+
+			}
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+}
+HUN_balance_of_power = {		
+	Arrow_Cross_marches = {		
+
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			
+		}
+		
+		fire_only_once = no
+		days_re_enable = 14		
+		visible = {	
+		
+		}		
+
+		cost = 30		
+		days_remove = 14
+		
+		remove_effect = {		
+			add_power_balance_value = {
+				id = HUN_power_balance
+				value = -0.1
+			}
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	great_chairman_propaganda = {		
+
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			
+		}
+		
+		fire_only_once = no
+		days_re_enable = 14		
+		visible = {	
+		
+		}		
+
+		cost = 30		
+		days_remove = 14
+		
+		remove_effect = {		
+			add_power_balance_value = {
+				id = HUN_power_balance
+				value = 0.1
+			}
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	public_demonstration_against_horthy = {		
+
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			
+		}
+		
+		fire_only_once = no
+		days_re_enable = 14		
+		visible = {	
+		
+		}		
+
+		cost = 30		
+		days_remove = 14
+		
+		remove_effect = {		
+			add_power_balance_value = {
+				id = HUN_power_balance
+				value = -0.15
+			}
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	arrest_arrow-cross_members = {		
+
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			
+		}
+		
+		fire_only_once = no
+		days_re_enable = 14		
+		visible = {	
+		
+		}		
+
+		cost = 30		
+		days_remove = 14
+		
+		remove_effect = {		
+			add_power_balance_value = {
+				id = HUN_power_balance
+				value = 0.15
+			}
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	raid_goverment_buildings = {		
+
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			
+		}
+		
+		fire_only_once = no
+		days_re_enable = 14		
+		visible = {	
+		
+		}		
+
+		cost = 40		
+		days_remove = 21
+		
+		remove_effect = {		
+			add_power_balance_value = {
+				id = HUN_power_balance
+				value = -0.3
+			}
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	crush_arrow-cross_cells = {		
+
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			
+		}
+		
+		fire_only_once = no
+		days_re_enable = 14		
+		visible = {	
+		
+		}		
+
+		cost = 40		
+		days_remove = 21
+		
+		remove_effect = {		
+			add_power_balance_value = {
+				id = HUN_power_balance
+				value = 0.3
+			}
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+}
+HUN_the_great_game = {
+	regional_uprising = {
+		
+		icon = GFX_decision_icon_default
+		days_mission_timeout = 14
+		is_good = yes
+		
+		available = {
+			always = no
+		}
+		
+		fire_only_once = no
+		
+		visible = {
+			has_completed_focus = HUN_the_battle_for_glory
+			 
+		}
+		activation = {
+			has_completed_focus = HUN_the_battle_for_glory
+		}
+		timeout_effect = {
+			random_owned_controlled_state = { 
+				set_demilitarized_zone = yes
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	retake_budapest = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 922 } 
+		}
+		on_map_mode = map_and_decisions_view
+		
+		
+		fire_only_once = no		
+		days_re_enable = 7
+		days_remove = 10
+		available = {
+			922 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_the_battle_for_glory
+		
+		}		
+
+		cost = 10	
+
+		remove_effect = {	
+			922 = {
+				set_demilitarized_zone = no
+			}
+			if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance2
+				}			   
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance2
+					add_idea = HUN_moderate_monarchist_resistance3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance3
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance3
+					add_idea = HUN_moderate_monarchist_resistance4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance4
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance4
+					add_idea = HUN_moderate_monarchist_resistance5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance5
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance5
+					add_idea = HUN_moderate_monarchist_resistance6
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance6
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance6
+					add_idea = HUN_moderate_monarchist_resistance7
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	
+	retake_northern_hungary = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 43 } 
+		}
+		on_map_mode = map_and_decisions_view
+		
+		
+		fire_only_once = no		
+		days_re_enable = 7
+		days_remove = 10
+		available = {
+			43 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_the_battle_for_glory
+		
+		}		
+
+		cost = 10	
+
+		remove_effect = {	
+			43 = {
+				set_demilitarized_zone = no
+			}
+			if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance2
+				}			   
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance2
+					add_idea = HUN_moderate_monarchist_resistance3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance3
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance3
+					add_idea = HUN_moderate_monarchist_resistance4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance4
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance4
+					add_idea = HUN_moderate_monarchist_resistance5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance5
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance5
+					add_idea = HUN_moderate_monarchist_resistance6
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance6
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance6
+					add_idea = HUN_moderate_monarchist_resistance7
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	
+	retake_alfold = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 154 } 
+		}
+		on_map_mode = map_and_decisions_view
+		
+		
+		fire_only_once = no		
+		days_re_enable = 7
+		days_remove = 10
+		available = {
+			154 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_the_battle_for_glory
+		
+		}		
+
+		cost = 10	
+
+		remove_effect = {	
+			154 = {
+				set_demilitarized_zone = no
+			}
+			if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance2
+				}			   
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance2
+					add_idea = HUN_moderate_monarchist_resistance3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance3
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance3
+					add_idea = HUN_moderate_monarchist_resistance4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance4
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance4
+					add_idea = HUN_moderate_monarchist_resistance5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance5
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance5
+					add_idea = HUN_moderate_monarchist_resistance6
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance6
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance6
+					add_idea = HUN_moderate_monarchist_resistance7
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	
+	retake_transdanubia = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 155 } 
+		}
+		on_map_mode = map_and_decisions_view
+		
+		
+		fire_only_once = no		
+		days_re_enable = 7
+		days_remove = 10
+		available = {
+			155 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_the_battle_for_glory
+		
+		}		
+
+		cost = 10	
+
+		remove_effect = {	
+			155 = {
+				set_demilitarized_zone = no
+			}
+			if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance2
+				}			   
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance2
+					add_idea = HUN_moderate_monarchist_resistance3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance3
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance3
+					add_idea = HUN_moderate_monarchist_resistance4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance4
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance4
+					add_idea = HUN_moderate_monarchist_resistance5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance5
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance5
+					add_idea = HUN_moderate_monarchist_resistance6
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance6
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance6
+					add_idea = HUN_moderate_monarchist_resistance7
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	
+	retake_southern_slovakia = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 664 } 
+		}
+		on_map_mode = map_and_decisions_view
+		
+		
+		fire_only_once = no		
+		days_re_enable = 7
+		days_remove = 10
+		available = {
+			664 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_the_battle_for_glory
+		
+		}		
+
+		cost = 10	
+
+		remove_effect = {	
+			664 = {
+				set_demilitarized_zone = no
+			}
+			if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance2
+				}			   
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance2
+					add_idea = HUN_moderate_monarchist_resistance3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance3
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance3
+					add_idea = HUN_moderate_monarchist_resistance4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance4
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance4
+					add_idea = HUN_moderate_monarchist_resistance5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance5
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance5
+					add_idea = HUN_moderate_monarchist_resistance6
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance6
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance6
+					add_idea = HUN_moderate_monarchist_resistance7
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	
+	retake_northern_transylvania = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 76 } 
+		}
+		on_map_mode = map_and_decisions_view
+		
+		
+		fire_only_once = no		
+		days_re_enable = 7
+		days_remove = 10
+		available = {
+			76 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_the_battle_for_glory
+		
+		}		
+
+		cost = 10	
+
+		remove_effect = {	
+			76 = {
+				set_demilitarized_zone = no
+			}
+			if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance2
+				}			   
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance2
+					add_idea = HUN_moderate_monarchist_resistance3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance3
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance3
+					add_idea = HUN_moderate_monarchist_resistance4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance4
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance4
+					add_idea = HUN_moderate_monarchist_resistance5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance5
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance5
+					add_idea = HUN_moderate_monarchist_resistance6
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance6
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance6
+					add_idea = HUN_moderate_monarchist_resistance7
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	
+	retake_vojvodina = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 45 } 
+		}
+		on_map_mode = map_and_decisions_view
+		
+		
+		fire_only_once = no		
+		days_re_enable = 7
+		days_remove = 10
+		available = {
+			45 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_the_battle_for_glory
+		
+		}		
+
+		cost = 10	
+
+		remove_effect = {	
+			45 = {
+				set_demilitarized_zone = no
+			}
+			if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance2
+				}			   
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance2
+					add_idea = HUN_moderate_monarchist_resistance3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance3
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance3
+					add_idea = HUN_moderate_monarchist_resistance4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance4
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance4
+					add_idea = HUN_moderate_monarchist_resistance5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance5
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance5
+					add_idea = HUN_moderate_monarchist_resistance6
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance6
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance6
+					add_idea = HUN_moderate_monarchist_resistance7
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	
+	retake_western_slovakia = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 70 } 
+		}
+		on_map_mode = map_and_decisions_view
+		
+		
+		fire_only_once = no		
+		days_re_enable = 7
+		days_remove = 10
+		available = {
+			owns_state = 70
+			70 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_the_battle_for_glory
+		
+		}		
+
+		cost = 10	
+
+		remove_effect = {	
+			70 = {
+				set_demilitarized_zone = no
+			}
+			if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance2
+				}			   
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance2
+					add_idea = HUN_moderate_monarchist_resistance3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance3
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance3
+					add_idea = HUN_moderate_monarchist_resistance4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance4
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance4
+					add_idea = HUN_moderate_monarchist_resistance5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance5
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance5
+					add_idea = HUN_moderate_monarchist_resistance6
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance6
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance6
+					add_idea = HUN_moderate_monarchist_resistance7
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	
+	retake_eastern_slovakia = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 71 } 
+		}
+		on_map_mode = map_and_decisions_view
+		
+		
+		fire_only_once = no		
+		days_re_enable = 7
+		days_remove = 10
+		available = {
+			owns_state = 71
+			71 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_the_battle_for_glory
+		
+		}		
+
+		cost = 10	
+
+		remove_effect = {	
+			71 = {
+				set_demilitarized_zone = no
+			}
+			if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance2
+				}			   
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance2
+					add_idea = HUN_moderate_monarchist_resistance3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance3
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance3
+					add_idea = HUN_moderate_monarchist_resistance4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance4
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance4
+					add_idea = HUN_moderate_monarchist_resistance5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance5
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance5
+					add_idea = HUN_moderate_monarchist_resistance6
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance6
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance6
+					add_idea = HUN_moderate_monarchist_resistance7
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	
+	retake_carpathian_ruthenia = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 73 } 
+		}
+		on_map_mode = map_and_decisions_view
+		
+		
+		fire_only_once = no		
+		days_re_enable = 7
+		days_remove = 10
+		available = {
+			owns_state = 73
+			73 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_the_battle_for_glory
+		
+		}		
+
+		cost = 10	
+
+		remove_effect = {	
+			73 = {
+				set_demilitarized_zone = no
+			}
+			if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance2
+				}			   
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance2
+					add_idea = HUN_moderate_monarchist_resistance3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance3
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance3
+					add_idea = HUN_moderate_monarchist_resistance4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance4
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance4
+					add_idea = HUN_moderate_monarchist_resistance5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance5
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance5
+					add_idea = HUN_moderate_monarchist_resistance6
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance6
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance6
+					add_idea = HUN_moderate_monarchist_resistance7
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	
+	retake_transylvania = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 84 } 
+		}
+		on_map_mode = map_and_decisions_view
+		
+		
+		fire_only_once = no		
+		days_re_enable = 7
+		days_remove = 10
+		available = {
+			owns_state = 84
+			84 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_the_battle_for_glory
+		
+		}		
+
+		cost = 10	
+
+		remove_effect = {	
+			84 = {
+				set_demilitarized_zone = no
+			}
+			if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance2
+				}			   
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance2
+					add_idea = HUN_moderate_monarchist_resistance3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance3
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance3
+					add_idea = HUN_moderate_monarchist_resistance4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance4
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance4
+					add_idea = HUN_moderate_monarchist_resistance5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance5
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance5
+					add_idea = HUN_moderate_monarchist_resistance6
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance6
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance6
+					add_idea = HUN_moderate_monarchist_resistance7
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	
+	retake_crisana = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 83 } 
+		}
+		on_map_mode = map_and_decisions_view
+		
+		
+		fire_only_once = no		
+		days_re_enable = 7
+		days_remove = 10
+		available = {
+			owns_state = 83
+			83 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_the_battle_for_glory
+		
+		}		
+
+		cost = 10	
+
+		remove_effect = {	
+			83 = {
+				set_demilitarized_zone = no
+			}
+			if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance2
+				}			   
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance2
+					add_idea = HUN_moderate_monarchist_resistance3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance3
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance3
+					add_idea = HUN_moderate_monarchist_resistance4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance4
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance4
+					add_idea = HUN_moderate_monarchist_resistance5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance5
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance5
+					add_idea = HUN_moderate_monarchist_resistance6
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance6
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance6
+					add_idea = HUN_moderate_monarchist_resistance7
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	
+	retake_banat = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 82 } 
+		}
+		on_map_mode = map_and_decisions_view
+		
+		
+		fire_only_once = no		
+		days_re_enable = 7
+		days_remove = 10
+		available = {
+			owns_state = 82
+			82 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_the_battle_for_glory
+		
+		}		
+
+		cost = 10	
+
+		remove_effect = {	
+			82 = {
+				set_demilitarized_zone = no
+			}
+			if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance2
+				}			   
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance2
+					add_idea = HUN_moderate_monarchist_resistance3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance3
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance3
+					add_idea = HUN_moderate_monarchist_resistance4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance4
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance4
+					add_idea = HUN_moderate_monarchist_resistance5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance5
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance5
+					add_idea = HUN_moderate_monarchist_resistance6
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance6
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance6
+					add_idea = HUN_moderate_monarchist_resistance7
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	
+	retake_western_banat = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 764 } 
+		}
+		on_map_mode = map_and_decisions_view
+		
+		
+		fire_only_once = no		
+		days_re_enable = 7
+		days_remove = 10
+		available = {
+			owns_state = 764
+			764 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_the_battle_for_glory
+		
+		}		
+
+		cost = 10	
+
+		remove_effect = {	
+			764 = {
+				set_demilitarized_zone = no
+			}
+			if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance2
+				}			   
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance2
+					add_idea = HUN_moderate_monarchist_resistance3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance3
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance3
+					add_idea = HUN_moderate_monarchist_resistance4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance4
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance4
+					add_idea = HUN_moderate_monarchist_resistance5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance5
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance5
+					add_idea = HUN_moderate_monarchist_resistance6
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance6
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance6
+					add_idea = HUN_moderate_monarchist_resistance7
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	
+	retake_croatia = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 109 } 
+		}
+		on_map_mode = map_and_decisions_view
+		
+		
+		fire_only_once = no		
+		days_re_enable = 7
+		days_remove = 10
+		available = {
+			owns_state = 109
+			109 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_the_battle_for_glory
+		
+		}		
+
+		cost = 10	
+
+		remove_effect = {	
+			109 = {
+				set_demilitarized_zone = no
+			}
+			if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance2
+				}			   
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance2
+					add_idea = HUN_moderate_monarchist_resistance3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance3
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance3
+					add_idea = HUN_moderate_monarchist_resistance4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance4
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance4
+					add_idea = HUN_moderate_monarchist_resistance5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance5
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance5
+					add_idea = HUN_moderate_monarchist_resistance6
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance6
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance6
+					add_idea = HUN_moderate_monarchist_resistance7
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	
+	retake_karlovac = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 918 } 
+		}
+		on_map_mode = map_and_decisions_view
+		
+		
+		fire_only_once = no		
+		days_re_enable = 7
+		days_remove = 10
+		available = {
+			owns_state = 918
+			918 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_the_battle_for_glory
+		
+		}		
+
+		cost = 10	
+
+		remove_effect = {	
+			918 = {
+				set_demilitarized_zone = no
+			}
+			if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance2
+				}			   
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance2
+					add_idea = HUN_moderate_monarchist_resistance3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance3
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance3
+					add_idea = HUN_moderate_monarchist_resistance4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance4
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance4
+					add_idea = HUN_moderate_monarchist_resistance5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance5
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance5
+					add_idea = HUN_moderate_monarchist_resistance6
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance6
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance6
+					add_idea = HUN_moderate_monarchist_resistance7
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	
+	retake_burgenland = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 921 } 
+		}
+		on_map_mode = map_and_decisions_view
+		
+		
+		fire_only_once = no		
+		days_re_enable = 7
+		days_remove = 10
+		available = {
+			owns_state = 921
+			921 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_the_battle_for_glory
+		
+		}		
+
+		cost = 10	
+
+		remove_effect = {	
+			921 = {
+				set_demilitarized_zone = no
+			}
+			if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance2
+				}			   
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance2
+					add_idea = HUN_moderate_monarchist_resistance3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance3
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance3
+					add_idea = HUN_moderate_monarchist_resistance4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance4
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance4
+					add_idea = HUN_moderate_monarchist_resistance5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance5
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance5
+					add_idea = HUN_moderate_monarchist_resistance6
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance6
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance6
+					add_idea = HUN_moderate_monarchist_resistance7
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+	
+	retake_mura = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 919 } 
+		}
+		on_map_mode = map_and_decisions_view
+		
+		
+		fire_only_once = no		
+		days_re_enable = 7
+		days_remove = 10
+		available = {
+			owns_state = 919
+			919 = {
+				is_demilitarized_zone = yes
+			}
+		}
+		
+		allowed = {
+			original_tag = HUN
+		}	
+		visible = {		
+			has_completed_focus = HUN_the_battle_for_glory
+		
+		}		
+
+		cost = 10	
+
+		remove_effect = {	
+			919 = {
+				set_demilitarized_zone = no
+			}
+			if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance2
+				}			   
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance2
+					add_idea = HUN_moderate_monarchist_resistance3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance3
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance3
+					add_idea = HUN_moderate_monarchist_resistance4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance4
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance4
+					add_idea = HUN_moderate_monarchist_resistance5
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance5
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance5
+					add_idea = HUN_moderate_monarchist_resistance6
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = HUN_moderate_monarchist_resistance6
+				}
+				swap_ideas = {
+					remove_idea = HUN_moderate_monarchist_resistance6
+					add_idea = HUN_moderate_monarchist_resistance7
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100
+		}
+	
+	}
+}
+
+integrate_our_new_territories = {		
+	
+	integrate_slovakia = {		
+
+		icon = GFX_decision_icon_default		
+		
+		
+		available = {
+			owns_state = 70
+			owns_state = 71
+			owns_state = 73
+		}
+		
+		fire_only_once = yes		
+		visible = {	
+		
+		}		
+
+		cost = 50		
+		days_remove = 60
+		
+
+		remove_effect = {		
+			add_state_core = 73
+			add_state_core = 71
+			add_state_core = 70
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	integrate_transylvania = {		
+
+		icon = GFX_decision_icon_default		
+		
+		
+		available = {
+			owns_state = 84
+			owns_state = 83
+			owns_state = 82
+		}
+		
+		fire_only_once = yes		
+		visible = {	
+		
+		}		
+
+		cost = 50		
+		days_remove = 60
+		
+
+		remove_effect = {		
+			add_state_core = 84
+			add_state_core = 82
+			add_state_core = 83
+			
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	integrate_yugoslavia = {		
+
+		icon = GFX_decision_icon_default		
+		
+		
+		available = {
+			owns_state = 764
+			owns_state = 109
+			owns_state = 918
+		}
+		
+		fire_only_once = yes		
+		visible = {	
+		
+		}		
+
+		cost = 50		
+		days_remove = 60
+		
+
+		remove_effect = {		
+			add_state_core = 764
+			add_state_core = 109
+			add_state_core = 918
+			
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+}
+
+HUN_trouble_in_the_balkans = {		
+	
+	clash_with_czechoslovakia = {		
+
+		icon = GFX_decision_icon_default		
+		
+		
+		available = {
+			
+		}
+		
+		fire_only_once = no
+		days_re_enable = 80
+		visible = {	
+		
+		}		
+
+		cost = 50		
+		days_remove = 15
+		
+
+		remove_effect = {		
+			CZE = {	country_event = { id = hungary_new.82 hours = 8 random_hours = 4 } }
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	clash_with_romania = {		
+
+		icon = GFX_decision_icon_default		
+		
+		
+		available = {
+			
+		}
+		
+		fire_only_once = no
+		days_re_enable = 80		
+		visible = {	
+		
+		}		
+
+		cost = 50		
+		days_remove = 15
+		
+
+		remove_effect = {		
+			ROM = {	country_event = { id = hungary_new.82 hours = 8 random_hours = 4 } }	
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	clash_with_yugoslavia = {		
+
+		icon = GFX_decision_icon_default		
+		
+		
+		available = {
+			
+		}
+		
+		fire_only_once = no
+		days_re_enable = 80		
+		visible = {	
+		
+		}		
+
+		cost = 50		
+		days_remove = 15
+		
+
+		remove_effect = {		
+			YUG = {	country_event = { id = hungary_new.82 hours = 8 random_hours = 4 } }	
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+}

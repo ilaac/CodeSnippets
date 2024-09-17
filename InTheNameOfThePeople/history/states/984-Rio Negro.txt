@@ -1,0 +1,24 @@
+state={
+	id=984
+	name="STATE_984"
+	
+	history={
+		owner = ARG
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = AWF
+		add_core_of = ARG
+		add_core_of = WLA
+
+	}
+	
+	provinces={
+		2149 8192 10935 12494 
+	}
+	manpower=23076
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

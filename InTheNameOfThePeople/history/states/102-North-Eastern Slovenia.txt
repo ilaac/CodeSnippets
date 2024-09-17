@@ -1,0 +1,28 @@
+
+state={
+	id=102
+	name="STATE_102"
+
+	history={
+		owner = AUS
+		buildings = {
+			infrastructure = 3
+
+		}
+		victory_points = {
+			665 1 
+		}
+		add_claim_by = YUG
+		add_core_of = SLV
+		add_core_of = AUS
+
+	}
+
+	provinces={
+		596 665 3631 3654 9596 
+	}
+	manpower=791050
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

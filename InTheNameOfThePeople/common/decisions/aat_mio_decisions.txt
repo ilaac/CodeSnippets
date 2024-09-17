@@ -1,0 +1,4 @@
+foreign_mio_decisions_category = {
+	# German MIOs
+	# Tanks
+	

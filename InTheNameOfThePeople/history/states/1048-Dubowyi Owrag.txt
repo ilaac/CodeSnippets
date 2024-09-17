@@ -1,0 +1,24 @@
+state={
+	id=1048
+	name="STATE_1048"
+	
+	history={
+		owner = KAL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 1
+
+		}
+		add_core_of = KAL
+
+	}
+	
+	provinces={
+		498 6503 6527 9459 9474 11447 
+	}
+	manpower=51830
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

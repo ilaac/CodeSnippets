@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		SWF_natioanal_workers_army = {
+			allowed = {
+				original_tag = KHI
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				conscription = 0.05
+			}
+		}
+		
+	}	
+}
+	

@@ -1,0 +1,29 @@
+state={
+	id=986
+	name="STATE_986"
+	
+	history={
+		owner = ITA
+		add_core_of = OCC
+		add_core_of = ITA
+		add_claim_by = FRA
+		add_claim_by = SPM
+		
+		victory_points = {
+			13384 2 
+		}
+		buildings = {
+			infrastructure = 3
+			13384 = {
+				naval_base = 3
+			}
+		}
+	}
+	provinces={
+		13384
+	}
+	manpower=176159
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

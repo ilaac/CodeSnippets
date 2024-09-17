@@ -1,0 +1,25 @@
+state={
+	id=1023
+	name="STATE_1023"
+	
+	history={
+		owner = SYR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			
+
+		}
+		add_core_of = SYR
+		add_claim_by = TUR
+
+	}
+	
+	provinces={
+		13395 13396 13397 
+	}
+	manpower=73945
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

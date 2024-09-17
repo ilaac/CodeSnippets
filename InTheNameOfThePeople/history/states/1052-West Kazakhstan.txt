@@ -1,0 +1,30 @@
+state={
+	id=1052
+	name="STATE_1052"
+	
+	history={
+		owner = CWA
+		
+		victory_points = {
+			4351 2 
+		}
+		
+		add_core_of = CWA
+		add_core_of = KAZ
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+
+		}
+
+	}
+	
+	provinces={
+		432 508 576 1254 1290 1318 3502 3563 4322 4351 7438 9462 9526 9528 11480 11510 11552 
+	}
+	manpower=148594
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

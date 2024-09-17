@@ -1,0 +1,28 @@
+state={
+	id=973
+	name="STATE_973"
+	
+	history={
+		owner = PRU
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+
+		}
+		victory_points = {
+			5131 2
+		}
+		add_core_of = PRU
+		add_core_of = BOL
+		add_core_of = CHL
+
+	}
+	
+	provinces={
+		5131 13303
+	}
+	manpower=70281
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

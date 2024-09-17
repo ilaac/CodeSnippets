@@ -1,0 +1,48 @@
+state={
+	id=1020
+	name="STATE_1020"
+	
+	history={
+		owner = KUR
+		victory_points = {
+			4512 5 
+		}
+		victory_points = {
+			12387 1 
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 2
+
+		}
+		if = {
+			limit = {
+				has_dlc = "Battle for the Bosporus"
+
+			}
+			add_core_of = KUR
+
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_dlc = "Battle for the Bosporus"
+
+				}
+
+			}
+			add_core_of = TUR
+			add_core_of = KUR
+
+		}
+
+	}
+	
+	provinces= {
+		4512 12387 12416 
+	}
+	manpower=234515
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

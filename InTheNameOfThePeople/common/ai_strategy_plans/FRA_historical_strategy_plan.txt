@@ -1,0 +1,51 @@
+FRA_historical_plan = {
+	name = "France historical plan"
+	desc = "Historical behavior for France"
+
+	allowed = {
+		original_tag = FRA
+	}
+	enable = {
+		is_historical_focus_on = yes
+				has_game_rule = {
+					rule = FRA_ai_behavior
+					option = DEFAULT
+				}
+	}
+
+	ai_national_focuses = {
+		FRA_a_new_french_revolution
+		#1939
+		
+		#1940
+		
+		#1941
+		
+		#1942
+		
+		#1942
+		
+		
+		
+	}
+	focus_factors = {
+		
+	}
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

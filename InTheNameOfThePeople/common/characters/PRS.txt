@@ -1,0 +1,174 @@
+characters={
+	
+	PRS_ernst_thaelmann={
+		name=PRS_ernst_thaelmann
+		portraits={
+			civilian={
+				large="GFX_portrait_prussia_ernst_thaelmann_large"
+			}
+		}
+		country_leader={
+			ideology=anarchist_communism
+			traits={ triumphant_revolutionary  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	PRS_wilhelm_pieck={
+		name=PRS_wilhelm_pieck
+		portraits={
+			civilian={
+				large="GFX_portrait_prussia_wilhelm_pieck_large"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={ triumphant_revolutionary  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	PRS_willi_sanger={
+		name=PRS_willi_sanger
+		portraits={
+			army={
+				large="GFX_portrait_prussia_willi_sanger_large"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	PRS_rober_uhrig={
+		name=PRS_rober_uhrig
+		portraits={
+			army={
+				large="GFX_portrait_prussia_robert_uhrig_large"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	PRS_franz_jacob={
+		name=PRS_franz_jacob
+		portraits={
+			army={
+				large="GFX_portrait_prussia_franz_jacob_large"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	
+	PRS_erich_mielke={
+		name=PRS_erich_mielke
+		portraits={
+			army={
+				large="GFX_portrait_prussia_erich_mielke_large"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id= 100
+		}
+	}
+	PRS_erich_mielke1={
+		name=PRS_erich_mielke1
+		portraits={
+			civilian={
+				small="GFX_portrait_small_prs_mielke_small"
+			}
+		}
+		
+		advisor={
+			slot = political_advisor
+			idea_token = PRS_erich_mielke1
+			allowed  = {
+				original_tag  = PRS
+			}
+			available  = {
+					has_country_flag = PRS_mielke_politican 
+
+				}
+			
+			traits  = {
+				prince_of_terror 
+			}	
+			do_effect  = {
+				has_government  = communism 
+				
+			}
+			ai_will_do  = {
+				factor  = 10.000
+				
+			}
+		}
+	}
+	
+	PRS_bernhard_baestlein={
+		name=PRS_bernhard_baestlein
+		portraits={
+			army={
+				large="GFX_portrait_prussia_bernhard_baestlein_large"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	PRS_anton_saefkow={
+		name=PRS_anton_saefkow
+		portraits={
+			army={
+				large="GFX_portrait_prussia_anton_saefkow_large"
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	
+}

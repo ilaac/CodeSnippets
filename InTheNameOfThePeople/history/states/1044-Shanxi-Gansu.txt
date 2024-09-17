@@ -1,0 +1,23 @@
+state={
+	id=1044
+	name="STATE_1044"
+	
+	history={
+		owner = CHI
+		add_core_of = SHX
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+
+		}
+	}
+	
+	provinces={
+		1027 1180 1203 1438 1575 4538 7571 10421 10480 12078 
+	}
+	manpower=2248641
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

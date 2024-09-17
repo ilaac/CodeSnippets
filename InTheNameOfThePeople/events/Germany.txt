@@ -1,0 +1,160 @@
+﻿###########################
+# German Events
+###########################
+
+add_namespace = germany
+
+####german-prussian war starts
+country_event = {
+	id = germany.1
+	title = germany.1.t
+	desc = germany.1.d
+	picture = GFX_german_civil_war_start
+	
+	is_triggered_only =  yes
+	
+	option = { 
+		name = germany.1.a
+		ai_chance = { factor = 100}
+		set_global_flag = german_civil_war
+		declare_war_on = {
+			target = PRS
+			type = annex_everything
+		}
+	}
+}
+
+##### Start south german civil war
+country_event = {
+    id = germany.2
+    title = germany_south_german_war.1.t
+    desc = germany_south_german_war.1.d
+    picture = GFX_german_civil_war_start
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = germany_south_german_war.1.a
+        ai_chance = { factor = 100 }
+		remove_ideas = { "south_german_devide" }
+		release = BAV
+		BAV = {    country_event = { id = south_germany.1} }
+        declare_war_on = {
+            target = BAV
+            type = annex_everything
+        }
+		custom_effect_tooltip = PRS_intervention
+		hidden_effect = {
+			PRS = {
+				country_event = { id = prussia.76 days = 7 random_hours = 4 }
+			}
+		}
+    }
+    
+    option = {
+        name = germany_south_german_war.1.b
+        ai_chance = { factor = 0 }
+		remove_ideas = { "south_german_devide" }
+        release = BAV
+		 declare_war_on = {
+            target = BAV
+            type = annex_everything
+        }
+        BAV = { change_tag_from = GER }
+		BAV = {    country_event = { id = south_germany.1} }
+		custom_effect_tooltip = PRS_intervention
+		hidden_effect = {
+			PRS = {
+				country_event = { id = prussia.76 days = 7 random_hours = 4 }
+			}
+		}
+		}
+	}
+
+####Hitler stays in power
+country_event = {
+    id = germany.3
+    title = germany_hitler_proofs_himself.1.t
+    desc = germany_hitler_proofs_himself.1.d
+    picture = GFX_german_civil_war_start
+    
+    is_triggered_only = yes
+    
+    option = {
+        name = germany_hitler_proofs_himself.1.a
+        ai_chance = { factor = 100 }
+		add_political_power = 75
+		add_stability = 0.1
+		add_war_support = 0.1
+    }
+}
+
+####Italy joins the faction
+country_event = {
+    id = germany.4
+    title = germany_italy_joins_our_faction.1.t
+    desc = germany_italy_joins_our_faction.1.d
+    picture = GFX_german_civil_war_start
+    
+    is_triggered_only = yes
+    
+    option = {
+		ai_chance = { factor = 100 }
+        name = germany_italy_joins_our_faction.1.a
+		set_faction_name = "Axis"
+    }
+}
+
+####Italy doesnt joins the faction
+country_event = {
+    id = germany.5
+    title = germany_italy_doesnt_joins_our_faction.1.t
+    desc = germany_italy_doesnt_joins_our_faction.1.d
+    picture = GFX_german_civil_war_start
+    
+    is_triggered_only = yes
+    
+    option = {
+		ai_chance = { factor = 100 }
+        name = germany_italy_doesnt_joins_our_faction.1.a
+		set_faction_name = Großdeutschland
+    }
+}
+
+#### Nazi Party Splits ####
+country_event = {
+    id = germany.6
+    title = germany.6.t
+    desc = germany.6.d
+    picture = GFX_german_civil_war_start
+    
+    is_triggered_only = yes
+    
+    option = {
+        ai_chance = { factor = 100 }
+        name = germany.6.a
+            release = SWF
+
+            declare_war_on = {
+                target = SWF
+                type = annex_everything
+            }
+        hidden_effect = {
+            SWF = { 
+				add_state_core = 56 
+				add_state_core = 59 
+				add_state_core = 1013 
+				load_oob = "SWF_1936"
+			}
+
+            
+        }
+        
+        hidden_effect = {
+           load_oob = "GER_sa_civil_war"
+         }
+    }
+}
+
+
+

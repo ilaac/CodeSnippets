@@ -1,0 +1,93 @@
+
+#Important to put HIGHEST first
+remove_all_cores_and_claims_of_tags = {
+	every_state = {
+		limit = {
+			any_of = {
+				array = remove_cores_array
+				OR = {
+					is_core_of = var:v
+					is_claimed_by = var:v
+				}
+			}
+		}
+		for_each_loop = {
+			array = remove_cores_array
+			remove_core_of = var:v
+			remove_claim_by = var:v
+		}
+	}
+}
+start_anti_british_uprisings = {
+	
+	hidden_effect = {
+		for_each_scope_loop = {
+			array = global.countries 
+			IF = {
+				limit = {
+					exists = no 
+					any_state = { 
+						is_core_of = PREV
+						OWNER = {
+						  tag = ENG 
+						}
+					}
+				}
+
+				every_core_state = {
+					limit = {
+						has_resistance = yes
+						NOT = { 
+							is_in_array = {
+								array = PRS.anti-british_states_array
+								value = THIS 
+							}
+						}
+					}
+					add_to_array = { PRS.anti-british_states_array = THIS }
+				}
+			}
+			
+		}
+	}
+}
+start_german_integration_decisions = {
+	
+	hidden_effect = {
+		for_each_scope_loop = {
+			array = global.countries 
+			IF = {
+				limit = { 
+					any_state = { 
+						is_claimed_by = PRS
+						OR = {
+							is_core_of = GER
+							is_core_of = BAV
+						}
+						OWNER = {
+						  tag = PRS 
+						}
+					}
+				}
+
+				every_state = {				
+					limit = {
+					is_claimed_by = PRS	
+					OR = {
+						is_core_of = GER
+						is_core_of = BAV
+					}	
+						NOT = { 
+							is_in_array = {
+								array = PRS.german_integration_decisions_array
+								value = THIS 
+							}
+						}
+					}
+					add_to_array = { PRS.german_integration_decisions_array = THIS }
+				}
+			}
+			
+		}
+	}
+}

@@ -1,0 +1,6242 @@
+#Category only allowed for GER
+
+PRS_industrialize_prussia = {
+	
+	industrialize_hinterpommern = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 63 } 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 63
+			controls_state = 63
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			63 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_posen = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 86 } 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 86
+			controls_state = 86
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			86 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_gdlingen = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 807 } 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 807
+			controls_state = 807
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			807 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_danzig = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 85 } 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 85
+			controls_state = 85
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			85 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_ermland_masuren = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 5 } 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 5
+			controls_state = 5
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			5 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_engelsstadt = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 763} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 763
+			controls_state = 763
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			763 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_oberschlesien = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 67} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 67
+			controls_state = 67
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 67
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			67 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_katowice = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 762} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 762
+			controls_state = 762
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 762
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			762 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_niederschlesien = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 66} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 66
+			controls_state = 66
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 66
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			66 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_ostmark = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 68} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 68
+			controls_state = 68
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 68
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			68 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_brandenburg = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 64} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 64
+			controls_state = 64
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 64
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			64 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_sachsen = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 65} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 65
+			controls_state = 65
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 65
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			65 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_berlin = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 1012} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 1012
+			controls_state = 1012
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 1012
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			1012 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_vorpommern = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 62} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 62
+			controls_state = 62
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 62
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			62 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_mecklenburg = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 61} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 61
+			controls_state = 61
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 61
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			61 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_thueringen = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 60} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 60
+			controls_state = 60
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 67
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			60 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_hannover = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 59} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 59
+			controls_state = 59
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 59
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			59 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_holstein = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 58} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 5
+			controls_state = 58
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 58
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			58 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_hamburg = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 1013} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 1013
+			controls_state = 1013
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 1013
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			1013 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_schleswig = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 909} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 909
+			controls_state = 909
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 909
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			909 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_weser_ems = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 56} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 56
+			controls_state = 56
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 56
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			56 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_westfalen = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 57} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 57
+			controls_state = 57
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 57
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			57 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	
+	industrialize_eastern_rhineland = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 992} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 992
+			controls_state = 992
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 992
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			992 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_kassel = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 1014} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 1014
+			controls_state = 1014
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 1014
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			1014 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_rhineland = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 51} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 51
+			controls_state = 51
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 51
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			51 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_moselland = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 42} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 42
+			controls_state = 42
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 42
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			42 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_hessen = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 55} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 55
+			controls_state = 55
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 55
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			55 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_franken = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 54} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 54
+			controls_state = 54
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 54
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			54 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_niederbayern = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 53} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 53
+			controls_state = 53
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 53
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			53 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_oberbayern = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 52} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 52
+			controls_state = 52
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 52
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			52 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	industrialize_wuerttemberg = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 50} 
+		}
+		on_map_mode =  map_and_decisions_view
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			original_tag = PRS
+			num_of_civilian_factories_available_for_projects > 2
+			owns_state = 50
+			controls_state = 50
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 50
+			has_completed_focus = PRS_expand_industrialisation_plan
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+
+		remove_effect = {		
+			50 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+}
+
+PRS1_the_german_civil_war = {
+
+	PRS_march_against_strasserists = {
+		
+		icon = GFX_decision_icon_default
+		days_mission_timeout = 7
+		is_good = yes
+		
+		available = {
+			always = no
+		}
+		
+		fire_only_once = yes
+		
+		visible = {
+			NOT = {country_exists = GER}
+			NOT = {has_war = yes}
+			country_exists = SWF
+		}
+		activation = {
+			NOT = {country_exists = GER}
+			has_war = no
+			country_exists = SWF
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		timeout_effect = {
+			declare_war_on = {
+                target = SWF
+                type = annex_everything
+            }
+		}
+	}
+	
+	declare_total_war = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_war = yes
+		}
+		fire_only_once = yes
+		#days_re_enable = 80
+		visible = {	
+			
+		}	
+		cost = 30		
+		days_remove = 30
+		
+
+		remove_effect = {		
+			add_ideas =  PRS_total_war
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	demand_schleswig = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			owns_state = 58
+			has_war = no
+		}
+		fire_only_once = yes
+		#days_re_enable = 80
+		visible = {	
+			
+		}	
+		cost = 10		
+		days_remove = 5
+		
+
+		remove_effect = {		
+			DEN = {country_event = prussia.77}
+		}
+
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	call_for_resistance = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_war = yes
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 80
+		visible = {	
+			
+		}	
+		cost = 40		
+		days_remove = 35
+		
+		remove_effect = {		
+			GER = {
+				add_timed_idea = { idea = PRS_peoples_resistance days = 80 }
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	missing_equipment = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_war = yes
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 80
+		visible = {	
+			
+		}	
+		cost = 30		
+		days_remove = 30
+		
+		remove_effect = {		
+			GER = {
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -1500
+				}
+				add_equipment_to_stockpile = {
+					type = support_equipment
+					amount = -750
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	sabotage_german_industry = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  PRS_sabotage_enemy_industry
+			has_war = yes
+		}
+		
+		fire_only_once = no
+		days_re_enable = 150
+		visible = {	
+			
+		}	
+		cost = 40		
+		days_remove = 20
+		
+		remove_effect = {		
+			hidden_effect = {
+				add_manpower = -200
+			}
+			if = {
+				GER = {
+					random_owned_controlled_state = {
+						limit = {
+							industrial_complex > 0
+							arms_factory > 0
+						}
+						damage_building = {
+							type = industrial_complex
+							damage = 0.4
+						}
+						damage_building = {
+							type = arms_factory
+							damage = 0.5
+						}
+					}
+				}
+			}
+			else = {
+				hidden_effect = {
+					add_manpower = 2000
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 100
+					}
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	sabotage_enemy_lines = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus = PRS_sabotage_enemy_lines
+			has_war = yes
+		}
+		
+		fire_only_once = no
+		days_re_enable = 80
+		visible = {	
+			
+		}	
+		cost = 40		
+		days_remove = 20
+		
+		remove_effect = {		
+			add_manpower = -200
+			GER = {
+				add_timed_idea = { idea = PRS_sabotaged_supply_lines days = 40 }
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	integrate_eastern_territories = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus = PRS_integrate_eastern_territories
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 80
+		visible = {	
+			
+		}	
+		cost = 60		
+		days_remove = 100
+		
+		remove_effect = {		
+			68 = { add_dynamic_modifier = { modifier = peoples_integration } }
+			66 = { add_dynamic_modifier = { modifier = peoples_integration } }
+			67 = { add_dynamic_modifier = { modifier = peoples_integration } }
+			762 = { add_dynamic_modifier = { modifier = peoples_integration } }
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+}
+integrate_the_german_territories = {
+
+	start_german_integration_decisions1 = {
+		icon = GFX_decision_generic_nationalism
+		target_array = PRS.german_integration_decisions_array
+		target_root_trigger = { original_tag = PRS } 
+		state_target = yes
+		on_map_mode = map_only
+		fire_only_once = yes 
+		available = {
+			has_completed_focus = PRS_victory_in_the_german_civil_war
+			#NOT = {has_country_flag = ETH_resistance_support_progress_flag}
+			owns_state = FROM
+			controls_state = FROM
+		}
+
+		visible = {
+			has_completed_focus = PRS_victory_in_the_german_civil_war
+			FROM = { is_owned_by = PRS }
+			FROM = { NOT = { is_core_of = ROOT } }# It gets kind of silly when you start supporting resistance against yourself, doesn't it
+		}
+		days_remove = 30
+ 
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}
+
+		remove_effect = {
+			add_state_core = FROM
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+
+}	
+
+PRS_fix_the_countryside = {
+	collapsing_economy = {
+		
+		icon = GFX_decision_icon_default
+		days_mission_timeout = 360
+		is_good = no
+		
+		available = {
+			 NOT = { has_idea = PRS_devastated_landside}
+		}
+		
+		fire_only_once = yes
+		
+		visible = {
+			has_completed_focus = PRS_repair_the_countryside
+		}
+		activation = {
+			has_completed_focus = PRS_repair_the_countryside
+	}
+		
+		timeout_effect = {
+			add_stability = -1
+			swap_ideas = {
+					remove_idea = PRS_devastated_landside
+					add_idea = PRS_devastated_landside2
+				}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+	
+	finish_the_repairs = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 7	
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = finish_repair_tooltip	
+					OR = {
+						check_variable = { PRS_reconstruction_progress = 100 }
+						check_variable = { PRS_reconstruction_progress > 100 }
+					}
+				}
+		}
+		
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			has_completed_focus = PRS_repair_the_countryside
+		}		
+
+		cost = 5
+
+		ai_will_do = {	
+			factor = 90			
+		}		
+
+		remove_effect = {		
+			remove_ideas = PRS_devastated_landside
+			clear_variable = PRS_reconstruction_progress
+		}	
+	}
+	
+	start_the_repairing_program = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 7
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "Has completed Focus Repair the Countryside"
+					has_country_flag = PRS_repair_shop
+				}
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			has_completed_focus = PRS_repair_the_countryside
+		}		
+
+		cost = 0
+
+		ai_will_do = {	
+			factor = 90			
+		}		
+
+		complete_effect = {	
+			clr_country_flag = PRS_repair_shop
+			set_variable = { PRS_reconstruction_progress = 10 }
+			custom_effect_tooltip = PRS_reconstruction_begin
+		}	
+	}
+	
+	seize_private_assets = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = no		
+		days_re_enable = 35
+		days_remove = 14	
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = reconstruction_progress_tt
+					OR = {
+						check_variable = { PRS_reconstruction_progress > 9 }
+					}
+				}
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			has_completed_focus = PRS_repair_the_countryside
+		}		
+
+		cost = 10
+		
+		modifier = {
+			consumer_goods_factor = 0.1
+		}
+
+		ai_will_do = {	
+			factor = 90			
+		}		
+
+		complete_effect = {	
+			add_to_variable = { PRS_reconstruction_progress = 10 }	
+			custom_effect_tooltip = PRS_reconstruction
+			add_stability = -0.02
+			add_war_support = -0.02
+			add_popularity = {
+				ideology = communism
+				popularity = -0.02
+			}
+			
+		}	
+	}
+	
+	create_genossenschaften = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = no		
+		days_re_enable = 35
+		days_remove = 14	
+		available = {
+			NOT = {has_idea = PRS_workers_exhaustion }
+			custom_trigger_tooltip = {
+				tooltip = reconstruction_progress_tt
+					OR = {
+						check_variable = { PRS_reconstruction_progress > 9 }
+					}
+				}
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			has_completed_focus = PRS_repair_investments
+		}		
+
+		cost = 10
+		
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+		ai_will_do = {	
+			factor = 90			
+		}		
+
+		complete_effect = {	
+			add_to_variable = { PRS_reconstruction_progress = 10 }	
+			custom_effect_tooltip = PRS_reconstruction
+			add_timed_idea = { idea = PRS_workers_exhaustion days = 30 }
+			
+		}	
+	}
+	
+	collective_work = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = no		
+		days_re_enable = 35
+		days_remove = 14	
+		available = {
+		NOT = {has_idea = PRS_workers_exhaustion }
+			custom_trigger_tooltip = {
+				tooltip = reconstruction_progress_tt
+					OR = {
+						check_variable = { PRS_reconstruction_progress > 9 }
+					}
+				}
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			has_completed_focus = PRS_repair_investments
+		}		
+
+		cost = 10
+		
+		modifier = {
+			political_power_gain = -0.05
+		}
+
+		ai_will_do = {	
+			factor = 90			
+		}		
+
+		complete_effect = {	
+			add_to_variable = { PRS_reconstruction_progress = 10 }	
+			custom_effect_tooltip = PRS_reconstruction
+			add_timed_idea = { idea = PRS_workers_exhaustion days = 30 }
+			
+		}	
+	}
+	
+	use_war_prisoners_as_forced_laborers = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = no		
+		days_re_enable = 35
+		days_remove = 21	
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = reconstruction_progress_tt
+					OR = {
+						check_variable = { PRS_reconstruction_progress > 9 }
+					}
+				}
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			has_completed_focus = PRS_use_foced_labour
+		}		
+
+		cost = 20
+		
+		modifier = {
+			weekly_manpower = -20
+		}
+
+		ai_will_do = {	
+			factor = 90			
+		}		
+
+		complete_effect = {	
+			add_to_variable = { PRS_reconstruction_progress = 20 }	
+			custom_effect_tooltip = PRS_reconstruction2
+			add_stability = -0.04
+			add_manpower = -200
+			add_popularity = {
+				ideology = communism
+				popularity = -0.02
+			}
+			
+		}	
+	}
+	
+	force_the_arbeitsdienst = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = no		
+		days_re_enable = 35
+		days_remove = 21	
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = reconstruction_progress_tt
+					OR = {
+						check_variable = { PRS_reconstruction_progress > 9 }
+					}
+				}
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			has_completed_focus = PRS_use_foced_labour
+		}		
+
+		cost = 20
+		
+		modifier = {
+			weekly_manpower = -20
+		}
+
+		ai_will_do = {	
+			factor = 90			
+		}		
+
+		complete_effect = {	
+			add_to_variable = { PRS_reconstruction_progress = 20 }	
+			custom_effect_tooltip = PRS_reconstruction2
+			add_stability = -0.04
+			add_manpower = -200
+			add_popularity = {
+				ideology = communism
+				popularity = -0.02
+			}
+			
+		}	
+	}
+	
+	increase_social_spending = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = no		
+		days_re_enable = 35
+		days_remove = 14	
+		available = {
+			NOT = {has_idea = PRS_workers_exhaustion }
+			custom_trigger_tooltip = {
+				tooltip = reconstruction_progress_tt
+					OR = {
+						check_variable = { PRS_reconstruction_progress > 9 }
+					}
+				}
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			has_completed_focus = PRS_stabilize_the_political_climate
+		}		
+
+		cost = 10
+		
+		modifier = {
+			political_power_factor = -0.1
+		}
+
+		ai_will_do = {	
+			factor = 90			
+		}		
+
+		complete_effect = {	
+			add_to_variable = { PRS_reconstruction_progress = -10 }	
+			custom_effect_tooltip = PRS_reconstruction3
+			add_stability = 0.02
+			add_war_support = 0.02
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+			
+		}	
+	}
+	
+	calm_down_workers = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = no		
+		days_re_enable = 35
+		days_remove = 14	
+		available = {
+			NOT = {has_idea = PRS_workers_exhaustion }
+			custom_trigger_tooltip = {
+				tooltip = reconstruction_progress_tt
+					OR = {
+						check_variable = { PRS_reconstruction_progress > 9 }
+					}
+				}
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			has_completed_focus = PRS_stabilize_the_political_climate
+		}		
+
+		cost = 10
+		
+		modifier = {
+			political_power_factor = -0.1
+		}
+
+		ai_will_do = {	
+			factor = 90			
+		}		
+
+		complete_effect = {	
+			add_to_variable = { PRS_reconstruction_progress = -10 }	
+			custom_effect_tooltip = PRS_reconstruction3
+			add_stability = 0.02
+			add_war_support = 0.02
+			add_popularity = {
+				ideology = communism
+				popularity = 0.02
+			}
+			
+		}	
+	}
+}
+PRS_volkswerke = {
+	volkswerke_zivil_ost = {
+		
+		icon = GFX_decision_icon_default				
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 55	
+		available = {
+			has_completed_focus	= PRS_create_the_volkswerke_zivil	
+			owns_state = 65
+			owns_state = 64
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {	
+			has_completed_focus = PRS_create_the_volkswerke_zivil	
+			original_tag = PRS
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+			consumer_goods_factor = 0.1
+		}		
+
+		remove_effect = {		
+			64 =  {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+			}	
+			}
+			65 =  {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	volkswerke_zivil_west = {
+		
+		icon = GFX_decision_icon_default				
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 55	
+		available = {
+			has_completed_focus	= PRS_expand_the_volkswerke_zivil	
+			owns_state = 51
+			owns_state = 992
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {	
+			has_completed_focus = PRS_expand_the_volkswerke_zivil	
+			original_tag = PRS
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+			consumer_goods_factor = 0.1
+		}		
+
+		remove_effect = {		
+			51 =  {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+			}	
+			}
+			992 =  {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+
+	volkswerke_militaer_ost = {
+		
+		icon = GFX_decision_icon_default				
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 55	
+		available = {
+			has_completed_focus	= PRS_create_the_volkswerke_militaer	
+			owns_state = 61
+			owns_state = 62
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {	
+			has_completed_focus = PRS_create_the_volkswerke_militaer	
+			original_tag = PRS
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+			consumer_goods_factor = 0.1
+		}		
+
+			remove_effect = {		
+				61 =  {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}		
+				}
+				62 =  {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+		
+	volkswerke_militaer_west = {
+		
+		icon = GFX_decision_icon_default				
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 55	
+		available = {
+			has_completed_focus	= PRS_expand_the_volkswerke_militaer	
+			owns_state = 57
+			owns_state = 1014
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {	
+			has_completed_focus = PRS_expand_the_volkswerke_militaer	
+			original_tag = PRS
+		}		
+
+		cost = 30
+
+		modifier = {
+			civilian_factory_use = 3
+			consumer_goods_factor = 0.1
+		}		
+
+		remove_effect = {		
+			1014 =  {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}	
+			}
+			57 =  {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+PRS_fight_the_guerillas = {	
+	clear_the_guerilla = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 67 } 
+		}
+		on_map_mode =  map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			owns_state = 67
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 67
+		}		
+
+		cost = 10
+	
+
+		remove_effect = {		
+			67 = {remove_dynamic_modifier = { modifier = fascist_resistance_fighters }}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	clear_the_guerilla1 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 68 } 
+		}
+		on_map_mode =  map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			owns_state = 68
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 68
+		}		
+
+		cost = 10
+	
+
+		remove_effect = {		
+			68 = {remove_dynamic_modifier = { modifier = fascist_resistance_fighters }}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	clear_the_guerilla2 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 66 } 
+		}
+		on_map_mode =  map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			owns_state = 66
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 66
+		}		
+
+		cost = 10
+	
+
+		remove_effect = {		
+			66 = {remove_dynamic_modifier = { modifier = fascist_resistance_fighters }}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	clear_the_guerilla3 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 762 } 
+		}
+		on_map_mode =  map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			owns_state = 762
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 762
+		}		
+
+		cost = 10
+	
+
+		remove_effect = {		
+			762 = {remove_dynamic_modifier = { modifier = fascist_resistance_fighters }}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	clear_the_guerilla4 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 65 } 
+		}
+		on_map_mode =  map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			owns_state = 65
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 65
+		}		
+
+		cost = 10
+	
+
+		remove_effect = {		
+			65 = {remove_dynamic_modifier = { modifier = fascist_resistance_fighters }}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	clear_the_guerilla5 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 64 } 
+		}
+		on_map_mode =  map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			owns_state = 64
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 64
+		}		
+
+		cost = 10
+	
+
+		remove_effect = {		
+			64 = {remove_dynamic_modifier = { modifier = fascist_resistance_fighters }}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	clear_the_guerilla6 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 62 } 
+		}
+		on_map_mode =  map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			owns_state = 62
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 62
+		}		
+
+		cost = 10
+	
+
+		remove_effect = {		
+			62 = {remove_dynamic_modifier = { modifier = fascist_resistance_fighters }}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	clear_the_guerilla7 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 61 } 
+		}
+		on_map_mode =  map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			owns_state = 61
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 61
+		}		
+
+		cost = 10
+	
+
+		remove_effect =  {
+		61 = {remove_dynamic_modifier = { modifier = fascist_resistance_fighters }}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	clear_the_guerilla8 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 1012 } 
+		}
+		on_map_mode =  map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			owns_state = 1012
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 1012
+		}		
+
+		cost = 10
+	
+
+		remove_effect = {		
+			1012 = {remove_dynamic_modifier = { modifier = fascist_resistance_fighters }}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	clear_the_guerilla9 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 60 } 
+		}
+		on_map_mode =  map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			owns_state = 60
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 60
+		}		
+
+		cost = 10
+	
+
+		remove_effect = {		
+			60 = {remove_dynamic_modifier = { modifier = fascist_resistance_fighters }}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	clear_the_guerilla10 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 59 } 
+		}
+		on_map_mode =  map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			owns_state = 59
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 59
+		}		
+
+		cost = 10
+	
+
+		remove_effect = {		
+			59 = {remove_dynamic_modifier = { modifier = fascist_resistance_fighters }}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	clear_the_guerilla11 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 58 } 
+		}
+		on_map_mode =  map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			owns_state = 58
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 58
+		}		
+
+		cost = 10
+	
+
+		remove_effect = {		
+			58 = {remove_dynamic_modifier = { modifier = fascist_resistance_fighters }}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	clear_the_guerilla12 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 1013 } 
+		}
+		on_map_mode =  map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			owns_state = 1013
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 1013
+		}		
+
+		cost = 10
+	
+
+		remove_effect = {		
+			1013 = {remove_dynamic_modifier = { modifier = fascist_resistance_fighters }}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	
+	clear_the_guerilla14 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 57 } 
+		}
+		on_map_mode =  map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			owns_state = 57
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 57
+		}		
+
+		cost = 10
+	
+
+		remove_effect = {		
+			57 = {remove_dynamic_modifier = { modifier = fascist_resistance_fighters }}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	clear_the_guerilla15 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 56 } 
+		}
+		on_map_mode =  map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			owns_state = 56
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 56
+		}		
+
+		cost = 10
+	
+
+		remove_effect = {		
+			56 = {remove_dynamic_modifier = { modifier = fascist_resistance_fighters }}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	clear_the_guerilla16 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 1014 } 
+		}
+		on_map_mode =  map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			owns_state = 1014
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 1014
+		}		
+
+		cost = 10
+	
+
+		remove_effect = {		
+			1014 = {remove_dynamic_modifier = { modifier = fascist_resistance_fighters }}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	clear_the_guerilla18 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 992 } 
+		}
+		on_map_mode =  map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			owns_state = 57
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 992
+		}		
+
+		cost = 10
+	
+
+		remove_effect = {		
+			992 = {remove_dynamic_modifier = { modifier = fascist_resistance_fighters }}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+	
+	clear_the_guerilla19 = {
+		
+		icon = GFX_decision_icon_default				
+		highlight_states = {
+			highlight_state_targets = { state = 51 } 
+		}
+		on_map_mode =  map_only
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 45	
+		available = {
+			owns_state = 51
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 51
+		}		
+
+		cost = 10
+	
+
+		remove_effect = {		
+			51 = {remove_dynamic_modifier = { modifier = fascist_resistance_fighters }}
+		}	
+		
+		ai_will_do = {	
+			factor = 50
+		}
+	}
+}
+PRS_schwarzer_kanal = { 
+		PRS_work_for_the_country = { # ID = 26
+		priority = 10
+
+		icon = eng_propaganda_campaigns
+
+		ai_will_do = {
+			base = 3
+			modifier = {
+				factor = 2
+				has_war = no
+			}
+			modifier = {
+				factor = 10
+				has_stability < 0.4
+			}
+			modifier = {
+				factor = 10
+				has_stability < 0.2
+			}
+		}
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		available = {
+			SOV_propaganda_poster_slot_available = yes
+
+			surrender_progress < 0.01
+		}
+
+		visible = {
+			has_completed_focus =  PRS_der_schwarze_kanal
+		}
+
+		days_remove = 180
+
+		days_re_enable = 90
+
+		cost = 30
+
+		modifier = {
+			stability_weekly = -0.005
+			production_speed_buildings_factor = 0.1
+			industrial_capacity_dockyard = 0.15
+			industrial_capacity_factory = 0.15
+			consumer_goods_factor = 0.10
+		}
+
+		complete_effect = {
+			set_variable = { SOV_new_propaganda_campaign = 26 }
+			SOV_pick_propaganda_campaign_slot_effect = yes
+			SOV_achievement_propaganda_counter_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { SOV_propaganda_campaign_to_remove = 26 }
+			SOV_reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	
+	PRS_our_great_plans = { # ID = 25
+		priority = 9
+
+		icon = eng_propaganda_campaigns
+
+		ai_will_do = {
+			base = 2
+		}
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		available = {
+			SOV_propaganda_poster_slot_available = yes
+
+			has_war = no
+		}
+
+		visible = {
+				has_completed_focus = PRS_master_of_economy
+		}
+
+		days_remove = 180
+
+		days_re_enable = 90
+
+		cost = 30
+
+		modifier = {
+			stability_weekly = -0.005
+			consumer_goods_factor = -0.10
+			monthly_population = -0.1
+			production_speed_buildings_factor = 0.1
+			industrial_capacity_factory = 0.05
+			industry_repair_factor = 0.1
+		}
+
+		complete_effect = {
+			set_variable = { SOV_new_propaganda_campaign = 25 }
+			SOV_pick_propaganda_campaign_slot_effect = yes
+			SOV_achievement_propaganda_counter_effect = yes
+
+		}
+
+		remove_effect = {
+			set_rule = { can_send_volunteers = yes }
+
+
+			set_variable = { SOV_propaganda_campaign_to_remove = 25 }
+			SOV_reset_propaganda_campaign_slot_effect = yes
+
+		}
+	}
+	
+	PRS_glory_to_the_nva = { # ID = 24
+		priority = 8
+
+		icon = eng_propaganda_campaigns
+
+		ai_will_do = {
+			base = 3
+			modifier = {
+				factor = 2
+				has_war = yes
+			}
+		}
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		available = {
+			SOV_propaganda_poster_slot_available = yes
+		}
+
+		visible = {
+			has_completed_focus = PRS_master_of_army
+		}
+
+		days_remove = 180
+
+		days_re_enable = 90
+
+		cost = 30
+
+		modifier = {
+			weekly_manpower = 75
+			local_manpower = 0.03
+			mobilization_speed = 0.13
+			war_support_factor = 0.1
+			stability_factor = -0.1
+			political_power_cost = 0.08
+		}
+
+		complete_effect = {
+			set_variable = { SOV_new_propaganda_campaign = 24 }
+			SOV_pick_propaganda_campaign_slot_effect = yes
+			SOV_achievement_propaganda_counter_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { SOV_propaganda_campaign_to_remove = 24 }
+			SOV_reset_propaganda_campaign_slot_effect = yes
+
+		}
+	}
+	
+	PRS_save_our_socialist_hegemony = { # ID = 23
+		priority = 7
+
+		icon = eng_propaganda_campaigns
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 2
+				has_war = no
+			}
+		}
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		available = {
+			SOV_propaganda_poster_slot_available = yes
+		}
+
+		visible = {
+			has_completed_focus = PRS_unifier_of_germany
+		}
+
+		days_remove = 180
+
+		days_re_enable = 90
+
+		cost = 30
+
+		modifier = {
+			political_power_factor = 0.07
+			surrender_limit = 0.15
+			communism_drift = 0.1
+			conscription_factor = -0.08
+			opinion_gain_monthly = -0.2
+			
+		}
+
+		complete_effect = {
+			set_variable = { SOV_new_propaganda_campaign = 23 }
+			SOV_pick_propaganda_campaign_slot_effect = yes
+			SOV_achievement_propaganda_counter_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { SOV_propaganda_campaign_to_remove = 23 }
+			SOV_reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	
+	PRS_the_workers_paradise = { # ID = 22
+		priority = 8
+
+		icon = eng_propaganda_campaigns
+
+		ai_will_do = {
+			base = 1
+		}
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		available = {
+			SOV_propaganda_poster_slot_available = yes
+		}
+
+		visible = {
+			has_completed_focus = PRS_successor_of_marx
+		}
+
+		days_remove = 180
+
+		days_re_enable = 90
+
+		cost = 30
+		
+		modifier = {
+			party_popularity_stability_factor = 0.15
+			stability_weekly = 0.1
+			stability_factor = 0.1
+			war_support_factor = -0.1
+			war_support_weekly = -0.01
+			
+		}
+
+		complete_effect = {
+			set_variable = { SOV_new_propaganda_campaign = 22 }
+			SOV_pick_propaganda_campaign_slot_effect = yes
+			SOV_achievement_propaganda_counter_effect = yes
+			
+
+		}
+		remove_effect = {
+
+			set_variable = { SOV_propaganda_campaign_to_remove = 22 }
+			SOV_reset_propaganda_campaign_slot_effect = yes
+		}
+	}
+	
+	PRS_peace_through_friendschip = { # ID = 21
+		priority = 5
+
+		icon = eng_propaganda_campaigns
+
+		ai_will_do = {
+			base = 0.1
+		}
+
+		allowed = {
+			original_tag = PRS
+		}
+
+		available = {
+			SOV_propaganda_poster_slot_available = yes
+
+		}
+
+		visible = {
+			has_completed_focus = PRS_leader_of_the_world_revolution
+		}
+
+		days_remove = 180
+
+		days_re_enable = 90
+
+		cost = 30
+
+		modifier = {
+			send_volunteer_size = 4
+			enemy_justify_war_goal_time = 0.1
+			compliance_growth = 0.1
+			justify_war_goal_time = 0.1
+			required_garrison_factor = 0.1
+			
+		}
+
+		complete_effect = {
+			set_variable = { SOV_new_propaganda_campaign = 21 }
+			SOV_pick_propaganda_campaign_slot_effect = yes
+			SOV_achievement_propaganda_counter_effect = yes
+		}
+
+		remove_effect = {
+			set_variable = { SOV_propaganda_campaign_to_remove = 21 }
+			SOV_reset_propaganda_campaign_slot_effect = yes
+			
+		}
+	}
+}
+PRS_integration_outer_german_territories = { 
+	
+	#####AUS
+	integrate_decision1 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 848
+			controls_state = 848
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 848
+			controls_state = 848
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 848
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	integrate_decision2 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 153
+			controls_state = 153
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 153
+			controls_state = 153
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 153
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	integrate_decision3 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 39
+			controls_state = 39
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 39
+			controls_state = 39
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 39
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	integrate_decision4 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 152
+			controls_state = 152
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 152
+			controls_state = 152
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 152
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	integrate_decision5 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 988
+			controls_state = 988
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 988
+			controls_state = 988
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 988
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	integrate_decision6 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 987
+			controls_state = 987
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 987
+			controls_state = 987
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 987
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	integrate_decision7 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 4
+			controls_state = 4
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 4
+			controls_state = 4
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 4
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	integrate_decision8 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 997
+			controls_state = 997
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 997
+			controls_state = 997
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 997
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	integrate_decision9 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 995
+			controls_state = 995
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 995
+			controls_state = 995
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 995
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	integrate_decision10 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 102
+			controls_state = 102
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 102
+			controls_state = 102
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 102
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	integrate_decision11 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 736
+			controls_state = 736
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 736
+			controls_state = 736
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 736
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	####CZE
+	integrate_decision12 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 75
+			controls_state = 75
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 75
+			controls_state = 75
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 75
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	integrate_decision13 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 74
+			controls_state = 74
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 74
+			controls_state = 74
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 74
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	integrate_decision14 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 9
+			controls_state = 9
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 9
+			controls_state = 9
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 9
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	integrate_decision15 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 69
+			controls_state = 69
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 69
+			controls_state = 69
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 69
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	###ITA
+	integrate_decision16 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 850
+			controls_state = 850
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 850
+			controls_state = 850
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 850
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	integrate_decision17 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 852
+			controls_state = 852
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 852
+			controls_state = 852
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 852
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	integrate_decision18 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 853
+			controls_state = 853
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 853
+			controls_state = 853
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 853
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	###SWI
+	integrate_decision19 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 3
+			controls_state = 3
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 3
+			controls_state = 3
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 3
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	
+	integrate_decision20 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 151
+			controls_state = 151
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 151
+			controls_state = 151
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 151
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	integrate_decision21 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 846
+			controls_state = 846
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 846
+			controls_state = 846
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 846
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	integrate_decision22 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 847
+			controls_state = 847
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 847
+			controls_state = 847
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 847
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	integrate_decision23 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 845
+			controls_state = 845
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 845
+			controls_state = 845
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 845
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	###FRA
+	integrate_decision24 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 993
+			controls_state = 993
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 993
+			controls_state = 993
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 993
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	integrate_decision25 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 28
+			controls_state = 28
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 28
+			controls_state = 28
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 28
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	integrate_decision26 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 937
+			controls_state = 937
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 937
+			controls_state = 937
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 937
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	###Rest
+	integrate_decision27 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 8
+			controls_state = 8
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 8
+			controls_state = 8
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 8
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	integrate_decision28 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 1015
+			controls_state = 1015
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 1015
+			controls_state = 1015
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 1015
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	integrate_decision29 = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes		
+		#days_re_enable = 10
+		days_remove = 50	
+		available = {
+			original_tag = PRS
+			owns_state = 912
+			controls_state = 912
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			owns_state = 912
+			controls_state = 912
+		}		
+
+		cost = 25
+
+		modifier = {
+			political_power_gain = -0.1
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_state_core = 912
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+}
+PRS_foreign_policy = { 
+	PRS_increase_prussian_influence = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = no		
+		days_re_enable = 20
+		days_remove = 25	
+		available = {
+			original_tag = PRS
+			PRS = {
+				NOT = {has_completed_focus = PRS_referendum_in_south_germany}
+			}
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			original_tag = PRS
+			PRS = { has_completed_focus = PRS_germany_on_world_stage }
+			PRS = {
+				NOT = {has_completed_focus = PRS_referendum_in_south_germany}
+			}
+		}		
+
+		cost = 45
+
+		modifier = {
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			add_to_variable = { PRS_communist_pressure = 10 }
+			custom_effect_tooltip =  PRS_increase_communist_pressure			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_reduce_prussian_influence = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = no		
+		days_re_enable = 15
+		days_remove = 20	
+		available = {
+			original_tag = BAV
+			PRS = {
+				NOT = {has_completed_focus = PRS_referendum_in_south_germany}
+			}
+		}
+		
+		allowed = {
+			original_tag = BAV
+		}	
+		visible = {		
+			original_tag = BAV
+			PRS = { has_completed_focus = PRS_germany_on_world_stage }
+			PRS = {
+				NOT = {has_completed_focus = PRS_referendum_in_south_germany}
+			}
+		}		
+
+		cost = 35
+
+		modifier = {
+			political_power_cost = 0.05
+		}		
+
+		remove_effect = {		
+			subtract_from_variable = { PRS_communist_pressure = 5 }
+			custom_effect_tooltip =  PRS_reduce_communist_pressure			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_liberate_the_soviets = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_fight_against_the_white_armies
+			NOT  = {country_exists = SOV}
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_set_up_eastern_bruderstaaten
+			NOT  = {country_exists = SOV}
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				SOV = {
+					remove_state_core = 812
+					remove_state_core = 811
+					remove_state_core = 813
+					remove_state_core = 13
+					remove_state_core = 191
+					remove_state_core = 12
+					remove_state_core = 810
+					remove_state_core = 808
+					remove_state_core = 809
+					remove_state_core = 190
+					remove_state_core = 189
+					remove_state_core = 815
+					remove_state_core = 784
+					remove_state_core = 11
+					remove_state_core = 814
+					remove_state_core = 145
+					remove_state_core = 111
+					remove_state_core = 926
+					remove_state_core = 927
+					remove_state_core = 928
+					remove_state_core = 930
+					remove_state_core = 929
+					remove_state_core = 149
+					remove_state_core = 150
+					remove_state_core = 148
+					remove_state_core = 722
+					remove_state_core = 1030
+				}
+			}
+		}
+
+		remove_effect = {
+			release = SOV
+			POL = {
+			hidden_effect = {
+				set_state_owner = 1030
+			}
+		}
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	
+	PRS_invade_scandinavia = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 20
+		available = {
+			original_tag = PRS
+			#has_completed_focus = PRS_strike_the_imperial_beast
+			has_war_with = ENG
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_strike_the_imperial_beast
+			has_war_with = ENG
+		}		
+
+		cost = 10
+
+		
+
+		remove_effect = {
+			declare_war_on = {
+                target = NOR
+                type = annex_everything
+            }
+			declare_war_on = {
+                target = SWE
+                type = annex_everything
+            }
+		}
+			
+			
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_support_anti_british_uprisings1 = {
+		icon = GFX_decision_generic_nationalism
+		target_array = PRS.anti-british_states_array
+		target_root_trigger = { original_tag = PRS } 
+		state_target = yes
+		on_map_mode = map_only
+		fire_only_once = yes 
+		available = {
+			has_completed_focus = PRS_initiate_anti_colonial_uprisings
+			NOT = {has_country_flag = ETH_resistance_support_progress_flag}
+		}
+
+		visible = {
+			has_completed_focus = PRS_initiate_anti_colonial_uprisings
+			FROM = { is_owned_by = ENG }
+			FROM = { NOT = { is_core_of = THIS.owner } } # Hide it if no longer a colony 
+			FROM = { NOT = { is_owned_by = ROOT } }# It gets kind of silly when you start supporting resistance against yourself, doesn't it
+		}
+		days_remove = 80
+ 
+		cost = 150
+
+		modifier = {
+			industrial_capacity_factory = -0.15
+		}
+
+		complete_effect = {
+			set_country_flag = ETH_resistance_support_progress_flag
+			
+		}
+
+		remove_effect = {
+			clr_country_flag = ETH_resistance_support_progress_flag
+			FROM = {
+				add_compliance = -50
+				add_resistance = 50  
+				add_dynamic_modifier = {
+					modifier = PRS_support_anti_british_uprisings
+						scope = ENG  # The modifier itself will be applied to GER, but the variables will be read off POL.
+						days = 360
+				}
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				factor = 2
+				has_government = communism
+		}
+	}
+	}
+	
+###bruderstaaten
+	PRS_establish_polish_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_set_up_eastern_bruderstaaten
+			PRS_owns_polish_volksstaaten = yes
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_set_up_eastern_bruderstaaten
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = POL }
+				remove_all_cores_and_claims_of_tags = yes
+				POL = {
+					add_state_core = 10
+					add_state_core = 92
+					add_state_core = 90
+					add_state_core = 88
+					add_state_core = 1028
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = POL
+			POL = {
+			hidden_effect = {
+				set_state_owner = 89
+				set_state_owner = 91
+			}
+				set_cosmetic_tag =  POL_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Polnische Besatzungskomission"
+					name = "PBK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+			}
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	
+	PRS_establish_baltic_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_set_up_eastern_bruderstaaten
+			PRS_owns_baltic_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_set_up_eastern_bruderstaaten
+			NOT  = {country_exists = SOV}
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = LIV }
+				remove_all_cores_and_claims_of_tags = yes
+				LIV = {
+					add_state_core = 812
+					add_state_core = 811
+					add_state_core = 813
+					add_state_core = 13
+					add_state_core = 191
+					add_state_core = 12
+					add_state_core = 810
+					add_state_core = 808
+					add_state_core = 809
+					add_state_core = 190
+					add_state_core = 189
+					add_state_core = 815
+					add_state_core = 784
+					add_state_core = 11
+					add_state_core = 814
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = LIV
+			LIV = {
+				set_cosmetic_tag =  LIV_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Baltische Besatzungskomission"
+					name = "BBK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+			}
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_establish_finish_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_set_up_eastern_bruderstaaten
+			PRS_owns_finish_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_set_up_eastern_bruderstaaten
+			NOT  = {country_exists = SOV}
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = FSA }
+				remove_all_cores_and_claims_of_tags = yes
+				FSA = {
+					add_state_core = 145
+					add_state_core = 111
+					add_state_core = 926
+					add_state_core = 927
+					add_state_core = 928
+					add_state_core = 930
+					add_state_core = 929
+					add_state_core = 149
+					add_state_core = 150
+					add_state_core = 148
+					add_state_core = 722
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = FSA
+			FSA = {
+				set_cosmetic_tag =  FIN_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Finnische Besatzungskomission"
+					name = "FBK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+			}
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_establish_slovak_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_balkan_bruderstaaten
+			PRS_owns_slovak_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_balkan_bruderstaaten
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = SLO }
+				remove_all_cores_and_claims_of_tags = yes
+				SLO = {
+					add_state_core = 70
+					add_state_core = 71
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = SLO
+			SLO = {
+				set_cosmetic_tag =  SLO_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Slowakische Besatzungskomission"
+					name = "SBK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+			}
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_establish_hungarian_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_balkan_bruderstaaten
+			PRS_owns_hungarian_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_balkan_bruderstaaten
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = HUN }
+				remove_all_cores_and_claims_of_tags = yes
+				HUN = {
+					add_state_core = 43
+					add_state_core = 998
+					add_state_core = 155
+					add_state_core = 664
+					add_state_core = 1025
+					add_state_core = 154
+					add_state_core = 73
+					add_state_core = 76
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = HUN
+			HUN = {
+				set_cosmetic_tag =  HUN_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Ungarische Besatzungskomission"
+					name = "UBK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+			}
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_establish_romanian_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_balkan_bruderstaaten
+			PRS_owns_romanian_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_balkan_bruderstaaten
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = ROM }
+				remove_all_cores_and_claims_of_tags = yes
+				ROM = {
+					add_state_core = 80
+					add_state_core = 79
+					add_state_core = 996
+					add_state_core = 46
+					add_state_core = 84
+					add_state_core = 82
+					add_state_core = 83
+					add_state_core = 81
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = ROM
+			ROM = {
+				set_cosmetic_tag =  ROM_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Rumänische Besatzungskomission"
+					name = "RBK"
+				}
+				give_resource_rights = { receiver = PRS state = 46 }
+				add_ideas = PRS_collaborationist_goverment
+			}
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_establish_croatian_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_balkan_bruderstaaten
+			PRS_owns_croatian_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_balkan_bruderstaaten
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = CRO }
+				remove_all_cores_and_claims_of_tags = yes
+				CRO = {
+					add_state_core = 109
+					add_state_core = 994
+					add_state_core = 103
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = CRO
+			CRO = {
+				set_cosmetic_tag =  CRO_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Kroatische Besatzungskomission"
+					name = "KBK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+				hidden_effect = {
+					set_state_owner = 104
+					set_state_owner = 804
+					set_state_owner = 105
+				}
+			}
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_establish_serbian_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_balkan_bruderstaaten
+			PRS_owns_serbian_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_balkan_bruderstaaten
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = SER }
+				remove_all_cores_and_claims_of_tags = yes
+				SER = {
+					add_state_core = 764
+					add_state_core = 45
+					add_state_core = 996
+					add_state_core = 1024
+					add_state_core = 107
+					add_state_core = 108
+					add_state_core = 802
+					add_state_core = 1011
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = SER
+			SER = {
+				set_cosmetic_tag =  SER_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Serbische Besatzungskomission"
+					name = "SBK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+			}
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_establish_albanian_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_restructure_southern_europe
+			PRS_owns_albanian_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_restructure_southern_europe
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = ALB }
+				remove_all_cores_and_claims_of_tags = yes
+				ALB = {
+					add_state_core = 934
+					add_state_core = 44
+					add_state_core = 805
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = ALB
+			ALB = {
+				set_cosmetic_tag =  ALB_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Albanische Besatzungskomission"
+					name = "ABK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+			}
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_establish_bulgarian_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_restructure_southern_europe
+			PRS_owns_bulgarian_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_restructure_southern_europe
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = BUL }
+				remove_all_cores_and_claims_of_tags = yes
+				BUL = {
+					add_state_core = 106
+					add_state_core = 803
+					add_state_core = 48
+					add_state_core = 212
+					add_state_core = 801
+					add_state_core = 211
+					add_state_core = 77
+					add_state_core = 1002
+					add_state_core = 814
+					drop_cosmetic_tag = yes
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = BUL
+			BUL = {
+				set_cosmetic_tag =  BUL_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Bulgarische Besatzungskomission"
+					name = "BBK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+			}
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_establish_greek_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_restructure_southern_europe
+			PRS_owns_greek_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_restructure_southern_europe
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = GRE }
+				remove_all_cores_and_claims_of_tags = yes
+				GRE = {
+					add_state_core = 731
+					add_state_core = 185
+					add_state_core = 47
+					add_state_core = 186
+					drop_cosmetic_tag = yes
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = GRE
+			GRE = {
+				set_cosmetic_tag =  GRE_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Griechische Besatzungskomission"
+					name = "GBK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+			}
+			hidden_effect = {
+				BUL = {
+					set_state_owner = 184
+				}
+			}
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_establish_italian_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_restructure_southern_europe
+			PRS_owns_italian_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_restructure_southern_europe
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = ITA }
+				remove_all_cores_and_claims_of_tags = yes
+				ITA = {
+					add_state_core = 114
+					add_state_core = 115
+					add_state_core = 156
+					add_state_core = 117
+					add_state_core = 849
+					add_state_core = 157
+					add_state_core = 2
+					add_state_core = 161
+					add_state_core = 162
+					add_state_core = 158
+					add_state_core = 159
+					add_state_core = 160
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = ITA
+			ITA = {
+				set_cosmetic_tag =  ITA_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Italiensche Besatzungskomission"
+					name = "IBK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+			}
+			hidden_effect = {
+				CRO = {
+					set_state_owner = 163
+					add_state_core = 163
+				}
+				GRE = {
+					set_state_owner = 1026
+					set_state_owner = 182
+					set_state_owner = 187
+					set_state_owner = 164
+					add_state_core = 1026
+					add_state_core = 182
+					add_state_core = 187
+					add_state_core = 64
+				}
+			}
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	###west
+	PRS_establish_dutch_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_partition_of_france
+			PRS_owns_dutch_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_partition_of_france
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = HOL }
+				remove_all_cores_and_claims_of_tags = yes
+				HOL = {
+					add_state_core = 36
+					add_state_core = 7
+					add_state_core = 35
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = HOL
+			HOL = {
+				set_cosmetic_tag =  HOL_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Niederländische Besatzungskomission"
+					name = "NBK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+			}
+			
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_establish_belgian_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_partition_of_france
+			PRS_owns_belgian_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_partition_of_france
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = BEL }
+				remove_all_cores_and_claims_of_tags = yes
+				BEL = {
+					add_state_core = 1016
+					add_state_core = 6
+					add_state_core = 34
+					add_state_core = 1005
+					add_state_core = 29
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = BEL
+			BEL = {
+				set_cosmetic_tag =  BEL_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Belgische Besatzungskomission"
+					name = "BBK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+			}
+			
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_establish_french_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_partition_of_france
+			PRS_owns_french_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_partition_of_france
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				#add_to_temp_array = { remove_cores_array = FRP }
+				#remove_all_cores_and_claims_of_tags = yes
+				FRP = {
+					add_state_core = 785
+					add_state_core = 15
+					add_state_core = 16
+					add_state_core = 24
+					add_state_core = 27
+					add_state_core = 17
+					add_state_core = 18
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = FRP
+			FRP = {
+				set_cosmetic_tag =  FRP_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Französische Besatzungskomission"
+					name = "FBK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+			}
+			
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_establish_briti_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_partition_of_france
+			PRS_owns_briti_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_partition_of_france
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = BRI }
+				remove_all_cores_and_claims_of_tags = yes
+				BRI = {
+					add_state_core = 14
+					add_state_core = 30
+					add_state_core = 23
+					add_state_core = 19
+					add_state_core = 806
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = BRI
+			BRI = {
+				set_cosmetic_tag =  BRI_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Französische Besatzungskomission"
+					name = "FBK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+			}
+			
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_establish_occi_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_partition_of_france
+			PRS_owns_occi_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_partition_of_france
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = OCC }
+				remove_all_cores_and_claims_of_tags = yes
+				OCC = {
+					add_state_core = 33
+					add_state_core = 25
+					add_state_core = 31
+					add_state_core = 26
+					add_state_core = 22
+					add_state_core = 20
+					add_state_core = 32
+					add_state_core = 735
+					add_state_core = 21
+					add_state_core = 851
+					add_state_core = 985
+					add_state_core = 986
+					add_state_core = 1
+					add_state_core = 1072
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = OCC
+			OCC = {
+				set_cosmetic_tag =  OCC_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Französische Besatzungskomission"
+					name = "FBK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+			}
+			
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_establish_english_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_divide_the_empire
+			PRS_owns_english_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_divide_the_empire
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = ENG }
+				remove_all_cores_and_claims_of_tags = yes
+				ENG = {
+					add_state_core = 127
+					add_state_core = 126
+					add_state_core = 338
+					add_state_core = 123
+					add_state_core = 125
+					add_state_core = 128
+					add_state_core = 129
+					add_state_core = 132
+					add_state_core = 130
+					add_state_core = 131
+					add_state_core = 932
+					add_state_core = 931
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = ENG
+			ENG = {
+				set_cosmetic_tag =  ENG_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Englische Besatzungskomission"
+					name = "EBK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+			}
+			
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_establish_scotish_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_divide_the_empire
+			PRS_owns_scotish_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_divide_the_empire
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = SCO }
+				remove_all_cores_and_claims_of_tags = yes
+				SCO = {
+					add_state_core = 133
+					add_state_core = 121
+					add_state_core = 136
+					add_state_core = 120
+					add_state_core = 933
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = SCO
+			SCO = {
+				set_cosmetic_tag =  SCO_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Schottische Besatzungskomission"
+					name = "SBK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+			}
+			
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_establish_irish_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_divide_the_empire
+			PRS_owns_irish_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_divide_the_empire
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = IRE }
+				remove_all_cores_and_claims_of_tags = yes
+				IRE = {
+					add_state_core = 119
+					add_state_core = 113
+					add_state_core = 134
+					add_state_core = 135
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = IRE
+			IRE = {
+				set_cosmetic_tag =  IRE_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Irische Besatzungskomission"
+					name = "IBK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+			}
+			
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_establish_welsh_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		days_re_enable = 15
+		#days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_divide_the_empire
+			PRS_owns_welsh_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_divide_the_empire
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = WLS }
+				remove_all_cores_and_claims_of_tags = yes
+				WLS = {
+					add_state_core = 122
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = WLS
+			WLS = {
+				set_cosmetic_tag =  WLS_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Walisische Besatzungskomission"
+					name = "WBK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+			}
+			
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+	
+	PRS_establish_scandinavian_bruderstaat = {
+		
+		icon = GFX_decision_icon_default				
+		
+		
+		fire_only_once = yes	
+		#days_re_enable = 15
+		days_remove = 1
+		available = {
+			original_tag = PRS
+			has_completed_focus = PRS_divide_the_empire
+			PRS_owns_scandinavian_volksstaaten = yes
+
+		}
+		
+		allowed = {
+			original_tag = PRS
+		}	
+		visible = {		
+			has_completed_focus = PRS_divide_the_empire
+		}		
+
+		cost = 40
+
+		complete_effect = {
+			hidden_effect = {
+				add_to_temp_array = { remove_cores_array = SWE }
+				remove_all_cores_and_claims_of_tags = yes
+				SWE = {
+					add_state_core = 138
+					add_state_core = 139
+					add_state_core = 124
+					add_state_core = 140
+					add_state_core = 915
+					add_state_core = 913
+					add_state_core = 919
+					add_state_core = 141
+					add_state_core = 916
+					add_state_core = 38
+					add_state_core = 917
+					add_state_core = 918
+					add_state_core = 666
+					add_state_core = 110
+					add_state_core = 920
+					add_state_core = 921
+					add_state_core = 922
+					add_state_core = 142
+					add_state_core = 143
+					add_state_core = 923
+					add_state_core = 144
+					add_state_core = 924
+					add_state_core = 925
+				}
+			}
+		}
+
+		remove_effect = {
+			release_puppet = SWE
+			SWE = {
+				set_cosmetic_tag =  SWE_bruderstaat
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					last_election = "1935.12.17"
+					election_frequency = 48
+					long_name = "Skandinavische Besatzungskomission"
+					name = "SBK"
+				}
+				add_ideas = PRS_collaborationist_goverment
+			}
+			IF = {
+				limit = {
+					country_exists = DEN
+					has_cosmetic_tag = DEN_bruderstaat
+					is_puppet_of = PRS
+				}
+				SWE = {
+					annex_country = {
+						target = DEN
+						transfer_troops = yes
+					}
+				}
+				hidden_effect = {
+					every_state  = {
+						limit = {is_core_of = DEN}
+						add_core_of = SWE
+					}
+				}
+			}
+			IF = {
+				limit = {
+					country_exists = FIN
+					has_cosmetic_tag = FIN_bruderstaat
+					is_puppet_of = PRS
+				}
+				SWE = {
+					annex_country = {
+						target = FIN
+						transfer_troops = yes
+					}
+				}
+				hidden_effect = {
+					every_state  = {
+						limit = {is_core_of = FIN}
+						add_core_of = SWE
+					}
+				}
+			}
+			
+			
+		}	
+		ai_will_do = {	
+			factor = 50			
+		}	
+	}
+}	

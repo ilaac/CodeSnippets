@@ -1,0 +1,129 @@
+#####################################################################################################################
+# COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+#####################################################################################################################
+
+
+HUN_ally_the_country = {		
+	icon = GFX_category_icon
+	priority = 8			
+	
+	allowed = {
+		original_tag = HUN
+	}
+	visible = {
+	}
+	
+	visible_when_empty = no		
+
+	on_map_area = {		
+		state = 43
+		state = 922
+		state = 154
+		state = 155
+		state = 76
+		state = 664
+		state = 45
+		name = map_icon_strip_localisation		
+		zoom = 100		
+	}
+}
+	third_balkan_war = {		
+	priority = 9		
+	icon = GFX_category_icon	
+	
+	allowed = {
+		original_tag = HUN
+	}
+	visible = {	
+		has_completed_focus = HUN_the_third_balkan_war
+	}
+}
+	the_romanian_issue = {		
+	priority = 8		
+	icon = GFX_category_icon	
+	
+	allowed = {
+		original_tag = HUN
+	}
+	visible = {	
+		OR = { 
+			has_completed_focus = HUN_radical_consequences
+			has_completed_focus = HUN_fight_the_resistance
+		} 
+	}
+}
+
+partisan_raids = {		
+	priority = 8		
+	icon = GFX_category_icon	
+	
+	allowed = {
+		original_tag = HUN
+	}
+	visible = {	
+		has_idea = HUN_spreading_unrest
+	}
+	visible_when_empty = no
+}
+HUN_balance_of_power = {		
+	priority = 8		
+	icon = GFX_category_icon	
+	
+	allowed = {
+		original_tag = HUN
+	}
+	visible = {	
+		has_completed_focus = HUN_the_fascist_leadership
+	}
+	visible_when_empty = no
+}
+
+HUN_the_great_game = {		
+	priority = 8		
+	icon = GFX_category_icon	
+	
+	allowed = {
+		original_tag = HUN
+	}
+	visible = {	
+		has_completed_focus = HUN_the_battle_for_glory
+		NOT = {
+			has_completed_focus = HUN_ultimate_victory
+		}
+	}
+	visible_when_empty = no
+}
+integrate_our_new_territories = {		
+	priority = 9		
+	icon = GFX_category_icon	
+	
+	allowed = {
+		original_tag = HUN
+	}
+	visible = {	
+		has_war = no
+		owns_state = 70
+		owns_state = 71
+		owns_state = 73
+		owns_state = 84
+		owns_state = 83
+		owns_state = 82
+		owns_state = 764
+		owns_state = 109
+		owns_state = 918
+		
+	}
+}
+HUN_trouble_in_the_balkans = {
+	icon = GFX_category_icon
+	picture = GFX_category_image_balkan_trouble		
+	priority = 9		
+	
+	allowed = {
+		original_tag = HUN
+	}
+	visible = {
+	}
+	visible_when_empty = no
+}

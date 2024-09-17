@@ -1,0 +1,23 @@
+state={
+	id=1068
+	name="STATE_1068"
+	
+	history={
+		owner = MLI
+		add_core_of = MLI
+		add_core_of = NGR
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+	
+	provinces={
+		8028 10758 
+	}
+	manpower=314657
+	state_category=pastoral
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

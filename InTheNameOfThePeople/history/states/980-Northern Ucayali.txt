@@ -1,0 +1,23 @@
+state={
+	id=980
+	name="STATE_980"
+	
+	history={
+		owner = CPR
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = CPR
+		add_core_of = PRU
+
+	}
+	
+	provinces={
+		13291  
+	}
+	manpower=280462
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

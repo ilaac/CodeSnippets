@@ -1,0 +1,195 @@
+#####################################################################################################################
+# COMMENTS HAVE BEEN INCLUDED FOR SAKE OF EXPLANATION, CAN BE REMOVED #
+# ID's must not include spaces!
+#####################################################################################################################
+
+PRS_industrialize_prussia = {		
+	icon = GFX_category_icon
+	priority = 8			
+	
+	allowed = {
+		original_tag = PRS
+	}
+	visible = {
+		original_tag = PRS
+	}
+	
+	visible_when_empty = no		
+
+	on_map_area = {		
+		state = 86
+		state = 63
+		state = 85
+		state = 807
+		state = 5
+		state = 763
+		name = PRS_map_icon_strip_localisation		
+		zoom = 100		
+	}
+}
+
+PRS1_the_german_civil_war = {
+	icon = GFX_category_icon
+	picture = GFX_category_image_prs_soldiers_german_cicil_war		
+	priority = 9		
+	
+	allowed = {
+		original_tag = PRS
+	}
+	visible = {
+		has_completed_focus = PRS_the_german_civil_war
+	}
+	visible_when_empty = no
+}
+integrate_the_german_territories = {		
+	priority = 9		
+	icon = GFX_category_icon	
+	
+	allowed = {
+		original_tag = PRS
+	}
+	visible = {	
+		has_completed_focus = PRS_victory_in_the_german_civil_war
+		has_war = no
+		owns_state = 67
+		owns_state = 762
+		owns_state = 66
+		owns_state = 68
+		owns_state = 64
+		owns_state = 1012
+		owns_state = 65
+		owns_state = 62
+		owns_state = 61
+		owns_state = 60
+		owns_state = 59
+		owns_state = 58
+		owns_state = 1013
+		owns_state = 56
+		owns_state = 1014
+		owns_state = 57
+		owns_state = 992
+		owns_state = 51
+		owns_state = 1071
+	}
+}
+PRS_fix_the_countryside = {
+	icon = GFX_category_icon
+	priority = 9		
+	
+	allowed = {
+		original_tag = PRS
+	}
+	visible = {
+		has_completed_focus = PRS_repair_the_countryside
+	}
+	visible_when_empty = no
+}
+PRS_volkswerke = {
+	icon = GFX_category_icon
+	priority = 8		
+	
+	allowed = {
+		original_tag = PRS
+	}
+	visible = {
+		has_completed_focus = PRS_create_the_arbeiterdienst
+	}
+	visible_when_empty = no
+}
+PRS_fight_the_guerillas = {		
+	icon = GFX_category_icon
+	priority = 8			
+	
+	allowed = {
+		original_tag = PRS
+	}
+	visible = {
+		original_tag = PRS
+		has_completed_focus = PRS_deal_with_the_guerillas
+		owns_state = 67
+		owns_state = 762
+		owns_state = 66
+		owns_state = 68
+		owns_state = 64
+		owns_state = 1012
+		owns_state = 65
+		owns_state = 62
+		owns_state = 61
+		owns_state = 60
+		owns_state = 59
+		owns_state = 58
+		owns_state = 1013
+		owns_state = 56
+		owns_state = 1014
+		owns_state = 57
+		owns_state = 992
+		owns_state = 51
+	}
+	
+	visible_when_empty = yes		
+
+	on_map_area = {	
+		state = 67
+		state = 762
+		state = 66
+		state = 68
+		state = 64
+		state = 1012
+		state = 65
+		state = 62
+		state = 61
+		state = 60
+		state = 59
+		state = 58
+		state = 56
+		state = 1014
+		state = 57
+		state = 992
+		state = 51
+		name = PRS1_map_icon_strip_localisation		
+		zoom = 100		
+	}
+}
+PRS_schwarzer_kanal = {
+	priority = 10
+	visible_when_empty = yes		
+
+	icon = SOV_propaganda
+
+	scripted_gui = prs_propaganda_campaigns_ui
+
+	allowed = {
+		original_tag = PRS
+	}
+
+	visible = {
+		has_completed_focus =  PRS_der_schwarze_kanal
+	}
+}
+PRS_integration_outer_german_territories = {
+	icon = GFX_category_icon
+	priority = 7		
+	
+	allowed = {
+		original_tag = PRS
+	}
+	visible = {
+		#has_completed_focus = PRS_germany_on_world_stage
+	}
+	visible_when_empty = no
+}
+PRS_foreign_policy = {
+	icon = GFX_category_icon
+	priority = 7		
+	
+	allowed = {
+		OR = {
+			original_tag = PRS
+			original_tag = BAV	
+		}
+	}
+	visible = {
+		PRS = { has_completed_focus = PRS_germany_on_world_stage }
+	}
+	visible_when_empty = no
+}

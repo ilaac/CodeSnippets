@@ -1,0 +1,43 @@
+﻿division_template = {
+	name = "Nardodna Gvardiya"
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+	}
+}
+
+
+units = {
+	division = {
+		name = "Nardodna Gvardiya"
+		location = 12450
+		division_template = "Nardodna Gvardiya"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Nardodna Gvardiya"
+		location = 4660
+		division_template = "Nardodna Gvardiya"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Nardodna Gvardiya"
+		location = 6997
+		division_template = "Nardodna Gvardiya"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Nardodna Gvardiya"
+		location = 6642
+		division_template = "Nardodna Gvardiya"
+		start_experience_factor = 0.6
+		start_equipment_factor = 0.8
+	}
+}

@@ -1,0 +1,17 @@
+characters={
+	
+	TAJ_ibrahim_bek={
+		name=TAJ_ibrahim_bek
+		portraits={
+			civilian={
+				large="GFX_portrait_taj_ibrahim_bek_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

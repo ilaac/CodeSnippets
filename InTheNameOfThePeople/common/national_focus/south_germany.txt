@@ -1,0 +1,136 @@
+focus_tree = {
+	id = south_germany_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 100
+			tag = BAV
+		}
+	}
+	default = no 
+	
+	continuous_focus_position = { x = 30 y = 2000 }
+	
+	###########Start of south german civil war
+		focus = {
+		id = BAV_start_of_a_new_era
+		icon = GFX_goal_generic_construction
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		
+		x = 5
+		y = 1
+		#relative_position_id =
+		
+		available = {
+		}
+				bypass = {
+		}
+		
+		cost = 0
+		#prerequisite = { focus = }
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = {
+		add_war_support = 0.075
+		division_template = {
+				name = "Freiheitskämpfer" 	
+				division_names_group = FRA_ARM_01
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }
+				}
+				support = {
+					artillery = { x = 0 y = 0 }
+				}
+			}
+				every_controlled_state = {
+					create_unit = {
+						division = "name = \"1. Division Cuirassée\" division_template = \"Freiheitskämpfer\"start_experience_factor = 0.1" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"2. Division Cuirassée\" division_template = \"Freiheitskämpfer\"start_experience_factor = 0.1"
+						owner = ROOT
+					}
+						create_unit = {
+						division = "name = \"3. Division Cuirassée\" division_template = \"Freiheitskämpfer\"start_experience_factor = 0.1"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"4. Division Cuirassée\" division_template = \"Freiheitskämpfer\"start_experience_factor = 0.1"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"5. Division Cuirassée\" division_template = \"Freiheitskämpfer\"start_experience_factor = 0.1"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"6. Division Cuirassée\" division_template = \"Freiheitskämpfer\"start_experience_factor = 0.1"
+						owner = ROOT
+					}
+				}
+    }
+		ai_will_do = {
+			factor = 4
+			modifier = {
+			}
+		}
+	}
+	
+		###########Start of south german civil war
+		focus = {
+		id = BAV_start_of_a_new_era2
+		icon = GFX_goal_generic_construction
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
+		
+		x = 0
+		y = 1
+		relative_position_id = BAV_start_of_a_new_era
+		
+		available = {
+		}
+				bypass = {
+		}
+		
+		cost = 5
+		prerequisite = { focus = BAV_start_of_a_new_era}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+	completion_reward = {
+				add_war_support = 0.075
+				every_controlled_state = {
+					create_unit = {
+						division = "name = \"1. Division Cuirassée\" division_template = \"Freiheitskämpfer\"start_experience_factor = 0.1" 
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"2. Division Cuirassée\" division_template = \"Freiheitskämpfer\"start_experience_factor = 0.1"
+						owner = ROOT
+					}
+						create_unit = {
+						division = "name = \"3. Division Cuirassée\" division_template = \"Freiheitskämpfer\"start_experience_factor = 0.1"
+						owner = ROOT
+					}
+			}
+	}
+		ai_will_do = {
+			factor = 4
+			modifier = {
+			}
+		}
+	}
+}

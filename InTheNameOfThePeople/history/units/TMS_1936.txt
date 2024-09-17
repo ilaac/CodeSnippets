@@ -1,0 +1,42 @@
+﻿division_template = {
+	name = "Pan-Türk Legiony"
+	regiments = {
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }	
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Türkmen Atlylary" 
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+		cavalry = { x = 0 y = 3 }
+	}
+}
+
+units = {
+
+	division= {			
+		#name = "1. Pyýada Goşun"		
+		location = 12333
+		division_template = "Pan-Türk Legiony"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	division= {			
+		#name = "1. Pyýada Goşun"		
+		location = 10414
+		division_template = "Türkmen Atlylary"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+	}
+	
+}

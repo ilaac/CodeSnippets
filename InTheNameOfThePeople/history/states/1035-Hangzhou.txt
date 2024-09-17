@@ -1,0 +1,28 @@
+state={
+	id=1035
+	name="STATE_1035"
+	history={
+		owner = JAP
+		add_core_of = CHI
+		add_core_of = PRC
+		victory_points = {
+			7191 1 
+		}
+		buildings = {
+			infrastructure = 2
+			7191 = {
+				naval_base = 1
+				coastal_bunker = 1
+				bunker = 1
+
+			}
+		}
+	}
+	provinces={
+		7191 
+	}
+	manpower=3738377
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

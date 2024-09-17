@@ -1,0 +1,159 @@
+﻿division_template = {
+	name = "Msroleli Divizia"
+
+	regiments = {
+		infantry = { x = 0 y = 0 }	
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }	
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }	
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Samto Saartilerio Divizia"
+
+	regiments = {
+		mountaineers = { x = 0 y = 0 }	
+		mountaineers = { x = 0 y = 1 }
+		mountaineers = { x = 0 y = 2 }	
+		mountaineers = { x = 1 y = 0 }
+		mountaineers = { x = 1 y = 1 }
+		mountaineers = { x = 1 y = 2 }
+		mountaineers = { x = 2 y = 0 }	
+		mountaineers = { x = 2 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Sakhalkho Gvardia"
+
+	regiments = {
+		militia = { x = 0 y = 0 }	
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }	
+		militia = { x = 1 y = 0 }
+		militia = { x = 1 y = 1 }
+		militia = { x = 1 y = 2 }
+		militia = { x = 2 y = 0 }	
+		militia = { x = 2 y = 1 }
+		militia = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Kavaleriis Divizia" 
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
+	}
+}
+
+units = {
+	division = {
+		name = "Kućni stražari"
+		location = 6669
+		division_template = "Samto Saartilerio Divizia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Kućni stražari"
+		location = 6642
+		division_template = "Samto Saartilerio Divizia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Kućni stražari"
+		location = 1539
+		division_template = "Samto Saartilerio Divizia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Kućni stražari"
+		location = 1599
+		division_template = "Msroleli Divizia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Kućni stražari"
+		location = 12320
+		division_template = "Msroleli Divizia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Kućni stražari"
+		location = 3653
+		division_template = "Msroleli Divizia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Kućni stražari"
+		location = 7661
+		division_template = "Msroleli Divizia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Kućni stražari"
+		location = 11674
+		division_template = "Msroleli Divizia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.5
+
+	}
+	division = {
+		name = "Kućni stražari"
+		location = 4477
+		division_template = "Sakhalkho Gvardia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "Kućni stražari"
+		location = 12434
+		division_template = "Sakhalkho Gvardia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "Kućni stražari"
+		location = 11617
+		division_template = "Sakhalkho Gvardia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division = {
+		name = "Kućni stražari"
+		location = 9663
+		division_template = "Sakhalkho Gvardia"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+}

@@ -1,0 +1,17 @@
+characters={
+	
+	CPR_jose_mariategui={
+		name=CPR_jose_mariategui
+		portraits={
+			civilian={
+				large="GFX_portrait_cpr_jose_mariategui_large"
+			}
+		}
+		country_leader={
+			ideology=marxism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,17 @@
+characters={
+	
+	FER_alexander_koltchak={
+		name=FER_alexander_koltchak
+		portraits={
+			civilian={
+				large="GFX_portrait_fer_alexander_koltchak_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

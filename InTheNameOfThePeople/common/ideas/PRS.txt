@@ -1,0 +1,1238 @@
+ideas = {
+	country = {
+		PRS_communist_refugees = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				weekly_manpower = 250
+				monthly_population = 0.15
+			}
+		}
+		
+		PRS_irregular_army = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				army_attack_factor = -0.2
+				army_org_factor = -0.1
+				conscription_factor = 0.1
+				experience_gain_army_factor = -0.5
+				
+			}
+		}
+		
+		PRS_dead_economy = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				production_speed_buildings_factor = -0.6
+				consumer_goods_factor = 0.1
+				production_factory_efficiency_gain_factor = -0.5
+				industrial_capacity_factory = -0.5
+			}
+		}
+		
+		PRS_mass_production = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = 0.025
+			}
+			equipment_bonus = {
+					infantry_equipment = {
+						build_cost_ic = -0.1
+						instant = yes
+					}	
+		}
+	}
+
+		PRS_irregular_army2 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				army_attack_factor = -0.15
+				army_org_factor = -0.1
+				conscription_factor = 0.1
+				experience_gain_army_factor = -0.3
+				
+			}
+		}
+
+		PRS_irregular_army3 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				army_attack_factor = -0.12
+				army_org_factor = -0.05
+				conscription_factor = 0.12
+				experience_gain_army_factor = -0.2
+				
+			}
+		}
+
+		PRS_irregular_army4 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				army_attack_factor = -0.05
+				conscription_factor = 0.14
+				experience_gain_army_factor = -0.1
+				
+			}
+		}		
+		
+		PRS_collectivization = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = 0.1
+				stability_factor = -0.1
+				conscription_factor = -0.04
+				
+			}
+		}
+
+		PRS_dead_economy2 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				production_speed_buildings_factor = -0.50
+				consumer_goods_factor = 0.1
+				production_factory_efficiency_gain_factor = -0.42
+				industrial_capacity_factory = -0.42
+			}
+		}
+		
+		PRS_dead_economy3 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				production_speed_buildings_factor = -0.40
+				consumer_goods_factor = 0.025
+				production_factory_efficiency_gain_factor = -0.32
+				industrial_capacity_factory = -0.32
+			}
+		}
+		
+		PRS_worker_protests = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = 0.025
+				stability_factor = -0.2
+				
+			}
+		}
+		
+		PRS_dead_economy4 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				production_speed_buildings_factor = -0.45
+				consumer_goods_factor = 0.05
+				production_factory_efficiency_gain_factor = -0.37
+				industrial_capacity_factory = -0.37
+			}
+		}
+		
+		
+		PRS_dead_economy5 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				production_speed_buildings_factor = -0.3
+				consumer_goods_factor = 0.025
+				production_factory_efficiency_gain_factor = -0.22
+				industrial_capacity_factory = -0.22
+			}
+		}
+	
+	PRS_concript_all_workers = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+				has_war_with = GER
+				has_war = yes
+			}
+			cancel = { }
+			modifier = {
+				conscription = 0.03
+				stability_factor = -0.15
+			}
+		}
+	
+	PRS_die_for_the_revolution = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {}
+			targeted_modifier = {
+				tag = GER
+					attack_bonus_against = 0.15
+					defense_bonus_against = 0.15
+				}	
+		}
+		
+		PRS_total_war = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+				has_war_with = GER
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = 0.25
+				production_speed_infrastructure_factor = -0.15
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_dockyard_factor = 0.15
+			}
+		}
+		
+		
+		PRS_peoples_resistance = {
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_war_with = PRS
+			}
+			cancel = { }
+			modifier = {
+				war_support_factor = -0.1
+				stability_factor = -0.15
+				industrial_capacity_factory = -0.13
+			}
+		}
+		
+		PRS_sabotaged_supply_lines = {
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_war_with = PRS
+			}
+			cancel = { }
+			modifier = {
+				supply_consumption_factor = 0.15
+				attrition = 0.065
+			}
+		}
+		
+		PRS_devastated_landside = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = 0.6
+				stability_factor = -0.15
+				local_resources_factor = -0.2
+				industrial_capacity_factory = -0.2
+				production_speed_buildings_factor = -0.3
+			}
+		}
+		
+		PRS_fascist_resistance = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				conscription_factor = -0.15
+				stability_weekly_factor = -0.04
+				war_support_weekly_factor = -0.04
+				resistance_activity = 0.15
+				army_org_factor = -0.1
+				
+				
+			}
+		}
+		
+		PRS_ulbrichts_plan = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				production_speed_buildings_factor = 0.1	
+			}
+		}
+		
+		PRS_honeckers_plan = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		
+		PRS_nationale_volksarmee = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				experience_gain_army_unit_factor =0.06
+			}
+		}
+		
+		PRS_nationale_volksarmee2 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				experience_gain_army_unit_factor = 0.06
+				planning_speed = 0.1
+				max_planning_factor = 0.1
+				land_doctrine_cost_factor = 0.1
+				naval_doctrine_cost_factor = 0.1
+				air_doctrine_cost_factor = 0.1
+
+			}
+		}
+		
+		PRS_nationale_volksarmee3 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				experience_gain_army_unit_factor = 0.06
+				required_garrison_factor = -0.13
+				agency_upgrade_time = -0.15
+				operative_slot = 1
+				compliance_growth_on_our_occupied_states = 0.3
+
+			}
+		}
+		
+		PRS_nationale_volksarmee4 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				experience_gain_army_unit_factor = 0.1
+				army_morale_factor = 0.2
+				training_time_army_factor = -0.1	
+
+			}
+		}
+		
+		PRS_nationale_volksarmee5 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				experience_gain_army_unit_factor = 0.06
+				planning_speed = 0.1
+				max_planning_factor = 0.1
+				land_doctrine_cost_factor = 0.1
+				naval_doctrine_cost_factor = 0.1
+				air_doctrine_cost_factor = 0.1
+				required_garrison_factor = -0.13
+				agency_upgrade_time = -0.15
+				operative_slot = 1
+				compliance_growth_on_our_occupied_states = 0.3
+
+			}
+		}
+		
+		PRS_nationale_volksarmee6 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				required_garrison_factor = -0.13
+				agency_upgrade_time = -0.15
+				operative_slot = 1
+				compliance_growth_on_our_occupied_states = 0.3
+				experience_gain_army_unit_factor = 0.1
+				army_morale_factor = 0.2
+				training_time_army_factor = -0.1	
+
+			}
+		}
+		
+		PRS_nationale_volksarmee7 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				planning_speed = 0.1
+				max_planning_factor = 0.1
+				land_doctrine_cost_factor = 0.1
+				naval_doctrine_cost_factor = 0.1
+				air_doctrine_cost_factor = 0.1
+				experience_gain_army_unit_factor = 0.1
+				army_morale_factor = 0.2
+				training_time_army_factor = -0.1	
+
+			}
+		}
+		
+		PRS_nationale_volksarmee8 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				planning_speed = 0.1
+				max_planning_factor = 0.1
+				land_doctrine_cost_factor = 0.1
+				naval_doctrine_cost_factor = 0.1
+				air_doctrine_cost_factor = 0.1
+				experience_gain_army_unit_factor = 0.1
+				army_morale_factor = 0.2
+				training_time_army_factor = -0.1
+				required_garrison_factor = -0.13
+				agency_upgrade_time = -0.15
+				operative_slot = 1
+				compliance_growth_on_our_occupied_states = 0.3				
+
+			}
+		}
+		
+		prussian_militia_army = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				conscription_factor = 0.15
+				army_core_attack_factor = 0.1
+				army_attack_against_major_factor = 0.05
+				army_org_factor = -0.2
+				planning_speed = -0.1
+				max_planning_factor = -0.1
+			}
+		}
+		
+		forced_conscription = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				conscription = 0.03
+				training_time_army_factor = 0.1
+			}
+		}
+		
+		female_soldiers = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				conscription = 0.045
+				consumer_goods_factor = 0.2
+			}
+		}
+		
+		PRS_central_command = {
+			allowed = { 
+				original_tag = PRS
+			}
+            modifier = {
+				out_of_supply_factor = -0.2
+				max_planning = 0.15
+				planning_speed = 0.15
+			}
+		}
+		
+		PRS_decentralized_command = {
+			allowed = { 
+				original_tag = PRS
+			}
+            modifier = {
+				org_loss_when_moving = -0.1
+				experience_gain_factor = 0.25
+				planning_speed = 0.25
+			}
+			
+		}
+		
+		PRS_proffesional_army = {
+			allowed = { 
+				original_tag = PRS
+			}
+            modifier = {
+				army_org_Factor = 0.15
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				org_loss_when_moving = -0.15
+				army_speed_factor  = 0.1
+			}
+			
+		}
+		
+		PRS_militia_tactics = {
+			allowed = { 
+				original_tag = PRS
+			}
+            modifier = {
+				dig_in_speed_factor = 0.2
+				max_dig_in = 8
+				winter_attrition_factor = -0.1
+				heat_attrition_factor = -0.1
+				terrain_penalty_reduction = 0.1
+			}
+			
+		}
+		
+		every_worker_a_soldier = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				conscription = 0.05
+				conscription_factor = 0.15
+				consumer_goods_factor = 0.2
+			}
+		}
+		
+		PRS_dead_economy6 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				production_speed_buildings_factor = -0.25
+				production_factory_efficiency_gain_factor = -0.17
+				industrial_capacity_factory = -0.17
+			}
+		}
+		
+		PRS_devastated_landside2 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = 1
+				stability_factor = -1
+				local_resources_factor = -1
+				industrial_capacity_factory = -1
+				production_speed_buildings_factor = -1
+			}
+		}
+		
+		PRS_workers_exhaustion = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = 0.025
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+	
+	
+	PRS_dead_economy7 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				production_factory_efficiency_gain_factor = -0.07
+				industrial_capacity_factory = -0.07
+			}
+		}
+		
+		PRS_ulbrichts_plan_military = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				production_speed_buildings_factor = 0.1	
+				production_cost_industrial_complex_factor = 0.1
+				production_cost_arms_factory_factor = -0.1
+			}
+		}
+		
+		PRS_ulbrichts_plan_oil = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				production_speed_buildings_factor = 0.1	
+				base_fuel_gain_factor = 0.1
+				max_fuel_factor = 0.2
+			}
+		}
+		
+		PRS_ulbrichts_plan_all = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				production_speed_buildings_factor = 0.1	
+				base_fuel_gain_factor = 0.1
+				max_fuel_factor = 0.2
+				production_cost_industrial_complex_factor = 0.1
+				production_cost_arms_factory_factor = -0.1
+			}
+		}
+		
+		PRS_dead_economy8 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor =  -0.05
+				production_speed_buildings_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+		
+		PRS_dead_economy9 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor =  0.05
+				production_speed_buildings_factor = 0.2
+				production_factory_efficiency_gain_factor = -0.15
+				industrial_capacity_factory = -0.15
+			}
+		}
+		
+		PRS_honeckers_plan2 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				stability_factor = 0.13
+			}
+		}
+		
+		PRS_honeckers_plan3 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = -0.05
+				global_building_slots_factor =  0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		PRS_honeckers_plan4 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				stability_factor = 0.13
+				global_building_slots_factor =  0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		PRS_independent_trade_unions = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				consumer_goods_factor = 0.075
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+		
+		PRS_integrated_trade_unions = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				consumer_goods_factor = -0.075
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		
+		PRS_fascist_resistance2 = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				conscription_factor = -0.1
+				stability_weekly_factor = -0.02
+				war_support_weekly_factor = -0.02
+				resistance_activity = 0.1
+				army_org_factor = -0.05
+				
+				
+			}
+		}
+		
+		PRS_party_purges = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				political_power_cost = 0.25
+				stability_weekly_factor = -0.1
+				political_power_gain = -0.25
+				trade_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+			}
+		}
+		
+		PRS_army_purges = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				land_doctrine_cost_factor = 0.2
+				naval_doctrine_cost_factor = 0.2
+				air_doctrine_cost_factor = 0.2
+				army_org_factor = -0.3
+				experience_gain_army_factor = -0.5
+			}
+		}
+		
+		PRS_red_guards = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				monthly_population = 0.1
+				conscription_factor = 0.05
+				communism_drift = 0.01
+			}
+		}
+		
+		PRS_socialist_education = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = { }
+				research_bonus = {
+					electronics = 0.1
+				}
+				research_bonus = {
+					industry = 0.1
+				}
+			
+		}
+		
+		PRS_work_with_companies = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		
+		PRS_full_employment = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				consumer_goods_factor = 0.05
+			}
+		}
+		
+		PRS_technocratic_paradise = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = { 
+				research_speed_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.07
+				political_power_cost = -0.1
+			}
+				research_bonus = {
+					electronics = 0.1
+				}
+				research_bonus = {
+					industry = 0.1
+				}
+				research_bonus = {
+					infantry_weapons = 0.1
+				}
+			
+		}
+		
+		PRS_red_support_units = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				monthly_population = 0.1
+				conscription_factor = 0.1
+				communism_drift = 0.01
+				supply_consumption_factor = -0.08
+				max_dig_in = 5
+				dig_in_speed_factor = 0.15
+			}
+		}
+		
+		PRS_expanded_stasi = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				propaganda_mission_factor = 0.2
+				boost_ideology_mission_factor = 0.2
+				operative_slot = 2
+				operation_cost = 0.15
+				operation_risk = 0.1
+			}
+		}
+		
+		PRS_martial_law = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				stability_weekly_factor = 0.01
+				war_support_weekly_factor = 0.01
+				consumer_goods_factor = 0.2
+				weekly_manpower = -25
+			}
+		}
+		
+		PRS_functional_architecture = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				industry_repair_factor  = 0.15
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_dockyard_factor = 0.1
+			}
+		}
+		
+		PRS_transformation_of_germany = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				political_power_cost = 0.5
+				consumer_goods_factor = 0.1
+				stability_factor = -0.05
+			}
+		}
+		
+		PRS_militarisation_of_society = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				conscription_factor = 0.15
+				consumer_goods_factor = 0.1
+				army_morale_factor = 0.1
+				stability_factor = -0.1
+				war_support_factor = 0.1
+				
+			}
+		}
+		
+		PRS_war_communism = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				conscription_factor = 0.25
+				consumer_goods_factor = 0.2
+				army_morale_factor = 0.15
+				stability_factor = -0.15
+				war_support_factor = 0.15
+				
+			}
+		}
+		
+		PRS_soviet_german_currency_union = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				global_building_slots_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.15
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		
+		PRS_defence_against_france = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				dig_in_speed_factor = 0.15
+				max_dig_in =  10
+			}
+			targeted_modifier = {
+				tag = FRA
+					defense_bonus_against = 0.15
+				}	
+		}
+		PRS_wave_of_strikes = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.25
+			}
+		}
+		PRS_naval_restrictions = {
+			allowed = {
+				original_tag = PRS
+				NOT = { has_war_with = ENG }
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				industrial_capacity_dockyard = -0.2
+				experience_gain_navy_factor = -0.25
+				naval_doctrine_cost_factor = 0.5
+			}
+		}
+		PRS_soviet_liberation_forces = {
+			allowed = {
+				original_tag = PRS
+				has_war_with = CRI
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				weekly_manpower = 500
+			}
+		}
+		
+		PRS_defeat_the_whites = {
+			allowed = {
+				original_tag = PRS
+				has_war_with = CRI
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+			}
+			targeted_modifier = {
+				tag = CRI
+					attack_bonus_against = 0.15
+				}
+			targeted_modifier = {
+				tag = CWA
+					attack_bonus_against = 0.15
+				}
+			targeted_modifier = {
+				tag = FER
+					attack_bonus_against = 0.15
+				}
+			targeted_modifier = {
+				tag = MON
+					attack_bonus_against = 0.15
+				}					
+		}
+		PRS_collaborationist_goverment = {
+			allowed = {
+				is_puppet_of = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				conscription_factor = -0.7
+				local_resources_factor = -0.5
+				stability_factor = -0.5
+				war_support_factor = -0.5
+				political_power_factor = 0.15
+			}
+		}
+		PRS_cheaper_planes = {
+			allowed = {
+				is_puppet_of = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.1 
+					instant = yes
+				}
+			}
+			equipment_bonus = {
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.1 
+					instant = yes
+				}
+			}	
+		}
+		PRS_optimized_planes = {
+			allowed = {
+				is_puppet_of = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				air_fuel_consumption_factor = -0.1
+				air_accidents_factor = -0.15
+				air_agility_factor = 0.1
+				air_weather_penalty = -0.1
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.1 
+					instant = yes
+				}
+			}
+			equipment_bonus = {
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.1 
+					instant = yes
+				}
+			}		
+		}
+		
+		PRS_optimized_ships = {
+			allowed = {
+				original_tag = PRS
+			}
+			available = {
+			}
+			cancel = { }
+			modifier = {
+				naval_coordination = 0.1
+				navy_visibility = -0.05
+				repair_speed_factor = 0.2
+			}
+		}
+		
+	}
+
+}
+	

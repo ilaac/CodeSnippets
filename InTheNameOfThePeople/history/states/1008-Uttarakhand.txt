@@ -1,0 +1,23 @@
+state={
+	id=1008
+	name="STATE_1008"
+	
+	history={
+		owner = RAJ
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			3989 3
+		}
+		
+	}
+	provinces={
+		1129 1898 2076 3989 7106 
+	}
+	manpower=3710574
+	state_category=small_town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

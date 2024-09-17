@@ -1,0 +1,25 @@
+
+state={
+	id=230
+	name="STATE_230"
+
+	history={
+		owner = TRC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = TRC
+		add_core_of = ARM
+
+	}
+
+	provinces={
+		4660 6642 6997 11708 12450 13123 
+	}
+	manpower=650082
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

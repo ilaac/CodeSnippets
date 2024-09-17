@@ -1,0 +1,117 @@
+﻿division_template = {
+	name = "Brigada Revolucionaria"			# Divisions were at reserve levels during peacetime
+	division_names_group = SPAN_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		militia = { x = 2 y = 0 }
+		militia = { x = 2 y = 1 }
+	}
+}
+
+
+units = {
+	##### Ejército del Perú #####
+	division= {	# "1era Div. de Infantería 'Bolognesi'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 10970 
+		division_template = "Brigada Revolucionaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "2da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 12969 
+		division_template = "Brigada Revolucionaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "3era División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 8213 
+		division_template = "Brigada Revolucionaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "4ta División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 8149 # Iquitos
+		division_template = "Brigada Revolucionaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	
+		name = "División de Caballería"
+		location = 8213 # Lima
+		division_template = "Brigada Revolucionaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "1era Div. de Infantería 'Bolognesi'"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 13289 # Lima
+		division_template = "Brigada Revolucionaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "2da División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 5190 
+		division_template = "Brigada Revolucionaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+	division= {	# "3era División de Infantería"
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 5190 
+		division_template = "Brigada Revolucionaria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.3
+
+	}
+}
+
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "PRU"
+		}
+		requested_factories = 1
+		progress = 0.79
+		efficiency = 100
+	}
+}

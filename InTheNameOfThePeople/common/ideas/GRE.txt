@@ -1,0 +1,19 @@
+ideas = {
+	country = {
+		GRE_dreams_of_megali = {
+			allowed = {
+				original_tag = GRE
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				conscription_factor = 0.15
+				army_attack_factor = 0.05
+			}
+		}
+		
+	}	
+}
+	

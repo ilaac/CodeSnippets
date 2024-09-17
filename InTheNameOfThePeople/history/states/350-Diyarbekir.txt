@@ -1,0 +1,45 @@
+
+state={
+	id=350
+	name="STATE_350"
+
+	history={
+		owner = TUR
+		victory_points = {
+			9823 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		if = {
+			limit = {
+				has_dlc = "Battle for the Bosporus"
+
+			}
+			add_core_of = KUR
+
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_dlc = "Battle for the Bosporus"
+
+				}
+
+			}
+			add_core_of = TUR
+			add_core_of = KUR
+
+		}
+
+	}
+
+	provinces={
+		9823 11759 11871 
+	}
+	manpower=216935
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

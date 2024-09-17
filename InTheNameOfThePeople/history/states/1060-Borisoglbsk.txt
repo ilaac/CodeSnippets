@@ -1,0 +1,24 @@
+state={
+	id=1060
+	name="STATE_1060"
+	
+	history={
+		owner = SSR
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			synthetic_refinery = 1
+
+		}
+		add_core_of = SSR
+
+	}
+	
+	provinces={
+		3469 3567 6477 6591 9552 11396 11412 11475 
+	}
+	manpower=359281
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

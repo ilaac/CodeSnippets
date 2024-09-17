@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		KHI_anarchist_exile_armies = {
+			allowed = {
+				original_tag = KHI
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				conscription = 0.02
+			}
+		}
+		
+	}	
+}
+	

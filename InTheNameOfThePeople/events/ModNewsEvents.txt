@@ -1,0 +1,156 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = mod_news
+
+# Hun Otto opposes Parliament
+news_event = {
+	id = mod_news.1
+	title = mod_news.1.t
+	desc = mod_news.1.d
+	picture = GFX_news_event_hun_parliament
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		ai_chance = {  base = 1 factor = 100 }
+		name = "Let´s hope He´s doing the right thing."
+	}
+}
+
+# Hun Otto supports Parliament
+news_event = {
+	id = mod_news.2
+	title = mod_news.2.t
+	desc = mod_news.2.d
+	picture = GFX_news_event_hun_parliament
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		ai_chance = { base = 1 factor = 100 }
+		name = "Really?!"
+	}
+}
+
+	news_event = {
+	id = mod_news.3
+	title = mod_news.3.t
+	desc = mod_news.3.d
+	picture = GFX_news_event_ihadnootheridea
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		ai_chance = { base = 1 factor = 100 }
+		name = "A new Hungarian King, hmmm..."
+	}
+}
+
+	news_event = {
+	id = mod_news.4
+	title = mod_news.4.t
+	desc = mod_news.4.d
+	picture = GFX_news_event_horthy_chairman
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		ai_chance = { base = 1 factor = 100 }
+		name = "Another Fascist?"
+	}
+}
+
+	news_event = {
+	id = mod_news.5
+	title = mod_news.5.t
+	desc = mod_news.5.d
+	picture = GFX_news_event_third_balkan_war
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	option = {
+		ai_chance = { base = 1 factor = 100 }
+		name = "The Balkan is at war again."
+	}
+}
+	news_event = {
+	id = mod_news.6
+	title = mod_news.6.t
+	desc = mod_news.6.d
+	picture = GFX_news_event_brothers_war
+	
+	major = yes
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = HUN
+		has_completed_focus = HUN_reunite_all_hungarians
+		has_war_with = AUS
+	}
+		
+	option = {
+		ai_chance = { base = 1 factor = 100 }
+		name = "Now the world ends completly."
+	}
+}
+	###Germany takes back the Saarland
+	news_event = {
+	id = mod_news.7
+	title = mod_news.7.t
+	desc = mod_news.7.d
+	picture = GFX_news_event_brothers_war
+	
+	major = yes
+	
+	#is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		original_tag = GER
+		has_completed_focus = GER_prepare_french_invasion
+	}
+		
+	option = {
+		ai_chance = { base = 1 factor = 100 }
+		name = "It was only inevitable"
+	}
+}
+
+
+
+
+

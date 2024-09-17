@@ -1,0 +1,39 @@
+
+state={
+	id=323
+	name="STATE_323"
+	manpower = 6273791
+	
+	state_category = city
+	resources={
+		chromium=4
+		steel=7
+	}
+	history={
+		owner = TIB
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 2 
+		}
+		victory_points = {
+			4987 15 
+		}
+		victory_points = {
+			10910 1 
+		}
+		victory_points = {
+			7374 3 
+		}
+		victory_points = {
+			5310 2 
+		}
+		add_core_of = TIB
+	}
+
+	provinces={
+		4386 4987 5310 7374 10825 10910 12892 
+	}
+
+	local_supplies=0.0 
+}

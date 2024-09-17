@@ -1,0 +1,235 @@
+bookmarks = {
+	bookmark = {
+		name = "GATHERING_STORM_NAME"
+		desc = "GATHERING_STORM_DESC"
+		date = 1936.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "GER"
+		default = yes
+		
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { NOT = { has_dlc = "La Resistance" } }
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { has_dlc = "La Resistance" } 
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { has_dlc = "Man the Guns" }
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = democratic
+			available = { NOT = { has_dlc = "Man the Guns" } }
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { has_dlc = "Waking the Tiger" }
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"GER"={
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { NOT = { has_dlc = "Waking the Tiger" } }
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { has_dlc = "By Blood Alone" }
+			ideas = {
+				
+			}	
+			focuses = {
+				
+			}		
+		}
+		"ITA"={
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
+			available = { NOT = { has_dlc = "By Blood Alone" } }
+			ideas = {
+				
+			}	
+			focuses = {
+				
+			}		
+		}
+		"PRS"={
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = communism
+			ideas = {
+				#state_shintoism
+				#JAP_zaibatsus
+				#JAP_militarism
+			}	
+			focuses = {
+				#JAP_the_zero
+				#JAP_warrior_spirit
+				#JAP_strike_on_the_southern_resource_area
+			}			
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			available = { has_dlc = "No Step Back" }
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}	
+		}
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			available = { NOT = { has_dlc = "No Step Back" } }
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}	
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		# minors from DLC ####
+		"SPR"={
+			minor = yes
+			history = "SPAIN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+		"HUN"={
+			minor = yes
+			history = "HUN_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				
+			}
+		}
+
+		
+		"CRI"={
+			minor = yes
+			history = "CRI_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				#CAN_great_depression_1
+				#CAN_conscription_crisis
+			}
+			focuses = {
+				#CAN_skewer_the_eagle
+				#CAN_north_american_alliance
+				#CAN_join_comintern
+			}
+		}
+		"RVA"={
+			minor = yes
+			history = "AST_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				#AST_great_depression_1
+			}
+			focuses = {
+				#AST_never_another_gallipoli
+				#AST_support_indonesian_uprising
+				#AST_delegation_to_china
+			}
+		}
+		"CWA"={
+			minor = yes
+			history = "NZL_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				
+			}
+			focuses = {
+				#NZL_bob_semple_tank
+				#NZL_independent_new_zealand
+				#NZL_maori_volunteers
+			}
+		}
+		"FER"={
+			minor = yes
+			history = "SAF_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				#SAF_ossewabrandwag
+				#SAF_history_of_segregation
+			}
+			focuses = {
+				#SAF_secure_interests_in_africa
+				#SAF_support_the_german_coup
+				#SAF_anti_colonialist_crusade
+			}
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

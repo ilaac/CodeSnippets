@@ -1,0 +1,19 @@
+characters={
+	
+	FSA_friedrich_karl_i={
+		name=FSA_friedrich_karl_i
+		portraits={
+			civilian={
+				large="GFX_portrait_finland_friedrich_karl_von_hessen_large"
+			}
+		}
+		country_leader={
+			ideology=moderatism
+			traits={ socialite_connections  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	
+	
+}

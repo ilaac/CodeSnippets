@@ -1,0 +1,50 @@
+characters={
+
+	FRA_edouard_daladier1={
+		name=FRA_edouard_daladier1
+		portraits={
+			civilian={
+				large=GFX_portrait_FRA_edouard_daladier
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ stout_defender }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	FRA_maurice_thorez1={ #Communist Leader
+		name=FRA_maurice_thorez1
+		portraits={
+			army={
+				small="GFX_idea_maurice_thorez"
+			}
+			civilian={
+				large="GFX_portrait_fra_maurice_thorez"
+			}
+		}
+		
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	FRA_rene_nicod1={
+		name=FRA_rene_nicod1
+		portraits={
+			civilian={
+				large="GFX_portrait_fra_rene_nicod"
+				small = GFX_portrait_FRA_rene_nicod_small
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1.1"
+		}
+	}
+
+}

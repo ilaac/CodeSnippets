@@ -1,0 +1,37 @@
+﻿###########################
+# German Events
+###########################
+
+add_namespace = south_germany
+
+country_event = {
+	id = south_germany.1
+	title = sgermany.1.t
+	desc = sgermany.1.d
+	picture = GFX_german_civil_war_start
+	
+	is_triggered_only =  yes
+	
+	option = { 
+		name = sgermany.1.a
+		ai_chance = { factor = 100}
+		complete_national_focus = SGER_start_of_a_new_era
+		add_political_power = 150
+				add_equipment_to_stockpile = {
+				    type = infantry_equipment
+				    amount = 10000
+				    producer = GER
+				}
+				add_equipment_to_stockpile = {
+				    type = support_equipment
+				    amount = 350
+				    producer = GER
+				}
+				add_equipment_to_stockpile = {
+				    type = artillery_equipment
+				    amount = 500
+				    producer = GER
+				}
+	}
+}
+

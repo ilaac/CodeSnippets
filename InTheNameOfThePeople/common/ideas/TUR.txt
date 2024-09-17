@@ -1,0 +1,175 @@
+ideas = {
+
+	country = { 
+
+		TUR_radicalized_army = { 
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			#picture = tur_kemalist_army_officers_powerful_loyal
+				
+			removal_cost = -1
+				
+			modifier = {
+				custom_modifier_tooltip = SPR_military_disloyalty_tt
+				fascism_drift = 0.02
+				communism_drift = 0.02
+			}
+		}
+		TUR_legacy_of_the_turkish_independence_war = { 
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			#picture = tur_kemalist_army_officers_powerful_loyal
+				
+			removal_cost = -1
+				
+			modifier = {
+				conscription_factor =  -0.1
+				army_org_factor = -0.2
+				army_morale_factor = -0.15
+				war_support_factor = -0.15
+			}
+		}
+		
+		TUR_kemalists_in_exile = { 
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			#picture = tur_kemalist_army_officers_powerful_loyal
+				
+			removal_cost = -1
+				
+			modifier = {
+				stability_factor =  0.05
+				democratic_drift = 0.01
+			}
+		}
+		
+		TUR_turkish_civil_war_participant = { 
+
+			allowed = {
+				OR = {
+					original_tag = TUR
+					original_tag = OTT
+					original_tag = NTU
+				}
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			#picture = tur_kemalist_army_officers_powerful_loyal
+				
+			removal_cost = -1
+				
+			modifier = {
+				monthly_population = -0.85
+				conscription_factor = 0.25
+				conscription = 0.03
+				stability_factor = -0.25
+				war_support_factor =  0.25
+				equipment_capture_factor = 0.2
+				training_time_factor = -0.25
+			}
+		}
+		
+		TUR_dead_sultan = { 
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			#picture = tur_kemalist_army_officers_powerful_loyal
+				
+			removal_cost = -1
+				
+			modifier = {
+				stability_factor = -0.4
+				war_support_factor = -0.4
+				political_power_cost = 0.5
+			}
+		}
+		
+		TUR_payments_to_the_soviets = { 
+
+			allowed = {
+				original_tag = TUR
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			#picture = tur_kemalist_army_officers_powerful_loyal
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = 0.3
+			}
+		}
+		
+		OTT_ottoman_payments = { 
+
+			allowed = {
+				
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			#picture = tur_kemalist_army_officers_powerful_loyal
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		
+		TUR_money_from_turkey = { 
+
+			allowed = {
+				original_tag = SOV
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			#picture = tur_kemalist_army_officers_powerful_loyal
+				
+			removal_cost = -1
+				
+			modifier = {
+				consumer_goods_factor = -0.3
+			}
+		}
+
+	}
+}

@@ -1,0 +1,33 @@
+state={
+	id=797
+	name="STATE_797"
+	resources={
+		steel = 10
+	}
+
+	history= {
+		owner = CNS
+		victory_points = {
+			9833 25
+		}
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 4
+			9833 = {
+				naval_base = 8
+			}
+		}
+		add_core_of = CNS
+		add_claim_by = TUR
+		add_claim_by = GRE
+	}
+
+	local_supplies=0.0 
+	state_category = city
+	manpower = 1442276
+	provinces={
+		9833 11829 
+	}
+}

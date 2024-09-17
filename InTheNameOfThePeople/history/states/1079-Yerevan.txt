@@ -1,0 +1,31 @@
+state={
+	id=1079
+	name="STATE_1079"
+	
+	history={
+		owner = TRC
+		victory_points = {
+			12320 3 
+		}
+		victory_points = {
+			12441 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			air_base = 2
+
+		}
+		add_core_of = TRC
+		add_core_of = ARM
+
+	}
+	
+	provinces={
+		3564 12320 12380 12441 
+	}
+	manpower=601824
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

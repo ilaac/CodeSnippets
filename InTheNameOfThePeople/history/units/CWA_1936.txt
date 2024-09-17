@@ -1,0 +1,63 @@
+﻿division_template = {
+	name = "Russkoye Denikinskoye Opolcheniyea"			# Cavalry Division
+
+	division_names_group = UKR_CAV_01 
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+}
+
+
+units = {
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4322
+		division_template = "Russkoye Denikinskoye Opolcheniyea"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7243
+		division_template = "Russkoye Denikinskoye Opolcheniyea"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 9526
+		division_template = "Russkoye Denikinskoye Opolcheniyea"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7341
+		division_template = "Russkoye Denikinskoye Opolcheniyea"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1
+
+	}
+	
+	
+	
+}

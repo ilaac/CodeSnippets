@@ -1,0 +1,31 @@
+ideas = {
+	country = {
+		QUE_militarized_society = {
+			allowed = {
+				original_tag = KHI
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				conscription = 0.03
+			}
+		}
+		QUE_french_refugees = {
+			allowed = {
+				original_tag = KHI
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				weekly_manpower = 750
+				monthly_population = 0.5
+			}
+		}
+		
+	}	
+}
+	

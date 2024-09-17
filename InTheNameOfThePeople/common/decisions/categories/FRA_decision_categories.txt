@@ -1,0 +1,78 @@
+################
+##### FRA ######
+################
+
+FRA_revolutionary_struggle = {
+	icon = power_struggle
+	priority = 9
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		has_completed_focus = FRA_revolutionary_chaos
+	}
+	visible_when_empty = no
+}
+FRA_project_alpha = {
+	icon = power_struggle
+	priority = 9
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		has_completed_focus = FRA_start_plan_alpha
+	}
+	visible_when_empty = no
+}
+FRA_military_buildup = {
+	icon = power_struggle
+	priority = 9
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+	}
+	visible_when_empty = no
+}
+FRA_expansion_of_anarchism = {
+	icon = power_struggle
+	priority = 9
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		has_completed_focus = FRA_our_next_goal
+	}
+	visible_when_empty = no
+}
+FRA_economic_reorganization = {
+	icon = power_struggle
+	priority = 9
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		has_completed_focus = FRA_gather_rescources
+		NOT = {
+			AND = {
+				has_completed_focus = FRA_finalize_economic_organization
+				has_completed_focus = FRA_a_true_anarchist_revoluion
+				has_completed_focus = FRA_the_plan_omega
+				has_completed_focus = FRA_scientific_revolution
+			}
+		}
+	}
+	visible_when_empty = no
+}
+FRA_the_eurasian_conquest = {
+	icon = power_struggle
+	priority = 9
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		has_completed_focus = FRA_prepare_the_conquest
+	}
+	visible_when_empty = no
+}
+

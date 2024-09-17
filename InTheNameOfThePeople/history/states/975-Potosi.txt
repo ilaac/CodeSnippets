@@ -1,0 +1,25 @@
+state={
+	id=975
+	name="STATE_975"
+	
+	history={
+		owner = PRU
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+		add_core_of = PRU
+		add_core_of = BOL
+
+	}
+	
+	provinces={
+		2174 5179 5229 10938 10987 12930 12979 
+	}
+	manpower=1022342
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

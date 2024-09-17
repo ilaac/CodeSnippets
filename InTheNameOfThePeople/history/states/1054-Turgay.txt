@@ -1,0 +1,22 @@
+state={
+	id=1054
+	name="STATE_1054"
+	
+	history={
+		owner = KAZ
+		add_core_of = KAZ
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+	
+	provinces={
+		1272 1276 1303 1331 1360 4337 10140 10295 12115 12139 12143 12170 12198 12266 
+	}
+	manpower=143953
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

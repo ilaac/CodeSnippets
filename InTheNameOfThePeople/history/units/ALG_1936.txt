@@ -1,0 +1,88 @@
+﻿start_equipment_factor = 0.1
+##### Division Templates #####
+division_template = {
+	name = "Katiba"			
+	regiments = {
+		militia = { x = 0 y = 0 }				#1000
+		militia = { x = 0 y = 1 }				#1000
+		militia = { x = 0 y = 2 }				#1000
+		militia = { x = 0 y = 3 }				#1000
+		militia = { x = 1 y = 0 }				#1000
+		militia = { x = 1 y = 1 }				#1000
+	}
+	support = {
+	}
+	priority = 0
+}
+division_template = {
+	name = "Firqat Almushat Aljazayiria"  
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+}
+
+
+###### OOB ######
+units = {
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7132
+		division_template = "Firqat Almushat Aljazayiria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1013
+		division_template = "Firqat Almushat Aljazayiria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1128
+		division_template = "Firqat Almushat Aljazayiria"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 7033
+		division_template = "Katiba"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+	division = {
+		division_name = {    
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 10059
+		division_template = "Katiba"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.4
+
+	}
+}

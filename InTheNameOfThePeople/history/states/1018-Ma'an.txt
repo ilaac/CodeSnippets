@@ -1,0 +1,23 @@
+state={
+	id=1018
+	name="STATE_1018"
+	
+	history={
+		owner = SYR
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = JOR
+		add_core_of = SYR
+
+	}
+	
+	provinces={
+		4017 4591 13387 13388 13389 
+	}
+	manpower=71345
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

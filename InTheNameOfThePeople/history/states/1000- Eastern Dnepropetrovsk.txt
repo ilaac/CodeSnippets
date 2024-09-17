@@ -1,0 +1,21 @@
+state={
+	id=1000
+	name="STATE_1000"
+	history={
+		owner = SSR
+		buildings = {
+			infrastructure = 3 #was: 5
+			industrial_complex = 1
+		}
+		add_core_of = SSR
+		add_core_of = UKR
+	}
+	
+	provinces={
+		453 472 486 9463 9479 11452 
+	}
+	manpower=549504
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

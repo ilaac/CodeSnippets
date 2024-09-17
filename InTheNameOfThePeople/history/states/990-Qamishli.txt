@@ -1,0 +1,28 @@
+state={
+	id=990
+	name="STATE_990"
+	resources={
+		oil=16.000
+	}
+	
+	provinces={
+		901 1549 1578 1938 10804 10882 
+	}
+	history={
+		owner = IRQ
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			1549 3 
+		}
+		add_core_of = IRQ
+		add_claim_by = KUR
+	}
+	manpower=789030
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

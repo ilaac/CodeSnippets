@@ -1,0 +1,22 @@
+state={
+	id=1065
+	name="STATE_1065"
+	
+	history={
+		owner = ALG
+		add_core_of = ALG
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+	
+	provinces={
+		1126 3991 4018 4150 7008 10045 12018 12020 13074 
+	}
+	manpower=405183
+	state_category=enclave
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

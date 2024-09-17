@@ -1,0 +1,26 @@
+state={
+	id=1014
+	name="STATE_1014"
+	
+	history={
+		owner = GER
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			564 3 
+		}
+		add_core_of = GER
+		add_claim_by = PRS
+
+	}
+	provinces={
+		564 3524 6549 9524 9547 11533 
+	}
+	manpower=1185343
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

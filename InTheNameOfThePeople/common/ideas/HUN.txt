@@ -1,0 +1,1817 @@
+ideas = {
+	country = {
+		HUN_treaty_of_triannon1 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_arms_factory_factor = -0.1
+			}
+		}
+		HUN_romanian_minority = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = -0.05
+				local_resources_factor = -0.1
+				industrial_capacity_factory = -0.1
+				conscription_factor = -0.1
+			}
+		}
+		HUN_close_austrian_ties = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = -0.20
+				production_factory_max_efficiency_factor = -0.20
+				production_speed_industrial_complex_factor = -0.20
+			}
+		}
+		HUN_medium_austrian_influence = {
+			allowed = {
+				original_tag = HUN
+					always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.20
+				production_factory_efficiency_gain_factor = -0.10
+				production_factory_max_efficiency_factor = -0.10
+				production_speed_industrial_complex_factor = -0.15
+			}
+		}
+		HUN_low_austrian_influence = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				industrial_capacity_factory = 0.20
+				production_factory_efficiency_gain_factor = -0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_speed_industrial_complex_factor = -0.05
+			}
+		}
+		HUN_national_economy_control = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				NOT = {has_idea = HUN_stagnating_economy } 
+			}
+			cancel = { }
+			modifier = {
+				industrial_capacity_factory = 0.2
+				production_factory_efficiency_gain_factor = 0
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_industrial_complex_factor = 0
+			}
+		}
+		HUN_austrian_sanctions = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				
+				consumer_goods_factor = 0.03
+				local_resources_factor = -0.1
+			}	
+				
+				equipment_bonus = {
+					infantry_equipment = {
+						build_cost_ic = 0.1
+						instant = yes
+					}
+					motorized_equipment = {
+						build_cost_ic = 0.1
+						instant = yes
+					}
+					light_tank_chassis = {
+						build_cost_ic = 0.1
+						instant = yes
+					}
+					light_tank_artillery_chassis = {
+						build_cost_ic = 0.1
+						instant = yes
+					}
+					light_tank_destroyer_chassis = {
+						build_cost_ic = 0.1
+						instant = yes
+					}
+					light_tank_aa_chassis = {
+						build_cost_ic = 0.1
+						instant = yes
+					}
+					medium_tank_chassis = {
+						build_cost_ic = 0.1
+						instant = yes
+					}
+					medium_tank_artillery_chassis = {
+						build_cost_ic = 0.1
+						instant = yes
+					}
+					medium_tank_destroyer_chassis = {
+						build_cost_ic = 0.1
+						instant = yes
+					}
+					medium_tank_aa_chassis = {
+						build_cost_ic = 0.1
+						instant = yes
+					}
+					heavy_tank_chassis = {
+						build_cost_ic = 0.1
+						instant = yes
+					}
+					heavy_tank_artillery_chassis = {
+						build_cost_ic = 0.1
+						instant = yes
+					}
+					heavy_tank_destroyer_chassis = {
+						build_cost_ic = 0.1
+						instant = yes
+					}
+					heavy_tank_aa_chassis = {
+						build_cost_ic = 0.1
+						instant = yes
+					}
+					artillery_equipment = {
+						build_cost_ic = 0.1
+						instant = yes
+					}
+				}
+			
+		}
+		
+		HUN_struggeling_hungarian_monarchy = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.15
+				political_advisor_cost_factor = 0.25
+				high_command_cost_factor = 0.25
+			}
+		}
+		
+		HUN_struggeling_hungarian_monarchy2 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.1
+				political_advisor_cost_factor = 0.15
+				high_command_cost_factor = 0.15
+			}
+		}
+		
+		HUN_hungarian_democracy = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = 0.1
+				
+			}
+		}
+		
+		HUN_hungarian_patriotism = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = 0.1
+				
+			}
+		}
+		
+		HUN_military_purges = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				army_org_factor = -0.2
+				experience_gain_army_factor = -0.15
+				training_time_factor = 0.1
+				offence = -0.1
+				defence = -0.1
+				
+			}
+		}
+		
+		HUN_fragile_stability = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = 0.2
+				consumer_goods_factor = -0.02
+				political_power_factor = 0.1
+				
+			}
+		}
+		
+		HUN_poisoned_opposition = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				democratic_drift = -0.05
+				communism_drift = -0.05
+				
+			}
+		}
+		
+		HUN_wave_of_fascism = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				neutrality_drift = -0.1
+				fascism_drift = 0.1
+				
+			}
+		}
+		
+		HUN_national_identity = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				war_support_weekly = 0.001
+				conscription = 0.01
+				surrender_limit = 0.15
+				
+			}
+		}
+		
+		HUN_reformed_country = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				political_power_factor = 0.08
+				war_support_factor = 0.1
+				generate_wargoal_tension = -0.1
+				stability_weekly = 0.02
+				consumer_goods_factor = -0.08
+				
+			}
+		}
+		
+		HUN_royal_dictatorship = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				neutrality_drift = 0.05
+				stability_weekly = -0.04
+			}
+		}
+		
+		HUN_new_won_border_war = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				offence = 0.15
+				defence =  0.15
+				army_org_factor = 0.1
+				experience_gain_army_factor = 0.1
+			}
+		}
+		
+		HUN_new_lost_border_war = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				offence = -0.15
+				defence =  -0.15
+				army_org_factor = -0.1
+				experience_gain_army_factor = -0.1
+			}
+		}
+		
+		HUN_hungarian_reperations = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = -0.1
+			}
+		}
+		
+		HUN_austrian_occupation = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = 0.5
+				industrial_capacity_factory = -0.3
+				production_factory_efficiency_gain_factor = -0.30
+				production_factory_max_efficiency_factor = -0.30
+				production_speed_buildings_factor = -0.30
+				local_resources_factor = -0.2
+			}
+		}
+		
+		HUN_nationalist_leftist_cooperation = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				political_power_factor = 0.05
+				stability_weekly = 0.02
+				drift_defence_factor = 0.25
+			}
+		}
+		
+		HUN_trade_unions = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				local_resources_factor = 0.15
+				industrial_capacity_factory = 0.10
+				industry_repair_factor = 0.1
+			}
+		}
+		
+		HUN_political_resistance = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				political_advisor_cost_factor = 0.25
+				political_power_cost = 0.25
+				trade_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+			}
+		}
+		
+		HUN_pro_habsburg_propaganda = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = 0.02
+				conscription_factor = 0.02
+				war_support_factor = 0.02
+				democratic_drift = 0.01
+			}
+		}
+		
+		HUN_pro_habsburg_propaganda2 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = 0.04
+				conscription_factor = 0.04
+				war_support_factor = 0.04
+				democratic_drift = 0.02
+			}
+		}
+		
+		HUN_pro_habsburg_propaganda3 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = 0.08
+				conscription_factor = 0.06
+				war_support_factor = 0.08
+				democratic_drift = 0.03
+			}
+		}
+		
+		HUN_pro_habsburg_propaganda4 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = 0.12
+				conscription_factor = 0.08
+				war_support_factor = 0.12
+				democratic_drift = 0.04
+			}
+		}
+		
+		HUN_pro_habsburg_propaganda5 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = 0.16
+				conscription_factor = 0.10
+				war_support_factor = 0.16
+				democratic_drift = 0.05
+			}
+		}
+		
+		HUN_pro_habsburg_propaganda6 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = 0.2
+				conscription_factor = 0.12
+				war_support_factor = 0.2
+				democratic_drift = 0.06
+			}
+		}
+		
+		HUN_pro_habsburg_propaganda7 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = 0.24
+				conscription_factor = 0.14
+				war_support_factor = 0.24
+				democratic_drift = 0.07
+			}
+		}
+		
+		HUN_payments_for_burgenland = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+		
+		HUN_chaos_on_the_streets = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_weekly =  -0.06
+				offence = -0.4
+				defence = -0.4
+				conscription = -0.02
+				war_support_weekly = -0.06
+				industrial_capacity_factory = -0.30
+				production_factory_efficiency_gain_factor = -0.30
+				production_factory_max_efficiency_factor = -0.30
+				
+			}
+		}
+		
+		HUN_root_out_fascism = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				fascism_drift = -0.05
+				neutrality_drift = -0.03
+				stability_weekly = -0.03
+				
+			}
+		}
+		
+		HUN_struggeling_hungarian_monarchy3 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.1
+				political_advisor_cost_factor = -0.15
+				high_command_cost_factor = -0.15
+			}
+		}
+		
+		HUN_general_strike = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_weekly = -0.08
+				war_support_weekly = -0.08
+				consumer_goods_factor = 0.5
+				industrial_capacity_factory = -0.20
+				production_factory_efficiency_gain_factor = -0.30
+				production_factory_max_efficiency_factor = -0.30
+				production_speed_industrial_complex_factor = -0.20
+			}
+		}
+		
+		HUN_military_disloyalty = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				conscription_factor = -0.5
+				offence = -0.1
+				defence = -0.1
+			}
+		}
+		
+		HUN_parlamentary_disloyalty = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				political_power_cost = 0.3
+				political_power_factor = -0.2
+				political_advisor_cost_factor = 0.3
+			}
+		}
+		
+		HUN_dog_mass_prduction = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = { }
+				equipment_bonus = {
+					infantry_equipment = {
+						build_cost_ic = -0.1
+						instant = yes
+					}
+					motorized_equipment = {
+						build_cost_ic = -0.1
+						instant = yes
+					}
+					light_tank_chassis = {
+						build_cost_ic = -0.1
+						instant = yes
+					}
+					
+					artillery_equipment = {
+						build_cost_ic = -0.1
+						instant = yes
+					}
+					
+					support_equipment = {
+						build_cost_ic = -0.1
+						instant = yes
+					}
+				}
+			
+		}
+		
+		HUN_modern_training_barracks = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				training_time_army_factor = -0.25
+			}	
+			research_bonus = {
+				infantry_weapons = 0.1
+			}
+		}
+		
+		HUN_allied_sanctions = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				trade_opinion_factor = -0.2
+				industrial_capacity_factory = -0.1
+				production_factory_start_efficiency_factor =  -0.1
+				production_speed_arms_factory_factor = -0.1
+			}	
+		}
+		
+		HUN_anti_monarchist_resistance = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				consumer_goods_factor = 0.08
+				conscription_factor = -0.25
+			}	
+		}
+		
+		HUN_bad_austrian_relations = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				trade_opinion_factor = -0.5
+				political_power_cost  =  0.1
+				research_speed_factor = -0.1
+			}	
+		}
+		
+		HUN_hungarian_monarchy1 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = 0.1
+				neutrality_drift = 0.02
+			}	
+		}
+		
+		HUN_nagys_army_reform_plan = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				max_planning = 0.15
+				planning_speed = 0.1
+				supply_consumption_factor = 0.1
+				war_support_factor = 0.07
+				
+				
+			}	
+		}
+		
+		HUN_werths_army_reform_plan = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				army_morale_factor = -0.15
+				training_time_army_factor = 0.1
+				army_org_factor = 0.1
+				surrender_limit = 0.05	
+			}	
+		}
+		
+		HUN_mobile_infantry1 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				army_speed_factor =  0.1
+				org_loss_when_moving = -0.12	
+			}	
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}	
+		HUN_static_fighting = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+			
+			}
+			cancel = { }
+			modifier = {
+				dig_in_speed_factor =  0.15
+				max_dig_in_factor = 0.1
+				army_morale = 0.08
+				army_org_factor = -0.05
+				
+			}	
+		}
+
+		HUN_infantry_charge = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				conscription = 0.01
+				breakthrough_factor = 0.1
+				army_org_regain = -0.08
+				
+				
+			}	
+		}
+		
+		HUN_organized_advance = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				army_org = 10
+				supply_consumption_factor = 0.05
+				attrition =  0.05
+				land_night_attack = 0.15
+				
+				
+			}	
+		}
+		
+		HUN_nagys_army_reform_plan1 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+			
+			}
+			cancel = { }
+			modifier = {
+				max_planning = 0.2
+				planning_speed = 0.25
+				supply_consumption_factor = 0.10
+				war_support_factor = 0.15
+				
+				
+			}	
+		}
+		
+		HUN_werths_army_reform_plan1 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				army_morale_factor = -0.15
+				training_time_army_factor = 0.1
+				army_org_factor = 0.15
+				surrender_limit = 0.1	
+			}	
+		}
+		
+		HUN_rebeling_romanian_minority = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = -0.15
+				local_resources_factor = -0.2
+				industrial_capacity_factory = -0.18
+				conscription_factor = -0.1
+			}
+		}
+		
+		HUN_stagnating_economy = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.1
+				production_speed_buildings_factor = -0.1
+				production_factory_efficiency_gain_factor  = -0.1
+				
+			}
+		}
+		
+		HUN_romanian_repressions = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = -0.01
+				stability_factor = -0.03
+				war_support_factor = -0.03
+				
+			}
+		}
+		
+		HUN_romanian_repressions1 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = -0.03
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				
+			}
+		}
+		
+		HUN_romanian_repressions2 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = -0.07
+				war_support_factor = -0.07
+				
+			}
+		}
+		
+		HUN_romanian_repressions3 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = -0.1
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				
+			}
+		}
+		
+		HUN_spreading_unrest = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_weekly = -0.03
+				stability_factor = -0.3
+				
+			}
+		}
+		
+		HUN_civilian_payment = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = -0.075
+				
+			}
+		}
+		
+		HUN_hungarian_monarchy2 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = 0.2
+				neutrality_drift = 0.1
+				conscription_factor = 0.15
+				political_power_factor = 0.15
+				political_power_cost = -0.075
+			}	
+		}
+		
+		HUN_progress_throught_cooperation = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				drift_defence_factor = 0.13
+				research_speed_factor = 0.15
+				generate_wargoal_tension = -0.1
+				production_speed_industrial_complex_factor = 0.1
+				consumer_goods_factor = -0.025
+			}	
+		}
+		
+		HUN_stagnating_economy1 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = 0.035
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.1
+				production_factory_efficiency_gain_factor  = -0.05
+				
+			}
+		}
+		
+		HUN_stagnating_economy2 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = 0.01
+				industrial_capacity_factory = -0.02
+				production_speed_buildings_factor = -0.05
+				
+			}
+		}
+		
+		HUN_payments_to_austria = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = 0.1
+				
+			}
+		}
+		
+		HUN_stagnating_economy3 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				industrial_capacity_factory = 0.02
+				production_speed_buildings_factor = 0.03
+				production_factory_efficiency_gain_factor  = 0.05
+				
+			}
+		}
+		
+		HUN_growing_powerty = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = 0.05
+				conscription_factor = -0.03
+				
+			}
+		}
+		
+		HUN_suspended_constitution= {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_weekly = -0.08
+				war_support_weekly = -0.08
+				fascism_drift = 0.03
+				neutrality_drift = -0.01
+				political_advisor_cost_factor = 0.25
+				high_command_cost_factor = 0.25
+				
+			}
+		}
+		
+		HUN_low_monarchist_resistance = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				consumer_goods_factor = 0.01
+				political_power_factor = 0.1
+				conscription_factor = -0.03
+			}	
+		}
+		
+		HUN_nationalist_dictaorship = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				mobilization_speed = 0.5
+				conscription_factor = 0.05
+				war_support_factor = 0.15
+				economy_cost_factor = 0.55
+				trade_laws_cost_factor = 0.55
+				monthly_population = 0.1
+				army_morale_factor = 0.1
+				non_core_manpower = -0.05
+				trade_opinion_factor = -0.35
+				production_factory_start_efficiency_factor = -0.05
+				political_power_factor = -0.10
+			}	
+		}
+		
+		HUN_paramilitaries = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				conscription_factor = 0.07
+				army_org_factor = -0.1
+				training_time_factor = -0.1
+			}	
+		}
+		
+		HUN_religious_loyalty = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				weekly_manpower = 120
+			}	
+		}
+		
+		HUN_controlled_capitalism = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				industrial_capacity_factory = 0.20
+				production_factory_efficiency_gain_factor = 0.2
+			}	
+		}
+		
+		HUN_coporatism = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+			}	
+		}
+		
+		HUN_coporatism2 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = -0.075
+				production_speed_industrial_complex_factor = 0.20
+				production_speed_arms_factory_factor = 0.20
+			}	
+		}
+		
+		HUN_controlled_capitalism2 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				industrial_capacity_factory = 0.25
+				production_factory_efficiency_gain_factor = 0.25
+				production_factory_start_efficiency_factor = 0.05
+			}	
+		}
+		
+		HUN_total_economy_control = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = 0.03
+				industrial_capacity_factory = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				communism_drift = 0.02
+				fascism_drift = 0.01
+			}	
+		}
+		
+		HUN_coporatism3 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.25
+				production_speed_arms_factory_factor = 0.25
+				production_speed_infrastructure_factor = 0.1
+			}	
+		}
+		
+		HUN_controlled_capitalism3 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				industrial_capacity_factory = 0.30
+				production_factory_efficiency_gain_factor = 0.30
+				production_factory_start_efficiency_factor = 0.12
+			}	
+		}
+		
+		HUN_hungarian_polypoly = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.15
+			}	
+		}
+		
+		HUN_unpopular_constitution= {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_weekly = -0.04
+				war_support_weekly = -0.04
+				fascism_drift = 0.02
+				neutrality_drift = -0.01
+				political_advisor_cost_factor = 0.15
+				high_command_cost_factor = 0.15
+				
+			}
+		}
+		
+		HUN_moderate_monarchist_resistance = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				consumer_goods_factor = 0.03
+				political_power_factor = -0.12
+				conscription_factor = -0.07
+			}	
+		}
+		
+		HUN_arrow-cross_secret_police = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				resistance_activity = -0.2
+				required_garrison_factor = -0.1
+				resistance_target = -0.15
+			}	
+		}
+		
+		HUN_fascist_cooperation = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				send_volunteer_size = 1
+				send_volunteer_divisions_required = -0.75
+				lend_lease_tension = -0.30
+			}	
+		}
+		
+		HUN_national_identity2 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				war_support_weekly = 0.05
+				conscription = 0.02
+				surrender_limit = 0.3
+				political_power_cost = -0.02
+				
+			}
+		}
+		
+		HUN_moderate_monarchist_resistance2 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = -0.25
+				war_support_factor = -0.25
+				consumer_goods_factor = 0.15
+				political_power_factor = -0.2
+				conscription_factor = -0.3
+			}	
+		}
+		
+		HUN_paramilitaries2 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				conscription_factor = 0.2
+				training_time_factor = -0.05
+				army_core_attack_factor = 0.1	
+				army_core_defence_factor = 0.1
+				supply_consumption_factor= -0.05
+			}	
+		}
+		
+		HUN_moderate_monarchist_resistance3 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				consumer_goods_factor = 0.125
+				political_power_factor = -0.15
+				conscription_factor = -0.25
+			}	
+		}
+		
+		HUN_moderate_monarchist_resistance4 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = -0.15
+				war_support_factor = -0.15
+				consumer_goods_factor = 0.1
+				political_power_factor = -0.15
+				conscription_factor = -0.2
+			}	
+		}
+		
+		HUN_moderate_monarchist_resistance5 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				consumer_goods_factor = 0.075
+				political_power_factor = -0.1
+				conscription_factor = -0.15
+			}	
+		}
+		
+		HUN_moderate_monarchist_resistance6 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				stability_factor = -0.05
+				war_support_factor = -0.05
+				consumer_goods_factor = 0.05
+				political_power_factor = -0.1
+				conscription_factor = -0.1
+			}	
+		}
+		
+		HUN_moderate_monarchist_resistance7 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				consumer_goods_factor = 0.025
+				political_power_factor = -0.05
+				conscription_factor = -0.05
+			}	
+		}
+		
+		HUN_a_real_reformed_country = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				political_power_factor = 0.2
+				war_support_factor = 0.25
+				generate_wargoal_tension = -0.10
+				stability_weekly = 0.05
+				consumer_goods_factor = -0.12
+				
+			}
+		}
+		
+		HUN_sky_domination = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				air_superiority_efficiency = 0.1
+				air_attack_factor = 0.05
+				air_defence_factor= 0.05
+				
+			}
+		}
+		
+		HUN_sky_domination2 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				air_superiority_efficiency = 0.15
+				air_attack_factor = 0.1
+				air_defence_factor= 0.1
+				
+			}
+		}
+		
+		HUN_battlefield_domination = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				ground_attack_factor = 0.05
+				air_close_air_support_org_damage_factor = 0.05
+				air_cas_efficiency =  0.1
+				
+			}
+		}
+		
+		HUN_battlefield_domination2 = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				ground_attack_factor = 0.1
+				air_close_air_support_org_damage_factor = 0.1
+				air_cas_efficiency =  0.15
+				
+			}
+		}
+		
+		HUN_submarine_production = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+					convoy_raiding_efficiency_factor = 0.1	
+				
+			}
+			equipment_bonus = {
+				submarine = {
+					instant = yes
+					build_cost_ic = -0.1
+				}
+			}
+		}
+		
+		HUN_anti_submarine_warfare = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				navy_submarine_detection_factor  = 0.1	
+				naval_hit_chance  = 0.05
+				naval_speed_factor 	=  0.1
+				
+			}
+		}
+		
+		HUN_man_of_the_nation = {
+			allowed = {
+				original_tag = HUN
+				always = no
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				conscription = 0.03
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				political_power_factor = 0.05
+				opinion_gain_monthly_factor = 0.25
+				
+			}
+		}
+	}	
+}
+	

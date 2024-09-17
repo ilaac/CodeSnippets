@@ -1,0 +1,34 @@
+state={
+	id=587
+	name="STATE_587"
+
+	history={
+		owner = CWA
+		add_core_of = KAZ
+		add_core_of = CWA
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		
+		victory_points = {
+			1517 1 
+		}		
+		victory_points = {
+			11701 2 
+		}		
+		victory_points = {
+			4523 2 
+		}
+	}
+
+	provinces={
+		475 642 1517 3593 4523 4620 7641 10262 11701 12163 12383 13008 
+	}
+	manpower=255133
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=0.0 
+}

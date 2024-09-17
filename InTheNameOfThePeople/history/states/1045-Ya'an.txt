@@ -1,0 +1,35 @@
+state={
+	id=1045
+	name="STATE_1045"
+	
+	history={
+		owner = XSM
+		add_core_of = XSM
+		add_core_of = CHI
+		victory_points = {
+			8049 3 
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 3
+			10733 = {
+				bunker = 2
+
+			}
+			12156 = {
+				bunker = 2
+
+			}
+
+		}
+
+	}
+	
+	provinces={
+		517 4939 8049 10733 10880 12156 12356 
+	}
+	manpower=4018393
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

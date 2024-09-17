@@ -1,0 +1,25 @@
+state={
+	id=1007
+	name="STATE_1007"
+	
+	history={
+		owner = MON
+
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = SOV
+		add_core_of = BYA
+		add_core_of = MON
+
+	}
+	
+	provinces={
+		1672 4766 7786 7860 10528 10683 12507 
+	}
+	manpower=72384
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

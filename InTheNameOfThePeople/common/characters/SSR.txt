@@ -1,0 +1,17 @@
+characters={
+	
+	SSR_boris_shavinkov={
+		name=SSR_boris_shavinkov
+		portraits={
+			civilian={
+				large="GFX_portrait_ssr_boris_shavinkov_large"
+			}
+		}
+		country_leader={
+			ideology=leninism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,17 @@
+characters={
+	
+	TMS_enver_pasha={
+		name=TMS_enver_pasha
+		portraits={
+			civilian={
+				large="GFX_portrait_tms_enver_pasha_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,31 @@
+state={
+	id=993
+	name="STATE_993"
+	provinces={
+		11531 
+	}
+	
+	resources={
+		oil=12.000
+	}
+	
+	history={
+		owner = FRA
+		victory_points = {
+			11531 5 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 2
+		}
+		add_core_of = FRA
+		add_claim_by = GER
+		add_claim_by = PRS
+		set_demilitarized_zone = no
+
+	}
+	manpower=189389
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,17 @@
+characters={
+	
+	UKR_pavlo_skoropadsky={
+		name=UKR_pavlo_skoropadsky
+		portraits={
+			civilian={
+				large="GFX_portrait_ukr_pavlo_skoropadsky_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ conservative_grandee  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

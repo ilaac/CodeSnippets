@@ -1,0 +1,20 @@
+ideas = {
+	country = {
+		FER_white_league_refugees = {
+			allowed = {
+				original_tag = FER
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				conscription_factor = 0.25
+				weekly_manpower = 250
+				monthly_population = 0.2
+			}
+		}
+		
+	}	
+}
+	

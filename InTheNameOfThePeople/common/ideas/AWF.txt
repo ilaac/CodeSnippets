@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		AWF_workers_spirit = {
+			allowed = {
+				original_tag = AWF
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				weekly_manpower = 500
+			}
+		}
+		
+	}	
+}
+	

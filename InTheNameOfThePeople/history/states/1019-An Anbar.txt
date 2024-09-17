@@ -1,0 +1,24 @@
+state={
+	id=1019
+	name="STATE_1019"
+	
+	history={
+		owner = SAU
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = SAU
+		add_claim_by = KUR
+
+	}
+	
+	provinces={
+		13386 13390 13391 13392 
+	}
+	manpower=40046
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,31 @@
+state={
+	id=999
+	name="STATE_999"
+	resources={
+		steel=5.000
+		tungsten=11.000
+	}
+
+	history={
+		owner = TIB
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 4
+
+		}
+		victory_points = {
+			12338 3 
+		}
+		add_core_of = TIB
+	}
+	
+	provinces={
+		4435 12338
+	}
+	manpower=1859031
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

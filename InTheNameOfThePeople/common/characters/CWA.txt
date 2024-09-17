@@ -1,0 +1,17 @@
+characters={
+	
+	CWA_anton_denikin={
+		name=CWA_anton_denikin
+		portraits={
+			civilian={
+				large="GFX_portrait_cwa_anton_denikin_large"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

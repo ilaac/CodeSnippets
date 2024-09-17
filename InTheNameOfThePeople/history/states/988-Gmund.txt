@@ -1,0 +1,21 @@
+state={
+	id=988
+	name="STATE_988"
+	
+		history={
+		owner = AUS
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 1
+
+		}
+		add_core_of = AUS
+	}
+	provinces={
+		732 3718 6552 6723 6739 9527 
+	}
+	manpower= 576000
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

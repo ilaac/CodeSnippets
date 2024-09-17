@@ -1,0 +1,17 @@
+characters={
+	
+	SWF_gregor_strasser={
+		name=SWF_gregor_strasser
+		portraits={
+			civilian={
+				large="GFX_portrait_swf_gregor_strasser_large"
+			}
+		}
+		country_leader={
+			ideology=strasserism
+			traits={  }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,322 @@
+characters={
+
+    FRA_council_of_anarchism={
+	    name=FRA_council_of_anarchism
+		portraits={
+			civilian={
+				large=GFX_portrait_anarchist_coucil_large
+			}
+		}
+		country_leader={
+			ideology=anarchist_syndicalism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FRA_anarchist_federation={
+	    name=FRA_anarchist_federation
+		portraits={
+			civilian={
+				large=GFX_portrait_fra_anarchist_federation_large
+			}
+		}
+		country_leader={
+			ideology=radical_anarchism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+	FRA_pierre_laval={ #Democratic Leader
+		name=FRA_pierre_laval
+		portraits={
+			civilian={
+				large="GFX_portrait_fra_pierre_laval"
+			}
+		}
+		country_leader={
+			ideology=liberalism
+			traits={ stout_defender }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	FRA_edouard_daladier={
+		name=FRA_edouard_daladier
+		portraits={
+			civilian={
+				large=GFX_portrait_FRA_edouard_daladier
+			}
+		}
+		country_leader={
+			ideology=socialism
+			traits={ stout_defender }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	FRA_denis_guillaumat={ #Non-Aligned Leader
+		name=FRA_denis_guillaumat
+		portraits={
+			civilian={
+				large=GFX_portrait_FRA_denis_guillaumat
+			}
+		}
+		country_leader={
+			ideology=centrism
+			traits={ editor eager_collaborator }
+			expire="1949.1.1.12"
+			id=-1
+		}
+	}
+
+	FRA_maurice_thorez={ #Communist Leader
+		name=FRA_maurice_thorez
+		portraits={
+			army={
+				small="GFX_idea_maurice_thorez"
+			}
+			civilian={
+				large="GFX_portrait_fra_maurice_thorez"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = maurice_thorez
+			allowed  = {
+				original_tag  = FRA
+			}
+			traits  = {
+				communist_revolutionary 
+			}
+			do_effect  = {
+				not  = {
+					has_government  = communism 
+				}
+			}
+			ai_will_do  = {
+				factor  = 0.000
+			}
+		}
+		
+		country_leader={
+			ideology=stalinism
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	FRA_rene_nicod={
+		name=FRA_rene_nicod
+		portraits={
+			civilian={
+				large="GFX_portrait_fra_rene_nicod"
+				small = GFX_portrait_FRA_rene_nicod_small
+			}
+		}
+		country_leader={
+			ideology=marxism
+			expire="1965.1.1.1"
+		}
+	}
+
+	FRA_philippe_petain={ #Fascist Leader
+		name=FRA_philippe_petain
+		portraits={
+			civilian={
+				large=GFX_portrait_FRA_philippe_petain
+			}
+		}
+		
+		
+		
+		
+		
+	}
+	###army
+	FRA_maurice_gamelin={
+		name=FRA_maurice_gamelin
+		portraits={
+			army={
+				small="GFX_idea_maurice_gamelin"
+			}
+			army={
+				large=GFX_portrait_FRA_maurice_gamelin
+			}
+		}
+
+		field_marshal={
+			traits={ old_guard inflexible_strategist career_officer defensive_doctrine }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=0
+		}
+	}
+	FRA_gastonhenri_billotte={
+		name=FRA_gastonhenri_billotte
+		portraits={
+			army={
+				large=GFX_portrait_FRA_gastonhenri_billotte
+				small=GFX_portrait_FRA_gastonhenri_billotte_small
+			}
+		}
+		corps_commander={
+			traits={ old_guard trait_cautious infantry_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	
+	FRA_rene_olry={
+		name=FRA_rene_olry
+		portraits={
+			army={
+				large=GFX_portrait_FRA_rene_olry
+				small=GFX_portrait_FRA_rene_olry_small
+			}
+		}
+		corps_commander={
+			traits={ old_guard infantry_officer trait_mountaineer }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=0
+		}
+	}
+	
+	FRA_francois_darlan={
+		name=FRA_francois_darlan
+		portraits={
+			army={
+				large=GFX_portrait_FRA_francois_darlan
+				small="GFX_idea_francois_darlan"
+			}
+		}
+		advisor={
+			slot = navy_chief
+			idea_token = francois_darlan
+			allowed = {
+				original_tag = FRA
+			}
+			traits = {
+				navy_chief_decisive_battle_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+
+		navy_leader={
+			traits={ bold naval_lineage superior_tactician }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=3
+			coordination_skill=3
+			legacy_id=102
+		}
+	}
+	
+###COUNCILS###	
+	
+	FRA_the_council_of_the_paris = {
+	    name = FRA_the_council_of_the_rhine
+		portraits = {
+		    army={
+				large="GFX_portrait_french_anarchist_council_paris_large"
+				#small="GFX_"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	} 
+	
+	FRA_the_council_of_brest = {
+	    name = FRA_the_council_of_brest
+		portraits = {
+		    army={
+				large="GFX_portrait_french_anarchist_council_brest_large"
+				#small="GFX_"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	} 
+	
+	FRA_the_council_of_marseille = {
+	    name = FRA_the_council_of_marseille
+		portraits = {
+		    army={
+				large="GFX_portrait_french_anarchist_council_maseille_large"
+				#small="GFX_"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	} 
+	
+	FRA_the_council_of_the_lyon = {
+	    name = FRA_the_council_of_the_lyon
+		portraits = {
+		    army={
+				large="GFX_portrait_french_anarchist_council_lyon_large"
+				#small="GFX_"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	} 
+	
+	FRA_the_council_of_bordeaux = {
+	    name = FRA_the_council_of_bordeaux
+		portraits = {
+		    army={
+				large="GFX_portrait_french_anarchist_council_bordeaux_large"
+				#small="GFX_"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	} 
+	

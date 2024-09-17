@@ -1,0 +1,28 @@
+state={
+	id=978
+	name="STATE_978"
+	
+	history={
+		owner = CPR
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 4
+			air_base = 1
+			
+
+		}
+		add_core_of = CPR
+		add_core_of = ECU
+		add_core_of = PRU
+
+	}
+	
+	provinces={
+		5120 11020 13379 13380 
+	}
+	manpower=401934
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

@@ -1,0 +1,32 @@
+﻿###########################
+# Italian Events
+###########################
+
+add_namespace = italy
+
+####Germany asks to join faction
+country_event = {
+	id = italy.1
+	title = italy_faction_invite.1.t
+	desc = italy_faction_invite.1.d
+	picture = GFX_german_civil_war_start
+	
+	is_triggered_only =  yes
+	
+	option = { 
+		name = italy_faction_invite.1.a
+		ai_chance = { factor = 80}
+		army_experience = 10
+		leave_faction = yes
+		GER = {add_to_faction = ITA}
+		GER ={country_event = {days = 1 id = germany.4}}
+	}
+	
+		option = { 
+		name = italy_faction_invite.1.b
+		ai_chance = { factor = 20}
+		add_political_power = 50
+		GER ={country_event = {days = 1 id = germany.5}}
+		}
+	}
+

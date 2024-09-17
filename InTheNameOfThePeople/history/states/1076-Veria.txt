@@ -1,0 +1,24 @@
+state={
+	id=1076
+	name="STATE_1076"
+	
+	history={
+		owner = GRE
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = GRE
+		add_claim_by = BUL
+
+	}
+	
+	provinces={
+		936 966 3844 10163 
+	}
+	manpower=401841
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

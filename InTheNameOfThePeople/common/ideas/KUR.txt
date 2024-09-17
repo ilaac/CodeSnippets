@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		KHI_mass_volunteers = {
+			allowed = {
+				original_tag = KUR
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				conscription = 0.03
+			}
+		}
+		
+	}	
+}
+	

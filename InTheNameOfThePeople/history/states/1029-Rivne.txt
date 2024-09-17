@@ -1,0 +1,22 @@
+state={
+	id=1029
+	name="STATE_1029"
+	
+	history={
+		owner = POL
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = BLR
+
+	}
+	
+	provinces={
+		535 3496 6579 9520 11503 
+	}
+	manpower=445035
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

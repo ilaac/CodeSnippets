@@ -1,0 +1,153 @@
+on_actions = {
+	# ROOT is capitulated country, FROM is winner
+	on_capitulation = {
+		effect = {
+			set_global_flag = show_peace_popup_alert
+			if = {
+					limit = {
+						ROOT = {
+							tag = ALG
+	
+						}
+						FROM = {
+							tag = FRA
+						}
+					}
+					ALG = {
+						white_peace = FRA
+					}
+					FRA = {
+						annex_country = {
+							target = ALG
+							transfer_troops = no
+						}
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							tag = LUX
+	
+						}
+						FROM = {
+							tag = FRA
+						}
+					}
+					LUX = {
+						white_peace = FRA
+					}
+					FRA = {
+						annex_country = {
+							target = LUX
+							transfer_troops = no
+						}
+					}
+				}
+				
+				if = {
+					limit = {
+						ROOT = {
+							tag = SWI
+	
+						}
+						FROM = {
+							tag = FRA
+						}
+					}
+					SWI = {
+						white_peace = FRA
+					}
+					FRA = {
+						fra_swiss_peacedeal = yes
+					}
+				}
+				
+				if = {
+					limit = {
+						ROOT = {
+							tag = BEL
+	
+						}
+						FROM = {
+							tag = FRA
+						}
+					}
+					BEL = {
+						white_peace = FRA
+					}
+					FRA = {
+						fra_belgian_peacedeal = yes
+					}
+				}
+				
+				if = {
+					limit = {
+						ROOT = {
+							tag = HOL
+	
+						}
+						FROM = {
+							tag = FRA
+						}
+					}
+					HOL = {
+						white_peace = FRA
+					}
+					FRA = {
+						fra_dutch_peacedeal = yes
+					}
+				}
+				
+				if = {
+					limit = {
+						FROM = {
+							tag = FRA
+							has_active_mission = FRA_growing_war_devasation
+						}
+					}
+					FROM = {
+						country_event = france_new.25
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+							tag = TRC
+	
+						}
+						FROM = {
+							OR = {
+								tag = AZR
+								tag = ARM
+								tag = ABK
+							}
+						}
+					}
+					TRC = {
+						white_peace = AZR
+						white_peace = ARM
+						white_peace = ABK
+						delete_units = {
+							division_template = "Msroleli Divizian"
+							disband = yes
+						}
+						delete_units = {
+							division_template = "Samto Saartilerio Divizia"
+							disband = yes
+						}
+						delete_units = {
+							division_template = "Sakhalkho Gvardia"
+							disband = yes
+						}
+						delete_units = {
+							division_template = "Kavaleriis Divizia"
+							disband = yes
+						}
+					}
+				}
+		}
+		
+		
+	}
+	
+}

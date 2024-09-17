@@ -1,0 +1,35 @@
+ideas = {
+	country = {
+		COG_belgian_refugees = {
+			allowed = {
+				original_tag = COG
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				conscription = 0.01
+				weekly_manpower = 500
+				monthly_population = 0.3
+			}
+		}
+		
+		INS_dutch_refugees = {
+			allowed = {
+				original_tag = INS
+			}
+			available = {
+				
+			}
+			cancel = { }
+			modifier = {
+				conscription = 0.01
+				weekly_manpower = 500
+				monthly_population = 0.3
+			}
+		}
+		
+	}	
+}
+	

@@ -1,0 +1,27 @@
+state={
+	id=1043
+	name="STATE_1043"
+	
+	history={
+		owner = JAP
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 3
+			10068 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			10068 1 
+		}
+
+	}
+	
+	provinces={
+		10068 
+	}
+	manpower= 1100000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

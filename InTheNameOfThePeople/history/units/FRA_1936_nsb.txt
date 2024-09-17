@@ -1,0 +1,1937 @@
+﻿##### Division Templates #####
+division_template = {
+	name = "Infanterie Révolutionnaire"		
+	division_names_group = FRA_INF_01
+	is_locked = yes
+	# Represents: Division d'Infanterie (Series A and B), Div. d'Inf. de Forteresse
+	# Difference is their equipment
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "Milice Révolutionnaire"		
+	division_names_group = FRA_COL_01
+	is_locked = yes
+	# Represents: Div. d'Inf. Coloniale, Div. d'Inf. Nord-Africaine
+	# Difference from DI is their equipment
+	regiments = {
+		militia = { x = 0 y = 0 }
+		militia = { x = 0 y = 1 }
+		militia = { x = 0 y = 2 }
+		militia = { x = 1 y = 0 }
+	}
+	support = {
+	# Heavy Arty Regiment had 2x 155mm battalions
+	}
+}
+
+##### OOB #####
+units = {
+	# VIe Corps d'Armée (Région Militaire in 1936) -- Metz
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11506
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	# VIe Corps d'Armée (Région Militaire in 1936) -- Metz
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11506
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	# VIe Corps d'Armée (Région Militaire in 1936) -- Metz
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11506
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	# VIe Corps d'Armée (Région Militaire in 1936) -- Metz
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11506
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+    division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11506
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+    division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11506
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	# VIe Corps d'Armée (Région Militaire in 1936) -- Metz
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3536
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3536
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3536
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11606
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11606
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11606
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6504
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+    division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6504
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6504
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11548
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11548
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11548
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9559
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9559
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9559
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9434
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9434
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9434
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3552
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3552
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3552
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11465
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11465
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11465
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3671
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3671
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3671
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 512
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 512
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 512
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6613
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6613
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6613
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9737
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9737
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9737
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6766
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9737
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9737
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11834
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11834
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11834
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 1145
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 1145
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 1145
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3447
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3447
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3447
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9472
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9472
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9472
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3560
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3560
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3560
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 5291
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 5291
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 5291
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11502
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11502
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11502
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11531
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11531
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11531
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 549
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 549
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 549
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9503
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9503
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9503
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6529
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6529
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6529
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 678
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 678
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 678
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 698
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 698
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 698
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3666
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3666
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3666
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3646
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3646
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3646
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6668
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6668
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6668
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6639
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6639
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6639
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6784
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6784
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6784
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3768
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3768
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3768
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 764
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 764
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 764
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3764
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3764
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3764
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6975
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6975
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6975
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3959
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3959
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3959
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9909
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9909
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9909
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9853
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9853
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9853
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6915
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6915
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6915
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6931
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6931
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6931
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3915
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3915
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3915
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9882
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9882
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9882
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9884
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9884
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9884
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11697
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11697
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11697
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 743
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11697
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11697
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9964
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9964
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 4146
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 4146
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 4131
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 4131
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 13077
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 13077
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 7065
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 7065
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9976
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9976
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11953
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11953
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 1058
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division= {	# "1ème Milice Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 1058
+		division_template = "Milice Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11420
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11420
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 485
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 485
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11563
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11563
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 13011
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 13011
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9490
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9490
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6449
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6449
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6536
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6536
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9495
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9495
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 620
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 620
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3594
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3594
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3652
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 3652
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9642
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9642
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11516
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 11516
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9710
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 9710
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6657
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 6657
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 12051
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+	division = {	# "1ème Infanterie Révolutionnaire"
+		division_name = {
+			is_name_ordered = no
+			name_order = 42
+		}
+		location = 7081
+		division_template = "Infanterie Révolutionnaire" 	# Frontline, best equipment
+		start_experience_factor = 0.3
+		start_equipment_factor = 0.4
+	}
+
+}
+instant_effect = {
+	
+}
+###################

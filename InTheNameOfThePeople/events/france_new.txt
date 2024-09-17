@@ -1,0 +1,653 @@
+###############
+#french events#
+###############
+
+add_namespace = france_new
+
+country_event = {
+	id = france_new.1
+	title = france_new.1.t
+	desc = france_new.1.d
+	picture = GFX_report_event_election_vote_image
+	
+	is_triggered_only =  yes
+
+	
+	option = { 
+		name = france_new.1.a
+		ai_chance = { factor = 100 }
+		add_named_threat = { threat = 3 }
+		add_popularity = {
+			ideology = anarchism
+			popularity = 0.03
+	    } 
+		add_political_power = 50
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+	
+}
+
+country_event = {
+	id = france_new.2
+	title = france_new.2.t
+	desc = france_new.2.d
+	picture = GFX_report_event_hun_versammlung
+	
+	is_triggered_only =  yes
+
+	
+	option = { 
+		name = france_new.2.a
+		ai_chance = { factor = 100 }
+	    custom_effect_tooltip = radicalism_increase
+		set_variable = { 
+			var = FRA_more_radicalism 
+			value = 10 
+		}
+		custom_effect_tooltip = "DEV-NOTE: This path will be the only one for France, France can get only radical."
+	}
+}	
+	
+country_event = {
+	id = france_new.3
+	title = france_new.3.t
+	desc = france_new.3.d
+	picture = GFX_report_event_radical_march
+	
+	is_triggered_only =  yes
+
+	
+	option = { 
+		name = france_new.3.a
+		ai_chance = { factor = 100 } 
+		IF = {
+			limit =  { 
+				check_variable = {
+					FRA_more_radicalism > 0
+				}			
+			}
+			country_event = { id = france_new.4 days = 5 random_hours = 4 }
+		}
+		ELSE = {
+			add_political_power = 100
+		}
+	     
+	}
+	
+}
+
+country_event = {
+	id = france_new.4
+	title = france_new.4.t
+	desc = france_new.4.d
+	picture = GFX_report_event_radical_march
+	
+	is_triggered_only =  yes
+
+	
+	option = { 
+		name = france_new.4.a
+		ai_chance = { factor = 80 }		
+			complete_national_focus = FRA_a_new_order
+			remove_ideas = FRA_disloyal_military
+			add_ideas =  FRA_moderate_resistance
+			set_country_flag = FRA_radicals_won
+			retire_country_leader = yes
+		}
+	
+}
+
+country_event = {
+	id = france_new.5
+	title = france_new.5.t
+	desc = france_new.5.d
+	picture = GFX_report_event_cleasing_south
+	
+	is_triggered_only =  yes
+
+	
+	option = { 
+		name = france_new.5.a
+		ai_chance = { factor = 100 }
+	}
+	
+}
+
+country_event = {
+	id = france_new.6
+	title = france_new.6.t
+	desc = france_new.6.d
+	picture = GFX_report_event_cleasing_south
+	
+	trigger = {
+		has_completed_focus = FRA_bleed_out_bordeaux
+		has_completed_focus = FRA_bleed_out_lyon
+		has_completed_focus = FRA_bleed_out_marseille
+		all_core_state = {
+			is_demilitarized_zone = no
+		}
+	}
+	fire_only_once = yes
+
+	
+	option = { 
+		name = france_new.6.a
+		ai_chance = { factor = 80 }		
+			add_ideas = FRA_purified_south
+			set_country_flag = FRA_great_south
+		}
+	
+}
+
+country_event = {
+	id = france_new.7
+	title = france_new.7.t
+	desc = france_new.7.d
+	picture = GFX_report_event_radical_march
+	
+	is_triggered_only =  yes
+
+	
+	option = { 
+		name = france_new.7.a
+		ai_chance = { factor = 80 }		
+			add_manpower = -5000
+			add_ideas = FRA_brutal_oppression
+		}
+	
+}
+
+country_event = {
+	id = france_new.8
+	title = france_new.8.t
+	desc = france_new.8.d
+	picture = GFX_report_event_hun_versammlung
+	
+	is_triggered_only =  yes
+
+	
+	option = { 
+		name = france_new.8.a
+		ai_chance = { factor = 50 }		
+		
+	}
+
+	
+}
+
+country_event = {
+	id = france_new.9
+	title = france_new.9.t
+	desc = france_new.9.d
+	picture = GFX_report_event_militias_army
+	
+	is_triggered_only =  yes
+
+	
+	option = { 
+		name = france_new.9.a
+		ai_chance = { factor = 40 }		
+		add_ideas = FRA_reforming_our_army
+	} 
+	
+}
+
+country_event = {
+	id = france_new.10
+	title = france_new.10.t
+	desc = france_new.10.d
+	picture = GFX_napoleonic_claims
+	
+	is_triggered_only =  yes
+
+	
+	option = { 
+		name = france_new.10.a
+		ai_chance = { factor = 100 }	
+		custom_effect_tooltip = FRA_napoleon_claims
+		remove_ideas = FRA_reforming_our_army
+	}
+	
+}
+
+country_event = {
+	id = france_new.11
+	title = france_new.11.t
+	desc = france_new.11.d
+	picture = GFX_napoleonic_claims
+	
+	is_triggered_only = yes
+
+	
+	option = { 
+		name = france_new.11.a
+		ai_chance = { factor = 70 }	
+		IF = {
+			limit = {tag = FRA}
+			set_state_owner = 1072
+		}		
+		ELSE_IF = {
+			limit = {tag = SPR}
+			add_political_power = 100
+			add_stability = 0.1
+			add_war_support = 0.15
+		}
+	}
+	
+}
+
+country_event = {
+	id = france_new.12
+	title = france_new.12.t
+	desc = france_new.12.d
+	picture = GFX_napoleonic_claims
+	
+	is_triggered_only =  yes
+	
+	option = {
+	    name = france_new.12.a
+		ai_chance = { factor = 100 }	
+		add_political_power = -100
+		add_stability = -0.1
+		add_war_support = -0.15
+		IF = {
+			limit = {tag = FRA}
+			set_country_flag = {flag = lost_border_war days = 60 value = 1}
+		}
+	}
+}
+
+country_event = {
+	id = france_new.13
+	title = france_new.13.t
+	desc = france_new.13.d
+	picture = GFX_report_event_hun_factory
+	
+	is_triggered_only =  yes
+
+	option = { 
+		name = france_new.13.a
+		ai_chance = { factor = 100 }		
+		add_political_power = 5
+	}
+}
+
+country_event = {
+	id = france_new.14
+	title = france_new.14.t
+	desc = france_new.14.d
+	picture = GFX_report_event_french_flag
+	
+	is_triggered_only =  yes
+	
+	option = {
+	    name = france_new.14.a
+		ai_chance = { factor = 100}
+		add_political_power = 5
+	 }
+	
+}
+
+country_event = {
+	id = france_new.15
+	title = france_new.15.t
+	desc = france_new.15.d
+	picture = GFX_report_event_execution
+	
+	is_triggered_only =  yes
+	
+	option = {
+	    name = france_new.15.a
+		ai_chance = { factor = 100}
+		add_manpower = -200
+		random_owned_controlled_state = {
+			add_manpower = -1000
+		}
+		add_stability = 0.05
+		hidden_effect = {
+			country_event = { id = france_new.15 days = 80 random_days = 10 }
+		}
+	}
+	
+}
+
+country_event = {
+	id = france_new.16
+	title = france_new.16.t
+	desc = france_new.16.d
+	picture = GFX_report_event_cleasing_south
+	
+	fire_only_once =  yes
+	
+	trigger = {
+		has_country_flag = FRA_purification
+		NOT = {has_idea = national_pacification_campaign}
+	}
+	
+	option = {
+	    name = france_new.16.a
+		ai_chance = { factor = 100}
+		remove_ideas = FRA_brutal_oppression
+		remove_ideas = FRA_purified_south
+		add_ideas = FRA_purified_utopia
+		clr_country_flag = FRA_purification
+	}
+	
+}
+
+country_event = {
+	id = france_new.17
+	title = france_new.17.t
+	desc = france_new.17.d
+	picture = GFX_report_event_eurasia
+	
+	is_triggered_only =  yes
+	
+	option = {
+	    name = france_new.17.a
+		ai_chance = { factor = 100}
+		add_political_power = 30
+	}
+}
+
+country_event = {
+	id = france_new.18
+	title = france_new.18.t
+	desc = france_new.18.d
+	picture = GFX_report_event_hun_workers
+	
+	is_triggered_only =  yes
+	
+	option = {
+	    name = france_new.18.a
+		ai_chance = { factor = 100}
+		add_ideas =  FRA_transformation_of_france
+	   }
+	
+}
+
+country_event = {
+	id = france_new.19
+	title = france_new.19.t
+	desc = france_new.19.d
+	picture = GFX_report_event_destroyeed_effel_tower
+	
+	is_triggered_only =  yes
+	
+	option = {
+	    name = france_new.19.a
+		ai_chance = { factor = 100}
+		add_ideas = FRA_destroyed_monuments
+	  }
+	
+}
+
+country_event = {
+	id = france_new.20
+	title = france_new.20.t
+	desc = france_new.20.d
+	picture = GFX_report_event_report_event_prs_rifles
+	
+	is_triggered_only =  yes
+	trigger = {
+		FRA = {
+			has_completed_focus = FRA_expliot_our_puppets
+		}
+		FROM = {
+			is_puppet_of = FRA
+		}
+	}
+	option = {
+	    name = france_new.20.a
+		ai_chance = { factor = 100}
+			FROM = {
+				add_manpower = -400
+				add_political_power =  -25
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = -100
+				}
+				country_event = { id = france_new.20 days = 60  }
+			}
+			FRA =  {
+				add_manpower = 400
+				add_political_power =  25
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 100
+				}
+			}
+	    }
+	
+}
+
+country_event = {
+	id = france_new.21
+	title = france_new.21.t
+	desc = france_new.21.d
+	picture = GFX_report_event_eastern_partition_handshake
+	
+	is_triggered_only =  yes
+	
+	option = {
+	    name = france_new.21.a
+		ai_chance = { factor = 70}
+		FRA = { add_to_faction = ROOT }	
+	 }
+	option = {
+	    name = france_new.21.a
+		ai_chance = { factor = 30}
+		FRA = {
+			country_event = { id = france_new.22 days = 3  }
+			add_opinion_modifier = { 
+				target = ROOT
+				modifier = rejected_demands
+			}
+		}
+	}
+	
+}
+
+country_event = {
+	id = france_new.22
+	title = france_new.22.t
+	desc = france_new.22.d
+	picture = GFX_report_event_eastern_partition_handshake
+	
+	is_triggered_only =  yes
+	
+	option = {
+	    name = france_new.22.a
+		ai_chance = { factor = 50}
+		
+	}
+	
+}
+
+country_event = {
+	id = france_new.23
+	title = france_new.23.t
+	desc = france_new.23.d
+	picture = GFX_report_event_anarchist_eurasisa
+	
+	is_triggered_only =  yes
+	
+	option = {
+	    name = france_new.23.a
+		ai_chance = { factor = 100}
+		set_cosmetic_tag = FRA_eurasia
+		country_event = { id = france_new.24 days = 1 random_hours = 4 }
+		set_country_flag = integration_enabled
+		hidden_effect = { integrate_eurasia = yes }
+	}
+}
+
+country_event = {
+	id = france_new.24
+	title = france_new.24.t
+	desc = france_new.24.d
+	picture = GFX_report_event_anarchist_eurasisa
+	
+	is_triggered_only =  yes
+	
+	option = {
+	    name = france_new.24.a
+		ai_chance = { factor = 100}
+		set_country_flag = continue_further
+	}
+
+}
+
+country_event = {
+	id = france_new.25
+	title = france_new.25.t
+	desc = france_new.25.d
+	picture = GFX_report_event_militias_army
+	
+	is_triggered_only =  yes
+	
+	option = {
+	    name = france_new.25.a
+		ai_chance = { factor = 100}
+		add_war_support = 0.025
+		add_days_mission_timeout = {
+			mission = FRA_growing_war_devasation
+			days = 20
+		}
+	}
+
+}
+
+country_event = {
+	id = france_new.26
+	title = france_new.26.t
+	desc = france_new.26.d
+	picture = GFX_
+	
+	is_triggered_only =  yes
+	
+	option = {
+	    name = france_new.26.a
+		ai_chance = { factor = 100}
+	}
+	
+	option = {
+	    name = france_new.26.b
+		ai_chance = { factor = 100}
+	}
+}
+
+country_event = {
+	id = france_new.27
+	title = france_new.27.t
+	desc = france_new.27.d
+	picture = GFX_
+	
+	is_triggered_only =  yes
+	
+	option = {
+	    name = france_new.27.a
+		ai_chance = { factor = 100}
+	}
+	
+	option = {
+	    name = france_new.27.b
+		ai_chance = { factor = 100}
+	}
+}
+
+country_event = {
+	id = france_new.28
+	title = france_new.28.t
+	desc = france_new.28.d
+	picture = GFX_
+	
+	is_triggered_only =  yes
+	
+	option = {
+	    name = france_new.28.a
+		ai_chance = { factor = 100}
+	}
+	
+	option = {
+	    name = france_new.28.b
+		ai_chance = { factor = 100}
+	}
+}
+
+country_event = {
+	id = france_new.29
+	title = france_new.29.t
+	desc = france_new.29.d
+	picture = GFX_
+	
+	is_triggered_only =  yes
+	
+	option = {
+	    name = france_new.29.a
+		ai_chance = { factor = 100}
+	}
+	
+	option = {
+	    name = france_new.29.b
+		ai_chance = { factor = 100}
+	}
+}
+
+country_event = {
+	id = france_new.30
+	title = france_new.30.t
+	desc = france_new.30.d
+	picture = GFX_
+	
+	is_triggered_only =  yes
+	
+	option = {
+	    name = france_new.30.a
+		ai_chance = { factor = 100}
+	}
+	
+	option = {
+	    name = france_new.30.b
+		ai_chance = { factor = 100}
+	}
+}
+
+country_event = {
+	id = france_new.31
+	title = france_new.31.t
+	desc = france_new.31.d
+	picture = GFX_
+	
+	is_triggered_only =  yes
+	
+	option = {
+	    name = france_new.31.a
+		ai_chance = { factor = 100}
+	}
+	
+	option = {
+	    name = france_new.31.b
+		ai_chance = { factor = 100}
+	}
+}
+
+country_event = {
+	id = france_new.32
+	title = france_new.32.t
+	desc = france_new.32.d
+	picture = GFX_
+	
+	is_triggered_only =  yes
+	
+	option = {
+	    name = france_new.32.a
+		ai_chance = { factor = 100}
+	}
+	
+	option = {
+	    name = france_new.32.b
+		ai_chance = { factor = 100}
+	}
+}

@@ -1,0 +1,1877 @@
+FRA_revolutionary_struggle = {
+
+	FRA_rising_anti_anarchist_ideas = {
+	priority = 9
+
+		icon = generic_civil_support
+
+		available = {
+				anarchism > 0.7
+		}
+
+		days_mission_timeout = 40
+		fire_only_once = no
+
+		activation = {
+			has_completed_focus = FRA_revolutionary_chaos
+		}
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		is_good = no
+		
+		timeout_effect = {
+			IF = {
+				limit = {
+					NOT = {
+						has_idea = FRA_political_unrest
+						has_idea = FRA_political_unrest2
+						has_idea = FRA_political_unrest3
+						has_idea = FRA_political_unrest4
+						has_idea = FRA_political_unrest5
+					}
+				}
+				add_ideas = FRA_political_unrest
+			}
+			ELSE_IF = {
+				limit  = {
+					has_idea = FRA_political_unrest
+				}
+				swap_ideas = {
+					remove_idea = FRA_political_unrest
+					add_idea = FRA_political_unrest2
+				}
+			}
+			ELSE_IF = {
+				limit  = {
+					has_idea = FRA_political_unrest2
+				}
+				swap_ideas = {
+					remove_idea = FRA_political_unrest2
+					add_idea = FRA_political_unrest3
+				}
+			}
+			ELSE_IF = {
+				limit  = {
+					has_idea = FRA_political_unrest3
+				}
+				swap_ideas = {
+					remove_idea = FRA_political_unrest3
+					add_idea = FRA_political_unrest4
+				}
+			}
+			ELSE_IF = {
+				limit  = {
+					has_idea = FRA_political_unrest4
+				}
+				swap_ideas = {
+					remove_idea = FRA_political_unrest4
+					add_idea = FRA_political_unrest5
+				}
+			}
+			ELSE_IF = {
+				limit  = {
+					has_idea = FRA_political_unrest5
+				}
+				add_political_power = -20
+			}
+			add_war_support = -0.05
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			} 
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			} 
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.05
+			} 
+			add_popularity = {
+				ideology = neutrality
+				popularity = 0.05
+			} 
+		
+		}
+	}
+	
+	promote_anarchism = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_revolutionary_chaos
+		}
+		
+		fire_only_once = no
+		days_re_enable = 20
+		visible = {	
+			
+		}	
+		cost = 10		
+		
+		remove_effect = {		
+			add_popularity = {
+				ideology = anarchism
+				popularity = 0.03
+			} 
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	arrest_counter_revolutionaries = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_escalating_fragmentation
+		}
+		
+		fire_only_once = no
+		days_re_enable = 20
+		visible = {	
+			has_completed_focus =  FRA_escalating_fragmentation
+		}	
+		cost = 20
+		days_remove = 20		
+		
+		remove_effect = {	
+			add_stability = 0.05
+			add_manpower = -5000
+			add_popularity = {
+				ideology = anarchism
+				popularity = 0.6
+			} 
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	create_civilian_militias = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_escalating_fragmentation
+		}
+		
+		fire_only_once = no
+		days_re_enable = 20
+		visible = {	
+			has_completed_focus =  FRA_escalating_fragmentation
+		}	
+		cost = 40
+		days_remove = 60
+		
+		complete_effect = {
+			add_ideas = FRA_civilian_militias
+		}
+		
+		remove_effect = {	
+		
+		remove_ideas =  FRA_civilian_militias
+			add_war_support = 0.05
+			add_popularity = {
+				ideology = anarchism
+				popularity = 0.05
+			} 
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+}
+FRA_project_alpha = {
+	build_military_factories = {
+		icon = GFX_decision_generic_factory
+		target_array = FRA.plan_alpha_decisions
+		target_root_trigger = { original_tag = FRA } 
+		state_target = yes
+		on_map_mode = map_only
+		fire_only_once = yes 
+		available = {
+			has_completed_focus = FRA_start_plan_alpha
+			#NOT = {has_country_flag = ETH_resistance_support_progress_flag}
+			owns_state = FROM
+			controls_state = FROM
+			num_of_available_civilian_factories > 3
+		}
+
+		visible = {
+			has_completed_focus = FRA_start_plan_alpha
+			num_of_available_civilian_factories > 3
+		}
+		days_remove = 40
+ 
+		cost = 25
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			FROM = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+}
+FRA_military_buildup = {
+	buy_soviet_guns = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_sign_weapon_contracts
+			NOT = {has_war_with = SOV}
+		}
+		
+		fire_only_once = no
+		days_re_enable = 40
+		visible = {	
+			has_completed_focus =  FRA_sign_weapon_contracts
+		}	
+		cost = 20
+		days_remove = 60
+		
+		complete_effect = {
+			SOV = {
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = 3000
+					target = FRA
+				}
+				add_offsite_building = { type = industrial_complex level = 3 }
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		
+		remove_effect = {	
+			SOV = {
+				add_offsite_building = { type = industrial_complex level = -3 }
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	buy_prussian_support_equipment = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_sign_weapon_contracts
+			NOT = {has_war_with = PRS}
+		}
+		
+		fire_only_once = no
+		days_re_enable = 40
+		visible = {	
+			has_completed_focus =  FRA_sign_weapon_contracts
+		}	
+		cost = 20
+		days_remove = 60
+		
+		complete_effect = {
+			PRS = {
+				send_equipment = {
+					equipment = support_equipment
+					amount = 300
+					target = FRA
+				}
+				add_offsite_building = { type = industrial_complex level = 3 }
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		
+		remove_effect = {	
+			PRS = {
+				add_offsite_building = { type = industrial_complex level = -3 }
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	buy_austrian_artillery = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_sign_weapon_contracts
+			NOT = {has_war_with = AUS}
+		}
+		
+		fire_only_once = no
+		days_re_enable = 40
+		visible = {	
+			has_completed_focus =  FRA_sign_weapon_contracts
+		}	
+		cost = 20
+		days_remove = 60
+		
+		complete_effect = {
+			AUS = {
+				send_equipment = {
+					equipment = artillery_equipment
+					amount = 300
+					target = FRA
+				}
+				add_offsite_building = { type = industrial_complex level = 3 }
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		
+		remove_effect = {	
+			AUS = {
+				add_offsite_building = { type = industrial_complex level = -3 }
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	buy_swedish_trucks = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_sign_weapon_contracts
+			NOT = {has_war_with = SWE}
+		}
+		
+		fire_only_once = no
+		days_re_enable = 40
+		visible = {	
+			has_completed_focus =  FRA_sign_weapon_contracts
+		}	
+		cost = 20
+		days_remove = 60
+		
+		complete_effect = {
+			SWE = {
+				send_equipment = {
+					equipment = motorized_equipment
+					amount = 300
+					target = FRA
+				}
+				add_offsite_building = { type = industrial_complex level = 3 }
+			}
+		}
+		modifier = {
+			civilian_factory_use = 3
+		}
+		
+		remove_effect = {	
+			SWE = {
+				add_offsite_building = { type = industrial_complex level = -3 }
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	FRA_buy_fighters = { #purchase german fighters
+		icon = GFX_decision_generic_air
+		allowed = { always = no }
+		
+		visible = {
+			FROM = { is_subject = no }
+			is_subject = no
+			NOT = { has_war_with = FROM }
+			has_completed_focus = FRA_airplane_effort
+		}
+		cancel_if_not_visible = yes
+		fire_only_once = no
+		days_remove = 60
+		days_re_enable = 180
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 80
+				stockpile_ratio = {
+					archetype = small_plane_airframe
+					ratio < 0.75
+				}
+			}
+		}
+
+		cost = 60
+
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = small_plane_airframe
+				amount = 150
+				producer = FROM
+			}
+		}
+	}
+	FRA_buy_bombers = { #purchase german tactical bombers
+		icon = GFX_decision_bomber
+		allowed = { always = no }
+		
+		visible = {
+			FROM = { is_subject = no }
+			is_subject = no
+			NOT = { has_war_with = FROM }
+			has_completed_focus = FRA_airplane_effort
+		}
+		cancel_if_not_visible = yes
+		days_remove = 60
+		days_re_enable = 180
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 80
+				stockpile_ratio = {
+					archetype = medium_plane_airframe
+					ratio < 0.75
+				}
+			}
+		}
+
+		cost = 60 
+		
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = medium_plane_airframe
+				amount = 150
+				producer = FROM
+			}
+		}
+	}
+	
+	rebuild_french_airports = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus = FRA_airplane_effort
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 20
+		visible = {	
+			has_completed_focus = FRA_airplane_effort
+		}	
+		cost = 10
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+		
+		remove_effect = {	
+			1037 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+			}
+			735 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+			}
+			31 = {
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 10			
+		}
+	}
+	
+	rebuild_construct_dockyards = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus = FRA_naval_effort
+		}
+		
+		fire_only_once = no
+		days_re_enable = 140
+		visible = {	
+			has_completed_focus = FRA_naval_effort
+		}	
+		cost = 10
+		days_remove = 60
+
+		modifier = {
+			civilian_factory_use = 3
+		}		
+		
+		remove_effect = {	
+			random_owned_controlled_state  = {
+			add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+			
+		}
+		ai_will_do = {	
+			factor = 10			
+		}
+	}
+	
+	convert_convois_into_destroyers = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus = FRA_naval_effort
+		}
+		
+		fire_only_once = no
+		days_re_enable = 60
+		visible = {	
+			has_completed_focus = FRA_naval_effort
+		}	
+		cost = 10
+		days_remove = 80
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = -20
+			}
+		}		
+		
+		remove_effect = {	
+			add_equipment_to_stockpile = {
+				type = destroyer_1
+				amount = 2
+			}
+		}
+		ai_will_do = {	
+			factor = 10			
+		}
+	}
+	
+	Reverse_cheap_equipment_production = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_more_equipment_but_cheaper
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 20
+		visible = {	
+			has_completed_focus =  FRA_more_equipment_but_cheaper
+		}	
+		cost = 10
+		days_remove = 0		
+		
+		remove_effect = {	
+			remove_ideas = FRA_cheap_equipment
+		}
+		ai_will_do = {	
+			factor = 10			
+		}
+	}
+	
+	create_a_motorized_template = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_diversify_armed_forces
+			custom_trigger_tooltip = {
+				tooltip = "We can produce Trucks."		
+				has_country_flag =  PRS_cheaper_trucks
+			}
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 20
+		visible = {	
+			has_completed_focus =  FRA_diversify_armed_forces
+		}	
+		cost = 20
+		days_remove = 0		
+		
+		remove_effect = {	
+			custom_effect_tooltip = FRA_motorized_tmeplate
+			division_template = {
+				name = "Division Légère Mécanique" 		# Division Légère Mécanique
+				division_names_group = FRA_MEC_01
+
+				regiments = {
+					motorized = { x = 0 y = 0 }		# Bn. of Hotchkiss, then Souma (Med.) tanks
+					motorized = { x = 0 y = 1 }		# Bn. of Hotchkiss tanks
+					motorized = { x = 1 y = 0 }			# Brigade of 2x Rgts., 2 Bns. each (later 1 Rgt. of 3x Bns.)
+					motorized = { x = 1 y = 1 }
+					motorized = { x = 1 y = 2 }
+					motorized = { x = 1 y = 3 }
+					mot_artillery_brigade = { x = 2 y = 0}
+					mot_artillery_brigade = { x = 2 y = 1}
+				}
+				support = {
+					mot_recon = { x = 0 y = 0 }      # Recon Group consisted of 42 ACs + motorcycles
+					engineer = { x = 0 y = 1 }
+				}
+			}
+			clr_country_flag = PRS_cheaper_trucks
+		}
+		ai_will_do = {	
+			factor = 10			
+		}
+	}
+	
+	create_an_armored_template = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_diversify_armed_forces
+			custom_trigger_tooltip = {
+				tooltip = "We can produce Tanks."		
+				has_country_flag =  PRS_cheaper_tanks
+			}
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 20
+		visible = {	
+			has_completed_focus =  FRA_diversify_armed_forces
+		}	
+		cost = 20
+		days_remove = 0		
+		
+		remove_effect = {	
+			custom_effect_tooltip = FRA_tank_tmeplate
+			division_template = {
+				name = "Brigade de Chars de Combat" 	# Brigade de Chars de Combat, independent armor brigades of 2x Rgts., 2 Bns. each
+				division_names_group = FRA_ARM_01
+				regiments = {
+					light_armor = { x = 0 y = 0 }
+					light_armor = { x = 0 y = 1 }
+					light_armor = { x = 1 y = 0 }
+					light_armor = { x = 1 y = 1 }
+					light_armor = { x = 2 y = 0 }
+					light_armor = { x = 2 y = 1 }
+				}
+			}
+			clr_country_flag = PRS_cheaper_tanks
+		}
+		ai_will_do = {	
+			factor = 10			
+		}
+	}
+	
+	create_a_mountaineer_template = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_diversify_armed_forces
+			custom_trigger_tooltip = {
+				tooltip = "We can produce modern Equipment"		
+				has_country_flag =  PRS_cheaper_mountains
+			}
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 20
+		visible = {	
+			has_completed_focus =  FRA_diversify_armed_forces
+		}	
+		cost = 20
+		days_remove = 0		
+		
+		remove_effect = {	
+			custom_effect_tooltip = FRA_mountain_tmeplate
+			division_template = {
+				name = "Division d'Infanterie Alpine"	# Division d'Infanterie Alpine
+				division_names_group = FRA_MNT_01
+				
+				regiments = {
+					mountaineers = { x = 0 y = 0 }	# Regular mountain infantry (Infanterie Alpine)
+					mountaineers = { x = 0 y = 1 }
+					mountaineers = { x = 0 y = 2 }	
+					mountaineers = { x = 1 y = 0 }
+					mountaineers = { x = 1 y = 1 }
+					mountaineers = { x = 1 y = 2 }
+					mountaineers = { x = 2 y = 0 }	# Chasseurs Alpins (HOI3 elites)
+					mountaineers = { x = 2 y = 1 }	# Chasseurs Alpins (HOI3 elites)
+					mountaineers = { x = 2 y = 2 }	# Chasseurs Alpins (HOI3 elites)
+					mountaineers = { x = 3 y = 0 }	# Chasseurs Alpins (HOI3 elites)
+					mountaineers = { x = 3 y = 1 }	# Chasseurs Alpins (HOI3 elites)
+					mountaineers = { x = 3 y = 2 }	# Chasseurs Alpins (HOI3 elites)
+				}
+				
+				support = {
+					recon = { x = 0 y = 0 }      # Recon Group consisted of 42 ACs + motorcycles
+					engineer = { x = 0 y = 1 }
+				}
+			}
+			clr_country_flag = PRS_cheaper_mountains
+		}
+		ai_will_do = {	
+			factor = 10			
+		}
+	}
+	
+	research_proper_artillery_production = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_artillery_effort
+			custom_trigger_tooltip = {
+				tooltip = "We are not currently researching any Production"	
+					NOT = {has_country_flag = FRA_research_progress}
+				}
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 40
+		visible = {	
+			has_completed_focus =  FRA_artillery_effort
+		}	
+		cost = 20
+		days_remove = 60
+		
+		complete_effect = {
+			set_country_flag = FRA_research_progress
+		}
+		modifier = {
+			research_speed_factor  = -0.5
+		}
+		
+		remove_effect = {	
+			clr_country_flag = FRA_research_progress
+			swap_ideas = {
+				remove_idea = unfunctional_military_production 
+				add_idea = unfunctional_military_production1
+			}
+			set_country_flag =  artillery_done
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	research_proper_motorisation_production = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_motorisation_effort
+			custom_trigger_tooltip = {
+				tooltip = "We are not currently researching any Production"	
+					NOT = {has_country_flag = FRA_research_progress}
+				}
+			custom_trigger_tooltip = {
+				tooltip = "We researched Artillery Production"	
+					has_country_flag = artillery_done
+				}
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 40
+		visible = {	
+			has_completed_focus =  FRA_motorisation_effort
+		}	
+		cost = 20
+		days_remove = 60
+		
+		complete_effect = {
+			set_country_flag = FRA_research_progress
+			clr_country_flag = artillery_done
+		}
+		modifier = {
+			research_speed_factor  = -0.5
+		}
+		
+		remove_effect = {	
+			clr_country_flag = FRA_research_progress
+			swap_ideas = {
+				remove_idea = unfunctional_military_production1 
+				add_idea = unfunctional_military_production2
+			}
+			set_country_flag =  motor_done
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	research_proper_armor_production = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_amored_effort
+			custom_trigger_tooltip = {
+				tooltip = "We are not currently researching any Production"	
+					NOT = {has_country_flag = FRA_research_progress}
+				}
+			custom_trigger_tooltip = {
+				tooltip = "We researched Motorisation Production"	
+					has_country_flag = motor_done
+				}
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 40
+		visible = {	
+			has_completed_focus =  FRA_amored_effort
+		}	
+		cost = 20
+		days_remove = 60
+		
+		complete_effect = {
+			set_country_flag = FRA_research_progress
+			clr_country_flag = motor_done
+		}
+		modifier = {
+			research_speed_factor  = -0.5
+		}
+		
+		remove_effect = {	
+			clr_country_flag = FRA_research_progress
+			swap_ideas = {
+				remove_idea = unfunctional_military_production2 
+				add_idea = unfunctional_military_production3
+			}
+			set_country_flag =  armor_done
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	research_proper_airplane_production = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_airplane_effort
+			custom_trigger_tooltip = {
+				tooltip = "We are not currently researching any Production"	
+					NOT = {has_country_flag = FRA_research_progress}
+				}
+			custom_trigger_tooltip = {
+				tooltip = "We researched Armor Production"	
+					has_country_flag = armor_done
+				}
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 40
+		visible = {	
+			has_completed_focus =  FRA_airplane_effort
+		}	
+		cost = 20
+		days_remove = 60
+		
+		complete_effect = {
+			set_country_flag = FRA_research_progress
+			clr_country_flag = armor_done
+		}
+		modifier = {
+			research_speed_factor  = -0.5
+		}
+		
+		remove_effect = {	
+			clr_country_flag = FRA_research_progress
+			swap_ideas = {
+				remove_idea = unfunctional_military_production3 
+				add_idea = unfunctional_military_production4
+			}
+			set_country_flag =  air_done
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	research_proper_navy_production = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_naval_effort
+			custom_trigger_tooltip = {
+				tooltip = "We are not currently researching any Production"	
+					NOT = {has_country_flag = FRA_research_progress}
+				}
+			custom_trigger_tooltip = {
+				tooltip = "We researched Airplane Production"	
+					has_country_flag = air_done
+				}
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 40
+		visible = {	
+			has_completed_focus =  FRA_naval_effort
+		}	
+		cost = 20
+		days_remove = 60
+		
+		complete_effect = {
+			set_country_flag = FRA_research_progress
+			clr_country_flag = air_done
+		}
+		modifier = {
+			research_speed_factor  = -0.5
+		}
+		
+		remove_effect = {	
+			clr_country_flag = FRA_research_progress
+			remove_ideas = unfunctional_military_production4
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+}
+FRA_expansion_of_anarchism = {
+	border_war_for_catalonia = {		
+		icon = border_war		
+		
+		available = {
+			has_completed_focus =  FRA_conquer_catalonia
+			divisions_in_border_state = {
+				state = 31
+				border_state = 1072
+				size > 0
+			}
+		}
+		
+		fire_only_once = no
+		days_re_enable = 1
+		visible = {	
+			has_completed_focus =  FRA_conquer_catalonia
+			NOT = {has_country_flag = lost_border_war}
+		}
+
+		highlight_states = {
+			highlight_state_targets = {
+				state = 31
+				state = 1072	
+			} 
+		}
+		cost = 10
+		days_remove = 30		
+		
+		remove_effect = {		
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 31
+					num_provinces = 3
+					on_win = france_new.11
+					on_lose = france_new.12
+					#on_cancel = japan_border_conflict.4
+				}
+				
+				defender = {
+					state = 1072
+					num_provinces = 3
+					on_win = france_new.11
+					on_lose = france_new.12
+					#on_cancel = japan_border_conflict.4
+				}
+			}
+			set_border_war_data = {
+				attacker = 31
+				defender = 1072
+				attacker_modifier = 0.15
+				combat_width = 20
+			}
+			hidden_effect = {
+				activate_targeted_decision = { target = FROM decision = russia_raid_in_progress }
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	russia_raid_in_progress = {
+		icon = border_war
+
+		allowed = { always = no } #Activated from effect
+
+		available = {
+			NOT = { has_border_war = yes }
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 31
+				state = 165	
+			} 
+		}
+
+		cancel_trigger = {
+			OR = {
+				is_in_faction_with = FROM
+				has_war_with = FROM
+			}
+		}
+
+		fire_only_once = yes #Reactivation handled in effect
+
+		days_mission_timeout = 180
+
+		timeout_effect = { #inconclusive battle
+			log = "[GetDateText]: [Root.GetName]: Decision timeout russia_raid_in_progress"
+			cancel_border_war = {
+				dont_fire_events = yes
+			}
+			hidden_effect = {
+				remove_targeted_decision = { target = FROM decision = russia_raid_in_progress }
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision russia_raid_in_progress"
+			hidden_effect = {
+				remove_targeted_decision = { target = FROM decision = russia_raid_in_progress }
+			}
+		}
+	}
+	
+	exploit_catalonia = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_conquer_catalonia
+			owns_state = 165
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 20
+		visible = {	
+			has_completed_focus =  FRA_conquer_catalonia
+			owns_state = 1072
+		}	
+		cost = 20
+		days_remove = 20		
+		
+		remove_effect = {	
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_cic = 1000
+			1072 = { 
+				add_dynamic_modifier = { modifier = salted_earth }
+				add_core_of = FRA				
+			}
+			31 = {
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+				add_resource = {
+					type = Aluminium
+					amount = 16
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+		exploit_jura_mountains = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_conquer_switzerland
+			owns_state = 845
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 20
+		visible = {	
+			has_completed_focus =  FRA_conquer_switzerland
+			owns_state = 845
+		}	
+		cost = 20
+		days_remove = 20		
+		
+		remove_effect = {	
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_cic = 1200
+			845 = { 
+				add_dynamic_modifier = { modifier = salted_earth }
+				add_core_of = FRA				
+			}
+			17 = {
+				add_resource = {
+					type = steel
+					amount = 8
+				}
+				add_resource = {
+					type = Aluminium
+					amount = 24
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+		exploit_ardennes = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_conquer_benelux
+			owns_state = 1016
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 20
+		visible = {	
+			has_completed_focus =  FRA_conquer_benelux
+			owns_state = 1016
+		}	
+		cost = 20
+		days_remove = 20		
+		
+		remove_effect = {	
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_cic = 800
+			1016 = { 
+				add_dynamic_modifier = { modifier = salted_earth }
+				add_core_of = FRA				
+			}
+			18 = {
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+				add_resource = {
+					type = Aluminium
+					amount = 16
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+		exploit_luxemburg = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_conquer_benelux
+			owns_state = 8
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 20
+		visible = {	
+			has_completed_focus =  FRA_conquer_benelux
+			owns_state = 8
+		}	
+		cost = 20
+		days_remove = 20		
+		
+		remove_effect = {	
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_cic = 1500
+			8 = { 
+				add_dynamic_modifier = { modifier = salted_earth }
+				add_core_of = FRA				
+			}
+			28 = {
+				add_resource = {
+					type = steel
+					amount = 5
+				}
+				add_resource = {
+					type = Aluminium
+					amount = 10
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	exploit_wallonie = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_conquer_benelux
+			owns_state = 34
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 20
+		visible = {	
+			has_completed_focus =  FRA_conquer_benelux
+			owns_state = 34
+		}	
+		cost = 20
+		days_remove = 20		
+		
+		remove_effect = {	
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_cic = 1000
+			34 = { 
+				add_dynamic_modifier = { modifier = salted_earth }
+				add_core_of = FRA				
+			}
+			785 = {
+				add_resource = {
+					type = steel
+					amount = 10
+				}
+				add_resource = {
+					type = Aluminium
+					amount = 16
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+		exploit_eupen_malmedy = {
+		icon = FX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_conquer_benelux
+			owns_state = 1015
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 20
+		visible = {	
+			has_completed_focus =  FRA_conquer_benelux
+			owns_state = 1015
+		}	
+		cost = 20
+		days_remove = 20		
+		
+		remove_effect = {	
+			add_stability = 0.05
+			add_war_support = 0.05
+			add_cic = 500
+			1015 = { 
+				add_dynamic_modifier = { modifier = salted_earth }
+				add_core_of = FRA				
+			}
+			18 = {
+				add_resource = {
+					type = steel
+					amount = 4
+				}
+				add_resource = {
+					type = Aluminium
+					amount = 4
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+}	
+FRA_economic_reorganization = {
+	dissposess_the_rich = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			#has_completed_focus =  FRA_gather_rescources
+		}
+		
+		fire_only_once = no
+		days_re_enable = 45
+		visible = {	
+			has_completed_focus =  FRA_gather_rescources
+		}	
+		cost = 20
+		days_remove = 30		
+		
+		remove_effect = {
+			add_stability = -0.075
+			custom_effect_tooltip = FRA_res_minus_10
+			subtract_from_variable = {
+				var = FRA_rescources_var
+				value = -0.1
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	local_fundraising_campaings = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_gather_rescources
+		}
+		
+		fire_only_once = no
+		days_re_enable = 30
+		visible = {	
+			has_completed_focus =  FRA_gather_rescources
+		}	
+		cost = 10
+		days_remove = 30		
+		
+		remove_effect = {	
+			custom_effect_tooltip = FRA_res_minus_5
+			subtract_from_variable = {
+				var = FRA_rescources_var
+				value = -0.05
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	dissposess_the_poor = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_gather_rescources
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 40
+		visible = {	
+			has_completed_focus =  FRA_gather_rescources
+		}	
+		cost = 50
+		days_remove = 30		
+		
+		remove_effect = {	
+			add_stability = -0.3  
+			custom_effect_tooltip = FRA_res_minus_40
+			subtract_from_variable = {
+				var = FRA_rescources_var
+				value = -0.4
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	produce_more_resources = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_subsidize_the_means_of_production
+		}
+		
+		fire_only_once = no
+		days_re_enable = 45
+		visible = {	
+			has_completed_focus =  FRA_subsidize_the_means_of_production
+		}	
+		cost = 10
+		days_remove = 30
+
+		modifier = {
+			civilian_factory_use = 3
+		}
+		
+		remove_effect = {	
+			custom_effect_tooltip = FRA_res_minus_10
+			subtract_from_variable = {
+				var = FRA_rescources_var
+				value = -0.1
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	forced_labour = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_subsidize_the_means_of_production
+		}
+		
+		fire_only_once = no
+		days_re_enable = 45
+		visible = {	
+			has_completed_focus =  FRA_subsidize_the_means_of_production
+		}	
+		cost = 10
+		days_remove = 30
+
+		complete_effect = {
+			add_ideas = FRA_forced_labour
+		}
+		
+		
+		remove_effect = {
+			remove_ideas = FRA_forced_labour
+			custom_effect_tooltip = FRA_res_minus_10
+			subtract_from_variable = {
+				var = FRA_rescources_var
+				value = -0.1
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+}
+FRA_the_eurasian_conquest = {
+	Integrate_eurasian_states = {
+		icon = GFX_decision_generic_factory
+		target_array = FRA.integrate_eurasia
+		target_root_trigger = { original_tag = FRA } 
+		state_target = yes
+		on_map_mode = map_only
+		fire_only_once = yes 
+		available = {
+			FROM = {
+				compliance  > 50
+			}
+			owns_state = FROM
+			
+		}
+
+		visible = {
+			has_country_flag = integration_enabled
+			FROM = {
+				is_claimed_by = FRA
+			}
+		}
+		days_remove = 30
+ 
+		cost = 20
+
+		modifier = {
+			political_power_cost = 0.15
+		}
+
+		remove_effect = {
+			add_state_core = FROM
+		}
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+	
+	FRA_growing_war_devasation = {
+	priority = 9
+
+		icon = generic_civil_support
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "We have conquered Eurasia"	
+				controls_province = 4135
+				controls_province = 12299
+				NOT = {
+					country_exists = POR
+					country_exists = JAP
+				}
+			}
+		}
+
+		days_mission_timeout = FRA_war_devastation_mission_duration
+		fire_only_once = no
+
+		activation = {
+			has_war = yes
+			has_completed_focus = FRA_prepare_the_army
+		}
+
+		allowed = {
+			original_tag = FRA
+		}
+
+		is_good = no
+		
+		timeout_effect = {
+			
+			IF = {
+				limit  = {
+					has_idea = FRA_well_prepared_army
+				}
+				swap_ideas = {
+					remove_idea = FRA_well_prepared_army
+					add_idea = FRA_well_prepared_army1
+				}
+				fra_mission_duration_small_increase = yes
+			}
+			ELSE_IF = {
+				limit  = {
+					has_idea = FRA_well_prepared_army1
+				}
+				swap_ideas = {
+					remove_idea = FRA_well_prepared_army1
+					add_idea = FRA_well_prepared_army2
+				}
+				fra_mission_duration_medium_increase = yes
+			}
+			ELSE_IF = {
+				limit  = {
+					has_idea = FRA_well_prepared_army2
+				}
+				swap_ideas = {
+					remove_idea = FRA_well_prepared_army2
+					add_idea = FRA_well_prepared_army3
+				}
+				fra_mission_duration_small_increase = yes
+			}
+			ELSE_IF = {
+				limit  = {
+					has_idea = FRA_well_prepared_army3
+				}
+				swap_ideas = {
+					remove_idea = FRA_well_prepared_army3
+					add_idea = FRA_well_prepared_army4
+				}
+				fra_mission_duration_small_decrease = yes
+			}
+			ELSE_IF = {
+				limit  = {
+					has_idea = FRA_well_prepared_army4
+				}
+				swap_ideas = {
+					remove_idea = FRA_well_prepared_army4
+					add_idea = FRA_well_prepared_army5
+				}
+				fra_mission_duration_medium_decrease = yes
+			}
+			ELSE_IF = {
+				limit  = {
+					has_idea = FRA_well_prepared_army5
+				}
+				swap_ideas = {
+					remove_idea = FRA_well_prepared_army5
+					add_idea = FRA_well_prepared_army6
+				}
+				fra_mission_duration_small_decrease = yes
+			}
+			ELSE_IF = {
+				limit  = {
+					has_idea = FRA_well_prepared_army6
+				}
+				swap_ideas = {
+					remove_idea = FRA_well_prepared_army6
+					add_idea = FRA_well_prepared_army7
+				}
+				fra_mission_duration_huge_decrease = yes
+			}
+			ELSE_IF = {
+				limit  = {
+					has_idea = FRA_well_prepared_army7
+				}
+				add_stability = -0.2
+				add_war_support = -0.2
+			}
+			
+		
+		}
+	}
+	
+	fulfil_civilian_needs = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus = FRA_prepare_the_army
+			has_active_mission = FRA_growing_war_devasation
+		}
+		
+		fire_only_once = no
+		days_re_enable = 50
+		days_remove = 30
+		visible = {	
+			has_completed_focus = FRA_prepare_the_army
+			has_active_mission = FRA_growing_war_devasation
+		}	
+		cost = 10		
+		
+		remove_effect = {		
+			add_stability = 0.025
+			add_war_support = -0.05
+			add_days_mission_timeout = {
+				mission = FRA_growing_war_devasation
+				days = 35
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	arrest_pacifists = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_prepare_the_army
+			has_active_mission = FRA_growing_war_devasation
+		}
+		
+		fire_only_once = no
+		days_re_enable = 50
+		visible = {	
+			has_completed_focus =  FRA_prepare_the_army
+			has_active_mission = FRA_growing_war_devasation
+		}	
+		cost = 20
+		days_remove = 20		
+		
+		remove_effect = {	
+			add_war_support = 0.05
+			add_stability = -0.025
+			add_manpower = -500
+			add_days_mission_timeout = {
+				mission = FRA_growing_war_devasation
+				days = 15
+			}
+			
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	the_home_front = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_prepare_the_army
+			has_active_mission = FRA_growing_war_devasation
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 20
+		visible = {	
+			has_completed_focus =  FRA_prepare_the_army
+			has_active_mission = FRA_growing_war_devasation
+		}	
+		cost = 5
+		days_remove = 0
+		
+		remove_effect = {
+			add_ideas = FRA_the_home_front
+			set_country_flag = homefront_enabled
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	mobilize_the_economy = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_prepare_the_army
+			has_active_mission = FRA_growing_war_devasation
+			has_country_flag = homefront_enabled
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 20
+		visible = {	
+			has_completed_focus =  FRA_prepare_the_army
+			has_active_mission = FRA_growing_war_devasation
+			has_country_flag = homefront_enabled
+		}	
+		cost = 40
+		days_remove = 20
+		
+		remove_effect = {
+			upgrade_economy_law = yes
+			add_days_mission_timeout = {
+				mission = FRA_growing_war_devasation
+				days = 15
+			}
+			IF = {
+				limit  = {
+					has_idea = FRA_the_home_front
+				}
+				swap_ideas = {
+					remove_idea = FRA_the_home_front
+					add_idea = FRA_the_home_front1
+				}
+			}
+			ELSE_IF = {
+				limit  = {
+					has_idea = FRA_the_home_front1
+				}
+				swap_ideas = {
+					remove_idea = FRA_the_home_front1
+					add_idea = FRA_the_home_front2
+				}
+			}
+			ELSE_IF = {
+				limit  = {
+					has_idea = FRA_the_home_front2
+				}
+				swap_ideas = {
+					remove_idea = FRA_the_home_front2
+					add_idea = FRA_the_home_front3
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	convert_civilian_production_into_militray_production = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_prepare_the_army
+			has_active_mission = FRA_growing_war_devasation
+			has_country_flag = homefront_enabled
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 20
+		visible = {	
+			has_completed_focus =  FRA_prepare_the_army
+			has_active_mission = FRA_growing_war_devasation
+			has_country_flag = homefront_enabled
+		}	
+		cost = 20
+		days_remove = 40
+		
+		remove_effect = {
+			random_owned_controlled_state = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+			}
+			add_days_mission_timeout = {
+				mission = FRA_growing_war_devasation
+				days = 15
+			}
+			IF = {
+				limit  = {
+					has_idea = FRA_the_home_front
+				}
+				swap_ideas = {
+					remove_idea = FRA_the_home_front
+					add_idea = FRA_the_home_front1
+				}
+			}
+			ELSE_IF = {
+				limit  = {
+					has_idea = FRA_the_home_front1
+				}
+				swap_ideas = {
+					remove_idea = FRA_the_home_front1
+					add_idea = FRA_the_home_front2
+				}
+			}
+			ELSE_IF = {
+				limit  = {
+					has_idea = FRA_the_home_front2
+				}
+				swap_ideas = {
+					remove_idea = FRA_the_home_front2
+					add_idea = FRA_the_home_front3
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+	
+	declare_total_submission_to_war = {		
+		icon = GFX_decision_icon_default		
+		
+		available = {
+			has_completed_focus =  FRA_prepare_the_army
+			has_active_mission = FRA_growing_war_devasation
+			has_country_flag = homefront_enabled
+		}
+		
+		fire_only_once = yes
+		#days_re_enable = 20
+		visible = {	
+			has_completed_focus =  FRA_prepare_the_army
+			has_active_mission = FRA_growing_war_devasation
+			has_country_flag = homefront_enabled
+		}	
+		cost = 20
+		days_remove = 60
+		
+		remove_effect = {
+			add_ideas = FRA_total_war
+			add_days_mission_timeout = {
+				mission = FRA_growing_war_devasation
+				days = 15
+			}
+			IF = {
+				limit  = {
+					has_idea = FRA_the_home_front
+				}
+				swap_ideas = {
+					remove_idea = FRA_the_home_front
+					add_idea = FRA_the_home_front1
+				}
+			}
+			ELSE_IF = {
+				limit  = {
+					has_idea = FRA_the_home_front1
+				}
+				swap_ideas = {
+					remove_idea = FRA_the_home_front1
+					add_idea = FRA_the_home_front2
+				}
+			}
+			ELSE_IF = {
+				limit  = {
+					has_idea = FRA_the_home_front2
+				}
+				swap_ideas = {
+					remove_idea = FRA_the_home_front2
+					add_idea = FRA_the_home_front3
+				}
+			}
+		}
+		ai_will_do = {	
+			factor = 100			
+		}
+	}
+}
+

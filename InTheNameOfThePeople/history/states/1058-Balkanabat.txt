@@ -1,0 +1,36 @@
+state={
+	id=1058
+	name="STATE_1058"
+	
+	history={
+		owner = TMS
+		victory_points = {
+			12333 8 
+		}
+		victory_points = {
+			1493 1 
+		}
+		victory_points = {
+			7477 2 
+		}		
+		victory_points = {
+			10359 3 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		add_core_of = TMS
+
+	}
+	
+	provinces={
+		1493 1593 4563 4599 7477 7563 7635 10359 10406 10485 10510 12333 12359 12491 
+	}
+	manpower=533142
+	state_category=rural
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

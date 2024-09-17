@@ -1,0 +1,1109 @@
+###########################
+# Turkish Events
+###########################
+
+add_namespace = new_turkey
+
+#The Montreux Convention - Britain
+country_event = {
+	id = new_turkey.1
+	title = new_turkey.1.t
+	desc = new_turkey.1.d
+	picture = GFX_report_event__sultan_dead
+
+	trigger = {
+		date < 1936.03.09
+		date > 1936.03.07
+	}
+	fire_only_once = yes
+	
+	option = {
+		name = new_turkey.1.a #we shall support the Turks
+		ai_chance = {
+			factor = 80
+		}
+		add_political_power = -100
+		add_ideas = TUR_dead_sultan
+		kill_country_leader = yes
+		country_event = {id = new_turkey.2 days = 3}
+	}
+	
+}
+country_event = {
+	id = new_turkey.2
+	title = new_turkey.2.t
+	desc = new_turkey.2.d
+	picture = GFX_report_event__sultan_dead
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.2.a #we shall support the Turks
+		ai_chance = {
+			factor = 80
+		}
+		add_political_power = 15
+		country_event = {id = new_turkey.3 days = 5}
+		hidden_effect = {
+			set_party_name = {
+				ideology = democratic
+				long_name = "Kemalist Türk Partisi"
+				name = "KTP" 
+			}
+		}
+	}
+	
+}
+country_event = {
+	id = new_turkey.3
+	title = new_turkey.3.t
+	desc = new_turkey.3.d
+	picture = GFX_report_event_kemalist_soldiers
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.3.a #we shall support the Turks
+		ai_chance = {
+			factor = 80
+		}
+		add_manpower = -5000
+		add_stability = -0.1
+		add_popularity = {
+				ideology = democratic
+				popularity = -0.2
+			}
+		country_event = {id = new_turkey.4 days = 2}
+	}	
+}
+country_event = {
+	id = new_turkey.4
+	title = new_turkey.4.t
+	desc = new_turkey.4.d
+	picture = GFX_report_event_kemalist_soldiers_coup
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.4.a #we shall support the Turks
+		ai_chance = {
+			factor = 80
+		}
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "Kazim Orbay"
+			picture = GFX_portrait_TUR_kazim_orbay
+			expire = "1965.1.1"
+			ideology = despotism
+		}
+		set_party_name = {
+				ideology = neutrality
+				long_name = "Kemalist Türk Partisi"
+				name = "KTP" 
+			}
+		add_popularity = {
+				ideology = democratic
+				popularity = 0.15
+			}
+		remove_ideas =  TUR_dead_sultan
+		country_event = {id = new_turkey.5 days = 7}
+	}	
+}
+country_event = {
+	id = new_turkey.5
+	title = new_turkey.5.t
+	desc = new_turkey.5.d
+	picture = GFX_report_event__ismet_inonu
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.5.a #we shall support the Turks
+		ai_chance = {
+			factor = 80
+		}
+		retire_country_leader = yes
+		create_country_leader = {
+			name = "İsmet İnönü"
+			picture = GFX_portrait_TUR_ismet_inonu
+			expire = "1965.1.1"
+			ideology = despotism
+			traits = {milli_sef}
+		}
+		set_cosmetic_tag = TUR_republic
+		add_stability = 0.1
+		add_war_support = 0.1
+		remove_ideas =  TUR_kemalists_in_exile
+		country_event = {id = new_turkey.6 days = 14}
+		
+	}	
+}
+country_event = {
+	id = new_turkey.6
+	title = new_turkey.6.t
+	desc = new_turkey.6.d
+	picture = GFX_report_event_hun_national_riot
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.6.a #we shall support the Turks
+		ai_chance = {
+			factor = 80
+		}
+		add_political_power = -100
+		set_autonomy = {
+			target = KUR
+			autonomy_state = autonomy_free
+		}
+		KUR = {
+			set_cosmetic_tag = KUR_free
+		}
+		country_event = {id = new_turkey.7 days = 4}
+		hidden_effect = {
+			346 = {
+				set_demilitarized_zone = yes
+				add_core_of = NTU
+			}
+			343 = {
+				set_demilitarized_zone = yes
+				add_core_of = NTU
+			}
+			1074 = {
+				set_demilitarized_zone = yes
+				add_core_of = NTU
+			}
+			342 = {
+				set_demilitarized_zone = yes
+				add_core_of = NTU
+			}
+			345 = {
+				set_demilitarized_zone = yes
+				add_core_of = NTU
+			}
+			1022 = {
+				set_demilitarized_zone = yes
+				add_core_of = OTT
+			}
+			344 = {
+				set_demilitarized_zone = yes
+				add_core_of = OTT
+			}
+			350 = {
+				set_demilitarized_zone = yes
+				add_core_of = OTT
+			}
+			349 = {
+				set_demilitarized_zone = yes
+				add_core_of = OTT
+			}
+			355 = {
+				set_demilitarized_zone = yes
+				add_core_of = OTT
+			}
+			353 = {
+				set_demilitarized_zone = yes
+				add_core_of = OTT
+			}
+			354 = {
+				set_demilitarized_zone = yes
+				add_core_of = OTT
+			}
+			1073 = {
+				set_demilitarized_zone = yes
+				add_core_of = OTT
+			}
+		}
+	}	
+}
+country_event = {
+	id = new_turkey.7
+	title = new_turkey.7.t
+	desc = new_turkey.7.d
+	picture = GFX_report_event_ottomans_rise_up
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.7.a #we shall support the Turks
+		ai_chance = {
+			factor = 80
+		}
+		release = OTT
+		every_state = {
+			limit = {is_core_of  = TUR }
+			add_core_of = OTT
+		}
+		transfer_units_fraction = {
+			target = OTT
+			size = 0.5
+			stockpile_ratio = 0.8
+			army_ratio = 0.3
+			navy_ratio = 0.0
+			air_ratio = 0.5
+			keep_unit_leaders_trigger = {
+				always = yes
+			}
+		}
+		TUR_fakhri_pasha = { retire = yes }
+		TUR_mehmet_esat_pasha = { retire = yes }
+		TUR_fevzi_cakmak = { retire = yes }
+		TUR_kazim_karabekir = { retire = yes }
+		TUR_ahmet_fevzi_pasha = { retire = yes }
+		country_event = {id = new_turkey.8 days = 7}
+		hidden_effect = {
+			OTT = {
+				load_oob = "OTT_1936"
+			}
+			1022 = {
+				set_demilitarized_zone = yes
+			}
+			344 = {
+				set_demilitarized_zone = yes
+			}
+			350 = {
+				set_demilitarized_zone = yes
+			}
+			349 = {
+				set_demilitarized_zone = yes
+			}
+			355 = {
+				set_demilitarized_zone = yes
+			}
+			353 = {
+				set_demilitarized_zone = yes
+			}
+			354 = {
+				set_demilitarized_zone = yes
+			}
+			1073 = {
+				set_demilitarized_zone = yes
+			}
+		}
+		
+	}	
+}
+country_event = {
+	id = new_turkey.8
+	title = new_turkey.8.t
+	desc = new_turkey.8.d
+	picture = GFX_report_event_ottomans_rise_up
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.8.a #we shall support the Turks
+		ai_chance = {
+			factor = 80
+		}
+		release = NTU
+		every_state = {
+			limit = {
+				is_core_of = TUR
+			}
+			add_core_of = NTU
+		}
+		transfer_units_fraction = {
+			target = NTU
+			size = 0.5
+			stockpile_ratio = 0.8
+			army_ratio = 0.3
+			navy_ratio = 0.0
+			air_ratio = 0.5
+			keep_unit_leaders_trigger = {
+				always = yes
+			}
+		}
+		TUR_cemil_cahit_toydemir = { retire = yes }
+		TUR_mustafa_muglali = { retire = yes }
+		TUR_mehmet_recep_peker = { retire = yes }
+		TUR_nihal_atsiz = { retire = yes }
+		hidden_effect = {
+			NTU = {
+				load_oob = "NTU_1936"
+			}
+			346 = {
+				set_demilitarized_zone = yes
+			}
+			343 = {
+				set_demilitarized_zone = yes
+			}
+			1074 = {
+				set_demilitarized_zone = yes
+			}
+			342 = {
+				set_demilitarized_zone = yes
+			}
+			345 = {
+				set_demilitarized_zone = yes
+			}
+			country_lock_all_division_template = no
+			set_global_flag = turkish_civil_war2
+			set_country_flag = turkish_civil_war_participant
+			OTT = {
+				set_country_flag = turkish_civil_war_participant
+			}
+			NTU = {
+				set_country_flag = turkish_civil_war_participant
+			}
+		}
+		
+	}	
+}
+country_event = {
+	id = new_turkey.9
+	title = new_turkey.9.t
+	desc = new_turkey.9.d
+	picture = GFX_report_event_report_event_prs_rifles
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.9.a #we shall support the Turks
+		ai_chance = {
+			factor = 70
+		}
+		NTU = { country_event = {id = new_turkey.10 days = 3} }
+			
+	}
+	option = {
+		name = new_turkey.9.b #we shall support the Turks
+		ai_chance = {
+			factor = 30
+		}
+		NTU = { country_event = {id = new_turkey.11 days = 3} }
+		
+	}		
+}	
+country_event = {
+	id = new_turkey.10
+	title = new_turkey.10.t
+	desc = new_turkey.10.d
+	picture = GFX_report_event_report_event_prs_rifles
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.10.a #we shall support the Turks
+		ai_chance = {
+			factor = 70
+		}
+			ITA = {
+				add_ai_strategy = {
+					type = send_volunteers_desire
+					id = NTU
+					value = 200
+				}
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = 2500
+					target = NTU
+				}
+				send_equipment = {
+					equipment = support_equipment
+					amount = 300
+					target = NTU
+				}
+				send_equipment = {
+					equipment = motorized_equipment
+					amount = 500
+					target = NTU
+				}
+			}
+			NTU = {
+				give_resource_rights = { receiver = ITA state = 343 }
+				give_resource_rights = { receiver = ITA state = 342 }
+			}
+	}
+}			
+country_event = {
+	id = new_turkey.11
+	title = new_turkey.11.t
+	desc = new_turkey.11.d
+	picture = GFX_report_event_report_event_prs_rifles
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.10.a #we shall support the Turks
+		ai_chance = { factor = 70 } 
+		ROOT = {
+			add_opinion_modifier = { target = FROM modifier = request_denied } 
+		}	
+	}
+}
+country_event = {
+	id = new_turkey.12
+	title = new_turkey.12.t
+	desc = new_turkey.12.d
+	picture = GFX_report_event_report_event_prs_rifles
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.12.a #we shall support the Turks
+		ai_chance = {
+			factor = 60
+		}
+		TUR = { country_event = {id = new_turkey.10 days = 3} }
+			
+	}
+	option = {
+		name = new_turkey.12.b #we shall support the Turks
+		ai_chance = {
+			factor = 40
+		}
+		TUR = { country_event = {id = new_turkey.11 days = 3} }
+		
+	}		
+}
+country_event = {
+	id = new_turkey.13
+	title = new_turkey.13.t
+	desc = new_turkey.13.d
+	picture = GFX_report_event_report_event_prs_rifles
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.13.a #we shall support the Turks
+		ai_chance = {
+			factor = 70
+		}
+		add_timed_idea = { idea =  TUR_payments_to_the_soviets days = 360 }
+		SOV = {
+			add_timed_idea = { idea =  TUR_money_from_turkey days = 360 }
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 5000
+				target = TUR
+			}
+			send_equipment = {
+				equipment = support_equipment
+				amount = 500
+				target = TUR
+			}
+		}
+			
+	}	
+}			
+country_event = {
+	id = new_turkey.14
+	title = new_turkey.14.t
+	desc = new_turkey.14.d
+	picture = GFX_report_event_kurdish_rebels
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.14.a #we shall support the Turks
+		ai_chance = {
+			factor = 70
+		}
+		add_stability = -0.15
+		add_war_support = -0.15
+		white_peace = {
+			tag = KUR
+			message = "Unable to defeat the Kurdish Rebels, they broke free."
+		}
+			
+	}	
+}		
+country_event = {
+	id = new_turkey.15
+	title = new_turkey.15.t
+	desc = new_turkey.15.d
+	picture = GFX_report_event_kurdish_rebels
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.15.a #we shall support the Turks
+		ai_chance = {
+			factor = 70
+		}
+		KUR = {
+			set_state_owner = 353
+			set_state_owner = 350
+		}
+		add_stability = -0.25
+		add_war_support = -0.25
+		white_peace = {
+			tag = KUR
+			message = "Unable to defeat the Kurdish Rebels, they broke free."
+		}
+			
+	}	
+}
+country_event = {
+	id = new_turkey.16
+	title = new_turkey.16.t
+	desc = new_turkey.16.d
+	picture = GFX_TRC_officals_intervention
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.16.a #we shall support the Turks
+		ai_chance = {
+			factor = 20
+		}
+		1073 = {
+			controller = { 
+					add_stability = -0.15
+					add_political_power = -100
+			}
+		}
+		TRC = {country_event = {id = new_turkey.17 days = 3} }
+		
+	}
+	option = {
+		name = new_turkey.16.b #we shall support the Turks
+		ai_chance = {
+			factor = 80
+		}
+		TRC = {country_event = {id = new_turkey.18 days = 3} }
+		
+	}		
+}	
+country_event = {
+	id = new_turkey.17
+	title = new_turkey.17.t
+	desc = new_turkey.17.d
+	picture = GFX_TRC_officals_intervention
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.17.a #we shall support the Turks
+		ai_chance = {
+			factor = 70
+		}
+		TRC = {
+			set_state_owner = 1073
+		}
+		1073 = {
+			remove_claim_by = TRC
+			add_core_of = TRC
+		}
+			
+	}	
+}	
+country_event = {
+	id = new_turkey.18
+	title = new_turkey.18.t
+	desc = new_turkey.18.d
+	picture = GFX_TRC_officals_intervention
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.18.a #we shall support the Turks
+		ai_chance = {
+			factor = 70
+		}
+		every_country = {
+			limit = {has_country_flag = turkish_civil_war_participant }
+				ROOT = {
+					declare_war_on = {
+						target = PREV
+						type = take_claimed_state
+					}
+				}
+		}
+			
+	}	
+}	
+country_event = {
+	id = new_turkey.19
+	title = new_turkey.19.t
+	desc = new_turkey.19.d
+	picture = GFX_TRC_officals_intervention
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.19.a #we shall support the Turks
+		ai_chance = {
+			factor = 100
+		}
+		1073 = {
+			controller = { 
+				set_state_owner = 1021
+				set_state_owner = 1078
+				set_state_owner = 1079
+			}
+		}
+		every_country = {
+			limit = {has_country_flag = turkish_civil_war_participant }
+			white_peace = TRC
+		}
+		1021 = {
+			remove_core_of = TRC
+		}
+		1078 = {
+			remove_core_of = TRC
+		}
+		1079 = {
+			remove_core_of = TRC
+		}
+		hidden_effect = {
+			TRC = {country_event = {id = new_turkey.22 days = 20} }
+		}
+	}	
+	option = {
+		name = new_turkey.19.b #we shall support the Turks
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.25
+		TRC = {country_event = {id = new_turkey.20 days = 3} }	
+	}
+}	
+country_event = {
+	id = new_turkey.20
+	title = new_turkey.20.t
+	desc = new_turkey.20.d
+	picture = GFX_TRC_officals_intervention
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.20.a #we shall support the Turks
+		ai_chance = {
+			factor = 100
+		}
+		
+	}	
+}	
+country_event = {
+	id = new_turkey.21
+	title = new_turkey.21.t
+	desc = new_turkey.21.d
+	picture = GFX_TRC_officals_intervention
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.21.a #we shall support the Turks
+		ai_chance = {
+			factor = 100
+		}
+		every_country = {
+			limit = {has_country_flag = turkish_civil_war_participant }
+			white_peace = TRC
+		}
+		set_state_owner = 1073
+		1073 = {
+			remove_claim_by = TRC
+			add_core_of = TRC
+		}
+	
+	}	
+	option = {
+		name = new_turkey.21.b #we shall support the Turks
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.25
+		1073 = {
+			controller = { 
+				 country_event = {id = new_turkey.20 days = 3} 	
+			}
+		}
+	}
+}	
+country_event = {
+	id = new_turkey.22
+	title = new_turkey.22.t
+	desc = new_turkey.22.d
+	picture = GFX_TRC_officals_collapse
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.22.a #we shall support the Turks
+		ai_chance = {
+			factor = 100
+		}
+		TRC = {
+			release = AZR
+			release = ARM
+			release = ABK
+			set_cosmetic_tag = TRC_collaped
+			country_event = {id = new_turkey.23 days = 10}
+		}
+		229 = {
+			remove_core_of = TRC
+		}
+		1017 = {
+			remove_core_of = TRC
+		}
+		230 = {
+			remove_core_of = TRC
+		}
+		826 = {
+			remove_core_of = TRC
+		}
+		233 = {
+			remove_core_of = TRC
+		}
+		AZR = {
+			load_oob = "AZR_1936"
+		}
+		ARM = {
+			load_oob = "ARM_1936"
+		}
+		ABK = {
+			load_oob = "ABK_1936"
+		}
+	
+	}	
+}
+country_event = {
+	id = new_turkey.23
+	title = new_turkey.23.t
+	desc = new_turkey.23.d
+	picture = GFX_TRC_officals_collapse
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.23.a #we shall support the Turks
+		set_country_flag = TRC_in_a_war
+		ai_chance = {
+			factor = 100
+		}
+		declare_war_on = {
+             target = AZR
+             type = annex_everything
+        }
+		declare_war_on = {
+             target = ARM
+             type = annex_everything
+        }
+		declare_war_on = {
+             target = ABK
+             type = annex_everything
+        }
+	
+	}	
+}	
+country_event = {
+	id = new_turkey.24
+	title = new_turkey.24.t
+	desc = new_turkey.24.d
+	picture = GFX_TRC_officals_collapse
+
+	trigger = {
+		has_country_flag = TRC_in_a_war
+		NOT = {
+			country_exists = AZR
+			country_exists = ARM
+			country_exists = ABK
+		}
+	}
+	fire_only_once = yes
+	option = {
+		name = new_turkey.24.a #we shall support the Turks
+		clr_country_flag  = TRC_in_a_war
+		set_country_flag = recore_decision
+		ai_chance = {
+			factor = 100
+		}
+		drop_cosmetic_tag = yes
+	
+	}	
+}
+country_event = {
+	id = new_turkey.25
+	title = new_turkey.25.t
+	desc = new_turkey.25.d
+	picture = GFX_report_event_greek_soldiers
+
+	is_triggered_only = yes
+	option = {
+		name = new_turkey.25.a #we shall support the Turks
+		ai_chance = {
+			factor = 100
+		}
+		GRE = {
+			country_event = { id = new_turkey.26 days = 3 }
+		}
+		random_country = {
+			limit = {
+				has_country_flag = turkish_civil_war_participant
+				controls_state = 49
+			}
+			country_event = { id = new_turkey.27 days =  4}
+		}
+	}	
+	option = {
+		name = new_turkey.25.b #we shall support the Turks
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = "The path doesn´t have content"
+	}	
+	option = {
+		name = new_turkey.25.c #we shall support the Turks
+		ai_chance = {
+			factor = 0
+		}
+		custom_effect_tooltip = "The path doesn´t have content"
+	}	
+}
+country_event = {
+	id = new_turkey.26
+	title = new_turkey.26.t
+	desc = new_turkey.26.d
+	picture = GFX_report_event_greek_soldiers
+
+	is_triggered_only = yes
+	option = {
+		name = new_turkey.26.a #we shall support the Turks
+		ai_chance = {
+			factor = 100
+		}
+		annex_country = {
+			target = CNS
+			transfer_troops = yes
+		}
+	}	
+	
+}
+country_event = {
+	id = new_turkey.27
+	title = new_turkey.27.t
+	desc = new_turkey.27.d
+	picture = GFX_report_event_greek_soldiers
+
+	is_triggered_only = yes
+	option = {
+		name = new_turkey.27.a #we shall support the Turks
+		ai_chance = {
+			factor = 100
+		}
+		GRE = {
+			country_event = { id = new_turkey.28 days = 3 }
+		}
+		add_political_power = -60
+		add_stability = 0.15
+	}
+	option = {
+		name = new_turkey.27.b #we shall support the Turks
+		ai_chance = {
+			factor = 0
+		}
+		add_political_power = 60
+		add_stability = -0.15
+	}
+	
+}
+country_event = {
+	id = new_turkey.28
+	title = new_turkey.28.t
+	desc = new_turkey.28.d
+	picture = GFX_report_event_greek_soldiers
+
+	is_triggered_only = yes
+	option = {
+		name = new_turkey.28.a #we shall support the Turks
+		ai_chance = {
+			factor = 90
+		}
+		random_country = {
+			limit = {
+				has_country_flag = turkish_civil_war_participant
+				controls_state = 49
+			}
+			country_event = { id = new_turkey.29 days =  4}
+		}
+	}
+	option = {
+		name = new_turkey.28.b #we shall support the Turks
+		ai_chance = {
+			factor = 10
+		}
+		add_stability = -0.15
+		random_country = {
+			limit = {
+				has_country_flag = turkish_civil_war_participant
+				controls_state = 49
+			}
+			set_state_owner = 797
+			set_state_owner = 341
+			set_state_owner = 340
+		}	
+	}
+	
+}
+country_event = {
+	id = new_turkey.29
+	title = new_turkey.29.t
+	desc = new_turkey.29.d
+	picture = GFX_report_event_greek_soldiers
+
+	is_triggered_only = yes
+	option = {
+		name = new_turkey.29.a #we shall support the Turks
+		ai_chance = {
+			factor = 100
+		}
+		create_wargoal = {
+			type = take_core_state
+			target = GRE
+		}
+	}
+	
+}
+country_event = {
+	id = new_turkey.30
+	title = new_turkey.30.t
+	desc = new_turkey.30.d
+	picture = GFX_report_event_turkish_diplomats
+
+	is_triggered_only = yes
+	option = {
+		name = new_turkey.30.a #we shall support the Turks
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 80
+				surrender_progress > 0.7
+			}
+		}
+		FROM = {	
+			white_peace = ROOT
+			add_to_faction = ROOT
+		}
+	}
+	option = {
+		name = new_turkey.30.b #we shall support the Turks
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 60
+				FROM = {
+					surrender_progress > 0.7
+				}
+			}
+		}
+		49 = {
+			controller = {
+				country_event = {id = new_turkey.11 days = 3}
+			}
+		}
+
+		add_political_power = 20
+	}
+	
+}
+country_event = {
+	id = new_turkey.31
+	title = new_turkey.31.t
+	desc = new_turkey.31.d
+	picture = GFX_report_event_greek_soldiers
+
+	is_triggered_only = yes
+	
+	option = {
+		name = new_turkey.31.a #we shall support the Turks
+		ai_chance = {
+			factor = 100
+		}
+		every_country = {
+			limit = {has_country_flag = turkish_civil_war_participant }
+			white_peace = GRE
+		}
+		49 = {
+			controller = { 
+				set_state_owner = 340
+				set_state_owner = 797
+				set_state_owner = 341
+				set_state_owner = 339
+				set_state_owner = 1075
+				set_state_owner = 187
+				set_state_owner = 1002
+			}
+		}
+		340 = {
+			remove_core_of = GRE
+		}
+		797 = {
+			remove_core_of = GRE
+		}
+		341 = {
+			remove_core_of = GRE
+		}
+		hidden_effect = {
+			country_event = {id = new_turkey.32 days = 14}
+		}
+	}	
+	option = {
+		name = new_turkey.31.b #we shall support the Turks
+		ai_chance = {
+			factor = 0
+		}
+		add_stability = -0.25
+		GRE = {
+			country_event = {id = new_turkey.20 days = 3} 	
+		}
+	}
+}
+country_event = {
+	id = new_turkey.32
+	title = new_turkey.32.t
+	desc = new_turkey.32.d
+	picture = GFX_report_event_more_turkish_soldiers
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = {country_exists = GRE}
+		FROM = {
+			has_country_flag = turkish_civil_war_participant
+		}
+	}
+	fire_only_once = yes
+	option = {
+		name = new_turkey.32.a #we shall support the Turks
+		ai_chance = {
+			factor = 100
+		}
+		activate_mission = restart_turkish_civil_war
+		dismantle_faction = yes
+	}	
+}
+country_event = {
+	id = new_turkey.33
+	title = new_turkey.33.t
+	desc = new_turkey.33.d
+	picture = GFX_report_event_turkish_soldier_marching
+	
+	trigger = {
+		has_country_flag = turkish_civil_war_participant
+		all_neighbor_country = { 
+			NOT = {has_country_flag = turkish_civil_war_participant}
+		}
+	}
+	fire_only_once = yes
+	option = {
+		name = new_turkey.33.a #we shall support the Turks
+		ai_chance = {
+			factor = 100
+		}
+		clr_country_flag = turkish_civil_war_participant
+		clr_global_flag = turkish_civil_war2 
+		remove_ideas = TUR_turkish_civil_war_participant
+		IF = {
+			limit = {tag = OTT}
+			set_cosmetic_tag = OTT_sultan_again
+		}
+		ELSE_IF = {
+			limit = {tag = NTU}
+			set_cosmetic_tag = NTU_social_state
+		}
+	}	
+}	
+

@@ -1,0 +1,25 @@
+
+state={
+	id=237
+	name="STATE_237"
+	manpower = 199620
+	
+	state_category = rural
+
+	history={
+		owner = KAL
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = KAL
+		victory_points = {
+			11724 1
+		}
+	}
+
+	provinces={
+		481 742 745 759 3413 3439 3461 3475 3487 3597 3746 3774 6463 6760 6791 6794 9426 9440 9442 9594 9720 9722 9735 9739 11416 11566 11579 11706 11724 11727 
+	}
+
+	local_supplies=0.0 
+}
